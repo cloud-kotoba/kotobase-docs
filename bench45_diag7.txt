@@ -1,0 +1,6 @@
+HEAD blob bytes: 176746
+worktree bytes: 176746
+identical: True
+index entry: 100644 fa45c3bad20ed3d58fd498a66ef81f9922b6f5a2 0	query-cosientist.md
+worktree hash: fa45c3bad20ed3d58fd498a66ef81f9922b6f5a2
+HEAD blob hash: fa45c3bad20ed3d58fd498a66ef81f9922b6f5a2

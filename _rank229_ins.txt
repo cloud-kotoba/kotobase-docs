@@ -1,0 +1,9 @@
+inserted ok
+rc=0
+=== hdr count ===
+1
+=== numstat ===
+ query-cosientist.md | 1 +
+ 1 file changed, 1 insertion(+)
+=== diff num lines ===
+1	0	query-cosientist.md

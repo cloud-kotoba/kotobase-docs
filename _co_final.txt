@@ -1,0 +1,8 @@
+=== K-Z3 row run243 present ===
+awk: illegal primary in regular expression ^| K-Z3 | at 
+ source line number 1
+ context is
+	/^| K-Z3 >>>  |/ <<< 
+=== git diff stat ===
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)

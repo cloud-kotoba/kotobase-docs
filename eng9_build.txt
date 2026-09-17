@@ -1,0 +1,9 @@
+RC=0
+[:worker] Compiling ...
+[:worker] Build completed. (207 files, 13 compiled, 0 warnings, 85.04s)
+shadow-cljs - config: /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/shadow-cljs.edn
+shadow-cljs - starting via "clojure"
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.google.protobuf.UnsafeUtil$MemoryAccessor (file:/Users/junkawasaki/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.protobuf.UnsafeUtil$MemoryAccessor
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release

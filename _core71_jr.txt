@@ -1,0 +1,53 @@
+86:(defn- json-resp
+                            (some-> (:cacao_b64 body)
+                                    (auth/verify-cacao-caps (now-sec)))}
+                           (auth/resolve-read-auth
+                            env authorization (:cacao_b64 body)
+                            tenant-did graph (now-sec)))
+                         owner-did (or tenant-did
+                                       (get-in auth-result
+                                               [:read-auth :did]))
+                         requester (get-in auth-result [:read-auth :did])
+                         event (fn [decision]
+                                 (read-audit-event
+                                  audit-context
+                                  (or owner-did (when public? "public"))
+                                  graph requester method decision body
+                                  basis-cid))]
+                     (if-not (:ok? auth-result)
+                       (audit-response!
+                        env
+                        (json-resp {:ok false :error "Unauthorized"
+                                    :details (:error auth-result)}
+                                   (:status auth-result))
+                        (event "deny"))
+                       (-> (owner/authorize-read
+                            env graph owner-did (:db_name body))
+                           (.catch (fn [error]
+                                     (audit-error! env (event "error") error)))
+                           (.then
+                            (fn [denial]
+                              (if denial
+                                (audit-response!
+                                 env
+         requester (get-in auth-result [:read-auth :did])
+         context (if context? viewer {})
+         event (fn [decision]
+                 (read-audit-event context
+                                   (or owner-did (when public? "public"))
+                                   g requester method decision body nil))]
+     (if-not (and (string? g) (not= "" (str/trim g)))
+       (js/Promise.resolve (bad-request "graph required"))
+       (if-not (:ok? auth-result)
+         (audit-response!
+          env
+          (json-resp {:ok false :error "Unauthorized"
+                      :details (:error auth-result)} (:status auth-result))
+          (event "deny"))
+         (-> (owner/authorize-read env g owner-did (:db_name body))
+             (.catch (fn [error]
+                       (audit-error! env (event "error") error)))
+             (.then
+              (fn [denial]
+                (if denial
+                  (audit-response!

@@ -1,0 +1,32 @@
+defn handle-with
+  "Testable implementation. `primary!` receives the original Request.
+  Runtime hooks are injected so scheduling and authority can be verified
+  without touching B2."
+  [{:keys [request env ctx method primary! runtime-fn ready-fn handler-fn
+           journal-fn catch-up-fn standalone-runtime-fn
+           standalone-catch-up-fn observe! now-fn sample-id-fn]}]
+  (let [candidate-request (.clone request)
+        percent (sample-percent env)
+        observe! (or observe! observe-default!)
+        journal-fn (or journal-fn journal/write!)
+        catch-up-fn (or catch-up-fn lsm-shadow/catch-up!)
+        standalone-runtime-fn (or standalone-runtime-fn standalone/make-runtime)
+        standalone-catch-up-fn (or standalone-catch-up-fn standalone/catch-up!)
+        now-fn (or now-fn #(.now js/Date))
+        sample-id-fn (or sample-id-fn #(random-uuid))
+        sample-id (str (sample-id-fn))
+        primary-started (now-fn)
+        scheduler (adapter/wait-until-scheduler ctx)]
+    (-> (primary! request)
+        (.then
+         (fn [primary-response]
+           (let [primary-duration-ms (- (now-fn) primary-started)]
+             (when (and (or (pos? percent) (writes-enabled? env)
+                            (standalone-writes-enabled? env))
+                        (<= 200 (.-status primary-response) 299))
+               (scheduler
+                (fn []
+                  (let [started (now-fn)
+                      work
+                      (-> (js/Promise.all
+       

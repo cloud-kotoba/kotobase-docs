@@ -1,0 +1,3 @@
+poll 0 HEAD=f418deafd4218048b08f82205f40a6af9e57d1a4
+HEAD advanced!
+head1: f418dea falsify 230: K-Z3 0hr n-add run518 cold 10/60 ~16.7% control 1/20 border(spike 9/1/0)

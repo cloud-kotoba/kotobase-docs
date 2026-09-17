@@ -1,0 +1,4 @@
+run207A: n=20 errs=0 cold(>=0.8s)=4 p50=61.9ms max=1027.2ms colds=[1.027, 0.84, 1.024, 0.869]
+run207B: n=20 errs=0 cold(>=0.8s)=0 p50=52.0ms max=118.7ms colds=[]
+run207C: n=20 errs=0 cold(>=0.8s)=1 p50=55.6ms max=1334.8ms colds=[1.335]
+control: n=20 errs=0 cold=0 p50=76.7ms max=404.9ms

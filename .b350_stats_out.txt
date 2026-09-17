@@ -1,0 +1,10 @@
+A: n=20 non200=0 cold(>=0.5s)=3 p50=72.3ms max=1501.4ms
+   cold vals: ['1.5014s', '1.0516s', '1.1273s']
+B: n=20 non200=0 cold(>=0.5s)=0 p50=64.3ms max=92.4ms
+C: n=20 non200=0 cold(>=0.5s)=0 p50=41.7ms max=58.9ms
+land: n=20 non200=0 cold(>=0.5s)=0 p50=45.0ms max=129.7ms
+=== all non200 check ===
+A non200: none
+B non200: none
+C non200: none
+land non200: none

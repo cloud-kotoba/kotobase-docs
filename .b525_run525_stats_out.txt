@@ -1,0 +1,7 @@
+run525A: n=20 cold(>=0.5s)=1/20 p50=134.3ms max=1141.6ms cold_vals=[1.1416]
+run525B: n=20 cold(>=0.5s)=0/20 p50=115.6ms max=194.8ms cold_vals=[none]
+run525C: n=20 cold(>=0.5s)=0/20 p50=128.7ms max=189.8ms cold_vals=[none]
+landing_control: n=20 cold=0/20 p50=90.6ms max=181.6ms cold_vals=[none]
+TOTAL_SEARCH_COLD=1/60
+ROW459_COLD_STR=1/60
+stexit=0

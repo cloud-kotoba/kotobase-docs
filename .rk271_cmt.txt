@@ -1,0 +1,12 @@
+[detached HEAD 8446acc] rank 第271回: K-Z3 9/14 午後帯 fold (falsify run616 15時台 cold 12/60 ~20.0% heavy クラスタ, bench run617 17時台 8/60 ~13.3% control separated); K-Z4 同帯日差ペア 15時台 spread ~6倍 / 17時台 spread ~3倍 追加; NEXT K-Z3 19時台 run618
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ssh: Could not resolve hostname head: nodename nor servname provided, or not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ssh: Could not resolve hostname head: nodename nor servname provided, or not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

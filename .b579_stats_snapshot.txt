@@ -1,0 +1,7 @@
+run579A: n=20 200=20 cold>=0.5s 8/20 (40.0%) p50=59.8ms p95=1606.7ms max=1629.1ms cold_vals=[0.9161, 1.056, 1.2519, 1.3802, 1.4632, 1.602, 1.6067, 1.6291]
+run579B: n=20 200=20 cold>=0.5s 1/20 (5.0%) p50=42.2ms p95=66.0ms max=886.3ms cold_vals=[0.8863]
+run579C: n=20 200=20 cold>=0.5s 2/20 (10.0%) p50=44.0ms p95=917.7ms max=1650.5ms cold_vals=[0.9177, 1.6505]
+control(signup): n=20 200=20 cold>=0.5s 0/20 (0.0%) p50=49.5ms p95=261.3ms max=265.6ms cold_vals=[]
+TOTAL search: cold 11/60 (18.3%)
+control separated: True
+t0: 2026-09-11 01:34:29 |  1:34  up 5 days, 18:17, 7 users, load averages: 5.25 8.84 11.25 |  1:34  up 5 days, 18:17, 7 users, load averages: 5.18 8.59 11.10 | 2026-09-11 01:34:49 | 

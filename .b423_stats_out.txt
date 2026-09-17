@@ -1,0 +1,6 @@
+run423A n=20 code200=20/20 cold=0/20 p50=47.3ms max=137.4ms
+run423B n=20 code200=20/20 cold=0/20 p50=42.8ms max=148.6ms
+run423C n=20 code200=20/20 cold=0/20 p50=45.8ms max=199.0ms
+landing n=20 code200=20/20 cold=0/20 p50=37.4ms max=125.6ms
+---VERDICT---
+search cold total=0/60; landing cold=0/20 -> control clean separation (cold level confined to search side)

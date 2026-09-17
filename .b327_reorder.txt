@@ -1,0 +1,3 @@
+hdr 357 mine [359] old [358]
+after: old now at [359]
+done

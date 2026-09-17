@@ -1,0 +1,11 @@
+3
+run377A
+run377A
+run377B
+run377C
+run377A
+18/180
+run377A cold 7/20 heavy
+18/180
+--- ilog run378 NEXT ---
+run378 使用

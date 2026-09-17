@@ -1,0 +1,11 @@
+[detached HEAD 12ee387] bench 第71回: K-Z3 6時台 run191A-C evidence 追記 (cold 1/60 単発, control 分離), status 遷移なし
+ 4 files changed, 39 insertions(+), 1 deletion(-)
+ create mode 100644 _b71_run.sh
+ create mode 100644 _b71_stats.py
+ create mode 100644 _b71_stats.txt
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push net-kotobase HEAD:<name-of-remote-branch>
+

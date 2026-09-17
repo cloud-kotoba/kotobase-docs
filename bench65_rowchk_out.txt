@@ -1,0 +1,2 @@
+52 len 2945 last80: '」仮説を実測で確定。transact 401 は K-Q1 (query path 退行) とは独立の調査事項として cosientist 実装担当に引き継ぎ。'
+207 len 29116 last80: 'ffic 最低帯での発現継続 (低頻度) は K-Z3 traffic 依存説への反証材料を維持。status 判定は rank に委ねる (rank 専門)。'

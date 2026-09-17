@@ -1,0 +1,15 @@
+=== amend ===
+[detached HEAD 13cbce4] rank 157: fold falsify165-run361(3/60)+falsify166-run362(6/60)+bench157-run363(2/60) -> K-Z3 14hr(9/7) 19/300 ~6.3% 5-set midband (swept sibling uncommitted falsify166/bench157 as coherent superset, rank142 precedent); heavy(run359A 6/20) non-reproduced, single-window decay held; rank/status/evolve unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 15hr band-first run364
+ Date: Mon Sep 7 15:04:50 2026 +0900
+ 1 file changed, 1 insertion(+)
+=== log -3 ===
+13cbce4 rank 157: fold falsify165-run361(3/60)+falsify166-run362(6/60)+bench157-run363(2/60) -> K-Z3 14hr(9/7) 19/300 ~6.3% 5-set midband (swept sibling uncommitted falsify166/bench157 as coherent superset, rank142 precedent); heavy(run359A 6/20) non-reproduced, single-window decay held; rank/status/evolve unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 15hr band-first run364
+44cddf9 bench 157: K-Z3 14hr n-add run363 (relabel from run362 collision w/ falsify166 in-flight; .b363) cold 2/60 ~3.3% (363A scattered 1.21s+2.11s, B/C 0/20 disappear) control 1/20 0.729s borderline not-separated; 14hr(9/7) run359+60+61+362+363 = 19/300 ~6.3% 5-set midband; sweep falsify166 run362 uncommitted (coherent superset)
+2dc090d falsify 165: K-Z3 14hr(9/7) 3rd-set n-add run361 (read-替 from run359 collision w/ bench155-run359+bench156-run360 after HEAD advance; runs rank156 NEXT run361) cold 3/60 (~5.0%): run361A/B/C each single 1.19-1.84s scatter, control 0/20 sep OK; 14hr 11/180 ~6.1% 3-set midband
+=== fetch ===
+From https://github.com/net-kotobase/docs
+   2dc090d..44cddf9  main       -> bench_fetch/main
+=== my HEAD ===
+13cbce41c1442fa9dfda0c08b378c6116aaec0d8
+=== bench_fetch/main ===
+44cddf9500f9d82bea4d0b6595673e10a08a7fc2

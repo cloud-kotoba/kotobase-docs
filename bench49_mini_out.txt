@@ -1,0 +1,11 @@
+{
+  "schema": "kotobase.benchmark.biscuit-auth-query.v1.bench49mini",
+  "observedAt": "2026-09-05T07:15:49.978Z",
+  "transactStatus": 401,
+  "transactData": {
+    "ok": false,
+    "error": "Unauthorized"
+  },
+  "aborted": "transact did not return 200 — harness flow could not complete"
+}
+rc=0

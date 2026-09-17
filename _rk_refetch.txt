@@ -1,0 +1,11 @@
+===HEAD after refetch===
+b0dcd16cf24f028110843d3b25c721564bbdb1ca
+===bench_fetch/main===
+b0dcd16cf24f028110843d3b25c721564bbdb1ca
+===log -4===
+b0dcd16 rank 190th: fold falsify190-run431+bench-run432+falsify191-run433 -> 7hr 3/180 ~1.7% 3-set low-band candidate; status/rank/evolve unchanged; NEXT K-Z3 7hr n-add run434
+f63cc21 falsify 191th: K-Z3 7hr run433A-C cold 0/60 complete-quiet; 7hr total 3/180 ~1.7% low band candidate
+f1939ef bench 07:09 JST: K-Z3 7hr band-in-2 run432 (run431 was falsify-190 band-first collision -> relabel run432; cold 2/60 ~3.3% run432A 散発 2/20 pos1+14; control clean separation; total 7hr 3/120 ~2.5% low band; next run433
+8d6d0a3 falsify 190th: K-Z3 7hr run431A-C cold 1/60
+===DATE===
+2026-09-08 07:34:21

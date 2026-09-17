@@ -1,0 +1,21 @@
+toms" #(xrpc/handle-datoms % env))
+      (= path (str "/xrpc/" nsid-base ".q"))
+      (physical-index-dispatch/handle request env ctx "q" #(xrpc/handle-q % env))
+      (= path (str "/xrpc/" nsid-base ".pull"))
+      (physical-index-dispatch/handle request env ctx "pull" #(xrpc/handle-pull % env))
+      (= path (str "/xrpc/" nsid-base ".transact"))
+      (physical-index-dispatch/handle request env ctx "transact"
+                           #(xrpc/handle-transact % env ctx))
+      (= path "/xrpc/ai.gftd.apps.kotobase.engine.bootstrap")
+      (xrpc/handle-engine-bootstrap request env)
+      (= path "/xrpc/ai.gftd.apps.kotobase.index.backfill")
+      (xrpc/handle-physical-index-backfill request env)
+
+      (= path "/xrpc/ai.gftd.apps.kotobase.index.qualificationProbe")
+      (xrpc/handle-physical-index-qualification-probe request env)
+      (= path "/xrpc/ai.gftd.apps.kotobase.engine.candidateRead")
+      (xrpc/handle-engine-candidate-read request env)
+      (= path "/xrpc/ai.gftd.apps.kotobase.engine.qualificationProbe")
+      (xrpc/handle-engine-qualification-probe request env)
+      (= path (str "/xrpc/" nsid-base ".fold"))
+      (physical-index-dispatch/handle request env ctx "fold"

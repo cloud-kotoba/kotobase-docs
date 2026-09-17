@@ -1,0 +1,4 @@
+3cb9292 falsify 78th tick: K-Z3 9時台 run201A-C evidence + iteration log (incl. run200/201 無効測定 404 注記)
+ef3d284 rank 第78回: K-Z3 9時台通算 240中12 (~5%) 更新 (run201 cold 5/60, 突発3セットが09:22-09:49 traffic上昇帯に集中), status 遷移なし, NEXT K-Z3 9時台 n 積み増し
+f7c9f1d bench 78: K-Z3 9時台帯初計測 run201A-C (cold 5/60, 1窓集中型, control 静穏) + log
+032b37b bench: K-Z3 8時台 run199A-C (cold 1/60 単発, control 分離, 第77回)

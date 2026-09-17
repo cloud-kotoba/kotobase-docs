@@ -1,0 +1,6 @@
+[detached HEAD bb27963] falsify run613A-C: K-Z3 7-ji-tai (9/14) 10/60 (~16.7%) leaning-separated control, K-Z4 nichi-sa material
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+To github.com:net-kotobase/docs
+   121700d..bb27963  HEAD -> main
+bb27963e14f42f340bc9594be7755154ef394fcb
+bb27963e14f42f340bc9594be7755154ef394fcb

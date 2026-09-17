@@ -1,0 +1,14 @@
+$ git add query-cosientist.md
+
+$ git commit -m rank 第68回: evidence なし, rank 変動なし, NEXT K-Z3 5時台 n 積み増し継続
+[detached HEAD cbf06c6] rank 第68回: evidence なし, rank 変動なし, NEXT K-Z3 5時台 n 積み増し継続
+ 1 file changed, 2 insertions(+)
+
+$ git push net-kotobase HEAD:main
+To github.com:net-kotobase/docs
+   a51977e..cbf06c6  HEAD -> main
+
+$ git log --oneline -2
+cbf06c6 rank 第68回: evidence なし, rank 変動なし, NEXT K-Z3 5時台 n 積み増し継続
+a51977e rank 第67回: evidence なし, rank 変動なし, NEXT K-Z3 5時台 n 積み増し
+

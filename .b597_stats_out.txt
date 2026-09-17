@@ -1,0 +1,4 @@
+A: n=20 codes=['404'] cold(>=0.5s)=1 p50=44.1ms p95=523.0ms max=523.0ms
+B: n=20 codes=['404'] cold(>=0.5s)=1 p50=45.3ms p95=518.0ms max=518.0ms
+C: n=20 codes=['404'] cold(>=0.5s)=0 p50=45.6ms p95=58.7ms max=58.7ms
+landing: n=20 codes=['200'] cold(>=0.5s)=1 p50=62.9ms p95=926.1ms max=926.1ms

@@ -1,0 +1,44 @@
+340:(defn- xrpc-permission [suffix]
+2358:                   (not (permitted? viewer (xrpc-permission suffix))) (forbidden)
+169:(defn credential-refusal-details
+                                      (b2-put-json env nonce-key
+                                                   #js {:iss leaf-iss :nonce_hash nonce-hash :iat (aget v "iat")
+                                                        :exp (aget v "exp") :seen_at (.toISOString (js/Date.))
+                                                        ;; a one-link record is unchanged in meaning:
+                                                        ;; root == leaf-iss and depth 1
+                                                        :root_iss iss :depth (aget v "depth")
+                                                        :holder (aget v "holder")}))))
+                           (.then (fn [_] iss)))))))))))
+
+(defn credential-refusal-details
+  "Why a 401 happened, in bounded terms, without leaking anything.
+
+  A rejected credential may never be reinterpreted as an absent one. The
+  graph database already holds that rule as `biscuit-scheme?`, which is
+  deliberately broader than its wire matcher so a malformed token stays a
+  REJECTION -- but the edge collapsed every outcome into a bare
+  `{ok:false, error:Unauthorized}`, so a holder of a wrong key, a holder of
+  an expired one, and somebody holding nothing all read the same. Measured
+  cost: ADR-2608281200's `kagi push/pull` failure passed through two wrong
+  hypotheses before anyone looked at the credential (ADR-2608291700 §2).
+
+  This names the SHAPE presented and the schemes accepted. It never says why
+  a well-formed credential failed: that reason lives in authn, this Worker
+  is not a second policy engine, and an oracle that separates `expired` from
+  `not yours` for an unauthenticated caller is a different kind of leak."
+  [request]
+  (let [authorization (or (req-header request "authorization") "")
+        cookie (or (req-header request "cookie") "")
+        accepted "this surface accepts an issued Biscuit (Authorization: Biscuit <token>), a session cookie, a service token, or an operator CACAO"]
+    (cond
+      (re-find #"(?i)^Biscuit(?:\s|$)" authorization)
+      {:presented "biscuit"
+       :details (if (re-matches #"(?i)^Biscuit [A-Za-z0-9_-]{80,8192}$" authorization)
+                  "the presented Biscuit was not accepted (bad signature, expired, revoked, or out of scope)"
+                  "the presented Biscuit is malformed: expected 80 to 8192 base64url characters after the scheme")}
+
+      (re-find #"(?i)^CACAO(?:\s|$)" authorization)
+      {:presented "cacao" :details "the presented CACAO was not accepted"}
+
+      (re-find #"(?i)^Bearer(?:\s|$)" authorization)
+      {:presented "bearer" :details "the presented bearer credential was not accepted"}

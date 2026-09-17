@@ -1,0 +1,8 @@
+Thu Sep 17 11:30:08 JST 2026
+11:30  up 12 days,  4:13, 5 users, load averages: 9.42 24.49 50.21
+      20 ._fz_b652_search_A.txt
+      20 ._fz_b652_search_B.txt
+      20 ._fz_b652_search_C.txt
+      20 ._fz_b652_control.txt
+      80 total
+Thu Sep 17 11:30:23 JST 2026

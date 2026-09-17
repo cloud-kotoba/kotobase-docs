@@ -1,0 +1,8 @@
+ls-remote:
+acfb18915d79e1ca8c635077f310373f3ac9a4ec	refs/heads/main
+
+log:
+acfb189 falsify 第63回: K-Z3 20時台帯初計測 run167A-C (cold 0/60, control 同時上振れで partially not-separated) evidence 追記
+69d7448 cosientist 第57回: K-Q1 滞留確定 — #614 merge済だが committed bundle に kv-stats pass-through 未到達 (grep 0), bundle 再生成 + PR control-plane#615 提出 (555 tests 0 failures)
+766d9fe bench 第57回: K-Z3 20時台 run168A–C (cold 4/60 散発が run168A のみ, control 静穏, 20時台通算 8/300 ~2.7% 低位帯; run167 は falsify 同 tick 分と ID 衝突のため読み替え)
+

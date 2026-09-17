@@ -1,0 +1,4 @@
+=== line243 length ===
+72031
+=== line243 tail 400 chars ===
+非再現)。20時台通算 (bench run239 3/60 + falsify run239 0/60 + falsify run240 0/60 + bench run241 2/60 + 本 tick 1/60) 6/240 (~2.5%) 低位帯残界確定方向継続 — 日中低位帯分布パターン (13–17時台 ~2-5%) と整合し traffic 依存説の方向支持継続、深夜帯 ~26-31% 平坦パターンとの対比も維持。status 判定は rank に委ねる (rank 専門)。

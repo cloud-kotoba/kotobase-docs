@@ -1,0 +1,3 @@
+row len 39397
+TAIL 700:
+ms 分離成立。単発散発型でクラスタ非形成 — 10時台通算 8/240 (~3.3%) 低位帯パターン維持] bench 2026-09-06 (第81回, K-Z3 11時台帯初計測 run206A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 11:31:57–11:32:21 JST, 全 80/80 200, host load1 15–22 (gate 7.5 超過) は production HTTP 実測のため gate 外): run206A cold(>=0.5s) 3/20 (0.967s/0.997s/1.137s, 1–3番目 冒頭集中クラスタ) p50 42ms / run206B cold 1/20 (0.917s, 17番目の単発) p50 41ms / run206C cold 0/20 p50 38ms — 合計 4/60, landing control (kotobase.net/signup, 同時刻, n=20, 全 200) は cold 0/20 p50 49ms max 233ms と静穏で control 分離成立、cold 群は search 側に局在。run206A 冒頭クラスタは 即消失 (B 単発→C 0) の帯内 1 窓型 (run178A/run201A/run202A 型)。11時台は帯初計測で cold 4/60 (~6.7%) — 12時台 (~8.3%) に近い日中低位帯の初期サンプル。status 判定は rank に委ねる (rank 専門)。

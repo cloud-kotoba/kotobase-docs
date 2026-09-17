@@ -1,0 +1,62 @@
+{
+  "results": {
+    "run328A": {
+      "name": "run328A",
+      "n": 20,
+      "all200": true,
+      "cold": 1,
+      "cold_idxs": [
+        7
+      ],
+      "cold_ttfb": [
+        1.084
+      ],
+      "p50_ms": 176.0,
+      "p90_ms": 250.2,
+      "max_ms": 1084.0,
+      "errors": [],
+      "min_ms": 44.1
+    },
+    "run328B": {
+      "name": "run328B",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 139.1,
+      "p90_ms": 251.4,
+      "max_ms": 269.4,
+      "errors": [],
+      "min_ms": 40.0
+    },
+    "run328C": {
+      "name": "run328C",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 186.0,
+      "p90_ms": 249.4,
+      "max_ms": 405.5,
+      "errors": [],
+      "min_ms": 56.7
+    },
+    "landing": {
+      "name": "landing",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 146.5,
+      "p90_ms": 207.4,
+      "max_ms": 235.9,
+      "errors": [],
+      "min_ms": 40.5
+    }
+  },
+  "uptime": "8:03  up 2 days, 46 mins, 15 users, load averages: 83.69 51.38 73.18",
+  "started": "2026-09-07 08:03:41 JST"
+}

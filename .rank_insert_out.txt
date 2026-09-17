@@ -1,0 +1,3 @@
+header count: 0
+entry count: 1
+first non-header line: 

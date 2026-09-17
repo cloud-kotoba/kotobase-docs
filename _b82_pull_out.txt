@@ -1,0 +1,11 @@
+HEAD 3d213161da96a340458bc7321ed83e6ca80d2306 
+pull rc 1
+
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+HEAD after 3d213161da96a340458bc7321ed83e6ca80d2306
+behind rc 128
+now 2026-09-06T12:07:36.798103

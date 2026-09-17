@@ -1,0 +1,8 @@
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+fetch_rc=0
+=== HEAD ===
+65537a1639538f19ffeb454c8f4657f4dbadd6cf
+=== remote ===
+65537a1639538f19ffeb454c8f4657f4dbadd6cf
+=== status M ===

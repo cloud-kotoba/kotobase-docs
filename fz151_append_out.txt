@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/fz151_append.py", line 16, in <module>
+    assert lines[i].rstrip().endswith("|"), lines[i][-60:]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 発現の突発性 (時間窓内でも連続しない) パターンと整合。status 判定は rank に委ねる (rank 専門)。
+0

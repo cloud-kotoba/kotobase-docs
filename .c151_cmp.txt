@@ -1,0 +1,9 @@
+HEAD line279 len: 274140
+HEAD line279 last 80:
+518A 9/20, deep>1s 5 本) - traffic 依存説 の 反証材料 継続, status 判定 は rank に委ねる (rank 専門。
+HEAD line279 last 5 repr: 'k 専門。'
+---
+WORKTREE line279 len: 275156
+WORKTREE line279 last 5 repr: 'k 専門)'
+wt startswith hd[:100]: True
+hd ends in wt's region: True

@@ -1,0 +1,1 @@
+'## Iteration log\n- 2026-09-06: falsify 第96回。16:46 JST tick。worktree detached HEAD のため fetch net-kotobase + rev-parse で同期'

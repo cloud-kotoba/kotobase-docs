@@ -1,0 +1,1 @@
+LC n=20 all200=True cold=0 p50=0.058 max=0.220

@@ -1,0 +1,13 @@
+[detached HEAD b831289] falsify 第53回: K-Z3 16時台 n 積み増し run154A-C (cold 6/3/0 per 20, search のみ 1s 超外れ値 9/60, control 静穏 p50 59ms) evidence 追記 — status 遷移なし
+ 8 files changed, 156 insertions(+), 1 deletion(-)
+ create mode 100644 fz154_append.py
+ create mode 100644 fz154_append_out.txt
+ create mode 100644 fz154_diff.txt
+ create mode 100644 kz3_run154.sh
+ create mode 100644 kz3_run154_calc.py
+ create mode 100644 kz3_run154_calc.txt
+ create mode 100644 kz3_run154_out.txt
+ 
+ To github.com:net-kotobase/docs
+   c712e74..b831289  HEAD -> main
+

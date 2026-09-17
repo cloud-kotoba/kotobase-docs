@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b579_stats.py", line 13, in <module>
+    p50 = s[n // 2 - 1] if n % 2 == 0 else s[n // 2]
+          ~^^^^^^^^^^^^
+IndexError: list index out of range

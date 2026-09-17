@@ -1,0 +1,1 @@
+- 2026-09-08: falsify 第197回: 08:49-08:56 JST tick, HEAD <push後確認>, K-Z3 8時台 n-add run444 cold 2/60 ~3.3% (run444A 散発 2/20 1.363s/1.052s, B/C 0/20), control 0/20 完全静穏分離成立 (run443 0/60 直後の弱い再出現, heavy クラスタは run331A 以降非再現継続); evidence 欄追記済み。status 判定は rank に委ねる。

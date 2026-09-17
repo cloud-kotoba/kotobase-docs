@@ -1,0 +1,7 @@
+run215A n=20 p50=134ms max=231ms cold(>0.7s)=0
+run215B n=20 p50=71ms max=1167ms cold(>0.7s)=1
+run215C n=20 p50=98ms max=1033ms cold(>0.7s)=1
+search_total n=60 p50=98ms max=1167ms cold(>0.7s)=2
+control n=20 p50=119ms max=512ms cold(>0.7s)=0
+control >0.3s: [331, 512]
+rc=0

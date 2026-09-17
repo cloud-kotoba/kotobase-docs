@@ -1,0 +1,10 @@
+=== refetch ===
+=== local HEAD ===
+e97c6dd4c755891e122bf6f93685d8353139a6ff
+=== remote bench_fetch ===
+e97c6dd4c755891e122bf6f93685d8353139a6ff
+=== diff HEAD vs remote (should be empty if same) ===
+0	0
+=== files changed vs HEAD ===
+ query-cosientist.md | 1 +
+ 1 file changed, 1 insertion(+)

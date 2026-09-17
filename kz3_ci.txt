@@ -1,0 +1,3 @@
+[detached HEAD 5d16805] cosientist 第9回: K-Z2 発火直後 vs 経過後対比 n 増強 run107 evidence (深夜3時帯 2/4窓 direct-after cold 0/20, 方向非一貫で機構確定に至らず) + Iteration log
+ 1 file changed, 8 insertions(+)
+5d16805 cosientist 第9回: K-Z2 発火直後 vs 経過後対比 n 増強 run107 evidence (深夜3時帯 2/4窓 direct-after cold 0/20, 方向非一貫で機構確定に至らず) + Iteration log

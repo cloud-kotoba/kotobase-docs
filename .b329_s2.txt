@@ -1,0 +1,90 @@
+=== stat 0ca3490 ===
+0ca3490 rank 第168回: fold bench175-run392(7/60) + falsify168-run393(2/60) + bench176-run394(1/60) -> K-Z3 20hr 3-set 10/180 ~5.6% 中位〜低位帯候補; status/rank/evolve 不変 (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 20hr n-add run395
+ query-cosientist.md | 2 ++
+ 1 file changed, 2 insertions(+)
+=== files in repo root ===
+BISCUIT-AUTH-QUERY-BENCHMARK.md
+DATA-HANDLING.md
+ENTERPRISE-READINESS.md
+LICENSE
+OBSIDIAN.md
+PLANS.md
+README.md
+SECURITY.md
+SUPPLY-CHAIN.md
+USING-AS-A-PIN-SERVICE.md
+_b301_run301.sh
+_b301_stats301.py
+_b71_run.sh
+_b71_stats.py
+_b71_stats.txt
+_b78_append.py
+_b78_append_out.txt
+_b78_run201.sh
+_b78_run201_out.txt
+_b78_stats.py
+_b78_stats_out.txt
+_b_land265.txt
+_b_land267.txt
+_b_land280.txt
+_b_run265.sh
+_b_run265A.txt
+_b_run265B.txt
+_b_run265C.txt
+_b_run265_time.txt
+_b_run267.sh
+_b_run267A.txt
+_b_run267B.txt
+_b_run267C.txt
+_b_run267_time.txt
+_b_run280.sh
+_b_run280A.txt
+_b_run280B.txt
+_b_run280C.txt
+_b_run280_insert.py
+_b_run280_time.txt
+=== log: files changed in last 12 commits ===
+  12 query-cosientist.md
+   1 f0e177b rank 第167回: fold bench174-run391 (K-Z3 19hr(9/7) 5-set 24/300 ~8.0% 中位帯候補) + iter-log; NEXT K-Z3 20hr band-first run392
+   1 eb7468d bench 第174回; K-Z3 19hr(9/7) 5-set n-add run391 cold 4/60 ~6.7% (A 散発 4/20 1.20-1.45s, B/C+control 0 完全静穏分離成立, run390A heavy 6/20 の 14 分後散発減弱, heavy 再達せず) = 24/300 ~8.0% 中位帯候補 + iter-log
+   1 e55adc5 rank 第165回: fold falsify166-run388 + bench171-run387 + bench172-run389 -> K-Z3 19hr 3-set 13/180 ~7.2% 中位帯候補; NEXT K-Z3 19hr n-add 継続 run390
+   1 d88b7fb falsify (第166回; K-Z3 19hr(9/7) 2-set n-add run388(読替不要) cold 3/60 ~5.0% (A 散発クラスタ 3/20 1.56/0.96/0.93s, B/C+control 0 完全静穏分離成立) = 9/120 ~7.5% 2-set 中位帯候補) + iter-log
+   1 d84bf4a bench 第175回: K-Z3 20hr band-first run392 (cold 7/60 ~11.7% A6heavy/B1/C0+control 0/20 split; NEXT K-Z3 20hr n-add run393)
+   1 cbf38ee rank 第166回: fold bench173-run390(canonical 7/60)=falsify167-run390(collision 0/60 dupe, not double-counted) -> K-Z3 19hr(9/7) 4-set 20/240 ~8.3% 中位帯候補; status/rank/evolve 不変 (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 20hr band-first run391
+   1 76249db bench 第172回; K-Z3 19hr(9/7) 3-set n-add run389 cold 4/60 ~6.7% (A 散発 4/20 deep 2.31s, B/C+control 0 完全静穏分離成立) = 13/180 ~7.2% 中位帯候補 + iter-log
+   1 738b92f falsify 第168回: K-Z3 20hr(9/7) n-add run393 cold 2/60 ~3.3% (A 散発 2/20 1.05/1.64s, B/C+control 0 完全静穏分離成立, run392A heavy 6/20 の 5 分後散発減弱) = 20hr 2-set 9/120 ~7.5% 中位帯候補 + iter-log
+   1 5525e86 bench 第173回; K-Z3 19hr(9/7) 4-set n-add run390 cold 7/60 ~11.7% (A heavy 6/20 冒頭集中+散発 deep 2.02s, B 単発 1/20, C+control 0 完全静穏分離成立, heavy re-達 first since run271A) = 20/240 ~8.3% 中位帯候補 + iter-log
+   1 355575f falsify 第169回: K-Z3 20hr n-add run395 (cold 7/60 ~11.7%, A5/B2/C0+control0; 20hr 4-set 17/240 ~7.1%) + iter-log
+   1 0ca3490 rank 第168回: fold bench175-run392(7/60) + falsify168-run393(2/60) + bench176-run394(1/60) -> K-Z3 20hr 3-set 10/180 ~5.6% 中位〜低位帯候補; status/rank/evolve 不変 (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 20hr n-add run395
+   1 0205d27 bench 第176回: K-Z3 20hr n-add run394 (cold 1/60 ~1.7% A 単発2.47s pos1, B/C+control 0 完全静穏分離成立, falsify run393 2/60 の8分後減弱; 20hr通算 10/180 ~5.6% low-to-mid 帯候補; NEXT run395)
+=== branch ===
+* (HEAD detached from 0b76dfb)                         355575f falsify 第169回: K-Z3 20hr n-add run395 (cold 7/60 ~11.7%, A5/B2/C0+control0; 20hr 4-set 17/240 ~7.1%) + iter-log
+  _f106_tmp                                            bad2fbe falsify 第106回: K-Z3 20時台帯初計測 run239A-C n積み増し (cold 0/60 完全静穏, control 分離成立, 帯初サンプル; ※bench 第94回 run239 と ID 衝突の独立 2 計測, 両方採用前例に従う)
+  bench-104-run258                                     1768f6e bench 104: K-Z3 22hr n add run258A-C cold 3/60 ~5.0% (early-head cluster weak rerun252A/253A, B/C 0/20 vanish, control quiet sep holds), 22hr total 25/420 ~6.0%, status unchanged NEXT delegated 22hr/23hr
+  bot/cosient-20260905-kz3-run129                      0a637f1 [net-kotobase/bot/cosient-20260905-kz3-run129: ahead 1] rank 第46回: K-Z3 11/12時台 evidence 3 本取り込み (falsify run127 0/60 + bench 第47回 run128A 6/20 多発 + falsify 第48回 run128 12時台 0/60 + cosientist run129) — 対称 2 サンプルで多発型即時非再現, 帯別 n の限界利得低下確定, NEXT: K-Q1 PR #3 deploy 判断と deploy 後計測
+  bot/cosient-20260906234425                           286b9b5 [bench_fetch/bot/cosient-20260906234425] cosientist 116: K-Z3 23hr n-add run265A-C (cold 1/60, p50 47-50ms, control quiet sep; 23hr total 12/180 ~6.7%, single-heavy one-window-vanish type) evidence append, status/rank to rank. NEXT K-Z3 23hr n-add continue
+  co84_work                                            39230e3 cosientist 第84回: K-Z3 20時台 run243 独立2計測 (cold 1/60 ~1.7%), bench run243 とのID衝突を両方採用, 20時台通算 10/360 ~2.8% 低位帯確定方向, コード変更なし
+  cosient-85                                           304121b cosientist 第85回: K-Q1 cut (iii) did:key CACAO harness 静的実査反証 (production required Biscuit mode で cacao 分岐到達不能)
+  cosient-sync                                         6eec2c1 [net-kotobase/main: behind 423] bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+  cosient-sync-60                                      07e493e [net-kotobase/main: behind 331] rank 第60回: deploy run 33964821723 queued 滞留確定 (jobs 0, 約2.5h) — 代替経路 cosientist 手動 wrangler deploy を NEXT 指定; K-Z3 22時台通算 6/120 中位値
+  fzwork                                               dc551d4 [net-kotobase/main: behind 303] rank 第69回: evidence 取り込み (K-Z3 6時台 4本), status 遷移なし, NEXT K-Q1 transact 401 調査
+  main                                                 76c7dcd [net-kotobase/main: behind 195] bench 第103回: K-Z3 22時台 n 積み増し run255A-C cold 2/60 (~3.3%), control 分離成立 (host load 高騰 not-separated 注記付き)
+  manifest-rev                                         423c4d8 docs: publish Biscuit auth query benchmark (#2)
+  rank-sync                                            eee3314 [net-kotobase/main: behind 393] rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+  rk139                                                0b76dfb rank 139: fold falsify145 run315 (6hr band-first n-add cold 2/60 scatter-pair, breaking run312-314 quiet streak; deep-night run275..315 42/2460 ~1.71% 41-set; heavy non-reproduced run271A+40; traffic-independence counter-evidence continues; K-Z3 open継続 status/rank unchanged; NEXT K-Z3 current-band(6hr) n-add run316)
+  remotes/bench_fetch/HEAD                             -> bench_fetch/main
+  remotes/bench_fetch/agent/cleanup-land-20260905      7c8ada8 cleanup: land untracked WIP (9 files)
+  remotes/bench_fetch/bot/cosient-20260905-kz3-run129  c5332cd cosientist 第46回: K-Z3 12時台 n 積み増し run129A-C (cold 3/1/0 per 20, control 静穏, 12時台通算 10/120 ~8.3%)
+  remotes/bench_fetch/bot/cosient-20260906234425       286b9b5 cosientist 116: K-Z3 23hr n-add run265A-C (cold 1/60, p50 47-50ms, control quiet sep; 23hr total 12/180 ~6.7%, single-heavy one-window-vanish type) evidence append, status/rank to rank. NEXT K-Z3 23hr n-add continue
+  remotes/bench_fetch/cosient-20260905-run123-obs      22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+  remotes/bench_fetch/cosient-sync-60                  ac736a7 cosientist 第60回: K-Z3 22時台 n 積み増し run173A-C evidence (cold 1/60, control 静穏) + K-Q1 deploy run 33964821723 queued 継続を確認 (gh 実査)
+  remotes/bench_fetch/main                             0ca3490 rank 第168回: fold bench175-run392(7/60) + falsify168-run393(2/60) + bench176-run394(1/60) -> K-Z3 20hr 3-set 10/180 ~5.6% 中位〜低位帯候補; status/rank/evolve 不変 (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 20hr n-add run395
+  remotes/bench_fetch/net-kotobase                     38bb30f bench iteration 62: K-Q1 x-kotobase-kv-stats header arrival confirmed 30/30 (bench49 method, authenticated query)
+  remotes/net-kotobase/HEAD                            -> net-kotobase/main
+  remotes/net-kotobase/agent/cleanup-land-20260905     7c8ada8 cleanup: land untracked WIP (9 files)
+  remotes/net-kotobase/bot/cosient-20260905-kz3-run129 c5332cd cosientist 第46回: K-Z3 12時台 n 積み増し run129A-C (cold 3/1/0 per 20, control 静穏, 12時台通算 10/120 ~8.3%)
+  remotes/net-kotobase/bot/cosient-20260906234425      286b9b5 cosientist 116: K-Z3 23hr n-add run265A-C (cold 1/60, p50 47-50ms, control quiet sep; 23hr total 12/180 ~6.7%, single-heavy one-window-vanish type) evidence append, status/rank to rank. NEXT K-Z3 23hr n-add continue
+  remotes/net-kotobase/cosient-20260905-run123-obs     22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+  remotes/net-kotobase/cosient-sync-60                 ac736a7 cosientist 第60回: K-Z3 22時台 n 積み増し run173A-C evidence (cold 1/60, control 静穏) + K-Q1 deploy run 33964821723 queued 継続を確認 (gh 実査)
+  remotes/net-kotobase/main                            355575f falsify 第169回: K-Z3 20hr n-add run395 (cold 7/60 ~11.7%, A5/B2/C0+control0; 20hr 4-set 17/240 ~7.1%) + iter-log
+  remotes/net-kotobase/net-kotobase                    38bb30f bench iteration 62: K-Q1 x-kotobase-kv-stats header arrival confirmed 30/30 (bench49 method, authenticated query)

@@ -1,0 +1,12 @@
+-rw-r--r--@ 1 junkawasaki  staff   171 Sep 13 02:11 .b532_dt.txt
+-rw-r--r--@ 1 junkawasaki  staff    12 Sep  9 10:41 .b532_elapsed.txt
+-rw-r--r--@ 1 junkawasaki  staff  3659 Sep  9 10:42 .b532_insert.py
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep 13 02:11 .b532_ls.txt
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 10:41 .b532_run546A.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 10:41 .b532_run546B.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 10:41 .b532_run546C.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   949 Sep  9 10:41 .b532_run546_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1134 Sep  9 10:41 .b532_run546_stats.py
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 10:41 .b532_run546land.ttfb
+-rw-r--r--@ 1 junkawasaki  staff    24 Sep  9 10:41 .b532_t0.txt
+-rw-r--r--@ 1 junkawasaki  staff    70 Sep  9 10:41 .b532_uptime.txt

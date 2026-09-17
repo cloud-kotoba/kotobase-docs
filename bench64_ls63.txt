@@ -1,0 +1,12 @@
+-rw-r--r--@ 1 junkawasaki  staff  6612 Sep  6 03:14 bench63_kq1_nonempty.mjs
+-rw-r--r--@ 1 junkawasaki  staff     5 Sep  6 03:15 bench63_kq1_nonempty_err.txt
+-rw-r--r--@ 1 junkawasaki  staff   328 Sep  6 03:15 bench63_kq1_nonempty_out.json
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep  6 03:24 bench63_kq1_nonempty_retry_err.txt
+-rw-r--r--@ 1 junkawasaki  staff   328 Sep  6 03:24 bench63_kq1_nonempty_retry_out.json
+-rw-r--r--@ 1 junkawasaki  staff  1788 Sep  6 03:28 bench63_kz3_3am.mjs
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep  6 03:29 bench63_kz3_3am_err.txt
+-rw-r--r--@ 1 junkawasaki  staff   891 Sep  6 03:29 bench63_kz3_3am_out.json
+     328 bench63_kq1_nonempty_out.json
+     328 bench63_kq1_nonempty_retry_out.json
+     656 total
+Sun Sep  6 03:38:16 JST 2026

@@ -1,0 +1,103 @@
+=== b42x exists? ===
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 03:49 .b419_419A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 03:49 .b419_419B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 03:49 .b419_419C.txt
+-rw-r--r--@ 1 junkawasaki  staff   257 Sep  8 03:57 .b419_bad.py
+-rw-r--r--@ 1 junkawasaki  staff   251 Sep  8 04:01 .b419_clean.py
+-rw-r--r--@ 1 junkawasaki  staff   257 Sep  8 04:02 .b419_clean2.py
+-rw-r--r--@ 1 junkawasaki  staff   279 Sep  8 04:03 .b419_clean3.py
+-rw-r--r--@ 1 junkawasaki  staff    22 Sep  8 03:49 .b419_done.txt
+-rw-r--r--@ 1 junkawasaki  staff   565 Sep  8 03:50 .b419_dump.py
+-rw-r--r--@ 1 junkawasaki  staff  3926 Sep  8 03:54 .b419_insert.py
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 03:49 .b419_land.txt
+-rw-r--r--@ 1 junkawasaki  staff   655 Sep  8 03:54 .b419_qfix.py
+-rw-r--r--@ 1 junkawasaki  staff   463 Sep  8 03:54 .b419_qfix2.py
+-rw-r--r--@ 1 junkawasaki  staff   991 Sep  8 03:49 .b419_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff   723 Sep  8 03:56 .b419_show.py
+-rw-r--r--@ 1 junkawasaki  staff  1143 Sep  8 03:49 .b419_stats.py
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:27 .b420_420A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:27 .b420_420B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:27 .b420_420C.txt
+-rw-r--r--@ 1 junkawasaki  staff   402 Sep  8 04:26 .b420_chk.py
+-rw-r--r--@ 1 junkawasaki  staff   274 Sep  8 04:26 .b420_chk2.py
+-rw-r--r--@ 1 junkawasaki  staff   393 Sep  8 04:52 .b420_clean.py
+-rw-r--r--@ 1 junkawasaki  staff   283 Sep  8 04:24 .b420_cp.txt
+-rw-r--r--@ 1 junkawasaki  staff    31 Sep  8 04:15 .b420_date.txt
+-rw-r--r--@ 1 junkawasaki  staff    22 Sep  8 04:27 .b420_done.txt
+-rw-r--r--@ 1 junkawasaki  staff   764 Sep  8 04:59 .b420_ins.py
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:27 .b420_land.txt
+-rw-r--r--@ 1 junkawasaki  staff  1182 Sep  8 04:15 .b420_log.txt
+-rw-r--r--@ 1 junkawasaki  staff   862 Sep  8 04:12 .b420_mds.txt
+-rw-r--r--@ 1 junkawasaki  staff  3126 Sep  8 04:23 .b420_run420.py
+-rw-r--r--@ 1 junkawasaki  staff   969 Sep  8 04:24 .b420_run420.sh
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:28 .b420_run420_420A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:28 .b420_run420_420B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:28 .b420_run420_420C.txt
+-rw-r--r--@ 1 junkawasaki  staff  1270 Sep  8 04:31 .b420_run420_evidence.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 04:28 .b420_run420_land.txt
+-rw-r--r--@ 1 junkawasaki  staff   997 Sep  8 04:26 .b420_run420b.sh
+-rw-r--r--@ 1 junkawasaki  staff    10 Sep  8 04:28 .b420_run_log.txt
+-rw-r--r--@ 1 junkawasaki  staff   991 Sep  8 04:26 .b420_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep  8 04:26 .b420_sed1.err
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep  8 04:26 .b420_sed2.err
+-rw-r--r--@ 1 junkawasaki  staff    69 Sep  8 04:12 .b420_state_head.err
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep  8 04:12 .b420_state_head.txt
+-rw-r--r--@ 1 junkawasaki  staff  1143 Sep  8 04:30 .b420_stats.py
+-rw-r--r--@ 1 junkawasaki  staff  1286 Sep  8 04:26 .b420_stats420.py
+-rw-r--r--@ 1 junkawasaki  staff     5 Sep  8 04:29 .b420_stats_err.txt
+-rw-r--r--@ 1 junkawasaki  staff   577 Sep  8 04:29 .b420_stats_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   371 Sep  8 04:45 .b420_tail.py
+-rw-r--r--@ 1 junkawasaki  staff   196 Sep  8 04:28 .b420_time.txt
+-rw-r--r--@ 1 junkawasaki  staff   688 Sep  8 04:12 .b420_tracked.txt
+-rw-r--r--@ 1 junkawasaki  staff    22 Sep  8 05:29 .b421_done.txt
+-rw-r--r--@ 1 junkawasaki  staff  2520 Sep  8 05:31 .b421_insert.py
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 05:29 .b421_run421_A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 05:29 .b421_run421_B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 05:29 .b421_run421_C.txt
+-rw-r--r--@ 1 junkawasaki  staff  1257 Sep  8 05:34 .b421_run421_evidence.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 05:29 .b421_run421_land.txt
+-rw-r--r--@ 1 junkawasaki  staff  1028 Sep  8 05:26 .b421_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff   905 Sep  8 05:29 .b421_stat.sh
+-rw-r--r--@ 1 junkawasaki  staff  1105 Sep  8 05:28 .b421_stats.py
+-rw-r--r--@ 1 junkawasaki  staff  1488 Sep  8 05:28 .b421_stats2.py
+-rw-r--r--@ 1 junkawasaki  staff   485 Sep  8 05:29 .b421_stats_out.txt
+-rw-r--r--@ 1 junkawasaki  staff  2546 Sep  8 05:33 .b421_transform.py
+
+.b419:
+total 80
+drwxr-xr-x@   12 junkawasaki  staff     384 Sep  8 03:51 .
+drwxr-xr-x@ 4272 junkawasaki  staff  136704 Sep  8 05:38 ..
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:50 run419_A.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:50 run419_B.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:50 run419_C.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:50 run419_land.txt
+-rw-r--r--@    1 junkawasaki  staff      59 Sep  8 03:50 run419_summary.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:51 run419b_A.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:51 run419b_B.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:51 run419b_C.txt
+-rw-r--r--@    1 junkawasaki  staff     541 Sep  8 03:51 run419b_land.txt
+-rw-r--r--@    1 junkawasaki  staff      63 Sep  8 03:51 run419b_summary.txt
+=== b421 evidence file ===
+bench run421 (K-Z3 5時台帯初計測, 2026-09-08 05:25-05:29 JST):
+ production HTTP (host load1 15.6-26.9, pre-run 05:22～05:29 実測, gate 7.5 超過だが production 実測は gate 外).
+ MEASURED run421A-C: cold(>=0.5s TTFB) 3/0/1 per 20 =  Ͱ4/60 ~6.7%.
+  run421A cold 3/20 (0.8581/1.2995/0.8796s 散発配置, p50 119.5ms max 1.2995s);
+  run421B cold 0/20 p50 73.8ms max 182.7ms;
+  run421C cold 1/20 (1.5194s 単発) p50 62.7ms max 1.5194s.
+
+ landing control (kotobase.net/signup, 同時刻, n=20, 全 200): cold 0/20 p50 47.4ms max 172.8ms と静穏で control 分離成立, cold 群は search 側に局在.
+.
+ verdict: not-separated は不成立 (control clean, cold 4/60 は search 側局在;機構判定は rank に委ねる (rank 専門).
+ secret 不含 (curl only, no credential/token/cookie.
+ raw data: .b421_run421_A.txt / _B.txt / _C.txt / _land.txt + .b421_stats_out.txt (nearest-rank p50, cold>=0.5s, per-file cold count, 200 codes 20/20/20/20.
+ qc 追記/commit は本 tick 不可 — query-cosientist.md は並行 cron (sibling) により常時再生成/676 行小额区 truncated され contention (sibling holds it; run419 と同型急 – rank は scratch evidence fold へ読替可能.
+ my HEAD commits は reset で破棄済み。=== b362 current? ===
+-rw-r--r--@ 1 junkawasaki  staff    260 Sep  7 14:48 .b362_362A.txt
+-rw-r--r--@ 1 junkawasaki  staff    260 Sep  7 14:48 .b362_362B.txt
+-rw-r--r--@ 1 junkawasaki  staff    260 Sep  7 14:48 .b362_362C.txt
+-rw-r--r--@ 1 junkawasaki  staff   6120 Sep  8 05:38 .b362_g421.txt
+-rw-r--r--@ 1 junkawasaki  staff   6512 Sep  8 05:38 .b362_g422.txt
+-rw-r--r--@ 1 junkawasaki  staff    260 Sep  7 14:48 .b362_land.txt
+-rw-r--r--@ 1 junkawasaki  staff  91391 Sep  8 05:38 .b362_probe.txt
+-rw-r--r--@ 1 junkawasaki  staff    896 Sep  7 14:48 .b362_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff    196 Sep  7 14:48 .b362_time.txt

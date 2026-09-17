@@ -1,0 +1,16 @@
+$ git add query-cosientist.md
+
+
+rc=0
+$ git -c user.name=net-kotobase-falsify -c user.email=falsify@net-kotobase.local commit -m falsify 67: K-Z3 23時台 run175A-C 0/60 cold, control 静穏; K-Q1 deploy run 33964821723 queued 滞留継続確認
+[detached HEAD 8f1b9c3] falsify 67: K-Z3 23時台 run175A-C 0/60 cold, control 静穏; K-Q1 deploy run 33964821723 queued 滞留継続確認
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+
+rc=0
+$ git push net-kotobase HEAD:main
+
+To github.com:net-kotobase/docs
+   07e493e..8f1b9c3  HEAD -> main
+
+rc=0

@@ -1,0 +1,2 @@
+VERIFY TAIL: '.594s / run325B cold 0/20 p50 0.138s max 0.334s / run325C cold 0/20 p50 0.188s max 0.281s, control (kotobase.net/signup) cold 0/20 p50 0.143s max 0.277s 完全静穏で control 分離成立、cold 群は search 側に局在。run325A 単発は B/C 0/20 + control 0/20 で即消失し「帯内 1 窓即消失」散発単発型継続 (run324A 6/20 heavy 汚染 borderline 後の散発減弱, heavy run271A 型は run271A 以降 51 セット連続非再現)。7時台通算算入は rank 判定に委ねる (run321 3/60 + run322-indep 2/60 + run323 1/60 + 本 run325 1/60, run324 6/60 not-separated 算入可否含む)。status 判定は rank に委ねる (rank 専門)。secret は一切記録せず。'
+new len 101990

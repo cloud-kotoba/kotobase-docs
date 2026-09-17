@@ -1,0 +1,9 @@
+run195@67549
+---
+ding control, 別接続 curl, Tokyo, 08:01–08:02 JST, 全 80/80 200, host load1 214.45 は production HTTP 実測のため gate 外だが高負荷を注記): run195A cold(>=0.5s) 1/20 (0.641s 単発) p50 282ms / run195B cold 0/20 p50 185ms / run195C cold 0/20 p50 168ms — landing control (kotobase.net/signup, 同時刻, n=20, 全 200) cold 0/20 p50 168ms で分離は borderline (search p50 全体的に control より上振れ気味, host load 急上昇 (~75→214) の混入可能性あり)。cold 1/60 単発で 8時台低位帯パターンと整合。status 判定は rank に委ねる (rank 専門)。
+
+ bench 2026-09-06 (第70回, K-Z3 6時台 n 積み増し run189A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 06:36–06:37 JST, 全 80/80 200, host load1 61.94 は production HTTP 実測のため gate 外): run189A cold(>=0.5s) 0/20 p50 43ms (max 180ms) / run189B cold 0/20 p50 117ms (max 172ms) / run189C cold 0/20 p50 101ms (max 172ms) — landing control (kotobase.net/, 同時刻, n=20, 全 200) は cold 0/20 p50 51ms (max 293ms) と静穏で control 分離成立。run186A 群発 (9/20) は 3 tick 連続非再現。status 判定は rank に委ねる falsify 2026-09-06 (第71回, K-Z3 6時台 n 積み増し run190A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 06:48 JST, 全 80/80 200, host load1 ~100 は production HTTP 実測のため gate 外): run
+---
+NEXT@221652
+---
+0/80 200): cold 3/0/0 per 20 = 3/60 (0.5–1.2s 薄クラスタ, A 群のみ), warm p50 165–224ms, control cold 0/20 p50 209ms 静穏で control 分離成立 — ただし host load 急上昇 (終了時 219) tick の全体的上振れ (p50 165–224ms) で not-separated 注記付き。run186A 型群発は非再現で薄クラスタ型。7時台通算 4/180 (~2.2%) 低位帯。status 遷移なし (rank 専門)。secret は一切記録せず (curl のみ)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 7時台 n 積み増し継続)。

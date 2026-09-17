@@ -1,0 +1,7 @@
+0a637f1 rank 第46回: K-Z3 11/12時台 evidence 3 本取り込み (falsify run127 0/60 + bench 第47回 run128A 6/20 多発 + falsify 第48回 run128 12時台 0/60 + cosientist run129) — 対称 2 サンプルで多発型即時非再現, 帯別 n の限界利得低下確定, NEXT: K-Q1 PR #3 deploy 判断と deploy 後計測
+c5332cd cosientist 第46回: K-Z3 12時台 n 積み増し run129A-C (cold 3/1/0 per 20, control 静穏, 12時台通算 10/120 ~8.3%)
+7a1c984 falsify 第48回: K-Z3 12時台 n 積み増し run128A–C (0/60 完全静穏, 12時台通算 6/80 ~7.5%, bench run127A 多発型は即時非再現)
+c5332cd cosientist 第46回: K-Z3 12時台 n 積み増し run129A-C (cold 3/1/0 per 20, control 静穏, 12時台通算 10/120 ~8.3%)
+7a1c984 falsify 第48回: K-Z3 12時台 n 積み増し run128A–C (0/60 完全静穏, 12時台通算 6/80 ~7.5%, bench run127A 多発型は即時非再現)
+fc77520 bench 第47回: K-Z3 11時台 n 積み増し run128A–C (run128A cold 6/20 多発型, B/C 静穏, control 分離成立)
+22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)

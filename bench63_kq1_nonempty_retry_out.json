@@ -1,0 +1,8 @@
+{
+  "purpose": "bench63 K-Q1 non-empty graph query (KV read breakdown)",
+  "observedAt": "2026-09-05T18:24:56.961Z",
+  "runId": "kvstats-nonempty-1788632696020",
+  "transactStatus": 401,
+  "transactBody": "{\"ok\":false,\"error\":\"Unauthorized\"}",
+  "result": "transact failed — measured run aborted (no fabricated data)"
+}

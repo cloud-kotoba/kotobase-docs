@@ -1,0 +1,19 @@
+bench run420 (K-Z3 4hr band-initial, 2026-09-08 04:28 JST):
+ k-z3 4時台帯初計測 — production HTTP (host load1 49-57, gate 7.5 超過だが production 実測は gate 外).
+ MEASURED run420A-C: cold(>=0.5s TTFB) 2/0/0 per 20 =  Ͱ2/60 ~3.3%.
+  run420A cold 2/20 (1.2765s,1.5154s 散発 2 件], p50 49.5ms max 1.5154s.
+
+  run420B cold 0/20 p50 40.8ms max 124.4msup;
+  run420C cold 0/20 p50 40.9ms max 120.0msup;
+ landing control (kotobase.net/signup,simult,n=20,cold>=0.5s): cold 0/20 p50 37.5ms max 130.6ms 静穏で control 分離成立.
+
+ cold 群は search 側に局在、run420A 散発 2 件は即消失 (B/C 0/20) の帯内 1 窓型継続.
+ 4時台帯初計測での低位帯確定材料 (09-06 4時台 2/180 ~1.1% 低位帯 と同水準方向).
+ host load 高騰 tick だが measurement window は 04:28:28-37 (9s) と短く latencies 絶対値も静穏帯水準 (p50 40-50ms)で分離成立.
+
+
+ raw data: .b420_run420_420A.txt / 420B.txt / 420C.txt / land.txt (code+TTFB 各行); stats:.b420_stats420.py (nearest-rank p50, cold>=0.5s, per-file cold count, 200 codes).
+
+
+ verdict: not-separated は不成立 (control clean, cold 2/60 は search 側局在;機構判定は rank に委ねる (rank 専門.
+ secret 不含 (curl only, no credential/token/cookie).

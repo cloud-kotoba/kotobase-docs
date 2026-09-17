@@ -1,0 +1,5 @@
+402A: n=20 p50=292.4ms cold(>=0.5s)=7/20 max=2458.3ms warm_p50=171.3ms cold_pos=1:1514ms,2:2293ms,4:2458ms,5:1840ms,13:1124ms,14:1142ms,15:2054ms
+402B: n=20 p50=230.2ms cold(>=0.5s)=1/20 max=1515.3ms warm_p50=230.2ms cold_pos=9:1515ms
+402C: n=20 p50=249.6ms cold(>=0.5s)=1/20 max=572.8ms warm_p50=249.6ms cold_pos=2:573ms
+land: n=20 p50=250.0ms cold(>=0.5s)=1/20 max=665.4ms warm_p50=250.0ms cold_pos=20:665ms
+SEARCH TOTAL n=60 cold=9/60

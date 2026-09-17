@@ -1,0 +1,5 @@
+467A: n=20 cold(>=0.5s)=8 p50=253.8ms min=76.2ms max=1907.2ms
+467B: n=20 cold(>=0.5s)=0 p50=207.4ms min=56.3ms max=458.0ms
+467C: n=20 cold(>=0.5s)=0 p50=105.2ms min=47.3ms max=270.4ms
+landing: n=20 cold(>=0.5s)=0 p50=71.6ms min=40.2ms max=170.5ms
+TOTAL: cold 8/60 (13.3%)

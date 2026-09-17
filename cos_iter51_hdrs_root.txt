@@ -1,0 +1,45 @@
+HTTP/2 200 
+date: Sat, 05 Sep 2026 09:07:03 GMT
+content-type: text/html; charset=utf-8
+access-control-allow-origin: *
+cache-control: public, max-age=300
+content-language: en
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Accept-Language, Cookie
+access-control-allow-headers: authorization, content-type, x-kotoba-did, x-datomic-db-name, x-request-id, x-payment, X-PAYMENT
+access-control-allow-methods: GET, POST, DELETE, OPTIONS
+access-control-expose-headers: x-kotobase-request-id, x-kotobase-content-sha256, x-kotobase-authority-receipt-cid, x-kotobase-canonical-origin, content-location, link, PAYMENT-REQUIRED, x-payment-response
+access-control-max-age: 86400
+permissions-policy: camera=(), geolocation=(), microphone=()
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-kotobase-request-id: kotobase-49b1b3c5-64f3-4a40-8899-d9c345f6a7b8
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2Er8qEZ%2BQBnMFmbQ7hl271GPPcUA13xyzUk%2FI7jHl4ILFPUF4S3DVIGLLfCEF%2F6K7ezoFZrv465x6TIJn0HAuQRixgMhrL%2F8NpmJY4BaRqOYU29m1%2Bcgz9o3pPqKhKcqaoqzhqb89k0HJVI%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a36414daee4a6506-NRT
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 401 
+date: Sat, 05 Sep 2026 09:07:03 GMT
+content-type: application/json
+content-length: 224
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubDomains
+www-authenticate: Biscuit, Bearer
+access-control-allow-headers: authorization, content-type, x-kotoba-did, x-datomic-db-name, x-request-id, x-payment, X-PAYMENT
+access-control-allow-methods: GET, POST, DELETE, OPTIONS
+access-control-expose-headers: x-kotobase-request-id, x-kotobase-content-sha256, x-kotobase-authority-receipt-cid, x-kotobase-canonical-origin, content-location, link, PAYMENT-REQUIRED, x-payment-response
+access-control-max-age: 86400
+permissions-policy: camera=(), geolocation=(), microphone=()
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-kotobase-request-id: kotobase-3a1b182c-43fe-4d33-932f-4286d147ed0c
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YvKGmbaFxovpHDU4O%2BMCvlhNejtZX58ayR13CyzzZq8BcYufZhpME0LzEsPI%2FscWscrVLRR4g9G%2FwrFllc6TG%2BwaGjTW7pIxqIp2GCsOPP0wHG9iME2I%2B6gmL7xnQzI3eVkiFzDLKzUKbAY%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a36414dc38fbdb4c-NRT
+alt-svc: h3=":443"; ma=86400
+

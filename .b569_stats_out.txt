@@ -1,0 +1,5 @@
+run569A: codes 404 n=20 cold=0/20 p50=159.7ms p95=267.4ms max=301.0ms
+run569B: codes 404 n=20 cold=0/20 p50=96.8ms p95=256.6ms max=270.9ms
+run569C: codes 404 n=20 cold=0/20 p50=144.3ms p95=226.2ms max=261.0ms
+control: codes 200 n=20 cold=0/20 p50=143.7ms max=300.7ms
+TOTAL cold 0/60

@@ -1,0 +1,6 @@
+falsify 2026-09-06 (第102回, K-Z3 18時台 n 積み増し run233
+## Iteration log
+- 2026-09-06: rank 第106回。20:36 JST tick。HEAD de3a5
+- (1) bench 第96回 (60d35f5, run241A-C, 20時台 2セット目, 
+- (2) falsify 第108回 (de3a5ef, run242A-C, 20時台 n 積み
+- 取り込み判定: (a) K-Z3: 20時台は 5 セット (run239 bench 3/60

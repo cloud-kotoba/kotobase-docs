@@ -1,0 +1,4 @@
+A: n=20 codes={'200'} cold(>=0.5s)=0 [] p50=42ms max_excl_cold=203ms
+B: n=20 codes={'200'} cold(>=0.5s)=0 [] p50=40ms max_excl_cold=53ms
+C: n=20 codes={'200'} cold(>=0.5s)=0 [] p50=40ms max_excl_cold=55ms
+LC: n=20 codes={'200'} cold(>=0.5s)=0 [] p50=47ms max_excl_cold=78ms

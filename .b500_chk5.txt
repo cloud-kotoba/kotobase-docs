@@ -1,0 +1,5 @@
+== L279 tail ==
+ 6/60 散発クラスタ (A 列のみ, B/C 0/40 即消失) — 20時台は帯初 0/60 → 帯内再上振れ 6/60 の 「帯内 1 窓即消失」散発クラスタ型継続 (heavy run487A 7/20 級は再現なし), run499 の "完全静穏の一時低位窓" が日中高帯継続中の一時的低位である証左 (traffic 依存説の 日中帯方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変)。status 判定は rank に委ねる (rank 専門).
+
+== iter line 407 ==
+- 2026-09-08: falsify 第222回。20:29 JST tick。K-Z3 20時台 independent run500A–C 計測 (n=20×3 + landing control, 別接続 curl, search.kotobase.net/search?q=test, 20:27–20:29 JST, 全 80/80 200, host load1 25.85–30)

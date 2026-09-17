@@ -1,0 +1,6 @@
+run377A: n=20 cold=7 p50=0.063 max=2.012 min=0.035 non200=[]
+run377B: n=20 cold=1 p50=0.053 max=1.708 min=0.038 non200=[]
+run377C: n=20 cold=0 p50=0.046 max=0.108 min=0.030 non200=[]
+land: n=20 cold=1 p50=0.053 max=0.517 min=0.038 non200=[]
+TOTAL_200=80
+done

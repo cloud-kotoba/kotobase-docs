@@ -1,0 +1,3 @@
+A: n=20 non200=0 cold(>=0.5s)=1 p50=284ms p95=412ms max=589ms
+B: n=20 non200=0 cold(>=0.5s)=2 p50=268ms p95=537ms max=583ms
+C: n=20 non200=0 cold(>=0.5s)=1 p50=223ms p95=318ms max=607ms

@@ -1,0 +1,6 @@
+ITER_AT 830563 HEADER_COUNT 8
+---HEAD-EQ---
+# query / worker / storage co-scientist — kotobase.net
+
+co-scientist アプローチ (仮説生成→反証→ランク→進化→メタレビュー) を
+kotobase.net の **qu

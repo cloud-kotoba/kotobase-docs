@@ -1,0 +1,164 @@
+$ git pull --ff-only -> 1
+
+STDERR: You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+
+$ git log --oneline -5 -> 0
+668ae46 bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+88c2c0a falsify: K-Z2 evidence (run106, 02:40-02:46 JST direct-after vs elapsed, n=40x2+control)
+91c516a rank 第36回 NEXT 修正: K-Z3 追加 n (限界利得低下済み) から K-Z2 発火直後 vs 経過後対比の n 増強へ — rank 第35回の残り焦点指定と整合
+68d3a22 rank 第36回: K-Q1 quiet-host 測定 2 本を反映 (graph-for 棄却材料, verify-session 1重化は主因ではない — 次切れ手を backend query path 計測へ更新), rank ブロック第36回版へ差替え, NEXT: gate 超過 tick は K-Z3 0時台 n 積み増し
+6eec2c1 bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+
+$ git status --short -> 0
+rify4.txt
+?? bench37_z2.py
+?? bench_diag.py
+?? bench_diag_out.txt
+?? bench_ls.py
+?? bench_ls.txt
+?? kq1_commit.py
+?? kq1_commit_out.txt
+?? kq1_evidence_append.py
+?? kq1_graph_cid_bench.mjs
+?? kq1_graph_cid_out.txt
+?? kq1_iter_append.py
+?? kq1_verify_hop_bench.mjs
+?? kq1_verify_hop_out.txt
+?? kz3_append.py
+?? kz3_append_out.txt
+?? kz3_br.txt
+?? kz3_cmt.txt
+?? kz3_co_out.txt
+?? kz3_commit.txt
+?? kz3_diff.txt
+?? kz3_eq.txt
+?? kz3_f.txt
+?? kz3_f2.txt
+?? kz3_fix_out.txt
+?? kz3_fixtypo.py
+?? kz3_git2.txt
+?? kz3_gitcheck.py
+?? kz3_gitcheck_out.txt
+?? kz3_grep.txt
+?? kz3_log.txt
+?? kz3_ls.txt
+?? kz3_ls2.txt
+?? kz3_pull.txt
+?? kz3_pull2.txt
+?? kz3_rank32_append.py
+?? kz3_rank32_append_out.txt
+?? kz3_run100.sh
+?? kz3_run100_append.py
+?? kz3_run100_calc.py
+?? kz3_run100_commit.py
+?? kz3_run100_fix.py
+?? kz3_run100_out.txt
+?? kz3_run101.sh
+?? kz3_run101_append.py
+?? kz3_run101_calc.py
+?? kz3_run101_commit.py
+?? kz3_run101_final.py
+?? kz3_run101_out.txt
+?? kz3_run101_secreq.py
+?? kz3_run101_verify.py
+?? kz3_run102.sh
+?? kz3_run102_append.py
+?? kz3_run102_calc.py
+?? kz3_run102_fixnum.py
+?? kz3_run102_out.txt
+?? kz3_run103.sh
+?? kz3_run103_append.py
+?? kz3_run103_append_out.txt
+?? kz3_run103_calc.py
+?? kz3_run103_calc_out.txt
+?? kz3_run103_check.py
+?? kz3_run103_commit.py
+?? kz3_run103_commit_out.txt
+?? kz3_run103_ctx_out.txt
+?? kz3_run103_math.txt
+?? kz3_run103_out.txt
+?? kz3_run103_verify.py
+?? kz3_run103_verify.txt
+?? kz3_run104_append.py
+?? kz3_run104_calc.py
+?? kz3_run104_calc_out.txt
+?? kz3_run104_commit.py
+?? kz3_run104_commit_out.txt
+?? kz3_run104_push.py
+?? kz3_run104_push_out.txt
+?? kz3_run104_st.py
+?? kz3_run104_st_out.txt
+?? kz3_run105.sh
+?? kz3_run105_append.py
+?? kz3_run105_calc.py
+?? kz3_run105_calc_out.txt
+?? kz3_run105_final.py
+?? kz3_run105_final.txt
+?? kz3_run105_out.txt
+?? kz3_run105_push2_out.txt
+?? kz3_run105_push3.py
+?? kz3_run105_push3_out.txt
+?? kz3_run105_push_out.txt
+?? kz3_run105_remotecheck.py
+?? kz3_run105_remotecheck.txt
+?? kz3_run105_verify.txt
+?? kz3_run107.sh
+?? kz3_run107_out.txt
+?? kz3_run96_ctx.py
+?? kz3_run96_ctx_out.txt
+?? kz3_run96_out.txt
+?? kz3_run97_calc_out.txt
+?? kz3_run98.sh
+?? kz3_run98_append.py
+?? kz3_run98_append_out.txt
+?? kz3_run98_calc.py
+?? kz3_run98_calc_out.txt
+?? kz3_run98_out.txt
+?? kz3_run98_verify.txt
+?? kz3_show106.txt
+?? kz3_show106b.txt
+?? kz3_st.txt
+?? kz3_status.py
+?? kz3_status_out.txt
+?? kz3_syn.txt
+?? kz3_tail104.py
+?? kz3_tail104.txt
+?? kz3_tail200.txt
+?? kz3_tail_out.txt
+?? kz3_tailcheck.py
+?? kz3_time.txt
+?? kz3_trace.txt
+?? kz3_trace2.txt
+?? kz3_trace_run.py
+?? kz3_trace_run_out.txt
+?? kz3_verify.txt
+?? kz3_z2_grep.txt
+?? rank38_pull.py
+?? rank38_pull_out.txt
+?? rk_br.py
+?? rk_br_out.txt
+?? rk_co.py
+?? rk_co_out.txt
+?? rk_date.py
+?? rk_date_out.txt
+?? rk_diff.py
+?? rk_diff_out.txt
+?? rk_edit.py
+?? rk_edit_out.txt
+?? rk_fetch.py
+?? rk_fetch2.py
+?? rk_fetch2_out.txt
+?? rk_fetch_out.txt
+?? rk_grep.txt
+?? rk_log.py
+?? rk_log_out.txt
+?? rk_push.py
+?? rk_push_out.txt
+?? rk_wc.py
+?? rk_wc_out.txt
+

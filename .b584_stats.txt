@@ -1,0 +1,19 @@
+run584A: n=20 cold(>=0.5s)=9 p50=62.6ms p95=1992.3ms min=41.7ms max=2202.8ms
+  cold values: [0.975, 1.023, 1.307, 1.431, 1.56, 1.836, 1.944, 1.992, 2.203]
+run584B: n=20 cold(>=0.5s)=2 p50=51.3ms p95=1105.8ms min=41.7ms max=1277.4ms
+  cold values: [1.106, 1.277]
+run584C: n=20 cold(>=0.5s)=0 p50=45.7ms p95=50.7ms min=36.9ms max=65.1ms
+control: n=20 cold(>=0.5s)=1 p50=66.0ms p95=426.5ms min=49.6ms max=751.9ms
+  cold values: [0.752]
+19:27:57 start
+19:28:13 A done
+19:28:17 B done
+19:28:18 C done
+19:28:21 control done
+19:28  up 6 days, 12:11, 10 users, load averages: 28.60 31.10 36.62
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b584/control.txt
+       6 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b584/meta.txt
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b584/run584A.txt
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b584/run584B.txt
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b584/run584C.txt
+      86 total

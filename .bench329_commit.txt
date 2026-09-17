@@ -1,0 +1,5 @@
+[detached HEAD a8146a1] bench 139: K-Z3 8時台 run329A-C cold 0/60 completely-quiet (falsify152 run328 単発直後再静穏; control 0/20 p50 157ms max 465ms sepr, host load 125 gate-exempt production HTTP; 8時台 clean separable 通算 1/120 ~0.83%; heavy run271A+54 non-reproduced; traffic-independence counter-evidence; status/rank to rank)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+commit_rc=0
+a8146a1 bench 139: K-Z3 8時台 run329A-C cold 0/60 completely-quiet (falsify152 run328 単発直後再静穏; control 0/20 p50 157ms max 465ms sepr, host load 125 gate-exempt production HTTP; 8時台 clean separable 通算 1/120 ~0.83%; heavy run271A+54 non-reproduced; traffic-independence counter-evidence; status/rank to rank)
+done

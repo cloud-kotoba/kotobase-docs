@@ -1,0 +1,6 @@
+.b351351A: n=20 cold(>=0.5s)=2/20 p50=46.9ms max=1699.7ms codes=['200']
+.b351351B: n=20 cold(>=0.5s)=0/20 p50=44.6ms max=153.8ms codes=['200']
+.b351351C: n=20 cold(>=0.5s)=0/20 p50=46.2ms max=104.3ms codes=['200']
+control(signup): n=20 cold(>=0.5s)=0/20 p50=41.2ms max=99.1ms codes=['200']
+TOTAL: 2/60 cold(>=0.5s)
+all search code set: ['200']

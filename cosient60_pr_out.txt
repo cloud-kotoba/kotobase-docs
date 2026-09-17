@@ -1,0 +1,3 @@
+rc= 0
+https://github.com/net-kotobase/docs/pull/6
+

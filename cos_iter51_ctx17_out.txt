@@ -1,0 +1,31 @@
+len 12506
+handle-with at 8829
+ (or (:graph primary) (:graph body))
+                                   config {:request request :env env :method method
+                                           :runtime-fn runtime-fn :ready-fn ready-fn
+                                           :handler-fn handler-fn :journal-fn journal-fn
+                                           :catch-up-fn catch-up-fn
+                                           :standalone-runtime-fn standalone-runtime-fn
+                                           :standalone-catch-up-fn standalone-catch-up-fn
+                                           :observe! observe! :now-fn now-fn
+                                           :sample-id sample-id
+                                           :deployment (deployment-identity env)
+                                           :primary-duration-ms primary-duration-ms}]
+                               (when (and (string? graph) (not (str/blank? graph)))
+                                 (run-shadow-task! config body primary graph started))))))]
+                  (.catch work
+                          (fn [error]
+                            (observe! (observation (deployment-identity env) sample-id :candidate
+                                                   "physical-index/orchestration/v1" method :error
+                                                   (- (now-fn) started)))))))))
+             primary-response))))))
+
+(defn handle [request env ctx method primary!]
+  (handle-with {:request request :env env :ctx ctx :method method
+                :primary! primary!
+                :runtime-fn lsm-shadow/make-runtime
+                :ready-fn lsm-shadow/ready?
+                :handler-fn lsm-shadow/make-handler
+                :journal-fn journal/write!
+                :catch-up-fn lsm-shadow/catch-up!}))
+

@@ -1,0 +1,4 @@
+start 2026-09-07T16:00:15+0900
+16:00  up 2 days,  8:43, 12 users, load averages: 15.21 16.87 22.27
+end 2026-09-07T16:00:45+0900
+16:00  up 2 days,  8:43, 12 users, load averages: 24.57 18.94 22.84

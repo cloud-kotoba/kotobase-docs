@@ -1,0 +1,50 @@
+# Kotoba Cloud — Empower those who protect.
+
+守る人に、力を。
+仲間の力を結び、世界に光を取り戻す。
+
+kotoba.cloud supports the curiosity and creativity of white hats.
+Bring our strengths together. Bring light back to the world.
+
+# Kotoba Cloud — verified white-hat research
+
+Security-focused LLM inference for authorized code review, vulnerability triage and remediation.
+Status: LIVE. Identity verification runs on Stripe Identity only (no manual review queue).
+One Stripe Identity verification approves the account automatically: ekyc, screening, trust, scope and activation.
+
+Free allowance after verified identity: 50 requests per day, up to 2,048 output tokens per request. No automatic paid fallback.
+
+Registration steps the agent can drive (human completes the Stripe identity check):
+- Full registration guide: https://kotoba.cloud/ekyc.md
+1. Sign in at https://auth.kotoba.cloud/sign-in — any method works and yields the
+   same Stable Principal (identity method does not affect verification):
+   - Passkey (Face ID / Touch ID / Windows Hello), or
+   - Your own key: self-minted CACAO (`kotoba cacao --aud https://auth.kotoba.cloud`), or
+   - Ethereum wallet (SIWE) or Base Account, or
+   - Recovery phrase (BIP-39, derived in-browser).
+   The session cookie (`credentials: "same-origin"`) is what the research API reads.
+2. POST https://api.kotoba.cloud/v1/research/ekyc/start (same-origin JSON:
+   {"scopeId":"owned","tasks":["code-review"]}) → verificationUrl
+3. Human opens the verificationUrl (https://verify.stripe.com) — agents never complete the identity check themselves.
+4. Approval is automatic on Stripe webhook; then GET /v1/research/status → eligible.
+5. POST /v1/research/jobs (Idempotency-Key uuid) and poll GET /v1/research/job?jobId=.
+
+- Model catalog: https://kotoba.cloud/v1/models
+- Registration page: https://kotoba.cloud/#research-register
+
+Existing infrastructure features below retain separate authority boundaries.
+
+# Kotoba Clo    5643 .b532_llms.txt
+# Kotoba Cloud — verified white-hat research
+   The session cookie (`credentials: "same-origin"`) is what the research API reads.
+2. POST https://api.kotoba.cloud/v1/research/ekyc/start (same-origin JSON:
+4. Approval is automatic on Stripe webhook; then GET /v1/research/status → eligible.
+5. POST /v1/research/jobs (Idempotency-Key uuid) and poll GET /v1/research/job?jobId=.
+- Registration page: https://kotoba.cloud/#research-register
+- Kotobase is the content-addressed graph state layer: https://kotobase.net/
+First-party signup counters are at GET /api/funnel (visitors, signups as intent, signup_completed / registrations as auth completed). They start at zero. This Worker has no KV/D1 funnel store; isolate-memory counts reset on recycle. No GMV and no OpenAI Ads pixel.
+- Graph CLI and MCP onboarding: https://kotobase.net/agent-quickstart.md
+- Graph documentation: https://kotobase.net/llms-full.txt
+- Search: https://kotoba.cloud/v1/knowledge/search?q=T1018
+Search accepts up to 200 characters and returns at most 8 matches by ID/title.
+Generation retains Passkey, identity/review and approved research scope requirements.

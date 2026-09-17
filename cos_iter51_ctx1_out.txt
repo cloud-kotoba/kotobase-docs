@@ -1,0 +1,17 @@
+ [encrypt-fn]
+  (fn [k s]
+    (if (exists? js/caches)
+      (-> (encrypt-fn (utf8-bytes s))
+          (.then (fn [blob]
+                   (js-invoke (aget js/caches "default") "put" (rows-url k)
+                              (js/Response. blob #js {:headers #js {"cache-control" "public, max-age=31536000, immutable"}}))))
+          (.catch (fn [_] nil)))
+      (js/Promise.resolve nil))))
+
+
+(defn- assoc-response-kv-stats
+  "K-Q1 engine 内訳計測: attach the per-request block-fetch summary as a
+  response header. Counts only -- no CID values, no block bytes, no secrets."
+  [resp]
+  (try
+    (.. resp 

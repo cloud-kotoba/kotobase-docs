@@ -1,0 +1,3 @@
+fetch rc=0
+HEAD=1cf582d
+MAIN=1cf582d

@@ -1,0 +1,7 @@
+=== conflict markers mine ===
+243:<<<<<<< HEAD
+245:=======
+247:>>>>>>> 80c405c (cosientist 第84回: K-Z3 20時台 run243 (cold 1/60 ~1.7%), 20時台通算 7/300 ~2.3% 低位帯確定方向, コード変更なし)
+=== bench run243 commit message ===
+bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+

@@ -1,0 +1,9 @@
+286:	bench57_branch.py
+287:	bench57_branch.txt
+1308:nothing added to commit but untracked files present (use "git add" to track)
+1310:   bfdfd7e..85ec4c9  HEAD -> main
+85ec4c9 bench 69: K-Z3 6時台 run187A-C n 積み増し (0/60, control 分離, run186A 非再現)
+bfdfd7e falsify 第69回: K-Z3 6時台 run186A-C (A 9/20 群発, B/C 静穏, control 分離)
+85ec4c9 bench 69: K-Z3 6時台 run187A-C n 積み増し (0/60, control 分離, run186A 非再現)
+85ec4c9 bench 69: K-Z3 6時台 run187A-C n 積み増し (0/60, control 分離, run186A 非再現)
+ancestor_rc=0

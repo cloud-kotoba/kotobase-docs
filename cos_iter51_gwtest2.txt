@@ -1,0 +1,179 @@
+RC=0
+
+ [33;1mNo such namespace: System, could not locate System.cljs, System.cljc, or JavaScript source providing "System"[0m
+--------------------------------------------------------------------------------
+[2m 292 | [0m
+--------------------------------------------------------------------------------
+
+[1m------ WARNING #4 - :undeclared-var --------------------------------------------[0m
+ File: /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs/test/kotobase/component_test.cljc:291:8
+--------------------------------------------------------------------------------
+[2m 288 |                           ;; here rather than only in a Worker build[0m
+[2m 289 |                           'kotobase.edge-chain-test)][0m
+[2m 290 |     (when (pos? (+ (:fail result) (:error result)))[0m
+[1m 291 |       (System/exit 1))))[0m
+--------------^-----------------------------------------------------------------
+ [33;1mUse of undeclared Var System/exit[0m
+--------------------------------------------------------------------------------
+[2m 292 | [0m
+--------------------------------------------------------------------------------
+running 62 registered test namespaces
+
+Testing kotobase.archive-biscuit-test
+
+Testing kotobase.archive-put-test
+
+Testing kotobase.agent-discovery-test
+
+Testing kotobase.agent-docs-quota-test
+
+Testing kotobase.audit-test
+
+Testing kotobase.authority-test
+
+Testing kotobase.authority-store-test
+
+Testing kotobase.authority-basis-test
+
+Testing kotobase.authority-frontier-test
+
+Testing kotobase.backend-nsid-test
+
+Testing kotobase.billing-settlement-test
+
+Testing kotobase.storage-authority-test
+
+Testing kotobase.billing-test
+
+Testing kotobase.s3-credential-route-test
+
+Testing kotobase.cli-distribution-test
+
+Testing kotobase.commercial-disclosure-test
+
+Testing kotobase.i18n-coverage-test
+
+i18n coverage (ja) — page: untranslated/ceiling half/ceiling
+  404: 0/0  0/0  (8 blocks)
+  admin: 9/9  0/0  (127 blocks)
+  benchmarks: 0/0  0/0  (20 blocks)
+  blog: 0/0  0/0  (23 blocks)
+  contact: 0/0  0/0  (20 blocks)
+  developers: 0/0  0/0  (82 blocks)
+  landing: 0/0  0/0  (184 blocks)
+  obsidian: 0/0  0/0  (29 blocks)
+  pricing: 2/2  0/0  (107 blocks)
+  resources: 0/0  0/0  (20 blocks)
+  signup: 0/0  0/0  (28 blocks)
+  support: 0/0  0/0  (15 blocks)
+  why-kotobase: 0/0  0/0  (22 blocks)
+
+Testing kotobase.client-api-handle-test
+
+Testing kotobase.client-api-test
+
+Testing kotobase.cloudflare-analytics-test
+
+Testing kotobase.cognitect-wire-synthetic-test
+
+Testing kotobase.component-test
+
+Testing kotobase.conversions-test
+
+Testing kotobase.core-test
+
+Testing kotobase.legacy-alias-test
+
+Testing kotobase.datomic-ingress-test
+
+Testing kotobase.encrypted-graph-route-test
+
+Testing kotobase.domain-search-test
+
+Testing kotobase.graph-test
+
+Testing kotobase.credential-refusal-test
+
+Testing kotobase.proxy-test
+
+Testing kotobase.edge-cacao-test
+
+Testing kotobase.edge-chain-test
+
+Testing kotobase.did-resolver-test
+
+Testing kotobase.evm-index-test
+
+Testing kotobase.funnel-test
+
+Testing kotobase.kaiyu-store-test
+
+Testing kotobase.geo-test
+
+Testing kotobase.git-bundle-test
+
+Testing kotobase.git-private-snapshot-test
+
+Testing kotobase.mail-test
+
+Testing kotobase.health-scope-test
+
+Testing kotobase.merkle-test
+
+Testing kotobase.object-grant-route-test
+
+Testing kotobase.object-grant-test
+
+Testing kotobase.openai-ads-test
+
+Testing kotobase.org-did-test
+
+Testing kotobase.org-enrollment-test
+
+Testing kotobase.plans-test
+
+Testing kotobase.psa-backend-mode-test
+
+Testing kotobase.realtime-test
+
+Testing kotobase.rows-test
+
+Testing kotobase.schema-test
+
+Testing kotobase.transit-bridge-test
+
+Testing kotobase.transit-test
+
+Testing kotobase.trust-discovery-test
+
+Testing kotobase.trust-evidence-test
+
+Testing kotobase.web-test
+
+Testing kotobase.x402-metrics-test
+
+Testing kotobase.x402-offer-test
+
+Testing kotobase.x402-spend-test
+
+Testing kotobase.x402-test
+
+Ran 555 tests containing 2714 assertions.
+0 failures, 0 errors.
+
+---STDERR---
+base/control-plane/kotobase-api-gateway-cljs/shadow-cljs.edn
+shadow-cljs - starting via "clojure"
+WARNING: Use of :paths external to the project has been deprecated, please remove: ../shared/src
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/Users/junkawasaki/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+(node:99066) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs/target/all-tests/main.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+kotobase proxy hop failed: AbortError UpstreamTimeout
+kotobase proxy hop failed: Error Upstream Error
+kotobase proxy hop failed: AbortError UpstreamTimeout
+kotobase proxy hop failed: Error Upstream Error

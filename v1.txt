@@ -1,0 +1,3 @@
+hdr 8
+entry 1
+pos 830563 ## Iteration log | - 2026-09-13: rank 第265回 (19:10 JST tick。HEAD 39f0d37 = fetch 後 bench_fetch/main 先端一致 (detached HEAD; f

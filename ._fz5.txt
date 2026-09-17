@@ -1,0 +1,29 @@
+===stats python===
+-rw-r--r--@ 1 junkawasaki  staff  1290 Sep  9 03:54 .b530_stats.py
+-rw-r--r--@ 1 junkawasaki  staff    11 Sep  9 03:54 .b530_elapsed.txt
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 03:54 .b530_landing.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 03:54 .b530_B.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 03:54 .b530_A.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   311 Sep  9 03:54 .b530_C.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   832 Sep  9 03:53 .b530_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff    76 Sep  9 03:52 .b529_insert_out.txt
+-rw-r--r--@ 1 junkawasaki  staff  1181 Sep  9 03:51 .b529_insert.py
+-rw-r--r--@ 1 junkawasaki  staff  1587 Sep  9 03:51 .b529_ev.txt
+-rw-r--r--@ 1 junkawasaki  staff  2396 Sep  9 03:51 .b529_iter.txt
+-rw-r--r--@ 1 junkawasaki  staff   283 Sep  9 03:50 .b529_locate_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   637 Sep  9 03:50 .b529_locate.py
+-rw-r--r--@ 1 junkawasaki  staff    22 Sep  9 03:50 .b529_smoke.txt
+-rw-r--r--@ 1 junkawasaki  staff   325 Sep  9 03:50 .b529_run529_stats_out.txt
+-rw-r--r--@ 1 junkawasaki  staff    13 Sep  9 03:49 .b529_now.txt
+-rw-r--r--@ 1 junkawasaki  staff    67 Sep  9 03:49 .b529_uptime.txt
+-rw-r--r--@ 1 junkawasaki  staff    61 Sep  9 03:49 .b529_run529_t0.txt
+-rw-r--r--@ 1 junkawasaki  staff   180 Sep  9 03:49 .b529_run529_landing.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   180 Sep  9 03:49 .b529_run529_C.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   180 Sep  9 03:49 .b529_run529_B.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   180 Sep  9 03:49 .b529_run529_A.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  1090 Sep  9 03:49 .b529_run529_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1682 Sep  9 03:49 .b529_run529_stats.py
+-rw-r--r--@ 1 junkawasaki  staff   461 Sep  9 03:48 .b529_scrub.py
+---
+===existing ttfb files===
+-rw-r--r--@ 1 junkawasaki  staff  311 Sep  9 03:54 .b530_A.ttfb

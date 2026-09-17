@@ -1,0 +1,7 @@
+L282 len=324148
+TAIL: ) 帯初 11/60 (~18.3%) は run578 (9/11) 10/60 (~16.7%) と同水準の同帯 2 日目実績 — run178A 型 heavy クラスタ (9/20) が 3時台でも再現し、深夜帯低位帯日次突発 (run557 1時台 11/60, run610 2時台 6/60 と連続) は K-Z4 低位帯日差方向の材料を積み増し。status 判定は rank に委ねる (rank 専門)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現時刻帯 n 積み増し継続)。secret 不含 (curl + python3 stats のみ)。
+
+iterlog_header_line=423
+run595_mentions=3
+run596_mentions=4
+run557_evidence_lines=8

@@ -1,0 +1,12 @@
+ query-cosientist.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+1
+[detached HEAD bfdfd7e] falsify 第69回: K-Z3 6時台 run186A-C (A 9/20 群発, B/C 静穏, control 分離)
+ 6 files changed, 152 insertions(+), 1 deletion(-)
+ create mode 100644 _f71_append.py
+ create mode 100644 kz3_run186.sh
+ create mode 100644 kz3_run186_calc.py
+ create mode 100644 kz3_run186_calc_out.txt
+ create mode 100644 kz3_run186_out.txt
+To github.com:net-kotobase/docs
+   cbf06c6..bfdfd7e  HEAD -> main

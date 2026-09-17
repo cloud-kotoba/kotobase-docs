@@ -1,0 +1,8 @@
+c37950fb22d0cad21b2275c86623dd3dd294a7d1
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+c37950fb22d0cad21b2275c86623dd3dd294a7d1

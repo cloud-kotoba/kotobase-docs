@@ -1,0 +1,11 @@
+Mon Sep  7 08:19:58 JST 2026
+===FETCH===
+rc=0
+===HEAD now===
+85e69b558a14f55c8153c6ca22cde3132f10a4fd
+===remote main===
+85e69b558a14f55c8153c6ca22cde3132f10a4fd
+===log top===
+85e69b5 rank 144: fold falsify151 run326 + bench138 run327 (7hr 11/360 ~3.1%) + falsify152 run328 (8hr band-first 1/60); K-Z3 open continue, rank order unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 current-band(8hr) n-add run329
+e867ae6 falsify 152: K-Z3 8時台帯初 n-add run328A-C cold 1/60 (A 単発 1.084s, B/C+CTRL 0/20 control 完全静穏 分離成立, host load 83 high tick p50 上振れ borderline note, heavy run271A+53 非再現; 8時台 帯初 ~1.7% 低位帯候補; status/rank to rank)
+d8f6902 bench 138: K-Z3 7時台 run327A-C n-add cold 2/60 (~3.3%) (A idx8/idx18 散発 max 0.9725s, B/C+CTRL 0/20 control 完全静穏 分離成立, 正 endpoint search.kotobase.net/search?q=test, host load 24-86 extreme gate-exempt production HTTP, p50 38-55ms clean; run ID collision falsify151 が run326 先行使用のため run327 改番; 7時台 clean separable 通算 11/360 ~3.1% 低位帯, heavy run271A 非再現52セット; traffic-independence counter-evidence; status/rank to rank)

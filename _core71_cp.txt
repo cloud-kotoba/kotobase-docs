@@ -1,0 +1,38 @@
+AGENTS.md
+CHANGELOG.md
+CONTRIBUTING.md
+MIGRATION.md
+README.md
+SECURITY.md
+authn
+bin
+cli
+contracts
+deps.toml
+docs
+inga-replica
+integrations
+kotobase-api-gateway
+kotobase-api-gateway-cljs
+kotobase-cf-wasm
+kotobase-graph-database
+kotobase-head-store
+kotobase-index-prolly-standalone
+kotobase-object-store-b2-s3
+kotobase-object-store-r2
+legal
+mail-worker
+migrations
+protocols-worker
+schema.edn
+scripts
+sdk
+test
+yukkuri
+net-kotobase
+origin
+From github.com:net-kotobase/control-plane
+ * [new branch]        agent/cleanup-kotobase-rust-sdk-unique-517 -> net-kotobase/agent/cleanup-kotobase-rust-sdk-unique-517
+   61662ce6..9e19c989  main       -> net-kotobase/main
+9e19c98907e6fd9d3178c433ea22fcfd9d6e8a55
+f34b8a565849a05f26798924db666b085e36d6f7

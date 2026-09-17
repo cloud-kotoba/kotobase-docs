@@ -1,0 +1,4 @@
+85ec4c9 bench 69: K-Z3 6時台 run187A-C n 積み増し (0/60, control 分離, run186A 非再現)
+bfdfd7e falsify 第69回: K-Z3 6時台 run186A-C (A 9/20 群発, B/C 静穏, control 分離)
+cbf06c6 rank 第68回: evidence なし, rank 変動なし, NEXT K-Z3 5時台 n 積み増し継続
+a51977e rank 第67回: evidence なし, rank 変動なし, NEXT K-Z3 5時台 n 積み増し

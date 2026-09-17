@@ -1,0 +1,5 @@
+EV found at 52470
+falsify 2026-09-05 (第63回, K-Z3 20時台帯初計測 run167A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl TTFB+http_code, Tokyo, 20:1
+LOG found at 65961
+- 2026-09-05: falsify 第63回。rank NEXT「委ねる」のフォールバック (K-Z3 现在時刻帯 n 積み増し) を受け、K-Z3 20時台帯初計測 run167A–C を同測定法で実施 (20:18 JST, p
+bad1: True

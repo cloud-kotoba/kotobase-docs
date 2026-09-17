@@ -1,0 +1,3 @@
+Fri Sep  4 22:22:49 JST 2026
+22:22  up 6 days, 10:21, 14 users, load averages: 14.81 11.89 10.84
+      84 kz3_run97_out.txt

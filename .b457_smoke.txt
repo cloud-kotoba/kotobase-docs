@@ -1,0 +1,2 @@
+smoke /: 200
+smoke /signup: 200

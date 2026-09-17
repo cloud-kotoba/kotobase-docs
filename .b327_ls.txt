@@ -1,0 +1,44 @@
+total 66920
+drwxr-xr-x@ 3753 junkawasaki  staff   120096 Sep  7 18:33 .
+drwxr-xr-x@   13 junkawasaki  staff      416 Sep  7 11:51 ..
+-rw-r--r--@    1 junkawasaki  staff      160 Sep  7 07:58 .b327_bcnt.txt
+-rw-r--r--@    1 junkawasaki  staff      436 Sep  7 07:58 .b327_bcnt2.txt
+-rw-r--r--@    1 junkawasaki  staff     1562 Sep  7 07:58 .b327_bcnt3.txt
+-rw-r--r--@    1 junkawasaki  staff      780 Sep  7 08:00 .b327_commit.sh
+-rw-r--r--@    1 junkawasaki  staff      648 Sep  7 08:00 .b327_commit.txt
+-rw-r--r--@    1 junkawasaki  staff      335 Sep  7 07:59 .b327_ee.py
+-rw-r--r--@    1 junkawasaki  staff     2194 Sep  7 07:59 .b327_ee.txt
+-rw-r--r--@    1 junkawasaki  staff      526 Sep  7 07:58 .b327_end.py
+-rw-r--r--@    1 junkawasaki  staff    94150 Sep  7 07:58 .b327_end.txt
+-rw-r--r--@    1 junkawasaki  staff      399 Sep  7 18:32 .b327_git.sh
+-rw-r--r--@    1 junkawasaki  staff     3514 Sep  7 18:32 .b327_git.txt
+-rw-r--r--@    1 junkawasaki  staff     3885 Sep  7 07:59 .b327_insert.py
+-rw-r--r--@    1 junkawasaki  staff       31 Sep  7 07:59 .b327_insert.txt
+-rw-r--r--@    1 junkawasaki  staff      202 Sep  7 18:33 .b327_ls.sh
+-rw-r--r--@    1 junkawasaki  staff        0 Sep  7 18:33 .b327_ls.txt
+-rw-r--r--@    1 junkawasaki  staff      297 Sep  7 08:00 .b327_postpush.sh
+-rw-r--r--@    1 junkawasaki  staff     1028 Sep  7 08:00 .b327_postpush.txt
+-rw-r--r--@    1 junkawasaki  staff      339 Sep  7 07:59 .b327_precommit.sh
+-rw-r--r--@    1 junkawasaki  staff      825 Sep  7 07:59 .b327_precommit.txt
+-rw-r--r--@    1 junkawasaki  staff     1124 Sep  7 07:59 .b327_reorder.py
+-rw-r--r--@    1 junkawasaki  staff       58 Sep  7 07:59 .b327_reorder.txt
+-rw-r--r--@    1 junkawasaki  staff      149 Sep  7 18:33 .b327_tail.py
+-rw-r--r--@    1 junkawasaki  staff      646 Sep  7 07:58 .b327_tail.txt
+-rw-r--r--@    1 junkawasaki  staff      449 Sep  7 07:59 .b327_verify.py
+-rw-r--r--@    1 junkawasaki  staff      916 Sep  7 07:59 .b327_verify.txt
+-rw-r--r--@    1 junkawasaki  staff      916 Sep  7 07:59 .b327_verify2.txt
+-rw-r--r--@    1 junkawasaki  staff      695 Sep  7 12:11 .b328_git.sh
+-rw-r--r--@    1 junkawasaki  staff      718 Sep  7 12:16 .b328_git2.sh
+-rw-r--r--@    1 junkawasaki  staff      569 Sep  7 12:12 .b328_next.py
+-rw-r--r--@    1 junkawasaki  staff      260 Sep  7 12:17 .b345_345A.txt
+-rw-r--r--@    1 junkawasaki  staff      260 Sep  7 12:18 .b345_345B.txt
+-rw-r--r--@    1 junkawasaki  staff      260 Sep  7 12:18 .b345_345C.txt
+-rw-r--r--@    1 junkawasaki  staff     1905 Sep  7 12:21 .b345_append.py
+-rw-r--r--@    1 junkawasaki  staff      556 Sep  7 12:32 .b345_gs.sh
+-rw-r--r--@    1 junkawasaki  staff     2996 Sep  7 12:24 .b345_iter.py
+-rw-r--r--@    1 junkawasaki  staff      260 Sep  7 12:18 .b345_land.txt
+-rw-r--r--@    1 junkawasaki  staff      786 Sep  7 12:17 .b345_runner.sh
+=== WC ===
+    2343 query-cosientist.md
+=== which files ===
+query-cosientist.md

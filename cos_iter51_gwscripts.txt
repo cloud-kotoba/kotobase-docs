@@ -1,0 +1,16 @@
+Lifecycle scripts included in kotobase-api-gateway-cljs@0.1.0:
+  test
+    nbb scripts/check-test-registry.cljs && shadow-cljs compile all-tests && node target/all-tests/main.js
+available via `npm run`:
+  test:graph-pin
+    shadow-cljs release graph-pin-test && node target/graph-pin-test/main.js
+  build
+    shadow-cljs release worker && shadow-cljs release entry && npm run manifest
+  build:worker
+    shadow-cljs release worker
+  build:entry
+    shadow-cljs release entry
+  manifest
+    nbb ../scripts/bundle-manifest.cljs .. write
+  manifest:check
+    nbb ../scripts/bundle-manifest.cljs .. check

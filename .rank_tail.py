@@ -1,0 +1,16 @@
+import sys
+lines = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md').readlines()
+out = []
+out.append('===L279 tail===')
+out.append(lines[278][-500:])
+out.append('')
+out.append('===L402 tail===')
+out.append(lines[401][-500:])
+out.append('')
+out.append('===L403 tail===')
+out.append(lines[402][-500:])
+out.append('')
+out.append('===L404 repr===')
+out.append(repr(lines[403][:80]))
+open('/tmp/rank_tails.txt','w').write('\n'.join(out))
+print("wrote", len('\n'.join(out)))

@@ -1,0 +1,5 @@
+time: 2026-09-05 06:13:30 JST
+run115A all=20 ok=20 cold(>=0.0s)=0 p50=0.051s warm range=0.043-0.078
+run115B all=20 ok=20 cold(>=0.0s)=0 p50=0.046s warm range=0.042-0.101
+run115C all=20 ok=20 cold(>=0.0s)=0 p50=0.049s warm range=0.041-0.092
+landing-control all=20 ok=20 cold(>=0.0s)=0 p50=0.052s warm range=0.041-0.079

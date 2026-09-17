@@ -1,0 +1,5 @@
+ M query-cosientist.md
+069c8d4bae115cdc4f3b737e494c5418d643ba22
+stash@{0}: WIP on (no branch): 069c8d4 rank 254th: fold run567 (clean-tick 0/60) + run569 (5/60) + run570 (1/60) -> 13hr band 13/360 ~3.6% mid-band, no status transition, NEXT K-Z3 13hr n-add run571
+stash@{1}: WIP on (no branch): f48dbe8 rank 第53回: falsify 第60回 (K-Z3 19時台 run162 0/60 静穏) + cosientist 第51回 (K-Q1 header 不在原因 = gateway whitelist, PR control-plane#614) を取り込み — status 遷移なし, 順位変動なし, NEXT: K-Q1 PR #614 merge + gateway deploy 後の header 到達確認 (0→30)
+1

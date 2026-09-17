@@ -1,0 +1,55 @@
+381:(defn caller-did
+386:  (let [v (some-> (.. request -headers (get "x-kotobase-tenant-did")) str/trim)]
+2268:                             :details "Biscuit fold requires an edge-verified tenant DID (x-kotobase-tenant-did or body tenant_did)"}
+2685:;; via the Authorization header + x-kotoba-did) -- so the target db_name is
+
+(defn cypher-write-query?
+  "True only for the one public Cypher write prefix the bounded parser accepts.
+  Classification happens before the read cache/head path: CREATE must traverse
+  the same verified-tenant, nonce, owner-record and CAS orchestration as
+  datomic.transact, never the anonymous read route."
+  [method body]
+  (boolean (and (= method "cypher")
+                (re-find #"(?i)^\s*CREATE\b" (str (:query body))))))
+
+(defn- cypher-write-after-nonce-check [env body iss nonce db-name seen?]
+  (cond
+    seen?
+    (js/Promise.resolve {:ok false :error "Unauthorized"
+                         :message "CACAO nonce already used" :status 401})
+
+    (not (valid-db-name? db-name))
+    (js/Promise.resolve {:ok false :error "Bad Request"
+                         :message "db_name required for Cypher CREATE" :status 400})
+
+    :else
+    (let [g (write-graph-name iss db-name)]
+      (-> (owner/bind-owner! env g iss)
+          (.then (fn [denial]
+                   (if denial
+                     (owner-write-denial denial)
+                     (run-write env g "cypher" (assoc body :graph g) iss))))
+          (.then (fn [resp] (transact-finish env iss nonce resp)))))))
+
+(defn- handle-kg-cypher-write [request env body]
+  (let [authz (.. request -headers (get "authorization"))
+        tenant (or (caller-did request) (:tenant_did body))
+        expected-graph (when (and tenant (valid-db-name? (:db_name body)))
+                         (write-graph-name tenant (:db_name body)))
+        auth-result (auth/resolve-transact-auth
+                     env authz
+                     (.. request -headers (get "x-internal-trust"))
+                     (caller-did request)
+                     (:tenant_did body)
+                     (now-sec)
+                     expected-graph)]
+    (if-not (:ok? auth-result)
+      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+                 (:status auth-result))
+      (let [iss (:iss auth-result)
+            nonce (:nonce auth-result)
+            after #(cypher-write-after-nonce-check env body iss nonce (:db_name body) %)]
+        (-> (if nonce
+              (.then (auth/nonce-seen? env iss nonce) after)
+              (after false))
+            (.then (fn [resp]

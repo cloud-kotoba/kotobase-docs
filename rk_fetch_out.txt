@@ -1,0 +1,21 @@
+== FETCH rc=128
+STDERR: fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+== HEAD rc=0
+423c4d873048301c58d7717cc109f22c37438746
+== ORIGIN_MAIN rc=128
+origin/main
+STDERR: fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+== BRANCH rc=0
+== REMOTE rc=0
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+== LOG_ORIGIN rc=128
+STDERR: fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'

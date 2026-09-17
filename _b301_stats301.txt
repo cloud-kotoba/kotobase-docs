@@ -1,0 +1,5 @@
+301A: n=20 p50=44.4ms cold(>=0.5s)=1/20 max=1613.3ms warm_p50=44.4ms
+301B: n=20 p50=45.9ms cold(>=0.5s)=0/20 max=99.7ms warm_p50=45.9ms
+301C: n=20 p50=46.8ms cold(>=0.5s)=0/20 max=126.9ms warm_p50=46.8ms
+land: n=20 p50=46.2ms cold(>=0.5s)=0/20 max=88.9ms warm_p50=46.2ms
+SEARCH TOTAL n=60 cold=1/60

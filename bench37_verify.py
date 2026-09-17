@@ -1,0 +1,5 @@
+import subprocess
+r = subprocess.run(["git", "log", "--oneline", "-1"], capture_output=True, text=True, cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs")
+r2 = subprocess.run(["git", "status", "--short"], capture_output=True, text=True, cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs")
+with open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench37_verify.txt", "w") as f:
+    f.write(r.stdout + r.stderr + "--\n" + r2.stdout + r2.stderr)

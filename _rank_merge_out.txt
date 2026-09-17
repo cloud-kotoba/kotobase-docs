@@ -1,0 +1,26 @@
+===HEAD===
+31a65c9f9a551465febf949f79ccf1bde34f6316
+===MERGE_HEAD===
+cat: .git/MERGE_HEAD: No such file or directory
+===REBASE dir===
+author-script
+done
+drop_redundant_commits
+ls: .git/rebase-apply: No such file or directory
+===STATUS (non-untracked)===
+UU query-cosientist.md
+===LOG --all recent===
+31a65c9 bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+5639692 rank 第106回: bench 第96回 run241 + falsify 第108回 run242 (K-Z3 20時台 n積み増し) 取り込み, 20時台通算 6/240-300 ~2.0-2.5% 低位帯確定方向, status遷移なし, 順位変動なし, NEXT K-Z3 20時台 run243 / 21時台帯初計測
+de3a5ef falsify 第108回: K-Z3 20時台 n 積み増し run242A-C (cold 1/60 ~1.7%, 帯内散発単発即消失, control 分離成立, 20時台通算 6/240 ~2.5% 低位帯確定方向)
+60d35f5 bench 第96回: K-Z3 20時台 2セット目 run241A-C (cold 2/60 ~3.3%, 帯内散発単発型, control 分離成立, 20時台通算 5/240 ~2.1% 低位帯残界確定方向)
+bf0986b rank 第105回: 追補 — push 時に falsify 第107回 run240 (20時台 n積み増し cold 0/60, 通算 3/180 ~1.67%) を並行 commit 検知・取込 (fast-forward 祖先確認済み)
+b9b8fa9 rank 第105回: 取り込むべき新 evidence 0 (HEAD=main 257b3fa 乖離0, rank第104回で cosientist第83回+bench/falsify run239 20時台帯初 3/120 取込済み), status遷移なし, 順位変動なし, NEXT K-Z3 20時台 n積み増し継続
+9621949 falsify 第107回: K-Z3 20時台 n積み増し run240A-C (cold 0/60 完全静穏, control 分離成立, 20時台通算 3/180 ~1.67% 低位帯維持)
+257b3fa rank 第104回: cosientist 第83回 (K-Q1 切れ手(ii) cacao_b64 静的実査反証) + bench 第94回/falsify 第106回 run239 (20時台帯初 3/120 ~2.5%) 取り込み, status遷移なし, 順位変動なし, NEXT K-Q1 did:key tenant harness (iii) / K-Z3 20時台 n積み増し
+===LOG HEAD..net-kotobase/main===
+===MERGE_MSG===
+cosientist 第84回: K-Z3 20時台 run243 (cold 1/60 ~1.7%), 20時台通算 7/300 ~2.3% 低位帯確定方向, コード変更なし
+
+# Conflicts:
+#	query-cosientist.md

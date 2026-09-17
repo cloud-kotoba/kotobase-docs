@@ -1,0 +1,19 @@
+local HEAD
+e47ccb17f02f52c0c17b5395d1531b5ee87b10b7
+== fetch ==
+Fetching net-kotobase
+From github.com:net-kotobase/docs
+   799a736..e47ccb1  main       -> net-kotobase/main
+Fetching bench_fetch
+== main ==
+e47ccb17f02f52c0c17b5395d1531b5ee87b10b7
+== log ==
+e47ccb1 rank 第234回: 3時台 run529/530 fold (16/360 ~4.4% 6set), K-Z3 open 継続, NEXT 4時台 run531
+799a736 bench237: K-Z3 3時台 run530 n-add (cold 5/60 ~8.3%, control 0/20 完全静穏分離成立), iter/evidence 追記
+29f90c1 falsify236: K-Z3 3時台 n 積み増し run529A-C (cold 1/60 ~1.7%, control 0/20 完全静穏分離成立), iter/evidence 追記
+== worktree diff ==
+ M query-cosientist.md
+?? $
+?? ._b531_count.txt
+?? ._b531_count2.txt
+?? ._b531_count3.txt

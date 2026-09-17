@@ -1,0 +1,6 @@
+[detached HEAD cad715d] rank 154: fold bench152 run353 (5/60) -> K-Z3 13hr(9/7) 11/180 ~6.1% 3-set midband; single-window non-sustained (run353A 5/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 14hr n-add run354
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+COMMIT_EXIT=0
+cad715d rank 154: fold bench152 run353 (5/60) -> K-Z3 13hr(9/7) 11/180 ~6.1% 3-set midband; single-window non-sustained (run353A 5/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 14hr n-add run354
+6bdf6ff bench 第153回: K-Z3 13時台 run355 n積み増し (cold 1/60 ~1.7%, run355A 冒頭単発, B/C+control 0/60 即消滅分離成立; 帯内1窓即消滅継続, 13時台通算 14/300 ~4.7% 5-set) + iterlog (rank154 swept)
+22d4145 falsify 第163回: K-Z3 13時台 run354 n積み増し (cold 2/60 ~3.3%, run354A 散発ペア 2/20, B/C+control 0/60 即消滅分離成立; 帯内1窓即消滅継続, 13時台通算 13/240 ~5.4% 4-set) + iterlog

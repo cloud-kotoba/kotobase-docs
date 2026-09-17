@@ -1,0 +1,5 @@
+cp ok rc=0;
+-rw-r--r--@ 1 junkawasaki  staff  3126 Sep  8 04:23 .b420_run420.py
+-rw-r--r--@ 1 junkawasaki  staff   969 Sep  8 04:24 .b420_run420.sh
+-rw-r--r--@ 1 junkawasaki  staff   994 Sep  8 04:24 .b420_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1258 Sep  8 04:24 .b420_stats.py

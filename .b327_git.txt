@@ -1,0 +1,52 @@
+=== FETCH ===
+=== HEAD_REV ===
+e97c6dd4c755891e122bf6f93685d8353139a6ff
+=== REMOTE_REV ===
+e97c6dd4c755891e122bf6f93685d8353139a6ff
+=== STATUS ===
+?? .b327_bcnt.txt
+?? .b327_bcnt2.txt
+?? .b327_bcnt3.txt
+?? .b327_commit.sh
+?? .b327_commit.txt
+?? .b327_ee.py
+?? .b327_ee.txt
+?? .b327_end.py
+?? .b327_end.txt
+?? .b327_git.sh
+?? .b327_git.txt
+?? .b327_insert.py
+?? .b327_insert.txt
+?? .b327_postpush.sh
+?? .b327_postpush.txt
+?? .b327_precommit.sh
+?? .b327_precommit.txt
+?? .b327_reorder.py
+?? .b327_reorder.txt
+?? .b327_tail.py
+?? .b327_tail.txt
+?? .b327_verify.py
+?? .b327_verify.txt
+?? .b327_verify2.txt
+?? .b328_git.sh
+?? .b328_git2.sh
+?? .b328_next.py
+?? .b345_345A.txt
+?? .b345_345B.txt
+?? .b345_345C.txt
+=== LOG_HEAD (falsify/bench latest) ===
+e97c6dd bench 第169回: K-Z3 18hr(9/7) n-add run383 cold 7/60 ~11.7% (A/B 各散発 3/20 + C 単発, control 0/20 完全静穏分離成立, run381 2/60+run382 4/60 の積み増し; 18hr 通算 13/180 ~7.2% 3-set 中位帯候補) + iter-log
+4e66f3f rank 第162回: fold bench166-run377+falsify172-run378+bench167-run379+cosientist126-run380(17hr 27/360 6-set候補)+bench168-run381(18hr帯初2/60低位帯初期); NEXT K-Z3 18hr n-add run382
+706cb22 bench 第168回: K-Z3 18hr(9/7) band-first run381 cold 2/60 ~3.3% (A/C 単発, control 0/20 完全静穏分離成立; falsify in-flight run380 ID衝突の読替) + iter-log
+367e01c cosientist 第126回: K-Z3 17hr(9/7) n-add run380 cold 6/60 ~10% (run378/379 sibling 先行のため読替; A散発5/20+B単発1/20, control 0/20 完全静穏分離成立; 17hr 27/360 ~7.5% 6-set候補) + iter-log
+a22c900 bench 第167回: K-Z3 17hr(9/7) n-add run379A-C cold 2/60 ~3.3% (A 冒頭集中ペア 2/20, B/C+control 0/60 即消失, run377A heavy 16分後 weak 散発, run378読替; 17hr確定分 5セット 21/300 ~7.0%)
+a832c66 falsify 第172回: K-Z3 17hr(9/7) n-add run378 cold 1/60 (run377 in-flight bench 読替; 17hr確定分 11/180 ~6.1%)
+36235d0 cosientist rank 第161回: fold falsify171-run373 + bench164-run374 + cosientist125-run375 + bench165-run376 + bench166-run377 -> 16hr 31/420 ~7.4% 7-set, 17hr 18/180 ~10.0% 3-set, NEXT K-Z3 run378
+0f30b9c bench 166: K-Z3 17hr n-add run377A-C (cold 8/60 ~13.3%, A heavy 7/20, control boundary 1/20)
+755db7e bench 165: K-Z3 17hr n-add run376A-C (cold 6/60 ~10%, control 0/20 quiet sep)
+25804bf cosientist 第125回: K-Z3 evidence 欄に run375 追記 (17hr(9/7) band-first cold 4/60 ~6.7%, A散発3/20+B単発1/20, control 0/20 完全静穏分離成立)
+c749d7e cosientist 第125回: K-Z3 17hr(9/7) band-first n-add run375 cold 4/60 ~6.7% (A散発3/20+B単発1/20, control 0/20 完全静穏分離成立; 帯内1窓即消失継続, heavy再達せず) + iter-log
+207bc7e falsify 171: K-Z3 16hr(9/7) n-add run373 cold 7/60 ~11.7% (run373A heavy 6/20 閾値再達, control 0/20 分離成立) + iter-log
+46240c7 bench 第164回: K-Z3 16hr(9/7) n-add run374 cold 3/60 ~5.0% (run373 sibling 16:51 in-flight 読替; A散発3/20即消失, control 0/20 完全静穏で分離成立; 16時台6セット目) + iter-log
+5a817df bench 第163回: K-Z3 16hr(9/7) n-add run372 cold 1/60 ~1.7% (16時台 5セット目, 散発減弱継続; control 0/20 完全静穏) + iter-log
+4bb63d4 bench 162: K-Z3 16hr(9/7) n-add run371 cold 8/60 ~13.3% (A 5/20 + B 3/20 2-run跨散発クラスタ, deep cold 2.64s; control 境界 1/20 borderline not-separated注記・magnitude分離弱成立; 16hr通算 20/240 ~8.3% 4-set高位帯候補; heavy>=6/20 は再達せず帯内1窓即消失継続) + iter-log

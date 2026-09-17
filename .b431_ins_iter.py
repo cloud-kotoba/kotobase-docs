@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+# Insert falsify 第190回 iter-log entry after "## Iteration log" header (newest-first).
+fn='query-cosientist.md'
+txt=open(fn,encoding='utf-8').read()
+anchor="## Iteration log\n"
+entry="- 2026-09-08: falsify 第190回: 07:02 JST tick, HEAD d597619 = bench 第191回 (06:59, K-Z3 6時台 n-add run430A-C cold 1/60 ~1.7%, control clean separation) = remote net-kotobase/main 一致 ( git fetch + rev-parse 比較, 乖離 0; worktree detached HEAD のため fetch 系で取込; terminal foreground stdout 空=既知のため状態確認・計測出力はファイル書き出し経由)。live smoke 200 (/, /signup; pre-run 計測)。host load1 ~22-28 (07:00 uptime 実測, gate 7.5 大幅超過) のため local 測定は拒否 - 但し K-Z3 観測は production HTTP 実測のため gate 外で実施。※pre-run monitor NEXT「K-Z3 深夜帯 23時台 n 積み増し継続」は stale ( rank 第90回帯 artifact) - true progressive NEXT は iter-log HEAD 連鎖 (bench 第191回, 06:59, run430 済) の続行枠であり、本 tick は 7時台帯初計測 run431 を実施 ( cron 実行時刻 07:01 が7時台に当たり run430 は bench  第191回使用済みのため次 run ID run431, 帯初))。K-Z3 7時台帯初計測 run431A-C 実測 (同測定法 n=20 x 3 + landing control,別接続 curl,cold>=0.5s,正 endpoint search.kotobase.net/search?q=test, 07:01:5x-07:02:39 JST,全 80/80 200, secret 不含 - curl + awk stats のみ): cold(>=0.5s) 1/0/0 per 20 =  1/60 (~1.7%) - run431A 単発散発 1/20 (1.431s, p50 50.5ms, max 1431.4ms) / run431B cold  0/20 p50 44.8ms max 117.8ms / run431C cold  0/20 p50 40.8ms max 133.7ms, control (kotobase.net/signup) cold  0/20 p50 40.8ms max 144.6ms 完全静穏で control 分離成立, cold 群 search  側局在,「帯内 1 窓即消失」散発単発型継続 ( run428A/429A/430A 単発 → 本 tick A 単発, heavy>=6/20 は run413A 以降非再現継続)。7時台 (9/8) 帯初計測 cold  1/60 ~1.7% - 6時台 (6/360 ~1.7%) に続く朝帯境低位帯継続で深夜帯→朝帯境静穏方向に整合し K-Z3 traffic 依存説への強反証材料なし,帯水準確定は rank 判定を要る)。status 判定は rank に委ねる ( rank 専門)。secret は一切記録せず。詳細は K-Z3 evidence 欄 (L279 末尾追記)。NEXT: 委ねる ( rank 指定優先,フォールバックは K-Z3 現在時刻帯 7時台 n 積み増し続行,次 run ID  は run432 使用)。"
+entry=entry.replace("\u200b", "").replace("\u200c", "").replace("\u200d", "")
+assert txt.count(anchor)==1,"anchor not unique"
+new=txt.replace(anchor, anchor+entry+"\n")
+open(fn,'w',encoding='utf-8').write(new)
+print("inserted iter-log entry ok")

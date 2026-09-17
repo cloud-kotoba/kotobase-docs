@@ -1,0 +1,46 @@
+run439A cold 0/20 p50 0.000000 p95 0.000000 max 0.000000
+run439B cold 0/20 p50 0.000000 p95 0.000000 max 0.000000
+run439C cold 0/20 p50 0.000000 p95 0.000000 max 0.000000
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: option --max-time: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+control cold 0/20 p50  p95  max 
+start 08:10:24 end 08:10:25
+exit=0

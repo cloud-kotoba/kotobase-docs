@@ -1,0 +1,18 @@
+=== remote log ===
+31a65c9 bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+5639692 rank 第106回: bench 第96回 run241 + falsify 第108回 run242 (K-Z3 20時台 n積み増し) 取り込み, 20時台通算 6/240-300 ~2.0-2.5% 低位帯確定方向, status遷移なし, 順位変動なし, NEXT K-Z3 20時台 run243 / 21時台帯初計測
+de3a5ef falsify 第108回: K-Z3 20時台 n 積み増し run242A-C (cold 1/60 ~1.7%, 帯内散発単発即消失, control 分離成立, 20時台通算 6/240 ~2.5% 低位帯確定方向)
+=== rebase ===
+Rebasing (1/1)Auto-merging query-cosientist.md
+CONFLICT (content): Merge conflict in query-cosientist.md
+error: could not apply 80c405c... cosientist 第84回: K-Z3 20時台 run243 (cold 1/60 ~1.7%), 20時台通算 7/300 ~2.3% 低位帯確定方向, コード変更なし
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply 80c405c... # cosientist 第84回: K-Z3 20時台 run243 (cold 1/60 ~1.7%), 20時台通算 7/300 ~2.3% 低位帯確定方向, コード変更なし
+rc_rebase=1
+31a65c9 bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+5639692 rank 第106回: bench 第96回 run241 + falsify 第108回 run242 (K-Z3 20時台 n積み増し) 取り込み, 20時台通算 6/240-300 ~2.0-2.5% 低位帯確定方向, status遷移なし, 順位変動なし, NEXT K-Z3 20時台 run243 / 21時台帯初計測
+de3a5ef falsify 第108回: K-Z3 20時台 n 積み増し run242A-C (cold 1/60 ~1.7%, 帯内散発単発即消失, control 分離成立, 20時台通算 6/240 ~2.5% 低位帯確定方向)

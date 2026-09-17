@@ -1,0 +1,7 @@
+read budget 0
+GraphTooLargeToHydrate 0
+revocation 0
+pack 27
+missing-read-capability 2
+l1= occurrences: 0
+;l2 occurrences: 0

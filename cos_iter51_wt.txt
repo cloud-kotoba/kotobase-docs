@@ -1,0 +1,17 @@
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine  7dc6249 (detached HEAD)
+total 80
+drwxr-xr-x@  15 junkawasaki  staff    480 Sep  5 17:56 .
+drwxr-xr-x@  36 junkawasaki  staff   1152 Sep  5 17:57 ..
+-rw-r--r--@   1 junkawasaki  staff    235 Sep  5 11:30 COMMIT_EDITMSG
+-rw-r--r--@   1 junkawasaki  staff    386 Sep  5 17:55 FETCH_HEAD
+-rw-r--r--@   1 junkawasaki  staff     41 Sep  5 17:55 HEAD
+-rw-r--r--@   1 junkawasaki  staff     41 Sep  5 14:47 ORIG_HEAD
+-rw-r--r--@   1 junkawasaki  staff    374 Sep  5 11:30 config
+-rw-r--r--@   1 junkawasaki  staff     73 Aug 12 19:20 description
+drwxr-xr-x@  16 junkawasaki  staff    512 Aug 12 19:20 hooks
+-rw-r--r--@   1 junkawasaki  staff  12718 Sep  5 17:56 index
+drwxr-xr-x@   3 junkawasaki  staff     96 Aug 12 19:20 info
+drwxr-xr-x@   4 junkawasaki  staff    128 Aug 12 19:20 logs
+drwxr-xr-x@ 139 junkawasaki  staff   4448 Sep  5 17:55 objects
+drwxr-xr-x@   6 junkawasaki  staff    192 Sep  5 16:56 refs
+drwxr-xr-x@   4 junkawasaki  staff    128 Sep  5 16:54 stash-archive-2026-09-05

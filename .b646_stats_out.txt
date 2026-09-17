@@ -1,0 +1,5 @@
+valid: True
+run646A: n=20 non200=0 cold 6/20 (30.0%) range=770.7-2297.8ms p50=156.4ms p95=1536.0ms max=2297.8ms
+run646B: n=20 non200=0 cold 2/20 (10.0%) range=808.6-1458.1ms p50=70.2ms p95=808.6ms max=1458.1ms
+run646C: n=20 non200=0 cold 0/20 (0.0%) range=n/a p50=66.6ms p95=126.2ms max=127.6ms
+control: n=20 non200=0 cold 3/20 (15.0%) range=506.1-612.9ms p50=89.6ms p95=575.6ms max=612.9ms

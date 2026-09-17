@@ -1,0 +1,22 @@
+$ git fetch net-kotobase main
+rc=0
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+
+---
+$ git rev-parse HEAD net-kotobase/main
+rc=0
+6934c3c6ca7d21f99467c575f37b222ac5222cc1
+6934c3c6ca7d21f99467c575f37b222ac5222cc1
+
+---
+$ git log net-kotobase/main --oneline -1
+rc=0
+6934c3c rank 第35回: K-Q1 を最上位へ (host load gate 下回る帯を初観測), K-Z3 0時台 run103-105 反映
+
+---
+$ git grep -c run105A net-kotobase/main:query-cosientist.md
+rc=0
+net-kotobase/main:query-cosientist.md:2
+
+---

@@ -1,0 +1,8 @@
+ query-cosientist.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[detached HEAD 7a3ad0b] falsify 84: K-Z3 12時台 run209A-C evidence (cold 7/60, run209A集中型)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To github.com:net-kotobase/docs
+   eb29b15..7a3ad0b  HEAD -> main
+7a3ad0bb5d68a39b83076048aa611c27a92d45e6
+7a3ad0bb5d68a39b83076048aa611c27a92d45e6

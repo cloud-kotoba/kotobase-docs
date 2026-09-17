@@ -1,0 +1,11 @@
+START 19:30:12 JST
+19:30  up 12:13, 15 users, load averages: 30.26 35.38 41.88
+== run164A ==
+n=20 cold>=0.5s: 0/20  p50=0.053s min=0.034 max=0.184
+== run164B ==
+n=20 cold>=0.5s: 0/20  p50=0.056s min=0.032 max=0.145
+== run164C ==
+n=20 cold>=0.5s: 0/20  p50=0.092s min=0.042 max=0.137
+== landing control ==
+n=20 cold>=0.5s: 0/20  p50=0.088s min=0.048 max=0.152
+END 19:30:27

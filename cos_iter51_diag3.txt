@@ -1,0 +1,2 @@
+with_GIT_DIR_env: RC=0 stdout=7dc62497d0ffe6c492c3b3b5510f1c12ad5a9fe9
+ stderr=

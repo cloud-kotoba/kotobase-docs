@@ -1,0 +1,27 @@
+$ git add query-cosientist.md
+
+RC=0
+
+$ git commit -m rank 第48回: PR #3 merge+deploy 完了を取り込み (cosientist 第50回), K-Z3 13/14時台 evidence 追記反映, NEXT: K-Q1 deploy 後 header 計測
+[detached HEAD a2cc538] rank 第48回: PR #3 merge+deploy 完了を取り込み (cosientist 第50回), K-Z3 13/14時台 evidence 追記反映, NEXT: K-Q1 deploy 後 header 計測
+ 1 file changed, 33 insertions(+), 7 deletions(-)
+RC=0
+
+$ git push
+
+STDERR: fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push net-kotobase HEAD:<name-of-remote-branch>
+RC=128
+
+$ git log --oneline -3
+a2cc538 rank 第48回: PR #3 merge+deploy 完了を取り込み (cosientist 第50回), K-Z3 13/14時台 evidence 追記反映, NEXT: K-Q1 deploy 後 header 計測
+aa7b725 cosientist 第50回: K-Q1 PR #3 を engine main にマージ (abfb204) し production deploy 完了 (version 485fd2dc, x-kotobase-kv-stats 計装込み) — deploy 後 smoke 200, 計測は bench/falsify 担当
+cea1f0f cosientist 第49回: K-Z3 14時台 n 積み増し run152A-C (cold 4/1/0 per 20, 14時台通算 5/60 ~8.3% 低位散発型, control 静穏) — status 遷移なし
+RC=0
+
+$ git status --short query-cosientist.md
+
+RC=0

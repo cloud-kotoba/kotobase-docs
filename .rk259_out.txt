@@ -1,0 +1,1 @@
+PRECHECK_FAIL [('hdr==1', False), ('no run579', True), ('no rank259', True), ('no K-Z4 row', True), ('ks1 present', True), ('r258 anchor', False)]

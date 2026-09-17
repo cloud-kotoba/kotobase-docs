@@ -1,0 +1,7 @@
+1:# query / worker / storage co-scientist — kotobase.net
+11:## 対象と測定点
+25:## 作業原則 (amu フリートと同一)
+37:## 書き込み権限の分担
+48:## hypothesis population
+237:## Iteration log
+    1764 query-cosientist.md

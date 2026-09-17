@@ -1,0 +1,10 @@
+=== remote HEAD ===
+0b337ead5040101cbb4be6422ba05ec2fec64469
+=== grep rank 第187回 in HEAD blob ===
+1
+=== grep rank 第187回 in local worktree ===
+1
+=== header count in HEAD blob ===
+1
+=== diff HEAD worktree stat (should be empty) ===
+diff:0

@@ -1,0 +1,6 @@
+8446acc rank 第271回: K-Z3 9/14 午後帯 fold (falsify run616 15時台 cold 12/60 ~20.0% heavy クラスタ, bench run617 17時台 8/60 ~13.3% control separated); K-Z4 同帯日差ペア 15時台 spread ~6倍 / 17時台 spread ~3倍 追加; NEXT K-Z3 19時台 run618
+c9b450d bench 第221回: K-Z3 17時台 (9/14) n 積み増し run617A-C, cold 8/60 (~13.3%), control separated (301 応答 TTFB); K-Z4 17時台日差ペア材料 (9/6 ~4.2% vs 9/14 ~13.3%)
+8446acc813023084aa3979fa7a0888102dc42ccf
+c9b450d9588913dd8a246d349cb66630c1a4c9f2
+1
+1

@@ -1,0 +1,46 @@
+{
+ "purpose": "bench66 K-Z3 4時台 2 セット目 (run183A-C)",
+ "observedAt": "2026-09-05T19:15:12.819Z",
+ "runs": [
+  {
+   "label": "run1 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 35,
+   "minMs": 31,
+   "maxMs": 45
+  },
+  {
+   "label": "run2 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 34,
+   "minMs": 31,
+   "maxMs": 44
+  },
+  {
+   "label": "run3 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 36,
+   "minMs": 28,
+   "maxMs": 48
+  }
+ ],
+ "control": {
+  "label": "landing control",
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 43,
+  "minMs": 35,
+  "maxMs": 52
+ }
+}

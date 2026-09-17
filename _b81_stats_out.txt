@@ -1,0 +1,5 @@
+run206A n 20 200 20 cold 3 p50 0.042 p95 0.997 max 1.137 coldvals ['0.967', '0.997', '1.137']
+run206B n 20 200 20 cold 1 p50 0.041 p95 0.063 max 0.917 coldvals ['0.917']
+run206C n 20 200 20 cold 0 p50 0.038 p95 0.055 max 0.097 coldvals []
+control n 20 200 20 cold 0 p50 0.049 p95 0.091 max 0.233 coldvals []
+11:33  up 1 day,  4:16, 7 users, load averages: 15.24 22.05 30.12

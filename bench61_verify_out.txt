@@ -1,0 +1,6 @@
+ncells 7
+starts | K-Z3 | wor
+ends 追加 n 要。status 判定は rank に委ねる (rank 専門)。 |
+found True
+bench 2026-09-05 (第61回, K-Z3 23時台 n 積み増し run176A–C — ※ falsify 第67回 run175A–C (22:59–23:00 JST) と ID 衝突を避け前例 (run169→170) に従い本分を run176 として記録, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 23:43:10–23:43:24 JST, 全 80/80 200, host load1 9.00 は production HTTP 実測のため gate 外): run176A cold(>=0.5s) 7
+run175 intact True our text after run175 True

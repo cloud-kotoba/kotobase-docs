@@ -1,0 +1,21 @@
+[detached HEAD f7c9f1d] bench 78: K-Z3 9時台帯初計測 run201A-C (cold 5/60, 1窓集中型, control 静穏) + log
+ 7 files changed, 155 insertions(+), 1 deletion(-)
+ create mode 100644 _b78_append.py
+ create mode 100644 _b78_append_out.txt
+ create mode 100644 _b78_run201.sh
+ create mode 100644 _b78_run201_out.txt
+ create mode 100644 _b78_stats.py
+ create mode 100644 _b78_stats_out.txt
+error: The destination you provided is not a full refname (i.e.,
+starting with "refs/"). We tried to guess what you meant by:
+
+- Looking for a ref that matches 'HEAD' on the remote side.
+- Checking if the <src> being pushed ('HEAD')
+  is a ref in "refs/{heads,tags}/". If so we add a corresponding
+  refs/{heads,tags}/ prefix on the remote side.
+
+Neither worked, so we gave up. You must fully qualify the ref.
+hint: The <src> part of the refspec is a commit object.
+hint: Did you mean to create a new branch by pushing to
+hint: 'HEAD:refs/heads/HEAD'?
+error: failed to push some refs to 'github.com:net-kotobase/docs'

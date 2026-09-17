@@ -1,0 +1,9 @@
+fixed 2
+K-Q1 bench65 evidence OK
+K-Q1 diag evidence OK
+K-Z3 run182 evidence OK
+iteration bench65 OK
+NEXT tail OK
+row line 52 ends-with-pipe OK, len 3751
+row line 207 ends-with-pipe OK, len 29720
+ALL-OK

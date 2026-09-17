@@ -1,0 +1,36 @@
+=== show HEAD e97c6dd stat ===
+commit e97c6dd4c755891e122bf6f93685d8353139a6ff
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Mon Sep 7 18:32:14 2026 +0900
+
+    bench 第169回: K-Z3 18hr(9/7) n-add run383 cold 7/60 ~11.7% (A/B 各散発 3/20 + C 単発, control 0/20 完全静穏分離成立, run381 2/60+run382 4/60 の積み増し; 18hr 通算 13/180 ~7.2% 3-set 中位帯候補) + iter-log
+
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+=== show 4e66f3f stat ===
+commit 4e66f3f24b10fee0ccc3b560421cb4ec51261227
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Mon Sep 7 18:17:52 2026 +0900
+
+    rank 第162回: fold bench166-run377+falsify172-run378+bench167-run379+cosientist126-run380(17hr 27/360 6-set候補)+bench168-run381(18hr帯初2/60低位帯初期); NEXT K-Z3 18hr n-add run382
+
+ query-cosientist.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+=== show e97c6dd diff files ===
+commit e97c6dd4c755891e122bf6f93685d8353139a6ff
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Mon Sep 7 18:32:14 2026 +0900
+
+    bench 第169回: K-Z3 18hr(9/7) n-add run383 cold 7/60 ~11.7% (A/B 各散発 3/20 + C 単発, control 0/20 完全静穏分離成立, run381 2/60+run382 4/60 の積み増し; 18hr 通算 13/180 ~7.2% 3-set 中位帯候補) + iter-log
+
+query-cosientist.md
+=== grep rank list recent commits ===
+2:4e66f3f rank 第162回: fold bench166-run377+falsify172-run378+bench167-run379+cosientist126-run380(17hr 27/360 6-set候補)+bench168-run381(18hr帯初2/60低位帯初期); NEXT K-Z3 18hr n-add run382
+7:36235d0 cosientist rank 第161回: fold falsify171-run373 + bench164-run374 + cosientist125-run375 + bench165-run376 + bench166-run377 -> 16hr 31/420 ~7.4% 7-set, 17hr 18/180 ~10.0% 3-set, NEXT K-Z3 run378
+17:86a46c6 rank 159: fold bench160-run368 (16hr band-first cold 9/60 ~15%, run368A heavy 8/20) + bench161-run370 (16hr n-add cold 2/60) -> K-Z3 16hr(9/7) 11/120 ~9.2% 2-set high-band initial (run369 falsify in-flight pending); heavy single-window decay held (run370 2/60 9min later), band-water-level not decisive; rank/status/evolve unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 16hr n-add run371
+20:4e6cedb rank 158: fold falsify167-run365+bench158-run364(swept)+bench159-run366+falsify168-run367 -> K-Z3 15hr(9/7) 9/240 ~3.8% 4-set low-band; band-first 2 clean sets (run364/365 0/60) then scattered reappearance run366A 4/20 + run367 4/60, single-window decay held, heavy>=6/20 non-reproduced; rank/status/evolve unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 16hr band-first run368
+26:13cbce4 rank 157: fold falsify165-run361(3/60)+falsify166-run362(6/60)+bench157-run363(2/60) -> K-Z3 14hr(9/7) 19/300 ~6.3% 5-set midband (swept sibling uncommitted falsify166/bench157 as coherent superset, rank142 precedent); heavy(run359A 6/20) non-reproduced, single-window decay held; rank/status/evolve unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 15hr band-first run364
+29:2b2ac90 rank 156: fold bench155-run359 (14hr band-first cold 7/60 ~11.7% heavy 6/20) + bench156-run360 (1/60) -> K-Z3 14hr(9/7) 8/120 ~6.7% 2-set mid-high band; heavy single-window non-sustained (run360 1/60, 9-min decay after run359A 6/20); rank/status/evolve unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 14hr n-add run361
+32:d3a6640 rank 155: fold falsify163-run354 + bench153-run355 + cosientist124-run356 + bench154-run357 + falsify164-run358 -> K-Z3 13hr(9/7) 19/480 ~4.0% 8-set midband; single-window non-sustained (run357/358 consecutive fully-quiet 2-window after run356A 5/20); rank/status/evolve unchanged; NEXT K-Z3 14hr band-first run359
+35:cad715d rank 154: fold bench152 run353 (5/60) -> K-Z3 13hr(9/7) 11/180 ~6.1% 3-set midband; single-window non-sustained (run353A 5/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 14hr n-add run354
+39:f018d56 rank 153: fold falsify162 run351 (4/60) + bench151 run352 (2/60) -> K-Z3 13hr(9/7) 6/120 ~5.0% 2-set midband; heavy single-window non-sustained (run351A 4/20 + run352A 2/20 scatter, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 13hr n-add run353

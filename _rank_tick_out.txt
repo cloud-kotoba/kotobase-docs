@@ -1,0 +1,9 @@
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+40a6a5d docs: falsify 第68回 evidence — K-Z3 5時台 1セット目 run185A-C (cold 0/60 完全静穏, 低位帯下限側) + iteration log
+dac503b docs: bench 第67回 evidence — K-Z3 4時台 3 セット目 run184A-C (cold 0/60 完全静穏, 4時台通算 2/180 ~1.1% 低位帯)
+2a43966 rank65

@@ -1,0 +1,6 @@
+_b88_run211A.txt: n=20 cold(>=0.5s)=1/20 p50=110ms p95=248ms min=49ms max=916ms colds=[0.916]
+_b88_run211B.txt: n=20 cold(>=0.5s)=0/20 p50=97ms p95=166ms min=47ms max=174ms colds=[]
+_b88_run211C.txt: n=20 cold(>=0.5s)=0/20 p50=123ms p95=236ms min=68ms max=282ms colds=[]
+land: n=20 codes_ok=20/20 cold=0/20 p50=96ms max=154ms
+rc=0
+end 14:15:07

@@ -1,0 +1,6 @@
+# Key finding: engine wrangler comment says "net-kotobase's own worker ... proxies its
+# datomic.* traffic here via KOTOBA_BACKEND_URL" => kotobase.net apex is a DIFFERENT worker
+# (in com-junkawasaki monorepo) that proxies xrpc to backend.kotobase.net. That proxy may
+# construct its own Response (dropping unknown headers) => header stripped at edge proxy.
+# This is the cut: production engine now emits header, but the kotobase.net apex proxy
+# drops it before the client sees it.

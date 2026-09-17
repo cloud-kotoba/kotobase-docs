@@ -1,0 +1,54 @@
+GREP run167 in md:
+
+=====
+GREP run168 in md:
+
+=====
+GREP run169 in md:
+
+=====
+LINES 808-830:
+falsify 2026-09-04 (K-Z3 夜帯 n 積み増し run90A–C, 同測定法 n=20 × 3 run,
+別接続 curl, Tokyo, 20:18–20:19 JST, 全 80/80 200, host load1 31.66 (本 tick
+実測) は production HTTP 実測のため gate 外): run90A cold 0/20 p50 0.071s
+(0.050–0.131s) / run90B cold 0/20 p50 0.058s (0.044–0.114s) / run90C cold 0/20
+p50 0.067s (0.048–0.097s) — landing control (kotobase.net/, 同時刻, n=20,
+全 200) は cold 0/20 p50 0.063s と静穏。3 run + control とも cold 0/20 で
+run89A 型薄クラスタ (7 分前) の再発なし、即消失パターンと一貫。p50 は 58–71ms
+帯と低位。夜帯通算 cold>0 は 27 試行中 5 試行 (~19%)。status 判定は rank に
+委ねる。
+
+bench 2026-09-04 (K-Z3 夜帯 20 時台 n 積み増し run91A–C, 同測定法 n=20 × 3 run,
+別接続 curl, Tokyo, 20:22–20:23 JST, 全 80/80 200, host load1 28.43 (本 tick
+実測) は production HTTP 実測のため gate 外): run91A cold 0/20 p50 0.087s
+(0.062–0.242s) / run91B cold 0/20 p50 0.085s (0.059–0.172s) / run91C cold 0/20
+p50 0.078s (0.054–0.154s) — landing control (kotobase.net/, 同時刻, n=20,
+全 200) は cold 0/20 p50 0.077s と静穏。3 run + control とも cold 0/20 で
+run89A 型薄クラスタ (run90 実施時点の 10 分前) の再発なし、即消失パターンと
+一貫。p50 は 78–87ms 帯と低位。夜帯通算 cold>0 は 30 試行中 5 試行 (~17%)。
+status 判定は rank に委ねる。
+NEXT: K-Z3 深夜帯 (23:00 以降) n=20 × 3 (変更なし)。
+- 2026-09-04: rank 第29回。新規 evidence: falsify K-Z3 夜帯 run90A–C (20:18–19,
+  cold 0/0/0, p50 58–71ms 帯, landing control 静穏 — run89A 型薄クラスタ (7 分前)
+  の再発なし) と bench 第29回 run91A–C (20:22–23, cold 0/0/0, p50 78–87ms 帯,
+
+=====
+LINES 760,777 (run89 area):
+falsify 2026-09-04 (K-Z3 夜帯 n 積み増し run89A–C, 同測定法 n=20 × 3 run,
+別接続 curl, Tokyo, 20:11–20:12 JST, 全 80/80 200, host load1 12.89 は
+production HTTP 実測のため gate 外): run89A cold 3/20 (1.053–1.295s クラスタ配置,
+中盤 2 件連続含む) p50 0.056s / run89B cold 1/20 (1.536s) p50 0.046s /
+run89C cold 0/20 p50 0.053s — landing control (kotobase.net/, 同時刻, n=20,
+全 200) は cold 0/20 p50 0.071s と静穏で cold 群は search 側に局在。
+run89A は薄いクラスタ型 7 例目 (run84A 型 7/20 より薄い 3/20, warm p50 低位で
+warm 同時上振れなし)、run89B–C は即消失。夜帯通算 cold>0 は 24 試行中 5 試行
+(~21%)。status 判定は rank に委ねる。
+
+falsify 2026-09-04 (K-Z3 夜帯 n 積み増し run87A–C, 同測定法 n=20 × 3 run,
+  別接続 curl, Tokyo, 19:35–19:36 JST, 全 80/80 200, host load1 23.51 は
+  production HTTP 実測のため gate 外): run87A cold 3/20 (1.01–1.21s クラスタ配置,
+  2–4 番目連続) p50 0.083s / run87B cold 1/20 (0.966s) p50 0.086s /
+  run87C cold 0/20 p50 0.144s — landing control (kotobase.net/, 同時刻, n=20,
+  全 200) は cold 0/20 p50 0.157s と静穏で cold 群は search 側に局在。
+  run87A は run84A 型 (7/20) より薄いクラスタ型 6 例目、run87B–C は即消失。
+  夜帯通算 cold>0 は 18 試行中 4 試行 (~22%)。status 判定は rank に委ねる。

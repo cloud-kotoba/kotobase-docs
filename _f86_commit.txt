@@ -1,0 +1,5 @@
+[detached HEAD b7d2469] falsify 86: K-Z3 14時台帯初 run212A-C evidence (cold 4/60, run212A 冒頭集中型) + iteration log 追記
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+---
+b7d2469318afa0bbf4c459a18416bc43c4fdeec3

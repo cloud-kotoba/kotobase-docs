@@ -1,0 +1,6 @@
+_f73_run193.sh URL_S="https://search.kotobase.net/search?q=test"
+_f75_run195.sh URL_S="https://search.kotobase.net/search?q=test"
+_f76_run196.sh URL_S="https://search.kotobase.net/search?q=test"
+_fz72_run192.sh URL_S="https://search.kotobase.net/search?q=test"
+_b71_run.sh # endpoint: search.kotobase.net /search?q=test (K-Z3 標準), control: kotobase.net/
+_b74_run194.sh URL_S="https://search.kotobase.net/search?q=test"

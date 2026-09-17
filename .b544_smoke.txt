@@ -1,0 +1,4 @@
+===SMOKE===
+/ 200
+/signup 200
+search 200

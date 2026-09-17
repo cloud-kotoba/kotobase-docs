@@ -1,0 +1,2 @@
+LINE 279 last30 'tatus 判定は rank に委ねる (rank 専門)。'
+ends_with_pipe False

@@ -1,0 +1,5 @@
+| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再発 (run4–6, run13–16: cold 群と warm 群の遅延上振れが同時に出る突発パターン, 10:41–11:47 JST の 14 試行中 5 試行で cold>0) は時間帯依存の traffic 変動に追従する — 午前/午後/夕方の複数時間帯で同測定法 (n=20) の発現率とタイミング分布を確定し、*/2 高頻度化の要否判断の直接の証拠とする | open | falsify 2026-09-05 (K-Z3 18時台 control 付き再計測 run159A–C, run158 not-separated の追加 n + 再計測, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 18:18:23–18:18:36 JST, 全 
+---TAIL---
+ と全体的に上振れし run158 型の全体的遅延窓が 18:01 / 18:35 の 2 窓で再出現 — search 側は p50 への反映が薄く (search/landing 同時ではない部分分離) control 分離は部分的不成立 (not-fully-separated)。18時台は低位 cold 率だが短時間全体遅延窓の再現性が残り、追加 n と control 分離成立サンプルの確定を rank 判断に委ねる。status 判定は rank に委ねる (rank 専門)。 |
+
+cols=5

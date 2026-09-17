@@ -1,0 +1,39 @@
+127: | K-Z1 | worker | K-W2 の反証で実在が確認された isolate 単位の cold penalty (+0.8–1.8s, 発現率 ~35%) は、定期 self-ping (isolate warm-up) で発現率を測定可能な水準まで下げられる — warm-up 導入前後で /search?q= の cold 群出現率を同測定法で比較する | executed (仮説どおり) | bench 2026-09-03: warm-up 前基準線 (search.kotobase.net /search?q=test, n=20, 別接続 curl, Tokyo, host load1 16.29 は production HTTP 実測のため gate 外): cold 群 (TTFB>500ms) 7/20, TTFB 1.41–2.22s / warm 群 13
+128: 
+129: rank (期待 gain × 確率, 2026-09-05 第43回):
+130: 1. K-Q1 — 恒常的 query path 退行 (+3.5〜3.9 倍) の切り分け。切れ手はほぼ収束:
+131:    graph-for (0.018ms) / verify-session (削減上限 ~12ms) / gateway 前段 (no-auth 402
+132:    短絡 p50 15.87ms) が棄却済みで、bench 第40回 計測第2段 (K-Q2 harness 再使用,
+133:    TTFB/total 分解, n=30 × 2 run) で authenticated warm query total p50
+134:    656.70/654.61ms — TTFB≈total (差 <0.1ms) で待ち時間の実質すべてが gateway 以遠の
+135:    backend query 実行区間。同窓 gateway auth check p50 20.11/21.31ms との差分
+136:    ~635ms が backend 実行区間に帰属し、2 回独立実行で再現 (2026-08-26 基準
+137:    187.35ms に対する +3.5〜3.9 倍退行を同 magnitude で再確認)。退行の主体は
+138:    engine/KV 側で確定 — 残る切れ手は engine 内訳 (KV read 回数 / CID 構造,
+139:    local engine test) でコード変更/実装を伴うため cosientist 実装待ち。
+140:    最大既知 gain (+~700ms) のため最上位維持。
+141: 2. K-Z2 — 日中帯 cold 群の短時間スケール再発の機構切分け。発火直後 vs 経過後対比
+142:    は n 積み増し後も方向非一貫で機構結論には不十分 (run10–15: 直後のみ cold 群
+143:    2/3 組, run52–53: 逆方向, run106 (falsify): 2/4 窓同方向, run107
+144:    (cosientist 第9回): 2 発火窓とも直後 cold 0/20 + 経過後単発 1 の逆方向寄り, run110/111 (bench 第38回): 同方向
+145:    (直後 cold 2/20 → 経過後 0/20) — 5 源累計で非一貫)。*/2 高頻度化の介入は反証まで保留のまま (発現は突発的で
+146:    時間窓内でも連続しない)。
+147: 3. K-Z3 — 時間帯別発現率分布。午前 ~36% / 昼 ~48–52% / 夕方 cold 単独クラスタ型
+148:    主流 / 夜帯 20時台 ~17% / 21時台 ~58% / 22時台 ~25%、深夜帯は 23時台
+149:    run99A/100A/101A と cold 単独クラスタ 3 例連続、0時台は run102A (8/20) /
+150:    run104A (2/20) / run105A (7/20, not-separated)、3時台は bench 第37回 run107
+151:    (cold 2/20 散発, control 分離成立)、4時台は bench 第38回 run113 (cold 1/20 単発,
+152:    control 分離成立)、5時台は falsify run112A–C (cold 1/60, 薄単発) + run114A–C
+153:    (cold 0/60 — 帯内初の完全静穏, 帯通算 120 試行中 1 試行)、6時台は cosientist
+154:    run105A–C (cold 2/20 薄クラスタ / 0/20 / 0/20, control 静穏) + bench 第40回
+155:    run115A–C (cold 0/60 完全静穏) + falsify run116A–C (cold 1/20 薄単発 / 0/20 / 0/20)
+156:    + bench 第41回 run117A–C (cold 0/60) + falsify run118A–C (cold 0/60) —
+157:    6時台通算 15 試行中 2 試行 (~13%)。8時台は falsify run119A–C + bench 第42回
+158:    run120A–C + falsify run121A–C で 3 セット連続 cold 0/180 完全静穏。9時台は
+159:    falsify run122A–C (cold 5/60: 122A 4/20 + 122B 1/20 の突発 1 セット, p90 0.887s) +
+160:    falsify run123A–C (cold 2/60, 123A 単発 2 件) + cosientist run124A–C (旧 run123,
+161:    cold 0/60 完全静穏) — 9時台通算 180 試行中 7 試行 (~3.9%) だが突発は 2 セット
+162:    (run122 / run123A) とも 09:31–09:49 JST の traffic 上昇帯に集中。朝帯は
+163:    8時台 0/180 → 9時台 ~3.9% と微増し、traffic 上昇に転じる帯で発現率が上がる
+164:    K-Z3 traffic 依存説の方向を支持するが深夜帯 (traffic 最低) で ~26% が維持
+165:    されているため確定には遠い — 深夜帯通算 cold>0 は 116 試行中 30 試行 (~25.9%)、

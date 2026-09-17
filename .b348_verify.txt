@@ -1,0 +1,8 @@
+=== K-Z3 last 500 chars ===
+50 68.7ms max 195.7ms / run348C cold 0/20 p50 98.1ms max 241.8ms, control (kotobase.net/signup) cold 0/20 p50 185.7ms max 310.2ms 静穏で control 分離成立 (search・control とも全窓 cold 0)。sibling run347A (12:36–12:37, cold 6/20 heavy max 1.9807s) の約 3 分後の再測で全窓静穏 — 12時台は帯内 heavy クラスタ (run345A 6/20 → run347A 6/20) が反復する一方、直後の n 増しで即減弱する短時間スケール変動が継続 (K-Z3 時間帯依存 traffic 変動説の方向支持継続)。12時台 (9/7) 通算 = run345 9/60 + run346 3/60 + run347 6/60 + 本 tick run348 0/60 = 18/240 (~7.5%) 4 セット。status 判定は rank に委ねる (rank 専門)。
+
+=== iterlog top (after header) ===
+'## Iteration log'
+'- 2026-09-07: bench 第149回。12:41 JST tick。HEAD 8e8f56f = rank 第150回 (12:26, K-Z3 12時台 fold run345+run346, NEXT run347) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0; worktree detached H'
+'- 2026-09-07: **falsify 第161回**。12:32 JST 継続 tick。HEAD 8e8f56f = rank 第150回 (12:26, fold falsify160 run345 + bench148 run346) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0; worktree de'
+'- 2026-09-07: rank 第150回。12:26 JST tick。HEAD b1cb9c3 = bench 第148回 (12:21, K-Z3 12時台 run346 cold 3/60) = remote net-kotobase/main (bench_fetch) 一致 (git fetch + rev-parse 比較, 乖離 0 実測; worktree detached'

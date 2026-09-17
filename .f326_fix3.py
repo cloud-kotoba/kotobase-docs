@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import io
+PATH="query-cosientist.md"
+lines=io.open(PATH,encoding="utf-8").readlines()
+row=lines[278]
+i=row.find("第151回")
+assert i>0
+clean = (
+ "第151回, K-Z3 7時台 n 積み増し run326A–C, 同測定法 n=20 × 3 + landing control, "
+ "別接続 curl, Tokyo, 07:47:2x–07:48:0x JST, 全 80/80 200, "
+ "正 endpoint search.kotobase.net/search?q=test, "
+ "host load1 132.62–143.22 (測定時, prod HTTP 実測のため gate 外), secret 不含 — curl のみ): "
+ "cold(>=0.5s) 2/0/0 per 20 = 2/60 (~3.3%) — "
+ "run326A 散発 2/20 (idx9 1.5311s / idx14 0.8244s 単発散発配置, warm 群 0.04–0.19s で cold と交互) p50 65.8ms / "
+ "run326B cold 0/20 p50 57.7ms max 217.6ms / run326C cold 0/20 p50 58.9ms max 132.8ms, "
+ "control (kotobase.net/signup) cold 0/20 p50 46.3ms max 126.2ms 完全静穏で control 分離成立、cold 群は search 側に局在。"
+ "run326A 散発 2/20 は B/C 0/20 + control 0/20 で「帯内 1 窓即消失」散発単発型継続 "
+ "(run322-indep 2/20, run323A 1/20, run325A 1/20 の散発減弱幅内, heavy は run271A 6/20 以降 51 セット連続非再現)。"
+ "7時台 clean separable 通算 (rank143) = run321 (3/60) + run322-indep (2/60) + run323 (1/60) + run325 (1/60) + "
+ "本 tick run326 (2/60) = 9/300 (~3.0%) 低位帯候補で深夜帯低位帯残界 (~1.7–2.0%) と同水準、"
+ "深夜帯 traffic 最低帯での散発再出現は K-Z3 traffic 依存説への反証材料を続行 "
+ "(深夜帯 ~26–31% 平坦パターンと整合方向, 帯水準確定は追加 clean-tick n 要)。"
+ "status 判定は rank に委ねる (rank 専門)。"
+)
+lines[278]=row[:i]+clean+"\n"
+io.open(PATH,"w",encoding="utf-8").write("".join(lines))
+# verify no garbled runes in segment
+seg=io.open(PATH,encoding="utf-8").readlines()[278]
+seg=seg[seg.find("第151回"):]
+for bad in ["済定時笫","概度行独","幅当内","⑤当 tick","渫"]:
+    print(bad,"in seg:", bad in seg)
+print("segment length:", len(seg))

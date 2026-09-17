@@ -1,0 +1,12 @@
+.b573_A.ttfb samples= 40 200= 20 unknown_code= 6 other= 14
+   cold>=0.5s: 16 [1.3017, 1.1951, 2.067, 1.9303, 0.9745, 2.0156, 2.3844, 1.2011, 1.6378, 1.2238, 1.7851, 1.1254, 0.982, 1.0074, 1.1342, 1.6191]
+   p50= 117.4 ms  max= 2.3844 s
+.b573_B.ttfb samples= 40 200= 20 unknown_code= 0 other= 20
+   cold>=0.5s: 1 [1.2653]
+   p50= 49.5 ms  max= 1.2653 s
+.b573_C.ttfb samples= 40 200= 20 unknown_code= 0 other= 20
+   cold>=0.5s: 1 [1.4575]
+   p50= 52.6 ms  max= 1.4575 s
+.b573_ctl.ttfb samples= 40 200= 20 unknown_code= 0 other= 20
+   cold>=0.5s: 0 []
+   p50= 50.8 ms  max= 0.3539 s

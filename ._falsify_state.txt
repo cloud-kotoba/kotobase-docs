@@ -1,0 +1,58 @@
+Wed Sep  9 04:01:05 JST 2026
+===FETCH===
+Fetching net-kotobase
+Fetching bench_fetch
+===LOG===
+799a736 bench237: K-Z3 3時台 run530 n-add (cold 5/60 ~8.3%, control 0/20 完全静穏分離成立), iter/evidence 追記
+29f90c1 falsify236: K-Z3 3時台 n 積み増し run529A-C (cold 1/60 ~1.7%, control 0/20 完全静穏分離成立), iter/evidence 追記
+cc66b02 rank 第233回: 3時台 run525-528 fold (10/240 ~4.2% 4set), K-Z3 open 継続, NEXT run529
+94026af bench 第233回: K-Z3 3時台 run528 n 積み増し (cold 1/60, control 分離成立)
+c70b179 falsify235: K-Z3 3時台 n-add run527 cold 3/60 ~5.0%, control 0/20 分離成立, iter/evidence 追記
+b009c96 bench232: K-Z3 3時台 run526A-C cold 5/60 (~8.3%), control 0/20 分離成立, iter/evidence 追記
+157efee falsify234: K-Z3 3時台 run525A-C cold 1/60 (~1.7%), control 0/20 分離成立, iter/evidence 追記
+83ef1d3 rank 第232回: no new evidence since rank231 (HEAD 5b65014b frozen), fold 済み K-Z3 2時台 16/120 維持, NEXT run525
+===HEAD===
+799a736269f05b1999e0c940e61aa53c08322bd7
+===STATUS===
+?? $
+?? ._cosient_insert509.py
+?? ._cosient_insert510.py
+?? ._cosient_run508.sh
+?? ._cosient_run508_stats.py
+?? ._cosient_run508b.sh
+?? ._cosient_run508b_stats.py
+?? ._falsify_state.txt
+?? ._kb_snap.py
+?? .appendstat.py
+?? .b189_ad.log
+?? .b189_anchor.py
+?? .b189_ap425.log
+?? .b189_ap425f.log
+?? .b189_append.log
+?? .b189_append.py
+?? .b189_append425.py
+?? .b189_append425f.py
+?? .b189_appenddoc.py
+?? .b189_bnd.py
+?? .b189_chk424.py
+?? .b189_chk424_out.txt
+?? .b189_chk425.py
+?? .b189_chk425_out.txt
+?? .b189_commit.log
+?? .b189_compile.log
+?? .b189_compile2.log
+?? .b189_ev425.log
+?? .b189_ev425.py
+?? .b189_evc.log
+?? .b189_evidence.py
+?? .b189_evrun.log
+?? .b189_extract.py
+?? .b189_extract.sh
+?? .b189_extract2.py
+?? .b189_extract_out.txt
+?? .b189_fetch2.log
+?? .b189_fixnl.py
+?? .b189_gadd.log
+?? .b189_gadd2.log
+===DIR===
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs

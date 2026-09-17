@@ -1,0 +1,5 @@
+run625A: 200 20/20 cold(>=0.5s) 0/20 p50 51.5ms p95 138.5ms max 154.8ms cold_pos []
+run625B: 200 20/20 cold(>=0.5s) 0/20 p50 56.5ms p95 135.4ms max 154.7ms cold_pos []
+run625C: 200 20/20 cold(>=0.5s) 0/20 p50 65.7ms p95 155.8ms max 166.1ms cold_pos []
+run625CTRL: 200 20/20 cold(>=0.5s) 0/20 p50 112.4ms p95 160.2ms max 168.7ms cold_pos []
+SEARCH TOTAL: cold 0/60 (0.0%)

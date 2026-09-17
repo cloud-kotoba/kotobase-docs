@@ -1,0 +1,9 @@
+434A: n=20 cold(>=0.5s)=1/20 p50=41.1ms max=1371.1ms codes=['200']
+434B: n=20 cold(>=0.5s)=1/20 p50=49.6ms max=929.6ms codes=['200']
+434C: n=20 cold(>=0.5s)=0/20 p50=46.2ms max=118.2ms codes=['200']
+control(signup): n=20 cold(>=0.5s)=0/20 p50=39.6ms max=254.9ms codes=['200']
+TOTAL search: 2/60 cold(>=0.5s), all-search p50=45.3ms
+control codes: ['200'] n= 20
+434A cold positions/values: [(1, 1.3711)]
+434B cold positions/values: [(9, 0.9296)]
+434C cold positions/values: []

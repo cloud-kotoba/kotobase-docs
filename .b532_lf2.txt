@@ -1,0 +1,16 @@
+9:# Kotoba Cloud — verified white-hat research
+26:   The session cookie (`credentials: "same-origin"`) is what the research API reads.
+27:2. POST https://api.kotoba.cloud/v1/research/ekyc/start
+35:5. GET https://api.kotoba.cloud/v1/research/ekyc/status until {"status":"verified"}.
+36:   GET https://api.kotoba.cloud/v1/research/status → {"status":"eligible"}.
+38:   POST https://api.kotoba.cloud/v1/research/jobs
+42:   202 queued (poll GET /v1/research/job?jobId=<uuid> every 5s) → 200 terminal.
+45:verification-required → restart step 2 (challenge lives 15 min); research-scope-required →
+52:Registration page: https://kotoba.cloud/#research-register · Full guide: https://kotoba.cloud/ekyc.md
+70:First-party signup counters are at GET /api/funnel (visitors, signups as intent, signup_completed / registrations as auth completed). They start at zero. This Worker has no KV/D1 funnel store; isolate-memory counts reset on recycle. No GMV and no OpenAI Ads pixel.
+82:Local CLI/IDE agents can call the research API without a browser session:
+87:   `POST https://api.kotoba.cloud/v1/research/jobs` (OpenAI-compatible shape),
+88:   `GET https://api.kotoba.cloud/v1/models` and `/v1/research/status`.
+112:- Search: https://kotoba.cloud/v1/knowledge/search?q=T1018
+115:Search accepts up to 200 characters and returns at most 8 matches by ID/title.
+124:Generation retains Passkey, identity/review and approved research scope requirements.

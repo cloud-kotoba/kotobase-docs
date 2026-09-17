@@ -1,0 +1,5 @@
+root_kc=200
+kotobase_root=301
+kc_ekyc=200
+kb_llms=301
+0

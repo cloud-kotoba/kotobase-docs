@@ -1,0 +1,4 @@
+run167A search: n=20 cold>=0.5s 0/20 p50=0.149s min=0.077 max=0.301 non200=0
+run167B search: n=20 cold>=0.5s 0/20 p50=0.074s min=0.035 max=0.310 non200=0
+run167C search: n=20 cold>=0.5s 0/20 p50=0.082s min=0.042 max=0.477 non200=0
+landing control: n=20 cold>=0.5s 0/20 p50=0.119s min=0.042 max=0.238 non200=0

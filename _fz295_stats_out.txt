@@ -1,0 +1,13 @@
+run295A search: n=20 200=20/20 cold(>=0.5s)=1/20
+  p50=44.2ms max=1307.6ms
+  cold_times=[1.3076]
+run295B search: n=20 200=20/20 cold(>=0.5s)=1/20
+  p50=41.9ms max=936.7ms
+  cold_times=[0.9367]
+run295C search: n=20 200=20/20 cold(>=0.5s)=0/20
+  p50=40.5ms max=61.8ms
+  cold_times=[]
+landing control: n=20 200=20/20 cold(>=0.5s)=0/20
+  p50=41.9ms max=112.8ms
+  cold_times=[]
+TOTAL search samples: 60

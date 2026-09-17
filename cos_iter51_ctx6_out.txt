@@ -1,0 +1,22 @@
+q at 31434
+assoc after q at -1
+uery_edn b))
+                   (bad-request "query_edn required")
+                   (run-read env "q" b (caller-did request))))))
+      (.catch (fn [e] (handler-failure e)))))
+
+(defn handle-pull [request env]
+  (-> (parse-json request)
+      (.then (fn [body]
+               (let [b (js-body->clj body)]
+                 (if-not (string? (:entity b))
+                   (bad-request "entity required")
+                   (run-read env "pull" b (caller-did request))))))
+      (.catch (fn [e] (handler-failure e)))))
+
+(defn handle-view [request env]
+  (-> (parse-json request)
+      (.then (fn [body]
+               (let [b (js-body->clj body)]
+                 (if-not (string? (:view b))
+         

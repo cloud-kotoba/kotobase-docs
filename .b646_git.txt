@@ -1,0 +1,6 @@
+[detached HEAD 8c3416c] bench: K-Z3 23時台 run646A-C evidence (8/60 cold ~13.3%, control 3/20 partial separation) + iter log
+ 1 file changed, 2 insertions(+)
+To github.com:net-kotobase/docs
+   73e96f0..8c3416c  HEAD -> main
+8c3416c0b4dcb300c02a8b67ee808d50e702a954
+8c3416c0b4dcb300c02a8b67ee808d50e702a954

@@ -1,0 +1,2 @@
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/proxy.cljc:926:   so this rewrite is rejected at handle-transact; it also does not rebind
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/proxy.cljc:1016:       ;; the tenant graph, which handle-transact then rejects as non-CACAO.

@@ -1,0 +1,13 @@
+total hits: 4
+L863: ...bench 2026-09-04 (K-Z3 夜帯 22時台 n 積み増し run96A–C, 同測定法 n=20 × 3 run,
+...
+---
+L865: ...開始時→測定後実測) は production HTTP 実測のため gate 外): run96A cold 0/20
+...
+---
+L866: ...p50 0.044s (0.034–0.090s) / run96B cold 0/20 p50 0.042s (0.034–0.150s) /
+...
+---
+L867: ...run96C cold 0/20 p50 0.047s (0.034–0.096s) — landing control (kotobase.net/,
+...
+---

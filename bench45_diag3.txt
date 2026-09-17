@@ -1,0 +1,3 @@
+count: 1
+count no-newline: 1
+count fragment: 1

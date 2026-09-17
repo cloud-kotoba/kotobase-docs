@@ -1,0 +1,5 @@
+time: 2026-09-05 08:29:24 JST
+run120A all=20 ok=20 cold(>=10.0s)=0 p50=0.045s colds=0.931s(#1) 1.480s(#2) 0.843s(#3) 1.013s(#5) 1.295s(#6) 1.199s(#8) 1.501s(#9) 1.212s(#13) 0.805s(#19) 0.835s(#20) warm range=0.035-0.045
+run120B all=20 ok=20 cold(>=1.0s)=0 p50=0.038s colds=1.302s(#1) warm range=0.032-0.068
+run120C all=20 ok=20 cold(>=0.0s)=0 p50=0.038s warm range=0.032-0.050
+landing-control all=20 ok=20 cold(>=0.0s)=0 p50=0.045s warm range=0.034-0.062

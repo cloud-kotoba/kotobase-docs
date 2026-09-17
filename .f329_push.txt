@@ -1,0 +1,12 @@
+===fetch===
+rc=0
+===HEAD===
+142071f7edd97f00c42bd768bc50bc323b566a30
+===remote main===
+4e24a248036f259b4eb8f93ccd0c9491e0dbc43d
+===base of my commit===
+4e24a24
+===push===
+To github.com:net-kotobase/docs
+   4e24a24..142071f  HEAD -> main
+push rc=0

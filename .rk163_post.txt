@@ -1,0 +1,7 @@
+=== HEAD blob header count ===
+1
+=== entry present in HEAD blob ===
+1
+=== entry order (first 4 iter lines) ===
+366:## Iteration log
+

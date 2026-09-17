@@ -1,0 +1,9 @@
+To github.com:net-kotobase/docs
+ ! [rejected]        HEAD -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:net-kotobase/docs'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+rc_push=1
+main now: 31a65c9f9a551465febf949f79ccf1bde34f6316

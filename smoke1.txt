@@ -1,0 +1,1 @@
+{"ok":false,"q":"test","k":10,"origin":"https://search.kotobase.net","engine":"postings","reason":"no-match","hits":[],"stats":{"docs":3876,"terms":["test"],"posting-entries-read":0,"hit-count":0}}

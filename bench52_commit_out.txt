@@ -1,0 +1,19 @@
+$ git add query-cosientist.md bench52_kq1_out.json bench52_kq1_edge.mjs bench52_run.py bench52_mk.py bench52_append.py bench52_verify.py bench52_verify.txt bench52_kq1_err.txt bench52_run_out.txt bench52_run_out2.txt bench52_run_out3.txt bench52_run_out4.txt bench52_append_out.txt bench52_check.py bench52_ls.txt rc=0
+
+$ git commit -m bench 第52回: K-Q1 deploy 整合再確認 — cosientist 第51回再 deploy (ea383ee7, 7dc6249) 後も x-kotobase-kv-stats header 不在 60/60 (deployed: false), 空 graph warm query p50 329.77/331.40ms (bench 第49回 ~305ms と同水準, not-separated) evidence + iteration log 追記 — status 遷移なし rc=0
+ode 100644 bench52_mk.py
+ create mode 100644 bench52_run.py
+ create mode 100644 bench52_run_out.txt
+ create mode 100644 bench52_run_out2.txt
+ create mode 100644 bench52_run_out3.txt
+ create mode 100644 bench52_run_out4.txt
+ create mode 100644 bench52_verify.py
+ create mode 100644 bench52_verify.txt
+
+$ git push net-kotobase HEAD:main rc=0
+To github.com:net-kotobase/docs
+   1510e58..c2f85cc  HEAD -> main
+
+$ git log --oneline -1 rc=0
+c2f85cc bench 第52回: K-Q1 deploy 整合再確認 — cosientist 第51回再 deploy (ea383ee7, 7dc6249) 後も x-kotobase-kv-stats header 不在 60/60 (deployed: false), 空 graph warm query p50 329.77/331.40ms (bench 第49回 ~305ms と同水準, not-separated) evidence + iteration log 追記 — status 遷移なし
+

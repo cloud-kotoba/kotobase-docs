@@ -1,0 +1,7 @@
+run211A: n=20 cold=4 p50=48.8ms max=1071.3ms
+run211B: n=20 cold=1 p50=42.6ms max=1444.3ms
+run211C: n=20 cold=0 p50=43.6ms max=65.2ms
+control: n=20 cold=0 p50=50.0ms max=220.9ms
+total cold=5/60 non200=0
+cold latencies: 0.876s, 0.919s, 0.989s, 1.071s, 1.444s
+13:44  up 1 day,  6:27, 7 users, load averages: 5.94 7.28 8.83

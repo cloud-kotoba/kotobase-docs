@@ -1,0 +1,17 @@
+fdd935bdaab62abd5f67393310963763e75f7570	HEAD
+7c8ada87890414d66a9dd65570341c78e788f51b	refs/heads/agent/cleanup-land-20260905
+c5332cd30dfcdbebb44607cc91952c2d2cfcca7b	refs/heads/bot/cosient-20260905-kz3-run129
+22bad92d63ab32aa758f02a27fa32265ef54b256	refs/heads/cosient-20260905-run123-obs
+ac736a75dd309c3bee26df1cf58b36a19194cb53	refs/heads/cosient-sync-60
+fdd935bdaab62abd5f67393310963763e75f7570	refs/heads/main
+38bb30fb97490aa57c15a1df243fa1b8cb8abe98	refs/heads/net-kotobase
+be8530c6502c5a8d472283bad4e6635e22715980	refs/pull/1/head
+f45e41dbaedee26aa4b1c4fc1a6861a39d03a477	refs/pull/2/head
+c5332cd30dfcdbebb44607cc91952c2d2cfcca7b	refs/pull/3/head
+7c8ada87890414d66a9dd65570341c78e788f51b	refs/pull/4/head
+666e88fb1e16645689a2f4ecfcfedd3288a43477	refs/pull/5/head
+ac736a75dd309c3bee26df1cf58b36a19194cb53	refs/pull/6/head
+
+
+local branch: main
+

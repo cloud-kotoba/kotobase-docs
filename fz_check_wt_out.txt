@@ -1,0 +1,5 @@
+HEAD K-Z3 rows: [175]
+WT   K-Z3 rows: [175]
+same: True
+total lines head/wt: 1286 1286
+diff lines total: 0

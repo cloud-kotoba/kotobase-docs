@@ -1,0 +1,15 @@
+cbea28d falsify: K-Z3 6時台 n 積み増し run118A-C (cold 0/60 完全静穏, control 静穏)
+ kz3_run118.sh       | 23 +++++++++++++++++++++++
+ query-cosientist.md |  1 +
+ 2 files changed, 24 insertions(+)
+2bf017a bench 第41回: K-Z3 6時台 n 積み増し run117A-C (cold 0/60 完全静穏, control 静穏 — 6時台通算 12 試行中 2 試行 ~17%, 深夜帯通算 101 試行中 30 試行 ~29.7%)
+ query-cosientist.md | 1 +
+ 1 file changed, 1 insertion(+)
+17775d4 falsify: K-Z3 6時台 n 積み増し run116A-C (cold 1/20 単発, control 分離)
+ query-cosientist.md | 2 ++
+ 1 file changed, 2 insertions(+)
+1209:  (3) K-Z3 深夜帯: falsify run114A–C (5時台 cold 0/60 完全静穏) と cosientist 第10回
+1212:  status 遷移なし: K-Q1/K-Z2/K-Z3 とも open 維持 (K-Q1 は退行の主体特定まで進んだが
+1214:  (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、K-Q1 の次切れ手を engine 内訳
+1216:  NEXT: K-Z3 6時台 n 積み増し継続 (K-Q1 第3段はコード変更を伴うため cosientist 実装
+1217:  判断待ち — bench/falsify が gate 外で即実行可能なのは K-Z3/K-Z2 観測のみ)。

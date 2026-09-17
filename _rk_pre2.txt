@@ -1,0 +1,5 @@
+4270:===DIFF STAT query-cosientist.md vs HEAD===
+4271:===LOG -3===
+4272:b0dcd16 rank 190th: fold falsify190-run431+bench-run432+falsify191-run433 -> 7hr 3/180 ~1.7% 3-set low-band candidate; status/rank/evolve unchanged; NEXT K-Z3 7hr n-add run434
+4275:===COUNT Iteration log header===
+4278: 7:33  up 3 days, 16 mins, 10 users, load averages: 36.66 29.92 24.80

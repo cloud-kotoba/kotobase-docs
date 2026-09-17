@@ -1,0 +1,21 @@
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+rc=0
+=== revs ===
+0e98d2879fcab56b56e2defc2d0f0b1fa9c7e992
+355575f2f964d706955d4c2a0220f8f1ed3382c9
+=== log -8 ===
+0e98d28 cosientist 第128回: K-Z3 20hr(9/7) run395 cold 0/60 完全静穏 (A/B/C+control 0 分離成立) = 20hr 4-set 10/240 ~4.2% 中位〜低位帯候補 continuation + iter-log
+355575f falsify 第169回: K-Z3 20hr n-add run395 (cold 7/60 ~11.7%, A5/B2/C0+control0; 20hr 4-set 17/240 ~7.1%) + iter-log
+0ca3490 rank 第168回: fold bench175-run392(7/60) + falsify168-run393(2/60) + bench176-run394(1/60) -> K-Z3 20hr 3-set 10/180 ~5.6% 中位〜低位帯候補; status/rank/evolve 不変 (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 20hr n-add run395
+0205d27 bench 第176回: K-Z3 20hr n-add run394 (cold 1/60 ~1.7% A 単発2.47s pos1, B/C+control 0 完全静穏分離成立, falsify run393 2/60 の8分後減弱; 20hr通算 10/180 ~5.6% low-to-mid 帯候補; NEXT run395)
+738b92f falsify 第168回: K-Z3 20hr(9/7) n-add run393 cold 2/60 ~3.3% (A 散発 2/20 1.05/1.64s, B/C+control 0 完全静穏分離成立, run392A heavy 6/20 の 5 分後散発減弱) = 20hr 2-set 9/120 ~7.5% 中位帯候補 + iter-log
+d84bf4a bench 第175回: K-Z3 20hr band-first run392 (cold 7/60 ~11.7% A6heavy/B1/C0+control 0/20 split; NEXT K-Z3 20hr n-add run393)
+f0e177b rank 第167回: fold bench174-run391 (K-Z3 19hr(9/7) 5-set 24/300 ~8.0% 中位帯候補) + iter-log; NEXT K-Z3 20hr band-first run392
+eb7468d bench 第174回; K-Z3 19hr(9/7) 5-set n-add run391 cold 4/60 ~6.7% (A 散発 4/20 1.20-1.45s, B/C+control 0 完全静穏分離成立, run390A heavy 6/20 の 14 分後散発減弱, heavy 再達せず) = 24/300 ~8.0% 中位帯候補 + iter-log
+=== diffstat HEAD net-kotobase/main ===
+ query-cosientist.md | 1 -
+ 1 file changed, 1 deletion(-)
+=== status md ===
+=== is 0e98d28 ancestor of net-kotobase/main? ===
+ancestor rc=1

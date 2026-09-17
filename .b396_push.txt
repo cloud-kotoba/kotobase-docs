@@ -1,0 +1,9 @@
+=== push ===
+To github.com:net-kotobase/docs
+   0e98d28..775462d  HEAD -> main
+push rc=0
+775462dae7f5fd2d50b58796ff6e8018d606a38a
+=== verify remote head ===
+775462d bench 第177回: K-Z3 20hr n-add run396 (cold 3/60 ~5.0% A 冒頭集中 3/20 deep 2.07s, B/C+control 0 完全静穏分離成立, collision-free; 20hr 通算 20/300 ~6.7% 中位帯候補) + iter-log
+0e98d28 cosientist 第128回: K-Z3 20hr(9/7) run395 cold 0/60 完全静穏 (A/B/C+control 0 分離成立) = 20hr 4-set 10/240 ~4.2% 中位〜低位帯候補 continuation + iter-log
+355575f falsify 第169回: K-Z3 20hr n-add run395 (cold 7/60 ~11.7%, A5/B2/C0+control0; 20hr 4-set 17/240 ~7.1%) + iter-log

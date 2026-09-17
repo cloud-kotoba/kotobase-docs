@@ -1,0 +1,10 @@
+===git log new===
+1b5b285 falsify 第182回: K-Z3 2hr(9/8) n-add run415 cold 0/60 ~0% (完全静穏, control clean
+868b96d cosientist 第130回: K-Z3 2hr(9/8) band-first run413 cold 6/60 ~10.0% (control clean); observation tick, no qualify evidence -> no impl
+===any 415 in file===
+4
+===iter insert===
+ITER LOG ENTRY INSERTED
+===fix juken typo===
+juken count= 1
+after= 0

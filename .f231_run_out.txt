@@ -1,0 +1,4 @@
+A: n=20 codes={'200': 20} cold(>=0.5s)=4/20 p50=68.4ms p95=909.4ms max=909.4ms cold_detail=[#1 909.4ms, #4 751.8ms, #5 905.0ms, #14 766.4ms]
+B: n=20 codes={'200': 20} cold(>=0.5s)=1/20 p50=47.5ms p95=1473.4ms max=1473.4ms cold_detail=[#18 1473.4ms]
+C: n=20 codes={'200': 20} cold(>=0.5s)=0/20 p50=47.3ms p95=170.7ms max=170.7ms cold_detail=[none]
+CTRL: n=20 codes={'200': 20} cold(>=0.5s)=0/20 p50=99.4ms p95=227.7ms max=227.7ms cold_detail=[none]

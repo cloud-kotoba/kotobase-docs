@@ -1,0 +1,9 @@
+line279 length: 274140
+--- run518 @ 274057 ---
+分離 は 境界成立 (完全静穏 未達) - 0時台帯 通算 (falsify run516 5/60 + bench run517 6/60 + 本 run518 10/60) =  ̂21/180 (~11.7%) の 3 セット - 23時台 (~9.6% 23/240) から 0時台 (深夜帯 traffic 最低帯) へ移行後も 重クラスタ 再発 (run518A 9/20, deep>1s 5 本) - traffic 依存説 の 反証材料 継続, status 判定 は ra
+--- run517 @ 273936 ---
+ (max 2.0480s) / run518C cold 0/20 (max 0.2570s) - control (kotobase.net/signup) cold 1/20 (max 0.5122s 閾値 0.5s 直上 境界) で 分離 は 境界成立 (完全静穏 未達) - 0時台帯 通算 (falsify run516 5/60 + bench run517 6/60 + 本 run518 10/60) =  ̂21/180 (~11.7%) の 3 セット - 23時台 (
+--- run516 @ 273916 ---
+s) / run518B 散発 1/20 (max 2.0480s) / run518C cold 0/20 (max 0.2570s) - control (kotobase.net/signup) cold 1/20 (max 0.5122s 閾値 0.5s 直上 境界) で 分離 は 境界成立 (完全静穏 未達) - 0時台帯 通算 (falsify run516 5/60 + bench run517 6/60 + 本 run518 10/60) =  ̂21/180 (~11.
+=== last 600 chars of line 279 ===
+ST, 全 80/80 200, host load1 40.0–40.9 (00:42 uptime, gate 7.5 超過) は production HTTP 実測のため gate 外, secret 不含): cold(>=0.5s) 9/1/0 per 20 = 10/60 (~16.7%) - run518A 重片側 9/20 (deep>1s 5 本, max 3.5723s) / run518B 散発 1/20 (max 2.0480s) / run518C cold 0/20 (max 0.2570s) - control (kotobase.net/signup) cold 1/20 (max 0.5122s 閾値 0.5s 直上 境界) で 分離 は 境界成立 (完全静穏 未達) - 0時台帯 通算 (falsify run516 5/60 + bench run517 6/60 + 本 run518 10/60) =  ̂21/180 (~11.7%) の 3 セット - 23時台 (~9.6% 23/240) から 0時台 (深夜帯 traffic 最低帯) へ移行後も 重クラスタ 再発 (run518A 9/20, deep>1s 5 本) - traffic 依存説 の 反証材料 継続, status 判定 は rank に委ねる (rank 専門。

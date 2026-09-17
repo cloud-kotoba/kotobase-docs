@@ -1,0 +1,6 @@
+run113A: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.041s min=0.032 max=0.059
+run113B: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.040s min=0.031 max=0.052
+run113C: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.040s min=0.030 max=0.054
+landing control: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.043s min=0.036 max=0.127
+
+search runs cold>0: 0 / 3

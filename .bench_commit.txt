@@ -1,0 +1,10 @@
+[detached HEAD 8703e9f] bench 156: K-Z3 14hr(9/7) n-add run360 cold 1/60 ~1.7% band-1-window-vanish (run359A 6/20 heavy -> 9min later 1/20; control sep OK; 14hr 8/120 ~6.7% 2-set midband)
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+commit rc=0
+To github.com:net-kotobase/docs
+   30e967a..8703e9f  HEAD -> main
+push rc=0
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+local HEAD: 8703e9f87c60dae659f6ebbc826f6c6170367023
+remote main: 8703e9f87c60dae659f6ebbc826f6c6170367023

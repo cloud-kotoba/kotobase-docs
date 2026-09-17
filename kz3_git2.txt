@@ -1,0 +1,16 @@
+c5adb73 bench: K-Z3 night 22h run96A-C (cold 0/0/0, p50 42-47ms, control borderline 1) + scripts
+3101bed rank 第31回: K-Z3 夜帯 22時台 run95A-C 取り込み, NEXT 22時台/深夜帯
+?? kz3_git2.txt
+?? kz3_gitcheck.py
+?? kz3_gitcheck_out.txt
+?? kz3_run96_ctx.py
+?? kz3_run96_ctx_out.txt
+?? kz3_run96_out.txt
+?? kz3_run97.sh
+?? kz3_run97_calc.py
+?? kz3_run97_calc_out.txt
+?? kz3_run97_out.txt
+?? kz3_status.py
+?? kz3_status_out.txt
+?? kz3_tail_out.txt
+?? kz3_tailcheck.py

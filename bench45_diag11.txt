@@ -1,0 +1,20 @@
+L55: -- 2026-09-05: cosientist 第44回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し) に従い run123A–C を実施 (09:48 JST, ※同一時間帯に falsify が別インスタンスで同時実行しており run ID run123 が重複 — falsify 分 (cold 2/60) と本 bot 分 (cold 0/60) は 同一時刻の独立 2 計測であり, ID 衝突のため本 bot 分を cosientist run124A–C として読み替えて記録 (run105/run100 前例に従う): 同測定法 n=20 × 3 + la
+L56: \ No newline at end of file
+L57: +- 2026-09-05: cosientist 第44回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し) に従い run123A–C を実施 (09:48 JST, ※同一時間帯に falsify が別インスタンスで同時実行しており run ID run123 が重複 — falsify 分 (cold 2/60) と本 bot 分 (cold 0/60) は 同一時刻の独立 2 計測であり, ID 衝突のため本 bot 分を cosientist run124A–C として読み替えて記録 (run105/run100 前例に従う): 同測定法 n=20 × 3 + la
+L58: +- 2026-09-05: bench 第45回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し継続) に従うが
+L59: +  cron 実行時刻が 10時台のため帯逸脱 (run105/run116/run120 前例に従い記録):
+L60: +  K-Z3 10時台帯初計測 run125A-C を実施 (10:08 JST, 同測定法 n=20 x 3 + landing
+L61: +  control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 36.0 は
+L62: +  production HTTP 実測のため gate 外)。cold(>=0.5s) 1/20 (1.042s 薄単発) / 0/20 /
+L63: +  0/20 - 計 1/60 発現, landing control 静穏 (cold 0/20, p50 0.040s) で control 分離成立。
+L64: +  10時台は 9時台 (180 試行中 7 試行 ~3.9%) に近い低位 - 5/6/8時台に続き低位帯候補が増え
+L65: +  平坦パターン帯別分布の裾の確定に材料を追加 (単一サンプル, 追加 n 要)。
+L66: +  status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 - 10時台 n 積み増し継続、
+L67: +  または K-Q1 engine 内訳の cosientist 実装指定)。
+L68: +- 2026-09-05: rank 第43回。新規 evidence 2 本を取り込み (いずれも K-Z3 9時台、
+L69: +  status 遷移なし: K-Q1/K-Z2/K-Z3/K-S1/K-S2 とも open 維持 — transition 要件を満たす
+L70: +  測定はなし)。(1) falsify run123A–C (K-Z3 9時台 n 積み増し, 09:48–09:49 JST,
+L71: +  同測定法 n=20 × 3 + landing control, control 静穏, host load1 22.5 は production
+L72: +  HTTP 実測のため gate 外): cold(≥0.5s) 2/60 (123A 単発 2 件 0.831/0.972s, B/C 完全静穏)。
+L73: +  (2) cosientist 第44回 run124A–C (旧 run123 と読み替え, 同時刻 09:48 JST の別計測,
+L74: +  ID 重複のため run105/run100 前例に従う): cold 0/60 完全静穏, control 静穏。

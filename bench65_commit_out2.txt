@@ -1,0 +1,5 @@
+[detached HEAD 8ca8d30] docs: bench 第65回 evidence — K-Q1 transact 401 3例目 + step 別診断 (authn chain 健全, transact 固有) + K-Z3 4時台帯初計測 run182A-C (cold 2/60)
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+To github.com:net-kotobase/docs
+   aadd539..8ca8d30  HEAD -> main
+8ca8d30 docs: bench 第65回 evidence — K-Q1 transact 401 3例目 + step 別診断 (authn chain 健全, transact 固有) + K-Z3 4時台帯初計測 run182A-C (cold 2/60)

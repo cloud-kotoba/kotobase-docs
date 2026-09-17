@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "service": "kotoba-cloud-control-plane",
+  "build": "20260914T2354-org-gw"
+}

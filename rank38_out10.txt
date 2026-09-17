@@ -1,0 +1,8 @@
+bytes: 136942
+cosientist 第9回 -> 1
+bench 第37回 -> 1
+falsify 2026-09-05 (K-Z2 発火直後 -> 1
+rank 第36回 -> 3
+NEXT (rank 第36回) の K-Z2 -> 1
+lines: 1093
+LAST LINE: - 2026-09-05: bench 第37回。新規 evidence: K-Z3 深夜 3時台 run107 (03:33-03:34 JST, n=20 + landing control, 別接続 curl, Tokyo, 全 40/40 200, host load1 12.77 は production HTTP 実測のため gate 外)。search cold(>=0.5s) 2/20 (0.768s, 0.954s, 散発) / warm 18/20 p50 0.050s — landing control cold 0/20 p50 0.050s と静穏で control 

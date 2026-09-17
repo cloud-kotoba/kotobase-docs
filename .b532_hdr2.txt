@@ -1,0 +1,9 @@
+HTTP/2 301 
+date: Mon, 14 Sep 2026 17:09:00 GMT
+content-type: text/html; charset=UTF-8
+location: https://kotoba.cloud/signup
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0hyfpNQpo%2Bbbzx9nRAea1YyP996LYNWT%2FrECAc3PLIeS3Kv%2FLjy58YRBjwAb6EQMgZ4kL6Ke%2FwS0x%2BCeWaKlhCtigLQfuvzI9n3exSptS%2FAKzGQhqXBJVo6vgpgX0MgcuGYcNssADnuVD6s%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a3b0ff37ea5e5eb3-NRT
+

@@ -1,0 +1,2 @@
+[detached HEAD 871b712] bench 189th: K-Z3 6hr n-add run426 cold 2/60 ~3.3% control clean
+ 1 file changed, 2 insertions(+), 1 deletion(-)

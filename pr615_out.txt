@@ -1,0 +1,18 @@
+== fetch ==
+From github.com:net-kotobase/control-plane
+ + 22c5bcc1...b3704230 agent/cleanup-review-20260827 -> origin/agent/cleanup-review-20260827  (forced update)
+ * [new branch]        bot/cosient-20260905-kq1-bundle-rebuild -> origin/bot/cosient-20260905-kq1-bundle-rebuild
+ * [new branch]        cleanup/awai-net-kotobase-director-dirty-review-20260905 -> origin/cleanup/awai-net-kotobase-director-dirty-review-20260905
+ * [new branch]        cleanup/awai-net-kotobase-sales-dirty-review-20260905 -> origin/cleanup/awai-net-kotobase-sales-dirty-review-20260905
+ * [new branch]        cleanup/awai-net-kotobase-supporter-dirty-review-20260905 -> origin/cleanup/awai-net-kotobase-supporter-dirty-review-20260905
+ * [new branch]        cleanup/awai-replay-1-20260905 -> origin/cleanup/awai-replay-1-20260905
+ * [new branch]        cleanup/awai-replay-2-20260905 -> origin/cleanup/awai-replay-2-20260905
+ + 626dc5aa...29d901b4 dependabot/npm_and_yarn/kotobase-api-gateway/cloudflare-worker-toolchain-529e91de44 -> origin/dependabot/npm_and_yarn/kotobase-api-gateway/cloudflare-worker-toolchain-529e91de44  (forced update)
+   784eeabc..61662ce6  main       -> origin/main
+
+== PR615 branch ancestry ==
+61662ce6e49a0b488121563a8c27aec87b56e3d1
+* bot/cosient-20260905-kq1-bundle-rebuild
+  remotes/net-kotobase/bot/cosient-20260905-kq1-bundle-rebuild
+  remotes/origin/bot/cosient-20260905-kq1-bundle-rebuild
+ANCESTOR-YES

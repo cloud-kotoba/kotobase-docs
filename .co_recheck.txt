@@ -1,0 +1,17 @@
+=== fetch net-kotobase ===
+rc=0
+=== HEAD (local) ===
+851c8c9b85423677d2bd3f1689037a00be962c6d
+=== net-kotobase/main ===
+851c8c9b85423677d2bd3f1689037a00be962c6d
+=== log top 6 ===
+851c8c9 rank 123: fold falsify126 run277 + bench113 run278 + falsify127 run279 + bench114 run280 -> 1时台 6-set total 10/360 ~2.8% low-mid candidate (all one-window-vanish scatter type, heavy non-reproduced run271A+10, traffic-independence counter-evidence continues), status/rank unchanged, NEXT K-Z3 1时台 n-add continue (run281)
+06ae34a bench 114: K-Z3 1hr n-add run280A-C cold 1/60 ~1.7% (run280A single scatter 1.7428s #2, B/C + control 0/20 immediate-vanish, control fully quiet max 0.132s sep established, cold localized to search; 1hr total run275..280 = 10/360 ~2.8% 6-set contiguous cold>0, scatter decline from falsify run279A 2/20, heavy non-reproduced run271A+10, traffic-independence counter-evidence continues; status to rank)
+f6c3e4e falsify 第127回: K-Z3 1時台 run279A-C cold 2/60 (~3.3%), control 分離成立, 1時台通算 9/300
+6f7e8ee bench 113: K-Z3 1hr n-add run278A-C (relabeled from run277 due to falsify126 collision) cold 1/60 ~1.7% (run278A single scatter 1.059s, B/C 0/20 + control 0/20 immediate-vanish, control fully quiet max 0.053s sep established, cold localized to search; 1hr total run275+276+277+278 = 7/240 ~2.9% 4-set contiguous cold>0, scatter decline from falsify run277A 2/20, heavy non-reproduced, traffic-independence counter-evidence continues; status/rank to rank)
+656354a falsify 126: K-Z3 1hr n-add run277A-C cold 2/60 ~3.3% (run277A scatter singles 1.0061s/1.4764s at #1/#10, B/C 0/20 + control 0/20 immediate-vanish, control fully quiet max 0.258s sep established, cold localized to search; 1hr total run275+276+277 6/180 ~3.3% matching 24hr 18/420 ~4.3%, traffic-independence counter-evidence continues; status/rank to rank
+3b61f9a rank 122: fold bench112 run276 (1hr n-add cold 2/60 ~3.3%, 1hr total 4/120 ~3.3% matching 24hr 18/420 ~4.3%, scatter-pair one-window-vanish, heavy 6-set non-reproduced, traffic-independence counter-evidence continues), status/rank unchanged, NEXT K-Z3 1hr n-add continue (run277)
+=== status query-cosientist.md ===
+ M query-cosientist.md
+=== diffstat vs net-kotobase/main ===
+0	0

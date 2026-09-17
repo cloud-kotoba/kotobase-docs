@@ -1,0 +1,43 @@
+{
+  "purpose": "bench65 transact 401 diagnostic (step statuses, fresh ephemeral EOA, no fabricated data)",
+  "observedAt": "2026-09-05T19:11:21.967Z",
+  "runId": "kvstats-diag-1788635479829",
+  "steps": [
+    {
+      "step": "siwe_options",
+      "status": 200,
+      "ms": 660.28
+    },
+    {
+      "step": "siwe_verify",
+      "status": 200,
+      "valid": true,
+      "ms": 427.87
+    },
+    {
+      "step": "tenant_provision",
+      "status": 201,
+      "tenantIdPresent": true,
+      "ms": 37.2
+    },
+    {
+      "step": "biscuit_issue",
+      "status": 201,
+      "authorizationPresent": true,
+      "graphPresent": true,
+      "ms": 102.97
+    },
+    {
+      "step": "pre_transact_query",
+      "status": 200,
+      "ms": 871.96,
+      "body": "{\"ok\":true,\"graph\":\"bafyreichdk7m64vh5lnxdtgl457c3gvol7oorhfigc6rr5evslbqfz3grm\",\"rows\":[],\"policy-cid\":null,\"policy-reason\":\"legacy-public\",\"policy-mode\":\"legacy-public\"}"
+    },
+    {
+      "step": "transact",
+      "status": 401,
+      "ms": 31.36,
+      "body": "{\"ok\":false,\"error\":\"Unauthorized\"}"
+    }
+  ]
+}

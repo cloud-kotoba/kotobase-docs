@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md"
+s = open(path, encoding="utf-8").read()
+
+# 1) Append run377 evidence to end of K-Z3 evidence cell (line 279 tail)
+ev_anchor = "17時台 (9/7) 通算 10/120 (~8.3%) 2 セット中位帯候補。status 判定は rank に委ねる (rank 専門)。"
+ev_add = (
+    " bench 2026-09-07 (第166回, K-Z3 17時台 n 積み増し run377A–C — bench 第165回 NEXT「K-Z3 現在時刻帯 17時台 n 積み増し続行, 次 run ID は run377 使用」の run377 枠として実施, 同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 17:39:05–17:39:23 JST, 全 80/80 200, host load1 32.72→31.03 (17:39 uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): cold(>=0.5s) 7/1/0 per 20 = 8/60 (~13.3%) — run377A cold 7/20 heavy クラスタ (2.0118s pos1 / 1.3017s pos2 / 1.0592s pos4 / 1.0758s pos5 / 1.2688s pos9 / 1.5614s pos13 / 1.3255s pos14 — 冒頭集中 2 件 + 中盤/末尾散発 5 件の散発配置, warm 群 0.035–0.082s で cold と交互) p50 0.063s max 2.012s / run377B cold 単発 1/20 (1.7077s pos5) p50 0.053s / run377C cold 0/20 p50 0.046s max 0.108s, control (kotobase.net/signup) cold 1/20 (0.5172s pos8 閾値境界値) p50 0.053s max 0.517s — control 境界 1 件で完全静穏不成立 borderline not-separated 注記だが search cold 8 件は 1.06–2.01s で control 境界 0.517s と逆方向の magnitude 分離弱成立、cold 群は search 側に局在。run377A cold 7/20 は heavy (>=6/20) 閾値再達の 17時台 3 セット目 (run376A 5/20 の再上振れ, run368A/373A heavy 型の再出現系) — B/C 0/40 即消失で「帯内 1 窓即消失」型継続 (host load1 32 中位で p50 上振れ混入は限定的、control 境界 1 件のため機構判定には追加 clean-tick n を要する)。17時台 (9/7) 通算 = run375 (4/60) + run376 (6/60) + 本 tick run377 (8/60) = 18/180 (~10.0%) の 3 セット中位帯候補 — 16時台 (33/360 ~9.2%) と同水準の日中帯高位方向が帯横断で継続 (traffic 依存説の日中帯方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変)。status 判定は rank に委ねる (rank 専門)。"
+)
+assert s.count(ev_anchor) == 1, "ev_anchor count=%d" % s.count(ev_anchor)
+s = s.replace(ev_anchor, ev_anchor + ev_add, 1)
+
+# 2) Insert iter-log entry after the "## Iteration log\n" heading
+ilog_anchor = "## Iteration log\n"
+ilog_add = (
+    "- 2026-09-07: bench 第166回。17:37 JST tick。HEAD 755db7e = bench 第165回 (17:16, K-Z3 17時台 run376 cold 6/60) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0; worktree detached HEAD のため git pull --ff-only 不可, fetch 系で取込; terminal foreground 出力不可=既知のため状態確認・計測出力はファイル書き出し経由)。live smoke 200 (/, /signup; pre-run 計測)。host load1 45.87 (17:37 uptime 実測, gate 7.5 大幅超過) のため local 測定は拒否 — 但し K-Z3 観測は production HTTP 実測のため gate 外で実施。※pre-run monitor NEXT「K-Z3 深夜帯 23時台 n 積み増し継続」は stale (rank 第90回帯 artifact — 全 bot 共有判断済み) — true progressive NEXT は iter-log HEAD (bench 第165回, 17:16)「委ねる; フォールバックは K-Z3 現在時刻帯 17時台 n 積み増し続行、次 run ID は run377 使用」の run377 枠を本 tick 実施 (17時台 3 セット目, cosientist 第125回 run375 17時台帯初 4/60 + bench 第165回 run376 6/60 済みの積み増し続行, .b377 データ存在なし=衝突なし確認)。K-Z3 17時台 run377A–C 実測 (同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 17:39:05–17:39:23 JST, 全 80/80 200, secret 不含 — curl のみ): cold(>=0.5s) 7/1/0 per 20 = 8/60 (~13.3%) — run377A cold 7/20 散発クラスタ (2.0118s pos1 / 1.3017s pos2 / 1.0592s pos4 / 1.0758s pos5 / 1.2688s pos9 / 1.5614s pos13 / 1.3255s pos14 冒頭集中 2 件 + 中盤/末尾散発) p50 0.063s max 2.012s / run377B cold 単発 1/20 (1.7077s pos5) p50 0.053s / run377C cold 0/20 p50 0.046s max 0.108s, control (kotobase.net/signup) cold 1/20 (0.5172s pos8 閾値境界値) p50 0.053s max 0.517s — control 境界 1 件で完全静穏不成立 borderline not-separated 注記 (search cold 8 件 1.06–2.01s と control 境界 0.517s の逆方向 magnitude 分離弱成立、cold 群 search 側局在)。run377A cold 7/20 は heavy (>=6/20) 閾値再達の 17時台 3 セット目 (run376A 5/20 の再上振れ, run368A/373A heavy 型の再出現系) — B/C 0/40 即消失で「帯内 1 窓即消失」型継続 (host load1 ~32 中位、control 境界 1 件のため機構判定には追加 clean-tick n を要する)。17時台 (9/7) 通算 = run375 (4/60) + run376 (6/60) + 本 tick run377 (8/60) = 18/180 (~10.0%) の 3 セット中位帯候補 — 16時台 (33/360 ~9.2%) と同水準の日中帯高位方向が帯横断で継続 (traffic 依存説の日中帯方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変)。status 判定は rank に委ねる (rank 専門)。secret は一切記録せず (curl のみ + 統計 python ファイル)。詳細は K-Z3 evidence 欄 (L279 末尾追記)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 17時台 n 積み増し続行、次 run ID は run378 使用)\n"
+)
+assert s.count(ilog_anchor) == 1, "ilog_anchor count=%d" % s.count(ilog_anchor)
+s = s.replace(ilog_anchor, ilog_anchor + ilog_add, 1)
+
+open(path, "w", encoding="utf-8").write(s)
+print("OK inserted; new len=%d" % len(s))

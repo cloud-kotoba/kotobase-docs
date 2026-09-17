@@ -1,0 +1,10 @@
+$ git fetch net-kotobase -> 0
+
+$ git rev-parse net-kotobase/main -> 0
+668ae461887f32fd45a3f705bfc297e218a6b638
+
+$ git log --oneline -3 net-kotobase/main -> 0
+668ae46 bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+88c2c0a falsify: K-Z2 evidence (run106, 02:40-02:46 JST direct-after vs elapsed, n=40x2+control)
+91c516a rank 第36回 NEXT 修正: K-Z3 追加 n (限界利得低下済み) から K-Z2 発火直後 vs 経過後対比の n 増強へ — rank 第35回の残り焦点指定と整合
+

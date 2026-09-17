@@ -1,0 +1,5 @@
+A n=20 cold=9 p50=137.3ms max=2.3844
+B n=20 cold=1 p50=60.5ms max=1.2653
+C n=20 cold=0 p50=70.1ms max=0.1774
+ctl n=20 cold=0 p50=49.0ms max=0.1613
+19:26:34

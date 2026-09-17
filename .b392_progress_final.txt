@@ -1,0 +1,6 @@
+start 20:14:35
+392A done: 20 samples
+392B done: 20 samples
+392C done: 20 samples
+land done: 20 samples
+finish 20:15:13

@@ -1,0 +1,33 @@
+CMD: git add query-cosientist.md
+RC:0
+
+
+=====
+CMD: git commit -m bench 第57回: K-Z3 20時台 run168A–C (cold 4/60 散発が run168A のみ, control 静穏, 20時台通算 8/300 ~2.7% 低位帯; run167 は falsify 同 tick 分と ID 衝突のため読み替え)
+RC:0
+[detached HEAD 766d9fe] bench 第57回: K-Z3 20時台 run168A–C (cold 4/60 散発が run168A のみ, control 静穏, 20時台通算 8/300 ~2.7% 低位帯; run167 は falsify 同 tick 分と ID 衝突のため読み替え)
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+
+=====
+CMD: git push
+RC:128
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push net-kotobase HEAD:<name-of-remote-branch>
+
+
+
+=====
+CMD: git log --oneline -2
+RC:0
+766d9fe bench 第57回: K-Z3 20時台 run168A–C (cold 4/60 散発が run168A のみ, control 静穏, 20時台通算 8/300 ~2.7% 低位帯; run167 は falsify 同 tick 分と ID 衝突のため読み替え)
+b65587d rank 第56回: bench 第56回 (PR #614 merge 済独立確認, header 0→3 未達) を取り込み — 残る切れ手は gateway deploy 実行 (cosientist) に収束, status 遷移なし, 順位変動なし, NEXT: K-Q1 gateway deploy 実行 (main 364b3355) + deploy 後 header 到達確認 0→30 (bench/falsify)
+
+
+=====
+CMD: git status --short query-cosientist.md
+RC:0
+

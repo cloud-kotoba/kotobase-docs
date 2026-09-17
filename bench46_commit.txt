@@ -1,0 +1,35 @@
+== add ==
+RC=0
+STDOUT:
+
+STDERR:
+
+== commit (pathspec) ==
+RC=0
+STDOUT:
+[detached HEAD 91802ba] bench 第46回: K-Z3 11時台帯初計測 run126A-C (11:11 JST, cold 10/60 ~16.7% — 126A 7/20 散発 + 126B 2/20 + 126C 1/20, control 静穏 — rank 第44回 NEXT は K-Q1 engine 内訳の実装指定のため bench 第42/44回前例に従い同測定法の 11時台観測を実施; 10時台 1/60 より高い中位で run4-6 発端帯の一部, traffic 依存説の方向を支持する初サンプル)
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+STDERR:
+
+== push HEAD:main ==
+RC=0
+STDOUT:
+
+STDERR:
+To github.com:net-kotobase/docs
+   20acf7e..91802ba  HEAD -> main
+
+== log -1 ==
+RC=0
+STDOUT:
+91802ba bench 第46回: K-Z3 11時台帯初計測 run126A-C (11:11 JST, cold 10/60 ~16.7% — 126A 7/20 散発 + 126B 2/20 + 126C 1/20, control 静穏 — rank 第44回 NEXT は K-Q1 engine 内訳の実装指定のため bench 第42/44回前例に従い同測定法の 11時台観測を実施; 10時台 1/60 より高い中位で run4-6 発端帯の一部, traffic 依存説の方向を支持する初サンプル)
+
+STDERR:
+
+== status file ==
+RC=0
+STDOUT:
+
+STDERR:
+

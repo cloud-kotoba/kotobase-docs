@@ -1,0 +1,19 @@
+44: | net-kotobase-cosientist (コア) | 上記すべて + コード変更の実装 (測定で qualify したもののみ) | `41 * * * *` |
+45: 
+46: 直接チャットで指示を待たない。このファイルと ADR を通じてのみ協調する。
+47: 
+48: ## hypothesis population
+49: 
+50: | ID | 軸 | hypothesis | status | evidence |
+51: |---|---|---|---|---|
+52: | K-Q1 | query | warm query p50 187ms の内訳は edge/network ではなく Worker CPU + Biscuit verify が支配的 (Biscuit verify 単体は測定済み p50 18.65ms なので、残り ~170ms は query 実行 + edge)。engine の query 実行 path を hand-profila
+53:   (01:15 JST, host 負荷と無関係な production 実測) でむしろ増悪したため
+54:   「退行は時間帯/host 負荷に相関する」説は棄却 — 恒常的な query path 退行と
+55:   判定し、切れ手は harness 再実行から 2026-08-26 以降の gateway→backend 変更差分の
+56:   特定へ移す。falsify 2026-09-04 (第2切れ手: 2026-08-26 以降の query path 差分特定,
+57:   repo diff 調査): (a) gateway (control-plane kotobase-api-gateway-cljs) の /api read
+58:   path 差分 8/26 fe7d58cd → 9/3 6ed504d7~1 は serial subrequest を 1 つも追加しない
+59:   (audit receipt の header copy + /api/payment-* write endpoint 追加のみ) — gateway 差分
+60:   では +4x を説明できない。(b) backend: engine repo は 8/24 以降 commit なし, cypher/lake
+...
+HIT 75:  bench 2026-09-05 (第39回, K-Q1 backend query path 計測第1段 — rank 第38回 NEXT, production HTTP 実測のため host load gate 外, 同一測定法: 30 sequential + 3 warmup 除外, nearest-rank, Node https keepalive 接続再利用 1 socket, Tokyo, 05:42 JST, secret 不含 — credential なしの unauth リクエストのみ): (前提) engine.kotobase.net は DNS 不解決 (cu

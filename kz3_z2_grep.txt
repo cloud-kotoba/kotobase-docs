@@ -1,0 +1,41 @@
+571:  NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (時間帯別発現率分布の確定が */2 判断の
+585:  NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+588:  K-Z2/K-Z3 の */2 高頻度化は反証まで保留、K-Q1 は host load1 33–43 (gate 7.5
+596:  NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+605:  通算 cold>0 は 89 試行中 44 試行 (~49%)。status 遷移なし: K-Z2/K-Z3 とも
+608:  rank 順位変動なし (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)、K-Z3 の分布に
+611:  NEXT: K-Z2/K-Z3 の夜帯 (18:00 以降) n 積み増し (時間帯別発現率分布の確定が
+632:[rank 第26回 2026-09-04: run82A–C (falsify, 17:52–53) / run83A–C (bench 第25回, 17:57–58) を採用 — run82A は cold 単独クラスタ型 4 例目 (run71A/76A/78A に続き, control 静穏で search 側局在), run82B–C/run83A–C は 5 分以内に即消失し夜帯 6 試行中 1 試行 cold>0。run4–6 型 warm 同時上振れは夜帯で未出現。status 遷移なし (K-Z2/K-Z3 とも open)、*/2 高頻度化介入は引き続き反証まで保留]
+639:  status 遷移なし: K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き反証まで
+642:  (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 61.67 (本 tick 実測) で
+645:  NEXT: K-Z2/K-Z3 の夜帯 (18:00 以降) n 積み増し継続 (夜帯の発現率分布の確定が
+649:  (K-Z2/K-Z3 の */2 高頻度化は反証まで保留、K-Q1 は host load1 28–41 (gate 7.5
+660:  NEXT: K-Z2/K-Z3 の夜帯 n 積み増し継続 (quiet-host を観測した tick は
+687:  status 遷移なし: K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は反証まで保留。
+688:  rank 順位変動なし (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 25.71
+721:  status 遷移なし: K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き
+724:  (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 25.96 (本 tick 実測) で
+731:  (K-Z2/K-Z3 の */2 高頻度化は反証まで保留、K-Q1 は host load1 12.89 (gate 7.5
+769:  status 遷移なし: K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き反証まで
+771:  rank 順位変動なし (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 29.32
+834:  (K-Z2/K-Z3 の */2 高頻度化は反証まで保留、K-Q1 は host load1 33.69 (gate 7.5
+859:  status 遷移なし: K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き反証まで
+860:  保留。rank 順位変動なし (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 29.52
+875:  突発クラスタ + 即消失パターンは一貫。status 遷移なし: K-Z2/K-Z3 とも open 維持、
+877:  (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 11.70 (本 tick 実測) —
+948:  K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き反証まで保留。rank 順位
+949:  変動なし (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 16.84 (本 tick 実測
+957:  深夜帯測定を優先。status 遷移なし: K-Z2/K-Z3 とも open 維持 (evidence なしの
+959:  (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 25.20 (本 tick 実測 23:23) で
+966:  (K-Z2 側) を優先的に見直す)。
+974:  status 遷移なし: K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き反証まで
+975:  保留。rank 順位変動なし (K-Z2 > K-Z3 > K-Q1 > K-S1 > K-S2)。host load1 13.74
+994:  2 例のみが分離成立。status 遷移なし: K-Z2/K-Z3 とも open 維持
+1012:  (深夜帯通算 cold>0 75 試行中 23 試行 ~31%)。status 遷移なし: K-Z2/K-Z3 とも open 維持、
+1026:  K-Z2/K-Z3 とも open 維持 (evidence は機構確定に至らず)、*/2 高頻度化介入は
+1031:  (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。rank ブロックを第34回版から第35回版へ
+1050:  84 試行中 27 試行 ~32.1%)。status 遷移なし: K-Z2/K-Z3 とも open 維持、
+1051:  */2 高頻度化介入は引き続き反証まで保留。rank 順位は K-Q1 > K-Z2 > K-Z3 >
+1075:  差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、K-Q1 の次切れ手を
+1079:  NEXT: K-Z2 発火直後 vs 発火経過後対比の n 増強 (rank 第35回で明記した残り焦点の
+    1084 query-cosientist.md

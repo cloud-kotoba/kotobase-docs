@@ -1,0 +1,2 @@
+[detached HEAD 1146b75] falsify237: K-Z3 4時台帯初 run532 (renum from run531, bench238 先行) cold 1/60, control分離成立, iter/evidence追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)

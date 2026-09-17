@@ -1,0 +1,11 @@
+8255634 rank 第88回: K-Z3 14時台 10/240 ~4.2% (run152 合算 15/300 ~5.0%) + 15時台帯初 2/60 ~3.3% 取り込み, NEXT cacao_b64 harness / K-Z3 15時台
+067b109 falsify 第89回: K-Z3 15時台 n 積み増し run215A-C (cold 2/60)
+---
+commit 8255634a832de75775d91bd81222efa35cd75612
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Sun Sep 6 15:09:52 2026 +0900
+
+    rank 第88回: K-Z3 14時台 10/240 ~4.2% (run152 合算 15/300 ~5.0%) + 15時台帯初 2/60 ~3.3% 取り込み, NEXT cacao_b64 harness / K-Z3 15時台
+
+ query-cosientist.md | 22 +++++++++++++++++-----
+ 1 file changed, 17 insertions(+), 5 deletions(-)

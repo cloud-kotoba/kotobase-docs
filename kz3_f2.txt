@@ -1,0 +1,5 @@
+cc98037 falsify K-Z3 night 22:00-hour run97A-C evidence (evidence-append only)
+c5adb73 bench: K-Z3 night 22h run96A-C (cold 0/0/0, p50 42-47ms, control borderline 1) + scripts
+3101bed rank 第31回: K-Z3 夜帯 22時台 run95A-C 取り込み, NEXT 22時台/深夜帯
+94deb7f falsify K-Z3 night 22:00-hour run95A-C evidence (evidence-append only)
+1fde96e rank 第30回: K-Z3 夜帯 21時台 run92-94 (21時台 12試行中7試行 ~58%, 夜帯通算 ~28%) 取り込み, status 遷移なし, NEXT 21-22時台継続/深夜到達時はそちら優先

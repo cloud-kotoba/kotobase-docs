@@ -1,0 +1,1 @@
+0e2aaa28 K-Q1 header 転送: x-kotobase-kv-stats を gateway の public upstream header whitelist に追加 (cosientist 第51回) — engine PR #3 計装の観測値を client まで通す観察転送のみ, body/authz 変更なし

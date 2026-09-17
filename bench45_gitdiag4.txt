@@ -1,0 +1,28 @@
+== branches ==
+RC=0
+STDOUT:
+* (HEAD detached at net-kotobase/main)
+  cosient-sync
+  main
+  manifest-rev
+  rank-sync
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/cosient-20260905-run123-obs
+  remotes/net-kotobase/main
+
+STDERR:
+
+== net-kotobase/main vs HEAD ==
+RC=0
+STDOUT:
+
+STDERR:
+
+== net-kotobase/main log -2 ==
+RC=0
+STDOUT:
+eee3314 rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+
+STDERR:
+

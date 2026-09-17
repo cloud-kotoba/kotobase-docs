@@ -1,0 +1,11 @@
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+ 
+* (HEAD detached from 07e493e)    8964a3f bench 第61回: K-Z3 23時台 n 積み増し run176A-C (cold 7/60, control 分離成立, 即消失型)
+  bot/cosient-20260905-kz3-run129 0a637f1 [net-kotobase/bot/cosient-20260905-kz3-run129: ahead 1] rank 第46回: K-Z3 11/12時台 evidence 3 本取り込み (falsify run127 0/60 + bench 第47回 run128A 6/20 多発 + falsify 第48回 run128 12時台 0/60 + cosientist run129) — 対称 2 サンプルで多発型即時非再現, 帯別 n の限界利得低下確定, NEXT: K-Q1 PR #3 deploy 判断と deploy 後計測
+  cosient-sync                    6eec2c1 [net-kotobase/main: behind 96] bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+  cosient-sync-60                 07e493e [net-kotobase/main: behind 4] rank 第60回: deploy run 33964821723 queued 滞留確定 (jobs 0, 約2.5h) — 代替経路 cosientist 手動 wrangler deploy を NEXT 指定; K-Z3 22時台通算 6/120 中位値
+  main                            5f1f53e [net-kotobase/main: behind 6] bench 第59回: K-Z3 22時台初計測 run172A-C (cold 3/2/0 = 5/60, control 静穏)
+  manifest-rev                    423c4d8 docs: publish Biscuit auth query benchmark (#2)
+  rank-sync                       eee3314 [net-kotobase/main: behind 66] rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+ 

@@ -1,0 +1,3 @@
+first assoc def at 13296
+reset count: 1
+record count: 0

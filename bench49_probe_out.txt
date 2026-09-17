@@ -1,0 +1,13 @@
+{
+  "purpose": "bench49 deploy probe (x-kotobase-kv-stats header presence)",
+  "observedAt": "2026-09-05T07:04:16.806Z",
+  "queryStatus": 200,
+  "writeStatus": 401,
+  "writeData": {
+    "ok": false,
+    "error": "Unauthorized"
+  },
+  "markerReadBack": false,
+  "xKotobaseKvStatsHeader": null,
+  "deployed": false
+}

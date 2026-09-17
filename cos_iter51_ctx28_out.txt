@@ -1,0 +1,8 @@
+"name": "kotobase-cf-wasm-staging",
+"main": "js/kotobase-graph-database-worker.js",
+"name": "kotobase-cf-wasm-testnet",
+"main": "js/kotobase-graph-database-worker.js",
+"name": "kotobase-cf-wasm-witness1",
+"main": "js/kotobase-graph-database-worker.js",
+"name": "kotobase-cf-wasm-witness2",
+"main": "js/kotobase-graph-database-worker.js",

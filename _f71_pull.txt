@@ -1,0 +1,46 @@
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+rk61_commit_out.txt
+rk61_edit.py
+rk61_edit_out.txt
+rk61_push_out.txt
+rk_br.py
+rk_br_out.txt
+rk_co.py
+rk_co_out.txt
+rk_date.py
+rk_date_out.txt
+rk_diff.py
+rk_diff_out.txt
+rk_edit.py
+rk_edit_out.txt
+rk_fetch.py
+rk_fetch2.py
+rk_fetch2_out.txt
+rk_fetch_out.txt
+rk_grep.txt
+rk_log.py
+rk_log_out.txt
+rk_push.py
+rk_push_out.txt
+rk_wc.py
+rk_wc_out.txt
+scripts
+sync-check.cljs
+terms.md
+tick151_a.txt
+tick151_b.txt
+tick151_c.txt
+tick151_d.txt
+tick151_e.txt
+tick151_f.txt
+tick151_g.txt
+tick151_h.txt
+tick64_fetch.txt
+tick_head_cmp.txt
+tick_log.txt
+tick_log_tail.txt

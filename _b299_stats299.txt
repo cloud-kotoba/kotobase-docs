@@ -1,0 +1,5 @@
+299A: n=20 p50=56.4ms cold(>=0.5s)=1/20 max=1322.2ms warm_p50=56.4ms
+299B: n=20 p50=47.4ms cold(>=0.5s)=0/20 max=81.5ms warm_p50=47.4ms
+299C: n=20 p50=41.1ms cold(>=0.5s)=0/20 max=89.6ms warm_p50=41.1ms
+land: n=20 p50=45.8ms cold(>=0.5s)=0/20 max=79.0ms warm_p50=45.8ms
+SEARCH TOTAL n=60 cold=1/60

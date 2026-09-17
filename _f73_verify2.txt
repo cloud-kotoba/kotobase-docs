@@ -1,0 +1,15 @@
+035d174 falsify 第73回: K-Z3 7時台 run193A-C evidence 追記 (3/60 薄クラスタ, control 分離) + iteration log, status 遷移なし
+def7b19 bench 第73回: K-Z3 7時台 run193A-C evidence 追記 (cold 0/60, control 分離), status 遷移なし
+07b91b0 rank 第71回: evidence 取り込み (bench71/falsify72 K-Z3 6-7時台), status 遷移なし, NEXT K-Q1 transact 401 調査
+24eb7de falsify 第72回: K-Z3 7時台帯初計測 run192A-C evidence 追記 (1/60 単発, control borderline), status 遷移なし
+12ee387 bench 第71回: K-Z3 6時台 run191A-C evidence 追記 (cold 1/60 単発, control 分離), status 遷移なし
+commit 035d1746ff53d1ff901ec3ec44506971b9bc56fb
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Sun Sep 6 07:43:43 2026 +0900
+
+    falsify 第73回: K-Z3 7時台 run193A-C evidence 追記 (3/60 薄クラスタ, control 分離) + iteration log, status 遷移なし
+
+ query-cosientist.md | 1 +
+ 1 file changed, 1 insertion(+)
+HEAD:query-cosientist.md:4
+net-kotobase/main:query-cosientist.md:3

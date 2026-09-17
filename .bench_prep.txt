@@ -1,0 +1,26 @@
+=== date ===
+Mon Sep  7 14:25:20 JST 2026
+=== git HEAD ===
+30e967ae5e1943cec63c80bf1fd2222a4bd67f1c
+=== fetch ===
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+fetch rc=0
+=== remote main ===
+30e967ae5e1943cec63c80bf1fd2222a4bd67f1c
+=== run360 / b360 collision check ===
+ls: .b360*: No such file or directory
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 14:16 .b359_359A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 14:16 .b359_359B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 14:16 .b359_359C.txt
+-rw-r--r--@ 1 junkawasaki  staff  4379 Sep  7 14:18 .b359_insert.py
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 14:16 .b359_land.txt
+-rw-r--r--@ 1 junkawasaki  staff   853 Sep  7 14:16 .b359_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1011 Sep  7 14:16 .b359_stats.py
+-rw-r--r--@ 1 junkawasaki  staff   196 Sep  7 14:16 .b359_time.txt
+=== uncommitted in query-cosientist.md? ===
+=== recent bench/falsify scripts to reuse ===
+ls: .b358*.sh: No such file or directory
+-rw-r--r--@ 1 junkawasaki  staff  877 Sep  7 13:50 .b356_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  990 Sep  7 13:54 .b357_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  853 Sep  7 14:16 .b359_runner.sh

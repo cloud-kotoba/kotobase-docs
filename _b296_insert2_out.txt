@@ -1,0 +1,3 @@
+header at 354 below: '- 2026-09-07: rank 第130回。03:35 JST tick。HEAD db823'
+inserted OK
+rc=0

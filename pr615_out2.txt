@@ -1,0 +1,7 @@
+main bundle grep: origin/main:kotobase-api-gateway/js/kotobase-worker.js:1
+main log: 61662ce6 K-Q1: rebuild gateway Worker bundle (kv-stats pass-through reaches the deployed artifact) (#615)
+f34b8a56 K-Q1: rebuild gateway Worker bundle from main (kv-stats pass-through) — proxy.cljc #614 pass-through was source-committed but the committed js bundle predates it; re-run shadow-cljs release worker+entry + manifest (tests 555/0 failures)
+364b3355 Merge pull request #614 from net-kotobase/bot/cosient-20260905-kq1-kvstats-fwd
+0e2aaa28 K-Q1 header 転送: x-kotobase-kv-stats を gateway の public upstream header whitelist に追加 (cosientist 第51回) — engine PR #3 計装の観測値を client まで通す観察転送のみ, body/authz 変更なし
+bf630923 ancestor: NO
+fatal: Not a valid object name bf630923

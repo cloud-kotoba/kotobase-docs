@@ -1,0 +1,7 @@
+remote: 
+remote: Create a pull request for 'bot/cosient-20260905-kq1-kvstats-fwd' on GitHub by visiting:        
+remote:      https://github.com/net-kotobase/control-plane/pull/new/bot/cosient-20260905-kq1-kvstats-fwd        
+remote: 
+To github.com:net-kotobase/control-plane
+ * [new branch]        bot/cosient-20260905-kq1-kvstats-fwd -> bot/cosient-20260905-kq1-kvstats-fwd
+rc=0

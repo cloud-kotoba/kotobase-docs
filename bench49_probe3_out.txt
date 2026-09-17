@@ -1,0 +1,22 @@
+{
+  "purpose": "bench49 deploy probe (x-kotobase-kv-stats header presence, with transact)",
+  "observedAt": "2026-09-05T07:07:22.194Z",
+  "writeStatus": 401,
+  "writeData": {
+    "ok": false,
+    "error": "Unauthorized"
+  },
+  "queryStatus": 200,
+  "queryData": {
+    "ok": true,
+    "graph": "bafyreib26cvd4k4e55fqsbbz55c2lyzkqa3uouc3notyzbe4svd6toimta",
+    "rows": [],
+    "policy-cid": null,
+    "policy-reason": "legacy-public",
+    "policy-mode": "legacy-public"
+  },
+  "markerReadBack": false,
+  "xKotobaseKvStatsHeader": null,
+  "deployed": false
+}
+rc=0

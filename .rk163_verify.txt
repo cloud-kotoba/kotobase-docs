@@ -1,0 +1,12 @@
+=== header count ===
+1
+=== first lines after header ===
+bench 2026-09-07 (第161回, K-Z3 16時台 n積み増し run370A–C — iter-log HEAD (bench 第160回)「K-Z3 current-band(16時台) n-add 継続, 次 run
+## Iteration log
+- 2026-09-07: **rank  第163回**. ~18:40 JST tick	HEAD e97c6dd = bench  第169回 (18:32, run383) = remote net-kotobase/main 【一
+- 2026-09-07: bench 第169回。18:28 JST tick。HEAD 4e66f3f = rank 第162回 (commit message stale NEXT run382, 但し file は falsify1
+- 2026-09-07: **falsify 第173回**。18:06 JST tick，HEAD 706cb22 = bench 第168回 (18hr band-first run381 cold 2/60) = remote ne
+=== entry present? ===
+1
+=== git status md ===
+ M query-cosientist.md

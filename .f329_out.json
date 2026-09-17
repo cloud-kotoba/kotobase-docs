@@ -1,0 +1,59 @@
+{
+  "results": {
+    "run329A": {
+      "name": "run329A",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 181.4,
+      "p90_ms": 230.6,
+      "max_ms": 236.0,
+      "errors": [],
+      "min_ms": 61.3
+    },
+    "run329B": {
+      "name": "run329B",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 166.7,
+      "p90_ms": 240.3,
+      "max_ms": 263.8,
+      "errors": [],
+      "min_ms": 60.1
+    },
+    "run329C": {
+      "name": "run329C",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 99.3,
+      "p90_ms": 259.4,
+      "max_ms": 277.6,
+      "errors": [],
+      "min_ms": 48.7
+    },
+    "landing": {
+      "name": "landing",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_idxs": [],
+      "cold_ttfb": [],
+      "p50_ms": 109.0,
+      "p90_ms": 201.6,
+      "max_ms": 234.5,
+      "errors": [],
+      "min_ms": 43.3
+    }
+  },
+  "uptime": "8:19  up 2 days,  1:02, 15 users, load averages: 88.25 102.38 96.05",
+  "started": "2026-09-07 08:19:20 JST"
+}
+rc=0

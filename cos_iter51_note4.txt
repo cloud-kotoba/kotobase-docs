@@ -1,0 +1,9 @@
+# CONFIRMED: gateway proxy (control-plane/kotobase-api-gateway-cljs proxy.cljc
+# public-upstream-json-headers) rebuilds the JSON response with a WHITELIST of
+# headers only: content-type, retry-after, read-audit-cid, witness-statement-cid.
+# x-kotobase-kv-stats from the engine is dropped at the kotobase.net gateway.
+# => header absence in bench was NOT a failed engine deploy; the engine deploy
+#    was to backend.kotobase.net which we cannot hit directly (401 "reachable
+#    only through the kotobase.net edge").
+# Next hypothesis cut: add x-kotobase-kv-stats to the gateway whitelist and
+# forward it. That is a gateway-repo change (K-Q1 follow-up).

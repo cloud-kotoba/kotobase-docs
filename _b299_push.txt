@@ -1,0 +1,3 @@
+To github.com:net-kotobase/docs
+   4813e93..84a2e64  HEAD -> main
+rc=0

@@ -1,0 +1,8 @@
+STDOUT:3c763b1 bench 第56回: K-Q1 header 0→3 未達 (PR #614 merge 済, gateway deploy 待ち)
+001b57e rank 第55回: falsify 第62回 (19時台 7/300 ~2.3% 低位帯不変) 取り込み + K-Q1 PR #614 merge 完了を git 実査 (merge-base exit 0, main 364b3355) — merge 待ち滞留解消, status 遷移なし, NEXT: K-Q1 gateway deploy 実行 (cosientist) + deploy 後 header 到達確認 0→30 (bench/falsify)
+d803f43 falsify 第62回: K-Z3 19時台 run166A-C (cold 1/60, control 0/20 静穏) evidence 追記 — 19時台通算 7/300 ~2.3%
+
+STDERR:
+RC:0
+ERR:
+RC:0

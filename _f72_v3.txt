@@ -1,0 +1,2 @@
+a75820e falsify 第70回: K-Z3 6時台 run188A-C (cold 1/60 単発, control borderline, run186A 群発は非再現継続)
+ancestor_rc=0

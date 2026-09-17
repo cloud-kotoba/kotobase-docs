@@ -1,0 +1,13 @@
+===REMOTES===
+bench_fetch	https://github.com/net-kotobase/docs (fetch)
+bench_fetch	https://github.com/net-kotobase/docs (push)
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+===FETCH kotobase===
+rc=0
+===remote main===
+f8d4b17987b2e7810a076e2f7a366c8bb8d64ed5
+===HEAD===
+f8d4b17987b2e7810a076e2f7a366c8bb8d64ed5
+===AHEAD/BEHIND===
+0	0

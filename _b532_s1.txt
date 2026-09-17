@@ -1,0 +1,3 @@
+smoke search=200 ctrl=200 home=200
+OK
+      80 /tmp/b532b_raw.txt

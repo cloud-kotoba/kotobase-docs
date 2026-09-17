@@ -1,0 +1,5 @@
+A n=20 p50=0.2348 max=0.9417 cold=3/20 cold_idx=[6, 9, 18] non200=0 codes={'200': 20}
+B n=20 p50=0.0983 max=0.2565 cold=0/20 cold_idx=[] non200=0 codes={'200': 20}
+C n=20 p50=0.0918 max=0.2630 cold=0/20 cold_idx=[] non200=0 codes={'200': 20}
+landing n=20 p50=0.1488 max=0.4400 cold=0/20 cold_idx=[] non200=0 codes={'200': 20}
+ 5:25  up 3 days, 22:08, 6 users, load averages: 78.94 87.50 80.77

@@ -1,0 +1,12 @@
+$ git diff --stat
+query-cosientist.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+rc=0
+$ git diff -U0
+diff --git a/query-cosientist.md b/query-cosientist.md
+index 6eeedae..e7c387d 100644
+--- a/query-cosientist.md
++++ b/query-cosientist.md
+@@ -207 +207 @@ cosientist 2026-09-05 (K-Z2 発火直後 vs 経過後対比の n 増強 run107,
+-| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再発 (run4–6, run13–16: cold 群と warm 群の遅延上振れが同時に出る突発パターン, 10:41–11:47 JST の 14 試行中 5 試行で cold>0) は時間帯依存の traffic 変動に追従する — 午前/午後/夕方の複数時間帯で同測定法 (n=20) の発現率とタイミング分布を確定し、*/2 高頻度化の要否判断の直接の証拠とする | open | falsify 2026-09-05 (K-Z3 18時台 control 付き追加 n run161A–C
+rc=0

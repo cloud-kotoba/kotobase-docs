@@ -1,0 +1,4 @@
+add (0, '')
+commit (0, '[detached HEAD 9056d1b] bench 第82回: K-Z3 12時台帯初計測 run207A-C cold 0/60, warm p50 53-55ms, control 分離成立\n 1 file changed, 2 insertions(+), 1 deletion(-)')
+push (1, 'error: The destination you provided is not a full refname (i.e.,\nstarting with "refs/"). We tried to guess what you meant by:\n\n- Looking for a ref that matches \'net-kotobase/main\' on the remote side.\n- Checking if the <src> being pushed (\'HEAD\')\n  is a ref in "refs/{heads,tags}/". If so we add a corresponding\n  refs/{heads,tags}/ prefix on the remote side.\n\nNeither worked, so we gave up. You must fully qualify the ref.\nhint: The <src> part of the refspec is a commit object.\nhint: Did you mean to create a new branch by pushing to\nhint: \'HEAD:refs/heads/net-kotobase/main\'?\nerror: failed to push some refs to \'github.com:net-kotobase/docs\'')
+head (0, '9056d1b1c8eaff108d7f06fab84e9cc72c1f207c')

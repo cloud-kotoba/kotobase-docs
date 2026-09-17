@@ -1,0 +1,46 @@
+RC=0
+
+ ⛅️ wrangler 4.118.0
+────────────────────
+[custom build] Running: npx shadow-cljs release worker
+[custom build] shadow-cljs - config: /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/shadow-cljs.edn
+[custom build] 
+[custom build] shadow-cljs - starting via "clojure"
+[custom build] 
+[custom build] [:worker] Compiling ...
+[custom build] 
+[custom build] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[custom build] WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.google.protobuf.UnsafeUtil$MemoryAccessor (file:/Users/junkawasaki/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar)
+[custom build] WARNING: Please consider reporting this to the maintainers of class com.google.protobuf.UnsafeUtil$MemoryAccessor
+[custom build] WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+[custom build] 
+[custom build] [:worker] Build completed. (207 files, 0 compiled, 0 warnings, 89.32s)
+[custom build] 
+Total Upload: 1720.09 KiB / gzip: 364.25 KiB
+Worker Startup Time: 73 ms
+Your Worker has access to the following bindings:
+Binding                                                                                      Resource                     
+env.CF_VERSION_METADATA                                                                      Worker Version Metadata      
+env.KOTOBASE_SECURITY_MODE ("legacy-public")                                                 Environment Variable         
+env.KOTOBASE_READ_OWNER_BINDING ("enforce")                                                  Environment Variable         
+env.KOTOBASE_OPERATOR_DIDS ("")                                                              Environment Variable         
+env.KOTOBASE_MAINTENANCE_OPERATOR_DIDS ("")                                                  Environment Variable         
+env.KOTOBASE_CRYPTO_EPOCH ("0")                                                              Environment Variable         
+env.KOTOBASE_B2_ENDPOINT ("https://s3.us-west-004.backblazeb2.com")                          Environment Variable         
+env.KOTOBASE_B2_BUCKET ("kotobase-cf-wasm-production")                                       Environment Variable         
+env.KOTOBASE_B2_PREFIX ("kotobase/cf-wasm-production")                                       Environment Variable         
+env.KOTOBASE_IENGINE_BOOTSTRAP ("0")                                                         Environment Variable         
+env.KOTOBASE_IENGINE_BENCHMARK ("0")                                                         Environment Variable         
+env.KOTOBASE_IENGINE_SHADOW_WRITES ("0")                                                     Environment Variable         
+env.KOTOBASE_IENGINE_SHADOW_PERCENT ("0")                                                    Environment Variable         
+env.KOTOBASE_PHYSICAL_INDEX_BACKFILL ("0")                                                   Environment Variable         
+env.KOTOBASE_PHYSICAL_INDEX_QUALIFICATION ("0")                                              Environment Variable         
+env.KOTOBASE_PROLLY_STANDALONE_SHADOW_WRITES ("0")                                           Environment Variable         
+env.KOTOBASE_HEAD_SIGNER ("warn")                                                            Environment Variable         
+
+Uploaded kotobase-cf-wasm-staging (4.17 sec)
+Deployed kotobase-cf-wasm-staging triggers (1.40 sec)
+  https://kotobase-cf-wasm-staging.04-feasts-minded.workers.dev
+  backend.kotobase.net (custom domain)
+Current Version ID: 485fd2dc-8a0c-4693-9e07-3b7a9b8f467d
+verified production Worker version 485fd2dc-8a0c-4693-9e07-3b7a9b8f467d at Git revision 415b1b28ff1c64ae3ef7a34c6f7c1738b830cc11

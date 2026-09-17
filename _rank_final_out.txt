@@ -1,0 +1,14 @@
+===NOW===
+20:52:02
+===HEAD===
+31a65c9
+===porcelain (non-untracked)===
+===file mtime===
+20:50:53
+---wait 4s---
+===NOW2===
+20:52:07
+20:50:53
+===reflog -2===
+31a65c9 HEAD@{0}: checkout: moving from co84_work to net-kotobase/main
+39230e3 HEAD@{1}: checkout: moving from 80c405cfe87acb8d40438de69534c5c4822b3463 to co84_work

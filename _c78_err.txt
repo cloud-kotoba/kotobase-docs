@@ -1,0 +1,18 @@
+file:///Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/cosient78_tx401_probe.mjs:134
+      datoms: [[:db/add, runId, "bench/run-id", runId]] }),
+                ^
+
+SyntaxError: Unexpected token ':'
+    at compileSourceTextModule (node:internal/modules/esm/utils:354:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:91:18)
+    at #translate (node:internal/modules/esm/loader:454:20)
+    at afterLoad (node:internal/modules/esm/loader:510:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:515:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:558:36)
+    at afterResolve (node:internal/modules/esm/loader:606:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:612:12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:631:32)
+    at TracingChannel.tracePromise (node:diagnostics_channel:363:22)
+
+Node.js v26.0.0
+rc=1

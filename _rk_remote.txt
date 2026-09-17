@@ -1,0 +1,18 @@
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+* (HEAD detached from 38bb30f)
+  bot/cosient-20260905-kz3-run129
+  cosient-sync
+  cosient-sync-60
+  main
+  manifest-rev
+  rank-sync
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/agent/cleanup-land-20260905
+  remotes/net-kotobase/agent/cleanup-review-20260905
+  remotes/net-kotobase/bot/cosient-20260905-kz3-run129
+  remotes/net-kotobase/cosient-20260905-run123-obs
+  remotes/net-kotobase/cosient-sync-60
+  remotes/net-kotobase/main
+  remotes/net-kotobase/net-kotobase
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs  40a6a5d (detached HEAD)

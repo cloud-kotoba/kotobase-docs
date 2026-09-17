@@ -1,0 +1,4 @@
+run98A: n=20 all200=True cold(>=0.5s) 2/20 p50 0.055s min 0.039 max 1.230
+run98B: n=20 all200=True cold(>=0.5s) 0/20 p50 0.056s min 0.037 max 0.112
+run98C: n=20 all200=True cold(>=0.5s) 0/20 p50 0.052s min 0.030 max 0.084
+landing: n=20 all200=True cold(>=0.5s) 0/20 p50 0.053s min 0.035 max 0.355

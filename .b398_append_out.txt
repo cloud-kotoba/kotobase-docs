@@ -1,0 +1,2 @@
+INSERTED: True | run398 in row: True
+row ends: '平坦パターンとの対比不変。status 判定は rank に委ねる (rank 専門)。 secret は一切記録せず。'

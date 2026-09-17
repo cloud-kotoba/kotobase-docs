@@ -1,0 +1,2 @@
+TAIL: '64s (0.085–0.317s) / run80B cold 0/20 p50 0.178s / run80C cold 0/20 p50 0.111s — 同時併記 landing page control (kotobase.net/, n=20, 全 200) は cold 0/20 p50 0.138s で静穏、cold 群は search 側に局在 (単発型)。run78A (17:06, cold 6/20) 型クラスタの再発は run79–80 の 7 試行でなし。夕方帯通算 cold>0 は 22 試行中 8 試行 (~36%)。status 判定は rank に委ねる |'
+ENDS_WITH_PIPE: True

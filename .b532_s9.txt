@@ -1,0 +1,4 @@
+s_kcbench=200
+s_qtest=200
+cap_git=404
+cap_datomic=200

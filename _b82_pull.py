@@ -1,0 +1,12 @@
+import subprocess, datetime
+r = subprocess.run(['git','rev-parse','HEAD'], capture_output=True, text=True)
+print('HEAD', r.stdout.strip(), r.stderr.strip())
+p = subprocess.run(['git','pull','--ff-only'], capture_output=True, text=True)
+print('pull rc', p.returncode)
+print(p.stdout.strip())
+print(p.stderr.strip())
+r2 = subprocess.run(['git','rev-parse','HEAD'], capture_output=True, text=True)
+print('HEAD after', r2.stdout.strip())
+r3 = subprocess.run(['git','merge-base','--is-ancestor','HEAD','origin/net-kotobase/main'], capture_output=True)
+print('behind rc', r3.returncode)
+print('now', datetime.datetime.now().isoformat())

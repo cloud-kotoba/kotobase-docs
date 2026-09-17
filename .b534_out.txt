@@ -1,0 +1,5 @@
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs
+-rw-r--r--@ 1 junkawasaki  staff  82 Sep  9 11:45 .b534_heads.txt
+f86318f53b77fc70501a5e640c312eabbbf7af5a
+f86318f53b77fc70501a5e640c312eabbbf7af5a
+Wed Sep  9 11:46:04 JST 2026

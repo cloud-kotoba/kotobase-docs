@@ -1,0 +1,5 @@
+c91cb22 rank 152: fold cosientist123 run349 (4/60) + bench150 run350 (3/60) -> K-Z3 12hr(9/7) 25/360 ~6.9% 6-set midband; heavy single-window non-sustained (run349 3/20 + run350 3/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 13hr band-first run351
+f3420d2 cosientist 第123回: K-Z3 12時台 run349 n積み増し (cold 4/60 ~6.7%, run349A 3/20 散発クラスタ + B 単発, control 0/20 完全静穏分離成立; 帯内1窓即消失継続, heavy 再達せず; 12h 通算 22/300 ~7.3% 5-set 中位帯); 実装対象なし (qualify 0)
+659081a bench 第150回: K-Z3 12時台 run350 n積み増し (cold 3/60 ~5.0%, run350A 3/20 散発クラスタ, sibling run349 in-flight のため run350 読替; control 0/20 完全静穏分離成立, 帯内1窓即消失継続) + iterlog
+65537a1 rank 151: fold falsify161 run347 (6/60, A heavy 6/20 12h-2nd) + bench149 run348 (0/60) -> K-Z3 12hr(9/7) 18/240 ~7.5% 4-set midband; heavy single-window attenuation confirmed (run348 0/60 3min后); rank/status/evolve unchanged; NEXT K-Z3 12hr n-add run349
+d6fb2e1 bench 第149回: K-Z3 12時台 run348 n積み増し (cold 0/60, sibling run347A heavy の約3分後 quiet — 帯内1窓即消失短時間減弱の追加観測) + iterlog

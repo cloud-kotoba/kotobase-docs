@@ -1,0 +1,4 @@
+code=200 ttfb=0.046091 size=75825
+<!DOCTYPE html>
+<html lang="ja">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="theme-color" content="#ffffff"><title>kotobase 検索</title><meta name="description" content="索引ブロックをストレージ面から読んで、この画面の中で検索する。"><stylTue Sep 15 02:14:58 JST 2026

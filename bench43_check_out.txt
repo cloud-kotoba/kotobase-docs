@@ -1,0 +1,1 @@
+['time: 2026-09-05 09:37:07 JST', 'run122A all=20 ok=20 cold(>=0.5s)=0 p50=0.042s warm range=0.034-0.064', 'run122B all=20 ok=20 cold(>=0.5s)=0 p50=0.046s warm range=0.034-0.140', 'run122C all=20 ok=20 cold(>=0.5s)=0 p50=0.044s warm range=0.039-0.060', 'landing-control all=20 ok=20 cold(>=0.5s)=0 p50=0.076s warm range=0.040-0.101']

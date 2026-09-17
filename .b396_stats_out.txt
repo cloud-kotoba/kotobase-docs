@@ -1,0 +1,9 @@
+run396A: n=20 cold=3 p50=0.070 max=2.067 min=0.048 non200=[]
+run396B: n=20 cold=0 p50=0.056 max=0.155 min=0.046 non200=[]
+run396C: n=20 cold=0 p50=0.062 max=0.204 min=0.043 non200=[]
+land: n=20 cold=0 p50=0.050 max=0.356 min=0.042 non200=[]
+TOTAL_200=80
+run396A cold idx: [(1, 1.111842), (2, 1.273232), (6, 2.067255)]
+run396B cold idx: []
+run396C cold idx: []
+rc=0

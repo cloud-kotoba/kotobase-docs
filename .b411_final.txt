@@ -1,0 +1,7 @@
+===FETCH-BOTH===
+===REFS===
+HEAD: 1bf704b519747a14a71e1d23a2b4206c6fce1c5b
+net-kotobase/main: 1bf704b519747a14a71e1d23a2b4206c6fce1c5b
+bench_fetch/main: 1bf704b519747a14a71e1d23a2b4206c6fce1c5b
+===DIVERGENCE-HEAD-NK===
+0	0

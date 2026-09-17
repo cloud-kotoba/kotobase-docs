@@ -1,0 +1,4 @@
+31434 "q"
+34458 "sparql"
+47831 "transact"
+68601 "kotobase.physical-index-qualification-observation.v1"

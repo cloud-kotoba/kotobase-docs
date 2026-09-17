@@ -1,0 +1,19 @@
+--- remotes ---
+bench_fetch	https://github.com/net-kotobase/docs (fetch)
+bench_fetch	https://github.com/net-kotobase/docs (push)
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+--- fetch ---
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+rc=0
+--- status ---
+ M query-cosientist.md
+--- status done ---
+--- HEAD now ---
+8e8f56f rank 150: fold falsify160 run345 (9/60) + bench148 run346 (3/60) -> K-Z3 12hr(9/7) 12/120 ~10% 2-set mid-high; run345A 6/20 heavy attenuated to run346 3/60 single-window; rank order unchanged; NEXT K-Z3 12hr n-add run347
+b1cb9c3 bench 第148回: K-Z3 12hr band n-add run346A-C (cold 3/60, control quiet, run345 relabeled to run346)
+74fba58 rank 149: fold falsify159 run342 + cosientist122 run343 + bench147 run344 -> 11hr(9/7) 23/360 ~6.4% 6-set mid-band; heavy run341A -> run342 3/20 -> run343 1/60 衰减, run344A 5/20 weak re上振re but heavy>=6/20 re達せず 帯内1窓即消失維持; K-Q1/K-Z2/K-S1/K-S2 変動なし, K-Z3 open, rank order unchanged; NEXT K-Z3 12hr-band n-add run345
+--- HEAD vs remote ---
+8e8f56f910f4f64d7dc77c4e5ad0b9a15a4a379a
+8e8f56f910f4f64d7dc77c4e5ad0b9a15a4a379a

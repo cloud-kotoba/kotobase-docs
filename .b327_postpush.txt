@@ -1,0 +1,6 @@
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+=== remote top 2 ===
+d8f6902 bench 138: K-Z3 7時台 run327A-C n-add cold 2/60 (~3.3%) (A idx8/idx18 散発 max 0.9725s, B/C+CTRL 0/20 control 完全静穏 分離成立, 正 endpoint search.kotobase.net/search?q=test, host load 24-86 extreme gate-exempt production HTTP, p50 38-55ms clean; run ID collision falsify151 が run326 先行使用のため run327 改番; 7時台 clean separable 通算 11/360 ~3.1% 低位帯, heavy run271A 非再現52セット; traffic-independence counter-evidence; status/rank to rank)
+9d2260d falsify 151: K-Z3 7時台 n-add run326A-C cold 2/60 (~3.3%) (run326A 単発散発 1.5311s idx9 / 0.8244s idx14, B/C+CTRL 0/20 control 完全静穏 分離成立, host load 132-143 extreme gate-exempt production HTTP, p50 46-66ms 上振れ最小 clean; 7時台 clean separable 通算 9/300 ~3.0% 低位帯, heavy run271A 非再現51セット; traffic-independence counter-evidence; status/rank to rank)
+=== status of doc ===

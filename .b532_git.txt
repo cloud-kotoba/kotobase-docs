@@ -1,0 +1,7 @@
+32c1a5f falsify 第252回 (2026-09-15 00:31 JST): K-Z3 23時台帯直後枠 run622A-C cold 6/60 (~10.0%), control 0/60 分離成立 — evidence 追記 + iter log
+8a47e9d bench run621A-C: K-Z3 23時台 (9/14) n-add, cold 3/60, control separated; search endpoint 301 読替 (search.yataverse.com / control kotobase.net/)
+c621144 rank 第272回: K-Z3 9/14 夜帯 fold (falsify run584 19時台 cold 1/60 control 分離, bench run619 20時台 cold 0/60 control 分離); 19時台 4日系列 spread ~10倍, 20時台日次ペア; search endpoint 301 redirect 運用注記; NEXT K-Z3 23時台 run620
+32c1a5f falsify 第252回 (2026-09-15 00:31 JST): K-Z3 23時台帯直後枠 run622A-C cold 6/60 (~10.0%), control 0/60 分離成立 — evidence 追記 + iter log
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+32c1a5f falsify 第252回 (2026-09-15 00:31 JST): K-Z3 23時台帯直後枠 run622A-C cold 6/60 (~10.0%), control 0/60 分離成立 — evidence 追記 + iter log

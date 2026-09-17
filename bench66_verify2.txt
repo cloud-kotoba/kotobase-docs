@@ -1,0 +1,6 @@
+218eb87 docs: bench 第66回 evidence — K-Z3 4時台 2 セット目 run183A-C (cold 0/60 完全静穏, 4時台通算 2/120 ~1.7% 低位帯) + bench65 commit 修復の iteration log
+7e0f606 docs: bench 第65回 evidence — K-Q1 transact 401 診断 (authn chain 200/201 で query 200, transact のみ 401 即断 = endpoint 固有) + K-Z3 4時台 run182A-C (cold 2/60 低位, control 静穏) + iteration log
+8ca8d30 docs: bench 第65回 evidence — K-Q1 transact 401 3例目 + step 別診断 (authn chain 健全, transact 固有) + K-Z3 4時台帯初計測 run182A-C (cold 2/60)
+aadd539 docs: bench 第64回 evidence — K-Z3 3時台 2 セット目 run181A-C (cold 1/60 単発, run180A 多発は即時非再現) + bench63 記録修復の iteration log
+218eb8745c924060547b6dd3533a410e00d731ae
+218eb8745c924060547b6dd3533a410e00d731ae

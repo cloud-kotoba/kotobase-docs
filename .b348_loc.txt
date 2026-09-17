@@ -1,0 +1,112 @@
+total lines: 2288
+--- K-Z3 evidence line at index 278 (1-based 279) length 125388 ---
+LAST 900 chars:
+実測, gate 7.5 超出) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): cold(>=0.5s) 6/0/0 per 20 = 6/60 (~10%) — run347A cold 6/20 (1.2721s/0.9677s/1.9807s/1.3052s/0.9602s/1.2565s 散発クラスタ) p50 99.6ms / run347B cold 0/20 p50 60.8ms max 106.3ms / run347C cold 0/20 p50 85.7ms max 180.5ms, control (kotobase.net/signup) cold 0/20 p50 84.4ms max 470.1ms 完全静穏で control 分離成立、cold 群は search 側に局在。run347A cold 6/20 は heavy (>=6/20) クラスタで、12時台帯内では run345A 6/20 に続く 2 回目の heavy 再出現 (run346 3/60 散発単発の直後再上振れ — run331A 9/20 heavy 型の 12時台再出現系, 帯内 heavy の再発は「帯内 1 窓即消失」型を越える帯水準での持続性を示唆)。runA 6/20 は B/C 0/20 + control 0/20 で即消失 (heavy>=6/20 の帯内維持は B/C 0/60 で未確認)。12時台 (9/7) 通算 = run345 9/60 + run346 3/60 + 本 tick 6/20 = 18/180 (~10%) の 3 セット中〜高位帯候補 — 12時台は日中帯で cold 濃度 10% 級の high-band 候補として帯水準が立ち始めた (日中帯 traffic 依存説の方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変)。ただし帯水準確定・機構判断には rank 追加 n を要する。status 判定は rank に委ねる (rank 専門)。
+
+--- iterlog candidate at index 8 (1-based 9): このファイルの hypothesis population と Iteration log を通じてのみ協調する。 ---
+    line 10: 
+    line 11: ## 対象と測定点
+
+--- iterlog candidate at index 41 (1-based 42): | net-kotobase-rank | status 遷移 / rank 更新 / 新仮説登録 / Iteration log / NEXT 指定 | `2-59/15` | ---
+    line 43: | net-kotobase-bench | 当該仮説行の **evidence 欄への追記のみ** + 測定条件の記録 | `7-59/15` |
+    line 44: | net-kotobase-cosientist (コア) | 上記すべて + コード変更の実装 (測定で qualify したもののみ) | `41 * * * *` |
+
+--- iterlog candidate at index 359 (1-based 360): ## Iteration log ---
+    line 361: - 2026-09-07: rank 第150回。12:26 JST tick。HEAD b1cb9c3 = bench 第148回 (12:21, K-Z3 12時台 run346 cold 3/60) = remote net-kotobase/main (bench_fetch) 一致 (gi
+    line 362: - 2026-09-07: **falsify 第160回**。12:11 JST tick。HEAD 74fba58 = bench 第147回 (12:01, K-Z3 11時台 run344 cold 5/60) = remote net-kotobase/main 一致 (git fetch
+
+--- iterlog candidate at index 360 (1-based 361): - 2026-09-07: rank 第150回。12:26 JST tick。HEAD b1cb9c3 = bench 第148回 (12:21, K-Z3 12時台 run346 cold 3/60) = remote net-koto ---
+    line 362: - 2026-09-07: **falsify 第160回**。12:11 JST tick。HEAD 74fba58 = bench 第147回 (12:01, K-Z3 11時台 run344 cold 5/60) = remote net-kotobase/main 一致 (git fetch
+    line 363: - 2026-09-07: bench 第148回。12:21 JST tick。HEAD 74fba58 = rank 第149回 (12:05) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0 実測; worktree 
+
+--- iterlog candidate at index 361 (1-based 362): - 2026-09-07: **falsify 第160回**。12:11 JST tick。HEAD 74fba58 = bench 第147回 (12:01, K-Z3 11時台 run344 cold 5/60) = remote n ---
+    line 363: - 2026-09-07: bench 第148回。12:21 JST tick。HEAD 74fba58 = rank 第149回 (12:05) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0 実測; worktree 
+    line 364: - 2026-09-07: rank 第149回。12:05 JST tick。HEAD cc6e581 = bench 第147回 (12:01, K-Z3 11時台 run344) = remote net-kotobase/main (bench_fetch) 一致 (git fetch + 
+
+--- iterlog candidate at index 362 (1-based 363): - 2026-09-07: bench 第148回。12:21 JST tick。HEAD 74fba58 = rank 第149回 (12:05) = remote net-kotobase/main 一致 (git fetch + re ---
+    line 364: - 2026-09-07: rank 第149回。12:05 JST tick。HEAD cc6e581 = bench 第147回 (12:01, K-Z3 11時台 run344) = remote net-kotobase/main (bench_fetch) 一致 (git fetch + 
+    line 365: - 2026-09-07: bench 第147回。12:01 JST tick。HEAD f4bc8ea = cosientist 第122回 (11:41, K-Z3 11時台 run343 cold 1/60) = remote net-kotobase/main 一致 (git fetch 
+
+--- iterlog candidate at index 363 (1-based 364): - 2026-09-07: rank 第149回。12:05 JST tick。HEAD cc6e581 = bench 第147回 (12:01, K-Z3 11時台 run344) = remote net-kotobase/main  ---
+    line 365: - 2026-09-07: bench 第147回。12:01 JST tick。HEAD f4bc8ea = cosientist 第122回 (11:41, K-Z3 11時台 run343 cold 1/60) = remote net-kotobase/main 一致 (git fetch 
+    line 366: - 2026-09-07: cosientist 第122回。11:41 JST tick。HEAD 8c5d4b5 = rank 第148回 (typo-fix amend) = remote net-kotobase/main 一致 (worktree detached HEAD のため git
+
+--- iterlog candidate at index 364 (1-based 365): - 2026-09-07: bench 第147回。12:01 JST tick。HEAD f4bc8ea = cosientist 第122回 (11:41, K-Z3 11時台 run343 cold 1/60) = remote ne ---
+    line 366: - 2026-09-07: cosientist 第122回。11:41 JST tick。HEAD 8c5d4b5 = rank 第148回 (typo-fix amend) = remote net-kotobase/main 一致 (worktree detached HEAD のため git
+    line 367: - 2026-09-07: falsify 第159回。11:35 JST tick。HEAD 8c5d4b5 = rank 第148回 (typo-fix; in-flight で bench 第146回 1ee1193b → rank 第148回 8c5d4b5 へ前進) = remote ne
+
+--- iterlog candidate at index 366 (1-based 367): - 2026-09-07: falsify 第159回。11:35 JST tick。HEAD 8c5d4b5 = rank 第148回 (typo-fix; in-flight で bench 第146回 1ee1193b → rank  ---
+    line 368: - 2026-09-07: rank 第148回。11:36 JST tick。HEAD 6fbf87b2 = rank 第147回 (11:20, K-Z3 11hr fold run339/340 後 NEXT run341) = remote net-kotobase/main (bench_
+    line 369: - 2026-09-07: bench 第146回。11:30 JST tick。HEAD 6fbf87b2 = rank 第147回 (11:13, K-Z3 11hr fold run339/340, NEXT run341) = remote net-kotobase/main 一致 (git
+
+--- iterlog candidate at index 367 (1-based 368): - 2026-09-07: rank 第148回。11:36 JST tick。HEAD 6fbf87b2 = rank 第147回 (11:20, K-Z3 11hr fold run339/340 後 NEXT run341) = re ---
+    line 369: - 2026-09-07: bench 第146回。11:30 JST tick。HEAD 6fbf87b2 = rank 第147回 (11:13, K-Z3 11hr fold run339/340, NEXT run341) = remote net-kotobase/main 一致 (git
+    line 370: - 2026-09-07: rank 第147回。11:13 JST tick。HEAD 36891cf = bench 第145回 (11:10, K-Z3 11時台 run340 cold 3/60, 但し sweep commit が本 rank 第147回の先行 entry を誤って削除 —
+
+--- iterlog candidate at index 368 (1-based 369): - 2026-09-07: bench 第146回。11:30 JST tick。HEAD 6fbf87b2 = rank 第147回 (11:13, K-Z3 11hr fold run339/340, NEXT run341) = re ---
+    line 370: - 2026-09-07: rank 第147回。11:13 JST tick。HEAD 36891cf = bench 第145回 (11:10, K-Z3 11時台 run340 cold 3/60, 但し sweep commit が本 rank 第147回の先行 entry を誤って削除 —
+    line 371: - 2026-09-07: bench 第145回。11:10 JST tick。HEAD 5f52235 = bench 第144回 (10:57, K-Z3 10時台 run338 cold 1/60) = remote net-kotobase/main 一致 (git fetch + rev
+
+--- iterlog candidate at index 370 (1-based 371): - 2026-09-07: bench 第145回。11:10 JST tick。HEAD 5f52235 = bench 第144回 (10:57, K-Z3 10時台 run338 cold 1/60) = remote net-kot ---
+    line 372: - 2026-09-07: falsify 第158回。11:05 JST tick。HEAD 5f52235 = bench 第144回 (10:57, K-Z3 10時台 run338 cold 1/60) = remote net-kotobase/main 一致 (fetch + rev-p
+    line 373: - 2026-09-07: bench 第144回。10:57 JST tick。HEAD 2501f53 = cosientist 第120回 (10:54, K-Z3 10時台 run337-indep cold 0/60) = remote net-kotobase/main 一致 (git 
+
+--- iterlog candidate at index 371 (1-based 372): - 2026-09-07: falsify 第158回。11:05 JST tick。HEAD 5f52235 = bench 第144回 (10:57, K-Z3 10時台 run338 cold 1/60) = remote net-k ---
+    line 373: - 2026-09-07: bench 第144回。10:57 JST tick。HEAD 2501f53 = cosientist 第120回 (10:54, K-Z3 10時台 run337-indep cold 0/60) = remote net-kotobase/main 一致 (git 
+    line 374: - 2026-09-07: cosientist 第120回。10:54 JST tick。HEAD 2501f53 = falsify 第157回 (10:49, K-Z3 10時台 run337 cold 6/60) = 本地 commit 先端 (remote net-kotobase/mai
+
+--- iterlog candidate at index 372 (1-based 373): - 2026-09-07: bench 第144回。10:57 JST tick。HEAD 2501f53 = cosientist 第120回 (10:54, K-Z3 10時台 run337-indep cold 0/60) = rem ---
+    line 374: - 2026-09-07: cosientist 第120回。10:54 JST tick。HEAD 2501f53 = falsify 第157回 (10:49, K-Z3 10時台 run337 cold 6/60) = 本地 commit 先端 (remote net-kotobase/mai
+    line 375: - 2026-09-07: falsify 第157回。10:49 JST tick。HEAD 1de4600 = rank 第146回 (10:33, fold run333-335, NEXT run336) = remote net-kotobase/main 一致 (fetch + rev-
+
+--- iterlog candidate at index 374 (1-based 375): - 2026-09-07: falsify 第157回。10:49 JST tick。HEAD 1de4600 = rank 第146回 (10:33, fold run333-335, NEXT run336) = remote net- ---
+    line 376: - 2026-09-07: bench 第143回。10:40 JST tick。HEAD bd2018d = falsify 第156回 (10:32, K-Z3 10時台 run335) = remote net-kotobase/main 一致 (fetch + rev-parse 比較, 僢
+    line 377: - 2026-09-07: rank 第146回。10:33 JST tick。HEAD bd2018d = falsify 第156回 (10:32, K-Z3 10時台 run335 cold 2/60, run334 消費後) = remote net-kotobase/main 一致。ran
+
+--- iterlog candidate at index 375 (1-based 376): - 2026-09-07: bench 第143回。10:40 JST tick。HEAD bd2018d = falsify 第156回 (10:32, K-Z3 10時台 run335) = remote net-kotobase/ma ---
+    line 377: - 2026-09-07: rank 第146回。10:33 JST tick。HEAD bd2018d = falsify 第156回 (10:32, K-Z3 10時台 run335 cold 2/60, run334 消費後) = remote net-kotobase/main 一致。ran
+    line 378: - 2026-09-07: **falsify 第156回**。10:31 JST tick。HEAD 24c8a44 = bench 第142回 (10:25, K-Z3 10時台 run334 cold 2/60) = remote net-kotobase/main (bench_fetch)
+
+--- iterlog candidate at index 376 (1-based 377): - 2026-09-07: rank 第146回。10:33 JST tick。HEAD bd2018d = falsify 第156回 (10:32, K-Z3 10時台 run335 cold 2/60, run334 消費後) = r ---
+    line 378: - 2026-09-07: **falsify 第156回**。10:31 JST tick。HEAD 24c8a44 = bench 第142回 (10:25, K-Z3 10時台 run334 cold 2/60) = remote net-kotobase/main (bench_fetch)
+    line 379: - 2026-09-07: bench 第142回。10:26 JST tick。HEAD 推測せず (worktree detached HEAD fetch 系取り込み)。live smoke 200 (/, /signup; pre-run 計測)。host load1 88.90 (10:2
+
+--- iterlog candidate at index 397 (1-based 398): - 2026-09-07: bench 第133回。06:42 JST tick。HEAD 86088ae = rank 第140回 (run316+run317 fold, 06:25) = remote net-kotobase/mai ---
+    line 399: - 2026-09-07: rank 第141回。06:32 JST tick。HEAD 86088ae = rank 第140回自身 (06:25 commit, run316/317 fold) = remote net-kotobase/main 一致 (fetch + rev-parse 比
+    line 400: - NEXT: K-Z3 current-band(6時台) n-add — 現時刻 06:32 は 6時台 (6時台帯 n=5 セット run315 2/60 · run316 1/60 · run317 0/60 · run318 0/60 · run319 0/60 通算 3/300 ~1.0
+
+--- iterlog candidate at index 443 (1-based 444): - 2026-09-07: rank 第126回。02:33 JST tick。HEAD 36e4e50 = bench 第117回 (run287A-C, 02:22-02:24, 2時台 n 積み増し, cold 1/60 ~1.7%) ---
+    line 445: - 2026-09-07: bench 第117回。02:22 JST tick。HEAD cf1c37d = remote net-kotobase/main 一致 (fetch + rev-parse 比較, 乖離 0; worktree detached HEAD のため git pull -
+    line 446: - 2026-09-07: rank 第125回。02:18 JST tick。HEAD acab6cd = rank 第124回自身 = remote net-kotobase/main 一致 + bench_fetch/main 一致 (git fetch --all --prune rc 0,
+
+--- iterlog candidate at index 445 (1-based 446): - 2026-09-07: rank 第125回。02:18 JST tick。HEAD acab6cd = rank 第124回自身 = remote net-kotobase/main 一致 + bench_fetch/main 一致  ---
+    line 447: - 2026-09-07: rank 第124回。02:03 JST tick。HEAD da68e15 = falsify 第129回 (run284A-C, 2時台帯初計測 run284, 02:01-02:02, 2時台(深夜帯) n-add, cold 1/60 ~1.7% — run284
+    line 448:   NEXT: K-Z3 2時台(深夜帯) n 積み増し継続 — 現時刻帯 2時台へ移行済み (2時台帯初 run284 1/60 ~1.7% が立ったが帯 n=1 のみ)。1時台は 9 セット 13/540 ~2.4% の低〜中位帯候補 (run283 完全静穏で連続 cold>0 途切れ, he
+
+--- iterlog candidate at index 578 (1-based 579): - 2026-09-06: bench 第94回 (run239)。20:00 JST tick。HEAD 5189530 = remote net-kotobase/main 先端 (falsify 第105回 run238 まで取込済み ---
+    line 580: - 2026-09-06: rank 第102回。19:33 JST tick。HEAD 40153c4 = remote net-kotobase/main 一致 (git fetch net-kotobase rc 0, 乖離 0; detached HEAD のため fetch + rev-p
+    line 581: NEXT: K-Z3 19時台 n 積み増し継続 (rank 第101回 NEXT を維持 — 19時台 3 セット 12/180 ~6.7% 済み、18時台 18/240 ~7.5% と同水準の中間帯で「18-19時台の低位帯から中間帯への弱い遷移方向」が 2 帯 3 セット連続で継続中。cont
+
+--- iterlog candidate at index 600 (1-based 601): - 2026-09-06: falsify 第97回。17:01 JST tick。worktree detached HEAD のため fetch net-kotobase + rev-parse で同期確認 (HEAD f3ef2bc  ---
+    line 602: - 2026-09-06: rank 第93回。16:50 JST tick。HEAD cc98efc = fetch 後 net-kotobase/main 先端一致
+    line 603:   (乖離 0, detached HEAD のため pull 不可・rev-parse で比較)。rank 第92回 (c0da368, 16:34)
+
+--- iterlog candidate at index 620 (1-based 621): - 2026-09-06: falsify 第96回。16:46 JST tick。worktree detached HEAD のため fetch net-kotobase + rev-parse で同期確認 (HEAD c0da3682 ---
+    line 622: - 2026-09-06: rank 第92回。16:34 JST tick。HEAD cb05bd7 = fetch 後 net-kotobase/main 先端一致
+    line 623:   (乖離 0)。rank 第91回 (c31f650, 16:17) 以降の新規 evidence は 2 本、いずれも K-Z3 16時台 run224
+
+--- iterlog candidate at index 639 (1-based 640): - 2026-09-06: falsify 第95回。16:30 JST tick（16:31:51 計測開始）。worktree detached HEAD のため git fetch net-kotobase + rev-parse で ---
+    line 641: - 2026-09-06: rank 第91回。16:17 JST tick。HEAD bdf2d4e = fetch 後 net-kotobase/main 先端一致
+    line 642:   (git pull --ff-only 完了, 乖離 0)。rank 第90回 (5923900, 15:33) 以降の新規 evidence は 5 本、
+
+--- iterlog candidate at index 675 (1-based 676): - 2026-09-06: falsify 第73回。07:31 JST tick。worktree detached HEAD のため fetch net-kotobase で取り込み確認 (HEAD 24eb7de = fetch 後  ---
+    line 677: - 2026-09-06: rank 第71回。07:36 JST tick。worktree detached HEAD のため fetch net-kotobase + ancestor 比較で取り込み (fetch rc 0, HEAD 24eb7de = fetch 後 net-kotoba
+    line 678: - 2026-09-06: bench 第73回。07:40 JST tick。worktree detached HEAD のため fetch net-kotobase + ancestor 比較で取り込み (fetch rc 0, HEAD 07b91b0 = fetch 後 net-kotob
+
+--- iterlog candidate at index 2167 (1-based 2168): - 2026-09-06: bench 第64回。03:47 JST tick。worktree detached HEAD のため fetch + net-kotobase/main 比較で取り込み (fetch rc 0, HEAD 3 ---
+    line 2169: - 2026-09-06: rank 第63回。03:20 JST tick。※worktree detached HEAD のため fetch + net-kotobase/main 比較で取り込み (fetch rc 0, HEAD e05d41e1 = fetch 後 net-kotobase
+    line 2170: 
+
+--- iterlog candidate at index 2171 (1-based 2172): - 2026-09-06: bench 第66回。04:14 JST tick。worktree detached HEAD のため fetch + net-kotobase/main 比較で取り込み (fetch rc 0, HEAD a ---
+    line 2173: - 2026-09-06: bench 第65回。04:02 JST tick。worktree detached HEAD のため fetch + net-kotobase/main 比較で取り込み (fetch rc 0, HEAD aadd539 = fetch 後 net-kotobase/
+    line 2174: - 2026-09-06: rank 第64回。03:47 JST tick。※worktree detached HEAD のため fetch + net-kotobase/main 比較で取り込み (fetch rc 0, HEAD 37449571 = fetch 後 net-kotobase

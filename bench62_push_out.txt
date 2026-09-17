@@ -1,0 +1,9 @@
+rc 0
+
+remote: 
+remote: Create a pull request for 'net-kotobase' on GitHub by visiting:        
+remote:      https://github.com/net-kotobase/docs/pull/new/net-kotobase        
+remote: 
+To github.com:net-kotobase/docs
+ * [new branch]      HEAD -> net-kotobase
+

@@ -1,0 +1,4 @@
+202A: n=20 non200=0 cold>=0.5s=4 cold_vals=[1.02, 0.938, 1.038, 0.858] p50=48.6ms max=1038.1ms
+202B: n=20 non200=0 cold>=0.5s=0 cold_vals=[] p50=38.9ms max=61.0ms
+202C: n=20 non200=0 cold>=0.5s=0 cold_vals=[] p50=38.9ms max=89.4ms
+CTRL: n=20 non200=0 cold>=0.5s=0 cold_vals=[] p50=52.2ms max=259.1ms

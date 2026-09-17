@@ -1,0 +1,8 @@
+p='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md'
+INS = " falsify 2026-09-06 (第116回, K-Z3 22時台 n 積み増し run254A–C — bench 第102回 run253 と同時刻帯 (22:32) の独立計測で ID 衝突のため run254 に読み替え (run123/124, run167/168, run253-另行前例に準拠), 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 22:32:39–22:33:14 JST, 全 80/80 200, 正 endpoint search.kotobase.net/search?q=test, host load1 86.78→85.93 (22:32/22:33 uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): cold(>=0.5s) 1/1/0 per 20 = 2/60 (~3.3%) — run254A cold 1/20 (1.961s, 散発) p50 118.5ms / run254B cold 1/20 (1.475s, 散発) p50 141.0ms / run254C cold 0/20 p50 101.6ms — landing control (kotobase.net/signup, 同時刻, n=20, 全 200) は cold 0/20 p50 113.1ms max 218ms と control 分離成立、cold 群は search 側に局在 (単発散発型, run252A/253A 型 heavy burst は非再現)。ただし本 tick は host load 86–103 高騰 tick で search p50 (102–141ms) と control p50 (113ms) が同時に quiet-tick の 40–60ms 帯から全体的に上振れしており cold 濃度判定 (2/60) への影響は限定的だが not-separated 注記付き。22時台通算は run252 (9/60 borderline, host load 高騰込) + bench run253 (6/60 clean-tick 分離成立) + 本 tick run254 (2/60) = 17/180 (~9.4%) で 21時台 (17/420 ~4.0%) と 9/5 22時台 (7/180 ~3.9%) より高位 — bench run253 (host load 53, control 完全静穏) が clean-tick で 22時台高位を再現支持し、本 tick run254 (host load 高騰) は独立方向の弱い支持に留まる。夜帯 traffic 遷移説の判定は rank 判断に委ねる (rank 専門)。status 判定は rank に委ねる"
+lines=open(p,encoding='utf-8').readlines()
+lines[242]=lines[242].rstrip('\n')+INS+"\n"
+open(p,'w',encoding='utf-8').write("".join(lines))
+cnt=open(p,encoding='utf-8').read().count("run254")
+open('/tmp/kz3_ins.txt','w',encoding='utf-8').write("run254 occurrences: %d\n"%cnt)
+print("OK run254 occ=%d"%cnt)

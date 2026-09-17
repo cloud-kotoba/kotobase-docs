@@ -1,0 +1,23 @@
+13: ;; kotoba-lang/kotobase-client's kotobase.cacao/kotobase.cid -- the SAME
+14: ;; primitives kotoba-lang/kotobase-cljc-worker (the actual live
+33: ;; tx/txRange/log/sync) delegates to kotoba-lang/kotobase-server (2026-07-07,
+37: ;; kotoba-lang/kotobase-cljc-worker already had, more completely, in live
+112: :deps {io.github.kotoba-lang/kotobase-peer
+113:        {:git/url "https://github.com/kotoba-lang/kotobase-peer.git"
+189:        io.github.kotoba-lang/kotobase-server
+190:        {:git/url "https://github.com/kotoba-lang/kotobase-server.git"
+218:        io.github.kotoba-lang/kotobase-engine-contract
+219:        {:git/url "https://github.com/kotoba-lang/kotobase-engine-contract.git"
+221:        io.github.kotoba-lang/kotobase-engine-lsm
+222:        {:git/url "https://github.com/kotoba-lang/kotobase-engine-lsm.git"
+224:        io.github.kotoba-lang/kotobase-storage
+225:        {:git/url "https://github.com/kotoba-lang/kotobase-storage.git"
+227:        io.github.kotoba-lang/kotobase-client
+228:        {:git/url "https://github.com/kotoba-lang/kotobase-client.git"
+233:        io.github.kotoba-lang/inga
+234:        {:git/url "https://github.com/kotoba-lang/inga.git"
+247:  ;; shadow-cljs.edn's `:deps {:aliases [:cljs]}` only loads this one alias
+251:   :extra-deps {io.github.kotoba-lang/org-ietf-chacha20-poly1305
+252:                {:git/url "https://github.com/kotoba-lang/org-ietf-chacha20-poly1305.git"
+254:                io.github.kotoba-lang/org-nist-aes
+255:                {:git/url "https://github.com/kotoba-lang/org-nist-aes.git"

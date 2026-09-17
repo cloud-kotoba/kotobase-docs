@@ -1,0 +1,10 @@
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+remote=4e24a248036f259b4eb8f93ccd0c9491e0dbc43d
+head=4e24a248036f259b4eb8f93ccd0c9491e0dbc43d
+=== status query-cosientist ===
+=== last 3 log ===
+4e24a24 bench 139: K-Z3 8時台 run329A-C cold 0/60 completely-quiet (run328 単発直後再静穏; control 0/20 p50 157ms max 465ms control sepr, host load 125 gate-exempt production HTTP; 8時台 clean separable 通算 1/120 ~0.83%; heavy run271A+54 non-reproduced; traffic-independence counter-evidence; status/rank to rank)
+85e69b5 rank 144: fold falsify151 run326 + bench138 run327 (7hr 11/360 ~3.1%) + falsify152 run328 (8hr band-first 1/60); K-Z3 open continue, rank order unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 current-band(8hr) n-add run329
+e867ae6 falsify 152: K-Z3 8時台帯初 n-add run328A-C cold 1/60 (A 単発 1.084s, B/C+CTRL 0/20 control 完全静穏 分離成立, host load 83 high tick p50 上振れ borderline note, heavy run271A+53 非再現; 8時台 帯初 ~1.7% 低位帯候補; status/rank to rank)
+verify2_done

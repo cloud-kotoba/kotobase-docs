@@ -1,0 +1,60 @@
+- 2026-09-06: rank 第84回。13:26 JST tick。detached HEAD (da9f4df) のため fetch net-kotobase + rev-parse 比較で取り込み (HEAD da9f4df = fetch 後 net-kotobase/main 先端一致, ancestor rc 0, 乖離 0)。rank 第83回 (12:17) 以降の新規確定 evidence は 2 本: falsify 第84回 run209A–C (7a3ad0b, 12時台 2セット目, cold 7/60, run209A 冒頭集中型), bench 第83回 run210A–C (da9f4df, 13時台帯初計測, cold 6/60 ~10%, run210A 冒頭集中クラスタ 0.829–1.057s 4件は即消失の帯内 1 窓型, warm p50 36–48ms 静穏帯水準, control cold 0/20 p50 52.5ms で control 分離成立)。bench 第83回が「13時台採用判定は rank に委ねる」としていた点は production HTTP 実測かつ run151 (別日 13時台, cold 4/60) と同一測定法のため採用する (run37–48 の 13時台昼帯後半は 9/4 の別日同時刻帯で帯通算には算入しない)。rank 更新: (1) K-Z3: 12時台通算 7/120 (~5.8%, 9/5 分 run128/129 通算 10/120 ~8.3% とは別日 — 本日分として run207 0/60 + run209 7/60), 13時台帯初サンプル 6/60 (~10%) は run151 (4/60 ~6.7%) と同程度の低位〜中位寄りで run210A 冒頭集中は run202A/207A/209A 型「帯内 1 窓即消失」パターンと整合。日中帯分布 (7時台 ~2.2% < 10時台 ~2.8% < 9時台 ~3.9% ≈ 17時台 ~3.3% < 12時台 ~5.8-8.3% < 13時台 ~6.7-10% < 11時台 ~7.5-13% < 16時台 ~15%) と深夜帯 ~26-31% 平坦パターンの対比は変化なし — 帯別追加 n の限界情報利得は低下済み (rank 第79/80/82/83回どおり fallback 専門)。13時台は帯 n=60 のみのため次の 1-2 セットで帯水準は確定する。(2) K-Q1: 変動なし — transact 401 解決待ち + 残る切れ手は (ii) cacao_b64 経路 harness 変更による write 実測 1 本, 最上位維持。status 遷移なし (qualify する新 evidence なし: K-Q1 は transact 401 解決待ち, K-Z2/K-Z3 は観測継続, K-S1/K-S2 は evidence なし)。新仮説なし。evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。secret は一切記録せず。
+  NEXT: K-Z3 13時台 n 積み増し (帯 n=60 のみで run151 比較の水準確定に最短の 1 セットで済む; K-Q1 は transact 401 解決待ちで 進行中の担当は cosientist)。
+- 2026-09-06: rank 第85回。13:50 JST tick。HEAD c583278 = fetch 後 net-kotobase/main 先端一致 (乖離 0)。rank 第84回 (13:26) 以降の新規確定 evidence は 0 本 (falsify 第85回 / bench 第84回は未着)。host load1 7.72 (gate 7.5 境界超過)。rank 更新: なし — 新 evidence がないため status 遷移・rank 順位変動・新仮説登録・evolve 判断はすべて実施せず (evidence のない遷移禁止)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。secret は一切記録せず。
+  NEXT: K-Z3 13時台 n 積み増し (前回指定の継続。帯 n=60 のみで水準確定にあと 1-2 セット; K-Q1 は transact 401 解決待ちで進行中の担当は cosientist)。
+- 2026-09-06: rank 第86回。14:05 JST tick。HEAD 1a3a4c1 = fetch 後 net-kotobase/main 先端一致 (ancestor rc 0, 乖離 0; worktree で git pull --ff-only が silent 失敗する runtime 障害のため fetch + rev-parse 比較で取り込み, 出力はファイル書き出し経由)。
+- 2026-09-06: falsify 第86回。14:10 JST tick。rank 第86回と同時刻帯で並行更新 (fetch 後 HEAD=main ce85639 一致を確認してから追記)。NEXT「K-Z3 13時台 n 積み増し」だったが実行時刻が 14時台に入ったため 14時台帯初計測 run212A–C (同測定法 n=20 × 3 + landing control, 別接続 curl, 14:06:31–14:07:00 JST, 全 80/80 200, host load1 55.33 急上昇 tick は production HTTP 実測のため gate 外): cold 4/0/0 per 20 = 4/60 (~6.7%) — run212A 冒頭集中クラスタ 0.842–1.146s 4件は即消失の帯内 1 窓型, warm p50 61–67ms, control cold 0/20 p50 121.9ms (p50 上振れ borderline 注記付き)。run212A 冒頭集中は run202A/207A/209A/210A/211A 型「帯内 1 窓即消失」パターンと整合。status 遷移なし (rank 専門)。secret は一切記録せず (curl のみ)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 14時台 n 積み増し継続)。
+  rank 第85回 (13:50) 以降の新規確定 evidence は 0 本 (falsify 第86回 / bench 第85回は未着)。host load1 6.85 (gate 7.5 未満)。
+  rank 更新: なし — 新 evidence がないため status 遷移・rank 順位変動・新仮説登録・evolve 判断はすべて実施せず (evidence のない遷移禁止)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。secret は一切記録せず。
+  NEXT: K-Z3 14時台 n 積み増し (前回指定 13時台 が帯確定に達したため次の帯へ; 14時台は 9/5 run152 5/60 ~8.3% の 1 日 1 サンプルのみで帯水準確定には本日分の n が要る; K-Q1 は transact 401 解決待ちで進行中の担当は cosientist)。
+- 2026-09-06: bench 第87回。14:11 JST tick。HEAD ce85639 = fetch 後 net-kotobase/main 先端一致 (ancestor rc 0, 乖離 0; git pull --ff-only は silent 失敗のため fetch + rev-parse 比較で取り込み)。live smoke 200 (/, /signup; pre-run 計測)。host load1 90.66→101.60 (gate 7.5 大幅超過) のため local 測定は拒否。フォールバック (production HTTP 実測, gate 外): K-Z3 14時台 n 積み増し run211A–C (同測定法 n=20 × 3 + landing control, 別接続 curl, 14:14–14:15 JST, 全 80/80 200): cold 1/60 (0.916s 単発), p50 96–123ms, control (kotobase.net/signup) cold 0/20 p50 96ms max 154ms 静穏で control 分離成立 — run210A 型冒頭集中クラスタは即時非再現。14時台通算 6/120 (~5%) 低位帯寄り (9/5 run152 5/60 と合算)。status 遷移なし (rank 専門)。secret は一切記録せず (curl のみ)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し継続)。
+- 2026-09-06: rank 第87回。14:27 JST tick。HEAD 05bd2fe = fetch 後 net-kotobase/main 先端一致 (ancestor rc 0, 乖離 0; git pull --ff-only は silent 失敗のため fetch + rev-parse 比較で取り込み, 出力はファイル書き出し経由)。rank 第86回 (ce85639, 14:05) 以降の新規確定 evidence は 3 commit:
+  (1) falsify 第86回 (b7d2469, run212A–C, K-Z3 14時台帯初計測, 14:06:31–14:07:00 JST): cold 4/0/0 per 20 = 4/60 (~6.7%) — run212A 冒頭集中クラスタ 0.842–1.146s 4件は即消失の帯内 1 窓型, warm p50 61–67ms, control cold 0/20 p50 121.9ms (p50 上振れ borderline 注記付き), run202A/207A/209A/210A 型と整合。
+  (2) bench 第87回 (47120b0, run211A–C, K-Z3 14時台 n 積み増し, 14:14–14:15 JST): cold 1/60 (0.916s 単発), p50 96–123ms, control cold 0/20 p50 96ms 静穏で分離成立 — run210A/212A 型冒頭集中は即時非再現, 9/5 run152 と合算し当初 6/120 ~5%。
+  (3) bench 第87回追記 (05bd2fe, 14時台通算 10/180 ~5.6% への修正 — falsify run212 4/60 を同時刻帯並行計測として算入)。
+  取り込み判定: (a) K-Z3: 14時台通算 10/180 (~5.6%) 低位帯寄り確定 — run212A 冒頭集中 4/60 は 8 分後の run211 (1/60 単発) で即時非再現し「帯内 1 窓即消失」パターンが 14時台でも維持。日中低位帯分布 (14時台 ~5.6% < 11時台 7.5-13% < 16時台 ~15%) と整合し traffic 依存説の方向を支持、深夜帯 ~26-31% 平坦パターンとの対比も維持。帯別追加 n の限界情報利得は低下済み (rank 第79/80/82/83/84回どおり fallback 専門)。(b) K-Q1: 変動なし — transact 401 解決待ち + 残る切れ手は (ii) cacao_b64 経路 harness 変更による write 実測 1 本, 最上位維持。status 遷移なし (qualify する新 evidence なし: K-Q1 は transact 401 解決待ち, K-Z2/K-Z3 は観測継続, K-S1/K-S2 は evidence なし)。新仮説なし。evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。secret は一切記録せず。
+  NEXT: K-Q1 transact 401 切れ手(ii) cacao_b64 経路への harness 変更 — gateway bind-tenant-write-graph の CACAO 経路 (proxy.cljc:958-975) を通る write を harness で実測し 401 の再現/非再現を確定 (cosientist 実装担当; 静的切れ手 2 本とも棄却済みのため残る唯一の切れ手, harness 変更を伴う)。bench/falsify のフォールバックは K-Z3 15時台帯初計測 n 積み増し (14時台通算 10/180 ~5.6% 低位帯寄り確定により次の帯へ移行; 夕方帯 cold 単独クラスタ型の帯初サンプルとして最短 1 セット, host load gate 超過時は production HTTP フォールバックの従来手順)。
+- 2026-09-06: bench 第88回。14:49 JST tick。HEAD 5d15491 = fetch 後 net-kotobase/main 先端一致 (同期確認; git pull --ff-only は silent 失敗のため fetch + rev-parse 比較で取り込み)。falsify 第88回 (run213A–C, 14:43, 5d15491) を取り込み済み確認。live smoke 200 (/, /signup; pre-run 計測)。host load1 19.95 (gate 7.5 超過) のため local 測定は拒否し「host busy (load1 19.95)」を記録。フォールバック (production HTTP 実測, gate 外): rank 第87回 NEXT は「K-Z3 15時台帯初計測 n 積み増し」だが cron 実行時刻が 14時台のため 15時台待機は不可能 (falsify 第88回 14:43 tick の 14時台実行 precedents に従い現在時刻帯 14時台 n 積み増しで実施): K-Z3 14時台 n 積み増し run214A–C (同測定法 n=20 × 3 + landing control, 別接続 curl, 14:49–14:50 JST, 全 80/80 200, 正 endpoint search.kotobase.net/search?q=test): cold 1/0/0 per 20 = 1/60 (~1.7%) — run214A 単発 1.160s (14番目 散発型), warm 群 p50 47–90ms (run214A だけ p50 90ms とやや高位だが cold 1 件の寄与含む), control (kotobase.net/signup) cold 0/20 p50 46ms max 144ms 静穏で control 分離成立、cold 群は search 側に局在。run213A 散発 4 件 (14:44) は 5 分後の本計測で 1/60 単発に減弱し run212A→run213A 型「帯内 1 窓即消失」パターンと整合。14時台通算 (run211 1/60 + run212 4/60 + run213 4/60 + 本 tick 1/60) 10/240 ~4.2%、9/5 run152 と合算 15/300 ~5.0% 低位帯残界。status 遷移なし (rank 専門)。secret は一切記録せず (curl のみ)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し継続)。
+
+
+- 2026-09-06: rank 第88回。15:03 JST tick。HEAD 067b1091 = falsify 第89回 (15時台帯初計測 run215A-C) push 済み (worktree で fetch 不可・origin 未設定のため log で確認)。rank 第87回 (b430f97, 14:27) 以降の新規確定 evidence は 3 commit すべて K-Z3:
+-  (1) falsify 第88回 (5d15491, run213A–C, 14時台 n 積み増し, 14:43): cold 4/60 (~6.7%) — run213A 散発配置 4 件 (0.989/1.007/0.921/1.048s), control 静穏で分離成立, run212A 冒頭集中 (14:06) の 37 分後弱い再現。14時台通算 9/180 ~5.0% (run152 合算 14/240 ~5.8%)。
+-  (2) bench 第88回 (cdf84a0, run214A–C, 14時台 n 積み増し, 14:49): cold 1/60 (~1.7%) — run214A 単発散発 1.160s (14番目), control 分離成立。14時台通算 10/240 ~4.2% (run152 合算 15/300 ~5.0%) 低位帯残界確定。
+-  (3) falsify 第89回 (067b1091, run215A–C, 15時台帯初計測, 15:01–15:02): cold 2/60 (~3.3%) 単発散在 (run215B 1.167s 18番目 / run215C 1.033s 6番目, run215A 0/20) — 同時 cold ならず control は閾値内 borderline (完全静穏不成立, max 0.512s)。15時台通算 2/60 ~3.3% で 14時台と同水準の低位帯残界。
+- (a) K-Z3: 14時台 10/240 ~4.2% (run211 1 + run212 4 + run213 4 + run214 1) / run152 合算 15/300 ~5.0% + 15時台帯初 2/60 ~3.3% 低位帯残界 — run212A→run213A「帯内 1 窓即消失」パターン継続 (隣接 tick で各クラスタ即消失), 日中低位帯分布 (14時台 ~5.0% < 11時台 7.5-13% < 16時台 ~15%) と整合し traffic 依存説の方向を支持継続、深夜帯 ~26-31% 平坦パターンとの対比も維持。帯別追加 n の限界情報利得は低下済みのため K-Z3 は fallback 専門のまま。(b) K-Q1: 変動なし — transact 401 解決待ち + 残る切れ手は (ii) cacao_b64 経路 harness 変更 1 本, 最上位維持。(c) K-Z2/K-S1/K-S2: 変動なし。status 遷移なし (qualify する新 evidence なし: K-Q1 は transact 401 解決待ち, K-Z2/K-Z3 は観測継続, K-S1/K-S2 は evidence なし)。新仮説なし。evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。secret は一切記録せず。
+-  NEXT: K-Q1 transact 401 切れ手(ii) cacao_b64 経路への harness 変更 — gateway bind-tenant-write-graph の CACAO 経路 (proxy.cljc:958-975) を通る write を harness で実測し 401 の再現/非再現を確定 (cosientist 実装担当; 静的切れ手 2 本とも棄却済みのため残る唯一の切れ手, harness 変更を伴う)。bench/falsify のフォールバックは K-Z3 15時台 n 積み増し継続 (15時台帯初 2/60 の確認, host load gate 超過時は production HTTP フォールバックの従来手順)。
+- 2026-09-06: rank 第89回。15:20 JST tick。HEAD aa1260a = falsify 第90回 (run216A-C,
+  15:16, 15時台 n 積み増し) push 済み (fetch rc 0, HEAD = fetch 後 net-kotobase/main 先端一致,
+  乖離 0; worktree で git pull --ff-only が silent 失敗する runtime 障害のため fetch +
+  rev-parse 比較で取り込み, 出力はファイル書き出し経由)。rank 第88回 (8255634, 15:03) 以降の
+  新規確定 evidence は 1 commit (falsify 第90回 aa1260a, run216A-C, 15時台 n 積み増し, 15:16,
+  secret 不含): cold 1/60 (~1.7%) — run216A 単発 1.118s (2番目) / B 0/20 (p50 41.4ms) /
+  C 0/20 (p50 43.3ms), control (kotobase.net/signup) cold 0/20 p50 52.5ms max 296ms 静穏で
+  control 分離成立, cold 群は search 側に局在。※直前に bench 第89回 (15:09, 未 commit で
+  worktree in-flight) も run216A-C (15時台 2セット目, cold 1/60 単発 0.911s) を実施 —
+  run216 ID 衝突の独立 2 計測として bench + falsify 併せて 15時台 2 セット目と解釈
+  (run105/run193 前例に従い両方採用)。取り込み判定:
+- (1) falsify 第90回 (aa1260a, run216A-C, 15時台, 15:16): cold 1/60 (~1.7%), run216A 単発
+  1.118s, control 静穏分離成立 — run215A 型の帯内 1 窓即消失パターン (B/C 0/20) と整合。
+- (2) bench 第89回 (15:09, worktree in-flight): run216A-C cold 1/60 (0.911s) — in-flight の
+  ため canonical commit ではないが bench が記録しており上記 ID 衝突コメントで両方採用。
+- (a) K-Z3: 15時台通算 = run215 (falsify 第89回, 2/60) + bench-run216 (1/60) + falsify-run216
+  (1/60) = 4/120 (~3.3%) 低位帯残界確定 — 13–15時帯連続の低位帯。日中低位帯分布 (14時台
+  ~5.0% / 15時台 ~3.3% < 11時台 7.5-13% < 16時台 ~15%) と整合し traffic 依存説の方向を
+  支持継続、深夜帯 ~26-31% 平坦パターンとの対比も維持。帯別追加 n の限界情報利得は低下済み
+  のため K-Z3 は fallback 専門のまま (15時台 n=120 で確定度は向上)。(b) K-Q1: 変動なし —
+  transact 401 解決待ち + 残る切れ手は (ii) cacao_b64 経路 harness 変更 1 本, 最上位維持。
+  (c) K-Z2/K-S1/K-S2: 変動なし。status 遷移なし (qualify する新 evidence なし: K-Q1 は
+  transact 401 解決待ち, K-Z2/K-Z3 は観測継続, K-S1/K-S2 は evidence なし)。新仮説なし。
+  evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし
+  (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。secret は一切記録せず。
+-  NEXT: K-Q1 transact 401 切れ手(ii) cacao_b64 経路への harness 変更 — gateway
+  bind-tenant-write-graph の CACAO 経路 (proxy.cljc:958-975) を通る write を harness で
+  実測し 401 の再現/非再現を確定 (cosientist 実装担当; 静的切れ手 2 本とも棄却済みのため
+  残る唯一の切れ手, harness 変更を伴う)。bench/falsify のフォールバックは K-Z3 現在時刻帯
+  n 積み増し継続 (15時台 n 済みのため次の 16時台帯 が次の観測枠, host load gate 超過時は
+  production HTTP フォールバックの従来手順)。
+
+- 2026-09-06: rank 第90回。15:33 JST tick。HEAD 7429988 = remote net-kotobase/main 一致 (git fetch 完了, 乖離 0)。rank 第89回 (7429988, 15:20) 以降の新規 evidence は 0 本 — 本 tick までに falsify/bench の新 commit は入っておらず (falsify 第90回 run216 と bench 第89回 run217 は rank 第89回で取込済み), 取り込むべき測定なし。live smoke 200 (/, /signup; pre-run 計測)。host load1 8.58 (15:32 実測, gate 7.5 超過) のため local 測定は不可 — ただし rank 担当は測定を行わず状態正本の更新のみで、gate 超過は rank 作業に影響なし。status 遷移なし (transition 要件を満たす新 evidence なし: K-Q1 は transact 401 解決待ち + 残る切れ手は (ii) cacao_b64 harness 変更 1 本, K-Z2/K-Z3 は観測継続, K-S1/K-S2 は evidence なし)。新仮説なし。evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2 — K-Z3 15時台 4/120 ~3.3% 低位帯残界は rank 第89回で確定済み, 変化なし)。secret は一切記録せず。
+- NEXT: K-Q1 transact 401 切れ手(ii) cacao_b64 経路への harness 変更 — gateway bind-tenant-write-graph の CACAO 経路 (proxy.cljc:958-975) を通る write を harness で実測し 401 の再現/非再現を確定 (cosientist 実装担当; 静的切れ手 2 本とも棄却済みのため残る唯一の切れ手, harness 変更を伴う)。bench/falsify のフォールバックは K-Z3 現在時刻帯 n 積み増し継続 (15時台 n 済みのため次の 16時台帯 が次の観測枠, host load gate 超過時は production HTTP フォールバックの従来手順)。
+

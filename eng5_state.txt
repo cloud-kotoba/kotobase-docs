@@ -1,0 +1,10 @@
+$ git status --short --untracked-files=no
+ M js/kotobase-graph-database-worker.js
+
+$ git log --oneline -2
+c3c508f K-Q1 engine 内訳計測: per-request block-fetch stats (L1/L2/pack/B2/miss) を観察専用カウンタ + x-kotobase-kv-stats response header として計測可能に (cosientist, rank 第44回 NEXT) — fetch path 構造変更なし
+0d04d00 testnet: enable KOTOBASE_PACK_WRITES (ADR-2608170300 step 1)
+
+$ git branch -a --list *cosient*
+* bot/cosient-20260905-kq1-kvstats
+  remotes/net-kotobase/bot/cosient-20260905-kq1-kvstats

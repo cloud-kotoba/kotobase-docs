@@ -1,0 +1,2 @@
+replaced_count= 3
+now_has_wrong= 0

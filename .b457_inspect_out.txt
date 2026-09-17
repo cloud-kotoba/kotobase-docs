@@ -1,0 +1,14 @@
+KZ3_ROW_LINE 279
+LINE_END ' traffic 依存説の方向支持継続 (深夜帯 ~26-31% 平坦パターンとの対比不変)。ただし帯初 n=1 セットで帯水準確定・機構判断には rank 追加 n を要する。status 判定は rank に委ねる (rank 専門)。'
+STARTS_WITH '| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再'
+run450 17
+run451 18
+run452 12
+run453 14
+run454 13
+run455 11
+run456 9
+run457 6
+ITERHDR_LINE 404
+NEXT_LINE '- 2026-09-08: falsify 第205回。11:03 JST tick。HEAD 95837ec = rank 第201回 (10:51, fol'
+TOTAL_LINES 2532

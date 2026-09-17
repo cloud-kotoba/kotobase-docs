@@ -1,0 +1,23 @@
+2026-09-06 17:18 JST
+---refs---
+refs/heads/bot/cosient-20260905-kz3-run129
+refs/heads/cosient-sync
+refs/heads/cosient-sync-60
+refs/heads/fzwork
+refs/heads/main
+refs/heads/manifest-rev
+refs/heads/rank-sync
+refs/remotes/net-kotobase/HEAD
+refs/remotes/net-kotobase/agent/cleanup-land-20260905
+refs/remotes/net-kotobase/agent/cleanup-review-20260905
+refs/remotes/net-kotobase/bot/cosient-20260905-kz3-run129
+refs/remotes/net-kotobase/cosient-20260905-run123-obs
+refs/remotes/net-kotobase/cosient-sync-60
+refs/remotes/net-kotobase/main
+refs/remotes/net-kotobase/net-kotobase
+refs/stash
+---upstream---
+fatal: HEAD does not point to a branch
+---count---
+309
+done

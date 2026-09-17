@@ -1,0 +1,4 @@
+run325A: n=20 all200=True cold>=0.5s=1/20 coldvals=[1.5941] p50=0.1692s max=1.5941s
+run325B: n=20 all200=True cold>=0.5s=0/20 coldvals=[] p50=0.138s max=0.3335s
+run325C: n=20 all200=True cold>=0.5s=0/20 coldvals=[] p50=0.1881s max=0.2808s
+control-signup: n=20 all200=True cold>=0.5s=0/20 coldvals=[] p50=0.1429s max=0.2768s

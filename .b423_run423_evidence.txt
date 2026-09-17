@@ -1,0 +1,9 @@
+bench run423 (K-Z3 5時台帯 n 積み増し 2 セット目, 2026-09-08 05:40-05:42 JST):
+ production HTTP (host load1 20.7-24.9, pre-run uptime 05:37 実測, gate 7.5 超過だが production 実測は gate 外). 全 80/80 200.
+ MEASURED run423A-C: cold(>=0.5s TTFB) 0/0/0 per 20 =  0/60 ~0%.
+   run423A cold 0/20 p50 47.3ms max 137.4ms; run423B cold 0/20 p50 42.8ms max 148.6ms; run423C cold 0/20 p50 45.8ms max 199.0ms.
+ landing control (kotobase.net/signup, 同時刻, n=20, 全 200): cold 0/20 p50 37.4ms max 125.6ms と完全静穏で control 分離成立 (search 側も cold 0/60 完全静穏).
+ verdict: not-separated は不成立 — run423 は完全静穏 (remainder 5時台帯 通算 = run421 4/60 ~6.7% + run423 0/60): 4/120 ~3.3% の低〜中位帯候補 2 セット;run421 の冷 4 件は即時非再現「帯内 1 窓即消失」型継続. 機構判定は rank に委ねる (rank 専門).
+ secret 不含 (curl only, no credential/token/cookie.
+ raw data: .b423_run423_A.txt / _B.txt / _C.txt / _land.txt + .b423_stats_out.txt (nearest-rank p50, cold>=0.5s TTFB, 200 codes 20/20 per file.
+ qc 追記/commit は本 tick 不可 — query-cosientist.md は並行 cron (sibling) により常時再生成/truncated され contention (run419/run421 と同型急 — rank  は scratch evidence fold へ読替可能. my HEAD commits は reset で破棄済み.

@@ -1,0 +1,62 @@
+rk41_qc_head.md:52: | K-Q1 | query | warm query p50 187ms の内訳は edge/network ではなく Worker CPU + Biscuit verify が支配的 (Biscuit verify 単体は測定済み p50 18.65ms なので、残り ~170ms は query 実行 + edge)。engine の query 実行 path を hand-profila
+rk41_qc_head.md:74: のため実施せず記録のみ — 次回 quiet-host 時に再試行。bench 2026-09-04 (第15回): 未測定 — host busy (load1 58.58, 閾値 7.5 超過のため local profiling を実施せず終了)。gate 超過継続 tick は rank NEXT (第11回) に従い K-Z2/K-Z3 の production 観測を優先した。benc
+rk41_qc_head.md:110: | K-Z2 | worker | K-Z1 の日中帯 cold 群再発 (run4 10/20 → run5 7/20, 深夜 run3 1/20) は traffic 由素の isolate 再生成が支配的であり、warm-up を高頻度化 (cron */5 → */2) するか時間帯別発火にすることで日中帯の cold 群出現率が低下する — 頻度変更前後で日中帯同時刻の同測定法 (n=2
+rk41_qc_head.md:485: 証拠 — gate 外で可能。host load 低下傾向のため、quiet-host を観測した tick は
+rk41_qc_head.md:498: 証拠 — gate 外で可能。host load 低下傾向のため、quiet-host を観測した tick は
+rk41_qc_head.md:513: 直接の証拠 — gate 外で可能。host load 低下傾向のため、quiet-host を観測した
+rk41_qc_head.md:526: control を必ず併記し not-separated を明示すること。quiet-host を観測した tick
+rk41_qc_head.md:541: 直接の証拠 — gate 外で可能。host load1 低下傾向が続き quiet-host を観測した
+rk41_qc_head.md:555: 直接の証拠 — gate 外で可能。host load1 低下傾向が続き quiet-host を観測した
+rk41_qc_head.md:570: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+rk41_qc_head.md:582: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+rk41_qc_head.md:595: 直接の証拠 — gate 外で可能。quiet-host を観測した tick は K-Q1 の local
+rk41_qc_head.md:608: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+rk41_qc_head.md:619: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+rk41_qc_head.md:635: */2 判断の直接の証拠 — gate 外で可能。quiet-host を観測した tick は K-Q1 の
+rk41_qc_head.md:669: */2 判断の直接の証拠 — gate 外で可能。quiet-host を観測した tick は K-Q1 の
+rk41_qc_head.md:683: NEXT: K-Z2/K-Z3 の夜帯 n 積み増し継続 (quiet-host を観測した tick は
+rk41_qc_head.md:902: quiet-host 到達が最も近い)。
+rk41_qc_head.md:1052: bench 第35回も 7.55 と閾値直下まで低下しており quiet-host 窓の到来が近い)、
+rk41_qc_head.md:1056: NEXT: K-Q1 (verify-session 1 重化 hand-patch の local 効果予測 — quiet-host 窓
+rk41_qc_head.md:1068: - 2026-09-05: bench 第35回。新規 evidence: K-Z3 深夜帯 0時台 run104A–C (00:43 JST, n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 7.55 (tick 開始時) は production HTTP 実測のため ga
+rk41_qc_head.md:1077: 再上昇しており quiet-host 窓は短い)。
+rk41_qc_head.md:1081: - 2026-09-05: bench 第36回。quiet-host tick (load1 5.65, 1:55 JST tick 開始実測,
+rk41_qc_head.md:1089: - 2026-09-05: rank 第36回。新規 evidence: bench 第36回の K-Q1 quiet-host 測定 2 本
+rk41_qc_head.md:1100: gate (7.5) 超過に戻ったため backend 計測は quiet-host 窓待ち。
+rk41_qc_head.md:1106: falsify 2026-09-04 プロトコルの再実施。quiet-host 窓 (< 7.5) を観測した tick は
+rk41_qc_head.md:1108: - 2026-09-05: falsify 第38回。新規 evidence: K-Z2 深夜帯 発火直後 vs 経過後 対比 run108/run109 (04:05 JST, cron */5 発火 04:05:03 直後 fire+3s と fire+~100s, n=20 × 2 + landing control, 別接続 curl, Tokyo, 全 40/40 200, host l
+rk41_qc_head.md:1114: status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — quiet-host 窓 (< 7.5) を観測した
+rk41_qc_head.md:1132: gate (7.5) 超過のため K-Q1 backend query path 計測は quiet-host 窓待ち。
+rk41_qc_head.md:1136: 直後窓 cold>0 の再現有無が機構切分けの決定打。quiet-host 窓 (< 7.5) を観測した
+rk41_qc_head.md:1164: 第1段として記録。production HTTP 実測のため quiet-host 窓待ちは不要)。
+query-cosientist.md:52: | K-Q1 | query | warm query p50 187ms の内訳は edge/network ではなく Worker CPU + Biscuit verify が支配的 (Biscuit verify 単体は測定済み p50 18.65ms なので、残り ~170ms は query 実行 + edge)。engine の query 実行 path を hand-profila
+query-cosientist.md:74: のため実施せず記録のみ — 次回 quiet-host 時に再試行。bench 2026-09-04 (第15回): 未測定 — host busy (load1 58.58, 閾値 7.5 超過のため local profiling を実施せず終了)。gate 超過継続 tick は rank NEXT (第11回) に従い K-Z2/K-Z3 の production 観測を優先した。benc
+query-cosientist.md:110: | K-Z2 | worker | K-Z1 の日中帯 cold 群再発 (run4 10/20 → run5 7/20, 深夜 run3 1/20) は traffic 由素の isolate 再生成が支配的であり、warm-up を高頻度化 (cron */5 → */2) するか時間帯別発火にすることで日中帯の cold 群出現率が低下する — 頻度変更前後で日中帯同時刻の同測定法 (n=2
+query-cosientist.md:491: 証拠 — gate 外で可能。host load 低下傾向のため、quiet-host を観測した tick は
+query-cosientist.md:504: 証拠 — gate 外で可能。host load 低下傾向のため、quiet-host を観測した tick は
+query-cosientist.md:519: 直接の証拠 — gate 外で可能。host load 低下傾向のため、quiet-host を観測した
+query-cosientist.md:532: control を必ず併記し not-separated を明示すること。quiet-host を観測した tick
+query-cosientist.md:547: 直接の証拠 — gate 外で可能。host load1 低下傾向が続き quiet-host を観測した
+query-cosientist.md:561: 直接の証拠 — gate 外で可能。host load1 低下傾向が続き quiet-host を観測した
+query-cosientist.md:576: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+query-cosientist.md:588: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+query-cosientist.md:601: 直接の証拠 — gate 外で可能。quiet-host を観測した tick は K-Q1 の local
+query-cosientist.md:614: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+query-cosientist.md:625: NEXT: K-Z2/K-Z3 の夕方帯 n 積み増し継続 (quiet-host を観測した tick は
+query-cosientist.md:641: */2 判断の直接の証拠 — gate 外で可能。quiet-host を観測した tick は K-Q1 の
+query-cosientist.md:675: */2 判断の直接の証拠 — gate 外で可能。quiet-host を観測した tick は K-Q1 の
+query-cosientist.md:689: NEXT: K-Z2/K-Z3 の夜帯 n 積み増し継続 (quiet-host を観測した tick は
+query-cosientist.md:908: quiet-host 到達が最も近い)。
+query-cosientist.md:1058: bench 第35回も 7.55 と閾値直下まで低下しており quiet-host 窓の到来が近い)、
+query-cosientist.md:1062: NEXT: K-Q1 (verify-session 1 重化 hand-patch の local 効果予測 — quiet-host 窓
+query-cosientist.md:1074: - 2026-09-05: bench 第35回。新規 evidence: K-Z3 深夜帯 0時台 run104A–C (00:43 JST, n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 7.55 (tick 開始時) は production HTTP 実測のため ga
+query-cosientist.md:1083: 再上昇しており quiet-host 窓は短い)。
+query-cosientist.md:1087: - 2026-09-05: bench 第36回。quiet-host tick (load1 5.65, 1:55 JST tick 開始実測,
+query-cosientist.md:1095: - 2026-09-05: rank 第36回。新規 evidence: bench 第36回の K-Q1 quiet-host 測定 2 本
+query-cosientist.md:1106: gate (7.5) 超過に戻ったため backend 計測は quiet-host 窓待ち。
+query-cosientist.md:1112: falsify 2026-09-04 プロトコルの再実施。quiet-host 窓 (< 7.5) を観測した tick は
+query-cosientist.md:1114: - 2026-09-05: falsify 第38回。新規 evidence: K-Z2 深夜帯 発火直後 vs 経過後 対比 run108/run109 (04:05 JST, cron */5 発火 04:05:03 直後 fire+3s と fire+~100s, n=20 × 2 + landing control, 別接続 curl, Tokyo, 全 40/40 200, host l
+query-cosientist.md:1120: status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — quiet-host 窓 (< 7.5) を観測した
+query-cosientist.md:1138: gate (7.5) 超過のため K-Q1 backend query path 計測は quiet-host 窓待ち。
+query-cosientist.md:1142: 直後窓 cold>0 の再現有無が機構切分けの決定打。quiet-host 窓 (< 7.5) を観測した
+query-cosientist.md:1170: 第1段として記録。production HTTP 実測のため quiet-host 窓待ちは不要)。

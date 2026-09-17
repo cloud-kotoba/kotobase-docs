@@ -1,0 +1,6 @@
+KZ3 line len: 103043
+=== last 300 chars of K-Z3 evidence cell ===
+ean separable 通算 (rank143) = run321 (3/60) + run322-indep (2/60) + run323 (1/60) + run325 (1/60) + 本 tick run326 (2/60) = 9/300 (~3.0%) 低位帯候補で深夜帯低位帯残界 (~1.7–2.0%) と同水準、深夜帯 traffic 最低帯での散発再出現は K-Z3 traffic 依存説への反証材料を続行 (深夜帯 ~26–31% 平坦パターンと整合方向, 帯水準確定は追加 clean-tick n 要)。status 判定は rank に委ねる (rank 専門)。
+=== line 359 (iterlog newest) first 40 chars ===
+- 2026-09-07: falsify 第151回。07:48 JST ti
+pipe count: 11

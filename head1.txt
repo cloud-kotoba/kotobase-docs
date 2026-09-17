@@ -1,0 +1,4 @@
+8172afecb92ec033ee1f121c1da14806128dde2a
+8172afe bench 2026-09-15 (215th): K-Z3 8时台 run627A-C cold 1/60, control separated
+708c5e8 falsify 第247回: K-Z3 8時台 n 積み増し run626A-C 0/60 完全静穏 (control 分離成立); 8時台通算 5/120 ~4.2%
+2f1e630 rank 第274回 (2026-09-15 07:0x JST): falsify run625 取り込み, K-Z4 3時台 3日系列完成 (16.7/18.3/8.3%), status 遷移なし, NEXT K-Z3 7時台 run626

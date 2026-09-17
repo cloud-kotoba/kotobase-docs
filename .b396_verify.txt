@@ -1,0 +1,9 @@
+=== verify run396 evidence in L279 ===
+run396 in file: 16
+bench 第177回 in file: 1
+context: , run396 は commit 未使用で衝突なし確認)。K-Z3 20時台 run396A–C 実測 (同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 20:58:17–20:58:30 JST, 全 80/80 200, secret 不含 — curl + python stats
+=== status ===
+ M query-cosientist.md
+=== git diff stat ===
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)

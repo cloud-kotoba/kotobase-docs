@@ -1,0 +1,4 @@
+// bench69 — K-Z3 6時台 n 積み増し (rank 第67回 fallback, 本 tick 独自分)
+// 同測定法: /search?q= n=20 × 3 run + landing control n=20, 別接続 curl, production 実測 (gate 外)
+// secret 不含。
+3

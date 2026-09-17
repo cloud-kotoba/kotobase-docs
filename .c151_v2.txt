@@ -1,0 +1,7 @@
+line279 total chars: 275156
+line279 last 3 chars repr: '専門)'
+line279 last 60 chars:
+継続) で traffic 依存説 の 反証材料 継続, status 判定 は rank に委ねる (rank 専門)
+line280 (first 80):    bench 2026-09-07 (第184回, K-Z3 23時台 n 積み増し run406, 同測定法 n=20 × 3 + landing con
+line281 (first 80): status 判定は rank に委ねる (rank 専門)。
+total lines: 2627

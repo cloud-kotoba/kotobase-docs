@@ -1,0 +1,7 @@
+To github.com:net-kotobase/docs
+   f8d4b17..db82376  HEAD -> main
+push rc=0
+---verify---
+fetch rc=0
+db82376fc5efba42027feb7fd339b7ceec0ca30f
+db82376fc5efba42027feb7fd339b7ceec0ca30f

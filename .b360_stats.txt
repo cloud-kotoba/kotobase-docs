@@ -1,0 +1,4 @@
+.b360_360A.txt: n=20 ok=20/20 coldcount=1 p50=0.0689s max=1.1969s cold=['1.1969']
+.b360_360B.txt: n=20 ok=20/20 coldcount=0 p50=0.0932s max=0.2444s cold=[]
+.b360_360C.txt: n=20 ok=20/20 coldcount=0 p50=0.0764s max=0.2518s cold=[]
+.b360_land.txt: n=20 ok=20/20 coldcount=0 p50=0.1264s max=0.2501s cold=[]

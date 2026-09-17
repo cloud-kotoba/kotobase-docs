@@ -1,0 +1,6 @@
+To github.com:net-kotobase/docs
+   65537a1..659081a  HEAD -> main
+push_rc=0
+=== verify ===
+659081ab0e16ae5e427a6885532644b15c5c7697
+659081ab0e16ae5e427a6885532644b15c5c7697

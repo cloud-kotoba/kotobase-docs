@@ -1,0 +1,54 @@
+=== DATE ===
+Mon Sep  7 14:23:51 JST 2026
+=== GIT STATUS ===
+?? .b327_bcnt.txt
+?? .b327_bcnt2.txt
+?? .b327_bcnt3.txt
+?? .b327_commit.sh
+?? .b327_commit.txt
+?? .b327_ee.py
+?? .b327_ee.txt
+?? .b327_end.py
+?? .b327_end.txt
+?? .b327_insert.py
+?? .b327_insert.txt
+?? .b327_postpush.sh
+?? .b327_postpush.txt
+?? .b327_precommit.sh
+?? .b327_precommit.txt
+?? .b327_reorder.py
+?? .b327_reorder.txt
+?? .b327_tail.py
+?? .b327_tail.txt
+?? .b327_verify.py
+?? .b327_verify.txt
+?? .b327_verify2.txt
+?? .b328_git.sh
+?? .b328_git2.sh
+?? .b328_next.py
+?? .b345_345A.txt
+?? .b345_345B.txt
+?? .b345_345C.txt
+?? .b345_append.py
+?? .b345_gs.sh
+?? .b345_iter.py
+?? .b345_land.txt
+?? .b345_runner.sh
+?? .b345_stats.py
+?? .b345_tail.py
+?? .b345_time.txt
+?? .b345_verify.py
+?? .b346_346A.txt
+?? .b346_346B.txt
+?? .b346_346C.txt
+=== GIT LOG ===
+30e967a bench 第155回: K-Z3 14時台帯初計測 run359 cold 7/60 (~11.7%, A 6/20 heavy) — control 完全静穏分離成立, 日中高位帯初期サンプル
+d3a6640 rank 155: fold falsify163-run354 + bench153-run355 + cosientist124-run356 + bench154-run357 + falsify164-run358 -> K-Z3 13hr(9/7) 19/480 ~4.0% 8-set midband; single-window non-sustained (run357/358 consecutive fully-quiet 2-window after run356A 5/20); rank/status/evolve unchanged; NEXT K-Z3 14hr band-first run359
+62de8f8 falsify 164: K-Z3 13hr(9/7) run358 n-add cold 0/60 fully-quiet (run358 relabeled from run356 collision w/ cosientist124; 19/480 ~4.0% 8-set midband; Quiet-window 2-consecutive) + iterlog
+e055e60 bench 154: K-Z3 13hr(9/7) run357 n-add cold 0/60 fully-quiet (run356 sibling 5/60 -> 0/60 3min decay) + iterlog
+cad715d rank 154: fold bench152 run353 (5/60) -> K-Z3 13hr(9/7) 11/180 ~6.1% 3-set midband; single-window non-sustained (run353A 5/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 14hr n-add run354
+6bdf6ff bench 第153回: K-Z3 13時台 run355 n積み増し (cold 1/60 ~1.7%, run355A 冒頭単発, B/C+control 0/60 即消滅分離成立; 帯内1窓即消滅継続, 13時台通算 14/300 ~4.7% 5-set) + iterlog (rank154 swept)
+22d4145 falsify 第163回: K-Z3 13時台 run354 n積み増し (cold 2/60 ~3.3%, run354A 散発ペア 2/20, B/C+control 0/60 即消滅分離成立; 帯内1窓即消滅継続, 13時台通算 13/240 ~5.4% 4-set) + iterlog
+9d7063a bench 第152回: K-Z3 13時台 run353 n積み増し (cold 5/60 ~8.3%, run353A 5/20 散発クラスタ, B/C+control 0/60 即消滅分離成立; 帯内1窓即消滅継続, rank153 NEXT run353 消費; 13時台通算 11/180 ~6.1% 3-set) + iterlog
+=== HOST LOAD ===
+14:23  up 2 days,  7:06, 13 users, load averages: 69.58 44.57 36.51

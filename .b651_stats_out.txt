@@ -1,0 +1,7 @@
+run651A n=20 codes_non200=0 cold=5 p50=55.6ms p90=630.4ms max=1059.1ms
+  cold vals(ms): 784.2, 630.4, 558.4, 1059.1, 540.2
+run651B n=20 codes_non200=0 cold=1 p50=54.5ms p90=117.1ms max=875.2ms
+  cold vals(ms): 875.2
+run651C n=20 codes_non200=0 cold=0 p50=49.6ms p90=122.5ms max=142.0ms
+TOTAL cold 6/60
+CONTROL n=20 codes_non200=0 cold=0 p50=62.6ms p90=154.9ms max=393.9ms

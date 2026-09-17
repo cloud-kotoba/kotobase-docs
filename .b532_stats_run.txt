@@ -1,0 +1,4 @@
+A: 200 0/20 cold 2/20 p50 35.9ms p95 523.4ms max 528.6ms coldmax 528.6ms
+B: 200 0/20 cold 0/20 p50 36.1ms p95 56.1ms max 495.4ms coldmax 0.0ms
+C: 200 0/20 cold 0/20 p50 35.2ms p95 44.2ms max 44.7ms coldmax 0.0ms
+CTRL: 200 20/20 cold 0/20 p50 39.2ms p95 60.8ms max 71.8ms coldmax 0.0ms

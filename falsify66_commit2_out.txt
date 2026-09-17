@@ -1,0 +1,11 @@
+$ git add query-cosientist.md
+
+rc=0
+$ git -c user.name=net-kotobase-falsify -c user.email=falsify@net-kotobase.local
+[detached HEAD da02d61] falsify 67 fix: K-Z3 K-Z3 run175 evidence 追記修正 (前 commit で差分取り消しになっていた分を正しく追記)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+rc=0
+$ git push net-kotobase HEAD:main
+To github.com:net-kotobase/docs
+   8f1b9c3..da02d61  HEAD -> main
+rc=0

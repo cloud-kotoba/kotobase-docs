@@ -1,0 +1,58 @@
+TIME: 2026-09-06 14:28:23 JST
+---FETCH---
+fetch_rc=0
+---HEAD---
+05bd2febbe6bad80ff1fbc71c14ff3ada6047226
+---MAIN---
+05bd2febbe6bad80ff1fbc71c14ff3ada6047226
+---AB (left=HEAD vs right=main count)---
+0	0
+---ANCESTOR (rc0 means HEAD ancestor of main)---
+ancestor_rc=0
+---STATUS---
+?? _b71_append.py
+?? _b71_append_out.txt
+?? _b71_cold.txt
+?? _b71_commit.txt
+?? _b71_eps.txt
+?? _b71_fetch_err.txt
+?? _b71_final.txt
+?? _b71_g.txt
+?? _b71_g2.txt
+?? _b71_git.txt
+?? _b71_head.txt
+?? _b71_line.txt
+?? _b71_log.txt
+?? _b71_meas.txt
+?? _b71_out.txt
+?? _b71_pull.txt
+?? _b71_pull_err.txt
+?? _b71_push.txt
+?? _b71_rc.txt
+?? _b71_verify.txt
+?? _b72_chk.txt
+?? _b72_grep.txt
+?? _b72_run192.sh
+?? _b72_run192.txt
+?? _b72_run192b.sh
+?? _b72_run192b.txt
+?? _b72_sum.py
+?? _b72_sum.txt
+?? _b72_sum2.py
+?? _b72_sum2.txt
+?? _b74_append.py
+?? _b74_append_out.txt
+?? _b74_git.txt
+?? _b74_run194.sh
+?? _b74_run194_out.txt
+?? _b74_stats.py
+?? _b74_stats_out.txt
+?? _b74_verify.txt
+?? _b77_anc.txt
+?? _b77_append.py
+---LASTCOMMITS---
+05bd2fe bench 第87回追記: 14時台通算を falsify 第86回 run212 (4/60, 同時刻帯並行計測) 込み 10/180 ~5.6% に修正
+b7d2469 falsify 86: K-Z3 14時台帯初 run212A-C evidence (cold 4/60, run212A 冒頭集中型) + iteration log 追記
+47120b0 bench 第87回: K-Z3 14時台 n 積み増し run211A-C (cold 1/60, control 分離, 14時台通算 6/120 ~5%)
+ce85639 rank 第86回: 新規 evidence 0 本, rank 更新なし, NEXT K-Z3 14時台 n 積み増し
+1a3a4c1 rank 第85回: 新規 evidence 0 本, rank 更新なし, NEXT K-Z3 13時台 n 積み増し継続

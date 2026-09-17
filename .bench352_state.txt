@@ -1,0 +1,35 @@
+=== modified tracked files ===
+ M query-cosientist.md
+?? .b327_bcnt.txt
+?? .b327_bcnt2.txt
+?? .b327_bcnt3.txt
+?? .b327_commit.sh
+?? .b327_commit.txt
+?? .b327_ee.py
+?? .b327_ee.txt
+?? .b327_end.py
+?? .b327_end.txt
+?? .b327_insert.py
+?? .b327_insert.txt
+?? .b327_postpush.sh
+?? .b327_postpush.txt
+?? .b327_precommit.sh
+?? .b327_precommit.txt
+?? .b327_reorder.py
+?? .b327_reorder.txt
+?? .b327_tail.py
+?? .b327_tail.txt
+=== in-flight run351/352 files ===
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 13:13 .b351_351A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 13:13 .b351_351B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 13:13 .b351_351C.txt
+-rw-r--r--@ 1 junkawasaki  staff   549 Sep  7 13:14 .b351_cold.py
+-rw-r--r--@ 1 junkawasaki  staff   148 Sep  7 13:14 .b351_cold_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 13:13 .b351_land.txt
+-rw-r--r--@ 1 junkawasaki  staff   472 Sep  7 13:14 .b351_loc.py
+-rw-r--r--@ 1 junkawasaki  staff   990 Sep  7 13:14 .b351_loc_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   375 Sep  7 13:13 .b351_ls.txt
+-rw-r--r--@ 1 junkawasaki  staff   860 Sep  7 13:13 .b351_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1265 Sep  7 13:14 .b351_stats.py
+-rw-r--r--@ 1 junkawasaki  staff   344 Sep  7 13:14 .b351_stats_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   196 Sep  7 13:13 .b351_time.txt

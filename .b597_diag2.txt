@@ -1,0 +1,2 @@
+line 279: starts_with_piped=True len=328017 head='| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再' tail='tatus 判定は rank に委ねる (rank 専門)。'
+line 280: starts_with_piped=True len=322777 head='| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再' tail='tatus 判定は rank に委ねる (rank 専門)。'

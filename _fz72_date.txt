@@ -1,0 +1,37 @@
+Sun Sep  6 07:13:37 JST 2026
+run191A
+run191A–C,
+run191B
+run191C
+10
+ 分離成立。cold 1/60 は run100A/116A/159B/188A 型の薄い単発型。status 判定は rank に委ねる (rank 専門)。
+kz3_run118.sh
+kz3_run122.sh
+kz3_run123.sh
+kz3_run151.sh
+kz3_run152.sh
+kz3_run153.sh
+kz3_run154.sh
+kz3_run155.sh
+kz3_run156.sh
+kz3_run169.sh
+kz3_run175.sh
+kz3_run186.sh
+kz3_run78.sh
+kz3_run79.sh
+kz3_run82.sh
+kz3_run83.sh
+kz3_run85.sh
+kz3_run86.sh
+kz3_run87.sh
+kz3_run88.sh
+kz3_run89.sh
+kz3_run90.sh
+kz3_run91.sh
+kz3_run92.sh
+kz3_run93.sh
+kz3_run94.sh
+kz3_run95.sh
+kz3_run96.sh
+kz3_run97.sh
+kz3_run98.sh

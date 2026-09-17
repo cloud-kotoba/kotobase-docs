@@ -1,0 +1,6 @@
+pos 2 ttfb 1.189062	200
+pos 3 ttfb 2.191505	200
+pos 4 ttfb 1.084860	200
+pos 5 ttfb 1.353636	200
+pos 7 ttfb 2.148194	200
+pos 9 ttfb 1.359534	200

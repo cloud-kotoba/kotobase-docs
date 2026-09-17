@@ -1,0 +1,7 @@
+=== iterlog head (lines 358-360) ===
+358 '## Iteration log'
+359 '- 2026-09-07: bench 第138回。07:53 JST tick。HEAD 9d2260d = fals'
+360 '- 2026-09-07: falsify 第151回。07:48 JST tick。HEAD 8b4ec73 = ra'
+=== K-Z3 len + run327 in line 279? ===
+len: 104230 has run327: True has run326: True
+tail 400:  で「帯内 1 窓即消失」散発単発型継続 (run322-indep 2/20, run323A 1/20, run325A 1/20, run326A 2/20 の散発減弱幅内, heavy は run271A 6/20 以降 52 セット連続非再現)。7時台 clean separable 通算 = run321 (3/60) + run322-indep (2/60) + run323 (1/60) + run325 (1/60) + run326 (2/60) + 本 run327 (2/60) = 11/360 (~3.1%) 低位帯候補で深夜帯低位帯残界 (~1.7–2.0%) と同水準、深夜帯 traffic 最低帯での散発再出現は K-Z3 traffic 依存説への反証材料を続行。status 判定は rank に委ねる (rank 専門)。secret は一切記録せず。

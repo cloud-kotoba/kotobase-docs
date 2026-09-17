@@ -1,0 +1,19 @@
+RC=0
+stdout=7dc62497d0ffe6c492c3b3b5510f1c12ad5a9fe9
+
+stderr=
+usage_rc=1
+stdout=
+stderr=file:///Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/scripts/deploy-versioned.mjs:108
+      throw new Error("usage: deploy-versioned.mjs <testnet|production> [--confirm-production <HEAD-SHA>]");
+            ^
+
+Error: usage: deploy-versioned.mjs <testnet|production> [--confirm-production <HEAD-SHA>]
+    at file:///Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/scripts/deploy-versioned.mjs:108:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:642:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v26.0.0
+

@@ -1,0 +1,4 @@
+exists: True
+access R: True
+access W: True
+read ok: '# query / worker / storage co-scientist — kotobase'

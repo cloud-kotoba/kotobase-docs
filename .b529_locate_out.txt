@@ -1,0 +1,6 @@
+KZ3_ROW 278
+KZ3_ROW_LEN 282963
+KZ3_TAIL '4 で帯水準確定・機構判断には未達 (K-Z3 open 継続, fallback 専門のまま)。status 判定は rank に委ねる (rank 専門)。'
+ILOG_AT 408
+NEXT_LINE '- 2026-09-09: rank  第233回: 03:25 JST tick HEAD 94026af = ben'
+rc=0

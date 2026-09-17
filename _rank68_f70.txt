@@ -1,0 +1,9 @@
+_rank66_append.py
+_rank67_append.py
+_rank_tick_probe.sh
+ist 実装担当が適切; bench/falsify のフォールバックは K-Z3 5時台 n 積み増し継続)。
+3
+92:cold>0 は 57 試行中 18 試行 (~32%)。深夜対比の低頻度期待に反し K-Z3 traffic 依存説は
+94:委ねる。NEXT: K-Z3 深夜帯 23時台 n 積み増し継続。
+104:75 試行中 23 試行 (~31%)。traffic 最低帯での連続再現は K-Z3 traffic 依存説への反証
+_falsify70_grep.txt

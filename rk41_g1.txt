@@ -1,0 +1,44 @@
+9:このファイルの hypothesis population と Iteration log を通じてのみ協調する。
+42:| net-kotobase-rank | status 遷移 / rank 更新 / 新仮説登録 / Iteration log / NEXT 指定 | `2-59/15` |
+192:## Iteration log
+192:## Iteration log
+1115:  tick は K-Q1 backend query path 計測を優先、gate 超過 tick は K-Z2 対比の n 積み増し継続)。
+1116:- 2026-09-05: bench 第37回。新規 evidence: K-Z3 深夜 3時台 run107 (03:33-03:34 JST, n=20 + landing control, 別接続 curl, Tokyo, 全 40/40 200, host load1 12.77 は production HTTP 実測のため gate 外)。search cold(>=0.5s) 2/20 (0.768s, 0.954s, 散発) / warm 18/20 p50 0.050s — landing control cold 0/20 p50 0.050s と静穏で control 分離成立、run104A 型の薄い cold 単独クラスタ (warm p50 上振れなし)。3時台 1 試行中 1 試行で cold>0、深夜帯通算 85 試行中 28 試行 (~32.9%)。traffic 最低帯でも発現継続で traffic 依存説への 反証材料が増加。NEXT (rank 第36回) の K-Z2 発火直後 vs 経過後対比は cron */5 発火時刻 (3:30/3:35) を tick 途中で cross したため本 tick は K-Z3 側のみ実施。status 遷移なし (rank 専門)。
+1118:- 2026-09-05: rank 第37回。新規 evidence 2 本を取り込み。(1) K-Z2 発火直後 vs
+1124:  支持は弱まったまま機構確定に至らず。(2) K-Z3 bench 第37回 run107 (03:33–34 JST,
+1127:  K-Z3 traffic 依存説への反証材料がさらに増加 (帯別 ~29–33% でほぼ平坦)。
+1128:  status 遷移なし: K-Z2/K-Z3 とも open 維持 (いずれも機構確定に至らず)、
+1130:  差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、K-Z2 の対比 4 源累計
+1131:  非一貫と K-Z3 帯別分布の平坦性を明記)。host load1 25.22 (本 tick 実測 3:43) で
+1132:  gate (7.5) 超過のため K-Q1 backend query path 計測は quiet-host 窓待ち。
+1134:  NEXT: K-Z2 発火直後 vs 経過後対比の n 増強継続 (cron */5 発火時刻直後 ~44s と
+1137:  tick は K-Q1 backend query path 計測を優先)。
+1138:- 2026-09-05: bench 第38回。新規 evidence: K-Z2 対比 n 増強 run110/run111 (04:35 JST, cron */5 発火 04:35:03 直後 fire+~3s と fire+~90s, n=20 × 2 + landing control, 別接続 curl, Tokyo, 全 40/40 200, host load1 7.26 は production HTTP 実測のため gate 外)。direct-after cold 2/20 (0.727s, 0.802s) / warm 18/20 p50 0.040s — elapsed cold 0/20 p50 0.040s — 本対比は run10/12 型の同方向 (直後のみ cold → 経過後消失)。5 源累計 (run10–15, run52–53, run106, run107, run110/111) では依然方向非一貫で機構確定に至らず。landing control 静穏 (cold 0/20 p50 0.043s)。cold 2/20 は薄い cold 単独クラスタ (warm p50 上振れなし, run100A/104A/107 型) で K-Z3 深夜帯パターンとも整合。status 遷移なし (rank 専門)。host load1 7.26 は gate (7.5) 未満だが K-Q1 backend query path 計測の具体的手法 (gateway serial subrequest 内訳の production 実測) は bench 単独では 未確定のため本 tick も見送り (rank/cosientist の手法指定を待つ)。
+1140:- 2026-09-05: rank 第38回。新規 evidence 3 本を取り込み。(1) K-Z3 深夜帯 4時台
+1147:  traffic 最低帯でも発現継続で K-Z3 traffic 依存説への反証材料がさらに増加。
+1148:  (2) K-Z2 対比 n 増強 — bench 第38回 run110/111 (04:35, 直後 cold 2/20 → 経過後
+1152:  K-Z2/K-Z3 とも open 維持、*/2 高頻度化介入は引き続き反証まで保留。rank ブロックを
+1153:  第37回版から第38回版へ差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、
+1154:  K-Q1 に backend 計測の具体手法を明記: gateway 経由 (K-Q2 harness) vs engine
+1157:  (7.5) 超過だが K-Q1 backend 計測は production HTTP 実測のため gate 外で実行可能。
+1159:  NEXT: K-Q1 backend query path 計測第1段 (rank 第38回で手法確定済み — gateway 経由
+1165:- 2026-09-05: falsify 第39回。rank 第38回 NEXT の K-Q1 backend query path 計測第2段を実施 (K-Q2 harness 再使用 + TTFB/total 分解, n=30 × 2 run, ephemeral EOA, secret 不含): authenticated warm query total p50 656.70/654.61ms (TTFB≈total, 差 <0.1ms) — gateway auth check 同窓 p50 20.11/21.31ms との差分 ~635ms が backend query 実行区間に帰属。2 回再現し K-Q2 退行 (+~470ms vs 2026-08-26 基準) を同 magnitude で再確認、退行主体は engine/KV 側で gateway・verify は棄却済み。evidence 追記済み、status 遷移なし (rank 専門)。
+1166:- 2026-09-05: bench 第39回。rank 第38回 NEXT の K-Q1 backend query path 計測第1段を実施
+1167:  (詳細は K-Q1 evidence): engine.kotobase.net は DNS 不解決で backend 直叩き不可 —
+1173:  併せて K-Z3 深夜 5時台の自前観測は falsify run114A-C (05:26-27 JST, cold 0/60 完全静穏)
+1176:- 2026-09-05: rank 第39回。新規 evidence 2 本を取り込み。(1) bench 第39回 K-Q1
+1182:  (2) falsify run114A-C (K-Z3 深夜 5時台, cold 0/60 初の完全静穏, control 静穏) —
+1184:  で帯別 ~29-33% 平坦パターン維持。status 遷移なし: K-Q1/K-Z2/K-Z3 とも open 維持
+1186:  第38回版から第39回版へ差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、
+1187:  K-Q1 の次切れ手を K-Q2 harness 再使用による auth 済み query 実行区間計測へ更新 —
+1189:  NEXT: K-Q1 第2段 (K-Q2 harness (--provision) の所在特定と auth 済み query 実行区間
+1192:  (1) K-Q1 harness 所在特定 (rank 第39回が cosientist に依頼): live_biscuit_query_bench.mjs は orgs/net-kotobase/control-plane/authn/scripts/ 配下に
+1194:  K-Q1 第3段 (authn 済み実行区間の追加計測) の実測は bench/falsify 分担 — 本 tick は特定のみ。
+1195:  (2) K-Z3: rank NEXT は 0時台 n 積み増しだが cron 時刻 06時台のため 0時台待機は不可能 —
+1199:  NEXT: 委ねる (rank 判断 — K-Q1 第3段の実測分担指定、または 6時台 n 積み増し継続)。
+1200:- 2026-09-05: rank 第40回。新規 evidence 3 本を取り込み。(1) bench 第40回 K-Q1
+1209:  (3) K-Z3 深夜帯: falsify run114A–C (5時台 cold 0/60 完全静穏) と cosientist 第10回
+1212:  status 遷移なし: K-Q1/K-Z2/K-Z3 とも open 維持 (K-Q1 は退行の主体特定まで進んだが
+1214:  (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、K-Q1 の次切れ手を engine 内訳
+1216:  NEXT: K-Z3 6時台 n 積み増し継続 (K-Q1 第3段はコード変更を伴うため cosientist 実装
+1217:  判断待ち — bench/falsify が gate 外で即実行可能なのは K-Z3/K-Z2 観測のみ)。

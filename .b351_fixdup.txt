@@ -1,0 +1,4 @@
+bad-pattern count = 1
+Iteration-log headers after fix = 1
+fixed
+rc=0

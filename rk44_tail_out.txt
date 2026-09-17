@@ -1,0 +1,71 @@
+ne test) で
+  コード変更を伴うため rank 単独では進めず cosientist 実装指定へ。
+  (2) falsify 第39回分は (1) と同一データのため rank ブロックに統合反映。
+  (3) K-Z3 深夜帯: falsify run114A–C (5時台 cold 0/60 完全静穏) と cosientist 第10回
+  run105A–C (6時台 cold 2/0/0) を取り込み済みだったが bench 第40回 run115A–C
+  (6時台 cold 0/60 完全静穏) を追加 — 深夜帯通算 cold>0 は 95 試行中 29 試行 (~30.5%)。
+  status 遷移なし: K-Q1/K-Z2/K-Z3 とも open 維持 (K-Q1 は退行の主体特定まで進んだが
+  transition 要件を満たす修正測定はなし)。rank ブロックを第39回版から第40回版へ差替え
+  (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、K-Q1 の次切れ手を engine 内訳
+  計測へ更新)。深夜/6時台追加 n の限界利得低下は維持。
+  NEXT: K-Z3 6時台 n 積み増し継続 (K-Q1 第3段はコード変更を伴うため cosientist 実装
+  判断待ち — bench/falsify が gate 外で即実行可能なのは K-Z3/K-Z2 観測のみ)。
+- 2026-09-05: rank 第41回。新規 evidence 4 本を取り込み (すべて K-Z3、status 遷移なし:
+  K-Q1/K-Z2/K-Z3 とも open 維持 — いずれも機構確定に至らず transition 要件を満たす
+  測定はなし)。(1) falsify run116A–C (6時台: cold 1/20 薄単発 + 0/60) — rank 第40回
+  NEXT は 23時台だったが cron 時刻が 6時台のため帯待機不可能だった前例に従う記録。
+  run105 の 6時台算入可否について rank 判定: cron 実行時刻の制約による帯逸脱は
+  測定法同一で control 分離成立しているため算入を容認 (6時台通算は run105A–C +
+  bench run115 + falsify run116 + bench run117 + falsify run118 で 15 試行中 2 試行
+  ~13% — cold>0 は run105A と run116A の 2 run)。(2) bench 第41回 run117A–C / falsify run118A–C (いずれも 6時台 cold 0/60
+  完全静穏)。(3) falsify run119A–C (8時台帯初計測, cold 0/60 完全静穏, host load1
+  41–48 だが landing control も概ね静穏で production 実測として採用) — 朝帯 8時台は
+  5時台/6時台に続き低位の静穏帯。深夜帯通算 cold>0 は 107 試行中 30 試行 (~28%)。
+  帯別分布は ~28–34% の平坦パターンをほぼ維持し、5時台/6時台/8時台のみ低位 —
+  K-Z3 traffic 依存説への反証材料は蓄積継続だが、深夜/朝帯追加 n の限界情報利得は
+  低下 (rank 順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。K-Q1 の次切れ手
+  (engine 内訳計測) はコード変更を伴い cosientist 実装判断待ちのまま。
+  NEXT: K-Z3 9時台 n 積み増し (朝帯 8時台 1 試行のみで帯発現率未確定 — 5時台/6時台
+  と同様に低位が再現するかで平坦パターン帯別分布の裾を確定できる、gate 外で可能)。
+- 2026-09-05: bench 第42回。新規 evidence: K-Z3 8時台 n 積み増し run120A–C (08:33 JST, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 86.6 は production HTTP 実測のため gate 外)。run120A–C cold(≥0.5s) 0/20 × 3 (p50 0.040–0.041s) — landing control も cold 0/20 p50 0.041s と静穏で control 分離成立。8時台は run119A–C (falsify, 0/60) に続き 0/120 完全静穏で朝帯低位が再現 — 5時台/6時台/8時台のみ低位という平坦パターン帯別分布の裾を支持。※ rank 第41回 NEXT は 9時台だったが cron 実行時刻が 08時台のため帯逸脱 (run105/run116 前例に従い記録)。深夜帯通算 cold>0 は 113 試行中 30 試行 (~26.5%)。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — 9時台 n 積み増しの継続、または K-Z2 対比・K-Q1 engine 内訳への焦点移行)。
+- 2026-09-05: falsify (cosientist 第43回相当)。K-Z3 9時台 n 積み増し run122A–C (09:31–09:32 JST, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 15.3 は production HTTP 実測のため gate 外)。122A cold(≥0.5s) 4/20 (p50 0.041s, p90 0.887s, max 0.925s), 122B cold 1/20 (p50 0.041s, max 1.452s 突発 1 件), 122C cold 0/20 (p50 0.038s) — 計 5/60 発現。landing control は cold 0/20 (p50 0.045s, max 0.287s) と静穏で control 分離成立。9時台は 8時台 (0/120 完全静穏) に続き最初の試行セットで cold 突発が出た — traffic 上昇に転じる 9時台で発現率が上がるという K-Z3 traffic 依存説の方向を支持 (単一サンプルのため確定はしない、追加 n 要)。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — 9時台 n 積み増し継続を優先推奨)。
+- 2026-09-05: rank 第42回。新規 evidence 1 本を取り込み: falsify run121A–C
+  (K-Z3 8時台 n 積み増し 3 セット目, cold 0/60, control 静穏, host load1 104.6
+  は production HTTP 実測のため gate 外)。8時台通算は run119 + run120 + 本 tick
+  で 0/180 完全静穏 — 朝帯低位が 3 セット連続で再現し 5時台/6時台/8時台のみ低位
+  という帯別分布の裾を強化。status 遷移なし (K-Z3 は open 維持: 帯別分布の把握は
+  ひと通り完了しているが機構結論の evidence はまだなく、0/180 は静穏帯の分布材料に
+  とどまる)。rank 順位変更なし: K-Q1 (最大既知 gain, engine 内訳は cosientist
+  実装待ち) > K-Z2 (対比 5 源非一貫) > K-Z3 (深夜追加 n の限界利得低下) > K-S1 /
+  K-S2。深夜帯通算 cold>0 は 116 試行中 30 試行 (~25.9%)。NEXT: K-Z3 9時台 n
+  積み増し (朝帯 8時台 0/180 確定に続き 9時台が未計測 — 5/6/8時台のみ低位という
+  裾の確定と、traffic 上昇に転じる時間帯での発現率変化が K-Z3 traffic 依存説への
+  直接の反証/支持材料になる、gate 外で可能)。
+- 2026-09-05: cosientist 第44回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し) に従い run123A–C を実施 (09:48 JST, ※同一時間帯に falsify が別インスタンスで同時実行しており run ID run123 が重複 — falsify 分 (cold 2/60) と本 bot 分 (cold 0/60) は 同一時刻の独立 2 計測であり, ID 衝突のため本 bot 分を cosientist run124A–C として読み替えて記録 (run105/run100 前例に従う): 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, production HTTP 実測のため gate 外): cold(≥0.5s) 0/20 × 3 (p50 0.040–0.042s), landing control も cold 0/20 (p50 0.049s) と静穏で control 分離成立。9時台は run122A–C (falsify, cold 5/60) に続き本計測 0/60 (falsify 同時刻 run123 別計測は 2/60) — 9時台通算 180 試行中 7 試行 (~3.9%) で 8時台 (0/180) に近い低位だが run122 の突発 1 セットがあり 5/6/8時台のみ低位という分布の裾の確定には追加 n 要。実装はなし (qualify 済みの実装候補は K-Q1 engine 内訳のみだが rank 実装指定待ち)。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — 9時台 n 積み増し継続、または K-Q1 engine 内訳の cosientist 実装指定)。
+- 2026-09-05: bench 第45回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し継続) に従うが
+  cron 実行時刻が 10時台のため帯逸脱 (run105/run116/run120 前例に従い記録):
+  K-Z3 10時台帯初計測 run125A-C を実施 (10:08 JST, 同測定法 n=20 x 3 + landing
+  control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 36.0 は
+  production HTTP 実測のため gate 外)。cold(>=0.5s) 1/20 (1.042s 薄単発) / 0/20 /
+  0/20 - 計 1/60 発現, landing control 静穏 (cold 0/20, p50 0.040s) で control 分離成立。
+  10時台は 9時台 (180 試行中 7 試行 ~3.9%) に近い低位 - 5/6/8時台に続き低位帯候補が増え
+  平坦パターン帯別分布の裾の確定に材料を追加 (単一サンプル, 追加 n 要)。
+  status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 - 10時台 n 積み増し継続、
+  または K-Q1 engine 内訳の cosientist 実装指定)。
+- 2026-09-05: rank 第43回。新規 evidence 2 本を取り込み (いずれも K-Z3 9時台、
+  status 遷移なし: K-Q1/K-Z2/K-Z3/K-S1/K-S2 とも open 維持 — transition 要件を満たす
+  測定はなし)。(1) falsify run123A–C (K-Z3 9時台 n 積み増し, 09:48–09:49 JST,
+  同測定法 n=20 × 3 + landing control, control 静穏, host load1 22.5 は production
+  HTTP 実測のため gate 外): cold(≥0.5s) 2/60 (123A 単発 2 件 0.831/0.972s, B/C 完全静穏)。
+  (2) cosientist 第44回 run124A–C (旧 run123 と読み替え, 同時刻 09:48 JST の別計測,
+  ID 重複のため run105/run100 前例に従う): cold 0/60 完全静穏, control 静穏。
+  9時台通算は run122A–C (5/60) + run123A–C (2/60) + run124A–C (0/60) で 180 試行中
+  7 試行 (~3.9%) — 8時台 (0/180) に近い低位だが突発が run122 / run123A の 2 セット
+  あり、いずれも traffic 上昇帯に集中。朝帯 8時台 → 9時台の微増は K-Z3 traffic 依存説
+  の方向を弱く支持するが、traffic 最低帯の深夜で ~26% が維持されている事実は変化なく
+  説は確定しない。rank ブロックを第42回版から第43回版へ差替え (順位変動なし:
+  K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2。K-Z3 の記述を 9時台通算と突発 2 セットの
+  traffic 上昇帯集中に更新)。深夜/朝帯追加 n の限界利得低下は維持。
+  NEXT: K-Q1 engine 内訳計測 (backend 実行区間 ~635ms の内訳 — KV read 回数/CID 構造
+  の production 観測は gate 外で即実行可能な新規切れ手。9時台/深夜帯追加 n より
+  情報利得が高い)。

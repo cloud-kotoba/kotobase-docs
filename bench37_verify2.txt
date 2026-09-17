@@ -1,0 +1,7 @@
+origin/main tip: fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+local log:
+668ae46 bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+88c2c0a falsify: K-Z2 evidence (run106, 02:40-02:46 JST direct-after vs elapsed, n=40x2+control)
+run107 occurrences: 2

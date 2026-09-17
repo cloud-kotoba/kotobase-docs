@@ -1,0 +1,8 @@
+DATE: Sat Sep  5 10:03:54 JST 2026
+
+LOADAVG: { 36.04 33.40 29.17 }
+
+GIT: 22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+9b1a466 falsify: K-Z3 9時台 run123A-C (cold 2/60, control 静穏 — 9時台通算 7/120, traffic 依存説を支持)
+1827abb falsify: K-Z3 9時台 run122A-C (cold 5/60 突発, control 静穏 — traffic 上昇帯での発現を支持)
+

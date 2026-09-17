@@ -1,0 +1,24 @@
+--- ls .b351* .f351* ---
+--- ls .b35* ---
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 12:57 .b350_350A.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 12:57 .b350_350B.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 12:57 .b350_350C.txt
+-rw-r--r--@ 1 junkawasaki  staff  1277 Sep  7 12:59 .b350_anchor.txt
+-rw-r--r--@ 1 junkawasaki  staff   622 Sep  7 13:00 .b350_commit.txt
+-rw-r--r--@ 1 junkawasaki  staff   218 Sep  7 12:59 .b350_fetch.txt
+-rw-r--r--@ 1 junkawasaki  staff  4432 Sep  7 12:59 .b350_insert.py
+-rw-r--r--@ 1 junkawasaki  staff    48 Sep  7 12:59 .b350_insert_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  7 12:57 .b350_land.txt
+-rw-r--r--@ 1 junkawasaki  staff   173 Sep  7 13:00 .b350_push.txt
+-rw-r--r--@ 1 junkawasaki  staff   923 Sep  7 12:57 .b350_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1300 Sep  7 12:58 .b350_stats.py
+-rw-r--r--@ 1 junkawasaki  staff   358 Sep  7 12:58 .b350_stats_out.txt
+-rw-r--r--@ 1 junkawasaki  staff   196 Sep  7 12:57 .b350_time.txt
+-rw-r--r--@ 1 junkawasaki  staff  1077 Sep  7 13:00 .b350_verify.txt
+--- 13時台 count in HEAD ---
+20
+--- run351 count in HEAD ---
+1
+--- run350 count in HEAD ---
+2
+--- (end) ---

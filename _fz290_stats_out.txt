@@ -1,0 +1,4 @@
+run290A: n=20 codes={200: 20} cold(>=0.5s)=1/20 p50=0.049821 max=1.313423 cold_vals=['1.3134']
+run290B: n=20 codes={200: 20} cold(>=0.5s)=0/20 p50=0.049035 max=0.119672 cold_vals=[]
+run290C: n=20 codes={200: 20} cold(>=0.5s)=0/20 p50=0.045123 max=0.053088 cold_vals=[]
+land290: n=20 codes={200: 20} cold(>=0.5s)=0/20 p50=0.042554 max=0.05359 cold_vals=[]

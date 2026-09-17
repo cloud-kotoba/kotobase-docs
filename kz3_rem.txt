@@ -1,0 +1,6 @@
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+* (HEAD detached at net-kotobase/main) 668ae46 bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+  cosient-sync                         6eec2c1 [net-kotobase/main: behind 4] bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+  main                                 668ae46 [net-kotobase/main] bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+  manifest-rev                         423c4d8 docs: publish Biscuit auth query benchmark (#2)

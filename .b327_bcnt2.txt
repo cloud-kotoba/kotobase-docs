@@ -1,0 +1,10 @@
+   2 第138回
+   1 第138回 (09/07 05:48 JST) 取込 判定: fals
+   1 第138回 (63d3bf3, 05:48, 5hr run314 f
+   1 第138回 NEXT「current-band n-add, 時間帯移
+   1 第138回 run302A-C (c73561e, 04:16, 4時
+   1 第138回) は host load 103 急上昇 + contro
+   1 第138回, K-Z3 4時台(deep-night) n 積み増し 
+   1 第139回
+   1 第139回 (0b76dfb, 06:04, run315 折込) 以
+   1 第139回 (run304A-C, 04:33, 4hr(deep-n

@@ -1,0 +1,45 @@
+import io
+
+path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md"
+src = io.open(path, encoding="utf-8").read()
+
+lines = src.split("\n")
+idx = [i for i, ln in enumerate(lines) if ln.startswith("| K-Z3 | worker |")]
+assert len(idx) == 1, idx
+row = lines[idx[0]]
+
+addition = (
+    " bench 2026-09-05 (第60回, K-Z3 22時台 n 積み増し run174A–C, 同測定法 n=20 × 3 run + landing control, "
+    "別接続 curl, Tokyo, 22:49:35–22:49:41 JST, 全 80/80 200, host load1 6.77 は production HTTP 実測のため gate 外): "
+    "run174A cold(>=0.5s) 0/20 p50 47ms / run174B cold 1/20 (0.998s, 20番目末尾の単発) p50 39ms / "
+    "run174C cold 0/20 p50 47ms (0.033–0.088s) — 合計 1/60, landing control (kotobase.net/, 同時刻, n=20, 全 200) は "
+    "cold 0/20 p50 48ms と静穏で control 分離成立 (cold 群は search 側単発, run168/169/173A 型)。"
+    "22時台通算は run172 (5/60) + run173 (1/60) + run174 (1/60) = 7/180 (~3.9%) — 21時台 (~58%) より低位、"
+    "18–20時台 (~2-3%) と同水準の低位側に更新。status 判定は rank に委ねる"
+)
+
+assert "run174A" not in row
+lines[idx[0]] = row + " " + addition
+io.open(path, "w", encoding="utf-8").write("\n".join(lines))
+print("appended to K-Z3 row, line", idx[0] + 1)
+
+# iteration log entry
+marker = "- 2026-09-05: bench 第59回。"
+pos = src.find(marker)
+assert pos != -1
+entry = (
+    "- 2026-09-05: bench 第60回。rank 第59回 NEXT フォールバック (K-Z3 現在時刻帯 n 積み増し) を受け、"
+    "K-Z3 22時台 n 積み増し run174A–C を同測定法で実施 (22:49:35–22:49:41 JST, production HTTP 実測のため gate 外, "
+    "secret 不含, host load1 6.77): run174A cold(>=0.5s) 0/20 p50 47ms / run174B cold 1/20 (0.998s, 20番目末尾単発) "
+    "p50 39ms / run174C cold 0/20 p50 47ms — 合計 1/60, landing control cold 0/20 p50 48ms と静穏で control 分離成立 "
+    "(search 側単発薄散発)。22時台通算は 7/180 (~3.9%) で 21時台 (~58%) より低位、18–20時台 (~2-3%) と同水準の低位側に更新 — "
+    "22時台帯レートはほぼ確定に近づいた。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 指定優先; フォールバックは "
+    "K-Z3 現在時刻帯 n 積み増し継続、または K-Q1 deploy run 33964821723 進行再確認)。\n"
+)
+lines = src.split("\n")
+# append entry at end of iteration log (end of file)
+while lines and lines[-1].strip() == "":
+    lines.pop()
+lines.append(entry.rstrip("\n"))
+io.open(path, "w", encoding="utf-8").write("\n".join(lines) + "\n")
+print("iteration log appended")

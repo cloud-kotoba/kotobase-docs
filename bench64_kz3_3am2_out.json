@@ -1,0 +1,48 @@
+{
+ "purpose": "bench64 K-Z3 3時台 2 セット目 n 積み増し (run181A-C)",
+ "observedAt": "2026-09-05T18:53:40.016Z",
+ "runs": [
+  {
+   "label": "run1 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 34,
+   "minMs": 32,
+   "maxMs": 66
+  },
+  {
+   "label": "run2 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 1,
+   "coldValues": [
+    "945ms"
+   ],
+   "p50ms": 40,
+   "minMs": 33,
+   "maxMs": 945
+  },
+  {
+   "label": "run3 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 38,
+   "minMs": 34,
+   "maxMs": 48
+  }
+ ],
+ "control": {
+  "label": "landing control",
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 47,
+  "minMs": 41,
+  "maxMs": 250
+ }
+}

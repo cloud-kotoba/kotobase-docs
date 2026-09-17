@@ -1,0 +1,4 @@
+falsify 2026-09-14 (第250回, K-Z3 3時台帯初 ru 2
+3時台通算 (9/11 run578 10/60 + 9/14 本測 11/60 1
+combining chars: []
+iter headers: 1

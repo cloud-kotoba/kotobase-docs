@@ -1,0 +1,7 @@
+import fs from "node:fs";
+const path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md";
+let text = fs.readFileSync(path, "utf8");
+const entry = "\n- 2026-09-06: cosientist 第82回。11:16 JST tick。worktree detached HEAD (5ccd827) のため fetch net-kotobase + rev-parse 比較で取り込み (fetch rc 0, HEAD 5ccd827 = fetch 後 net-kotobase/main 先端一致, ancestor rc 0, 乖離 0)。falsify 第81回 (run205A-C, 10時台 4セット目) を取り込み済み確認。live smoke 200 (/, /signup; pre-run 計測)。host load1 31.21 (gate 7.5 超過) のため local 測定は拒否 (本 tick の main 作業はコード実査 + 固定入力 parity 計算で production/local 負荷なし)。rank 第80回 NEXT「K-Q1 transact 401 の切れ手(a): delegation-for-request の graph/tenant binding 実装照合」を実施 — (1) mint 側 (authn/worker.cljs:1856-1860, cid/canonical-graph = trim 後連結), (2) gateway (proxy.cljc:958-975 bind-tenant-write-graph = trim 後連結), (3) engine (xrpc.cljs:1327-1335 write-graph-name = iss+db_name から再導出, client CID 不使用) のコード実査 + 三式バイト列 parity の固定入力実測 (_cosient82_cid_parity.mjs, trim あり式は 3 パターン全一致) で「CID 再束縛文字列 vs mint 時名前文字列の不一致」説を棄却 (反証成立)。残る切れ手は (i) authority_from_model の scope 照合 (verify-biscuit-action の graph 引数が canonical CID の場合 mint スコープ kotoba://graph/<名前> と不一致になり得る — 次の反証対象), (ii) cacao_b64 経路 harness 変更, の 2 本に再収束 (K-Q1 evidence 欄参照)。コード変更なし (evidence なしの実装は規律違反)。secret は一切記録せず。NEXT: 委ねる (rank 指定優先; K-Q1 は切れ手(i) scope 文字列照合の反証を推奨)。\n";
+text = text.replace(/\n*$/, "\n") + entry;
+fs.writeFileSync(path, text);
+console.log("log appended");

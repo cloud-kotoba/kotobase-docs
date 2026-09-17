@@ -1,0 +1,5 @@
+      28 bench64_diff.txt
+4:+++ b/query-cosientist.md
+10:+| K-Q1 | query | warm query p50 187ms の内訳は edge/network ではなく Worker CPU + Biscuit verify が支配的 (Biscuit verify 単体は測定済み p50 18.65ms なので、残り ~170ms は query 実行 +
+19:+| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再発 (run4–6, run13–16: cold 群と warm 群の遅延上振れが同時に出る突発パターン, 10:41–11:47 JST の 14 試行中 5 試行で cold>0) は時間帯依存の traffic 変動に追従す
+27:+- 2026-09-06: bench 第63回。03:22 JST tick。worktree detached HEAD のため fetch + net-kotobase/main 比較で取り込み (fetch rc 0, HEAD 3744957 = fetch 後 net-kotobase/main 先

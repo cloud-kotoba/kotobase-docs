@@ -1,0 +1,5 @@
+08fb604 rank 第50回修正: falsify 第54回 (K-Z3 17時台 run155A-C cold 5/60) を取り込み — detached HEAD 構成のため fetch+log 確認に置換, status 遷移なし, 順位変動なし, NEXT: K-Q1 deploy 整合切分け (cosientist)
+ee9e233 rank 第50回: 第49回以降の新規 evidence なし (静穏 tick) — status 遷移なし, 順位変動なし K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2, NEXT: K-Q1 deploy 整合切分け (cosientist)
+4fa6a0c falsify 第54回: K-Z3 17時台 n 積み増し run155A-C (cold 4/1/0 per 20 = 5/60 ~8.3%, search のみ 1s 超外れ値, control 静穏 p50 53ms) evidence 追記 — status 遷移なし
+--- merge-base check
+0

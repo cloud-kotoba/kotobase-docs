@@ -1,0 +1,2 @@
+LEN 54609
+TAIL: 'falsify/bench 前例 (rank 第94/95回 17時台, 第98回 18時台) に従い 現在時刻帯 20時台 n 積み増しで実施): cold(>=0.5s) 1/1/0 per 20 = 2/60 (~3.3%) — run244A 単発 1.4281s (18番目) p50 53.5ms / run244B 単発 0.9698s (16番目) p50 62.8ms / run244C 0/20 p50 67.9ms max 240.3ms, control (kotobase.net/signup) cold 0/20 p50 63.5ms max 260.2ms 静穏で control 分離成立、cold 群は search 側に局在。run244A/B 各単発は C 0/20 で即消失し run241A/B 型「帯内散発単発即消失」パターン継続 — 20時台通算 (10/360 ~2.8% + 本 tick 2/60) 12/420 (~2.9%) 低位帯確定方向、run243 後の帯水準確定は不変。status 判定は rank に委ねる (rank 専門)。'
