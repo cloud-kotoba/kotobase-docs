@@ -1,0 +1,10 @@
+doc = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md', encoding='utf-8').read()
+out = []
+# K-Z3 row should contain BOTH falsify run403 (7/60) and my run404 (3/60)
+out.append('KZ3 row has falsify run403 7/60: %s' % ('run403A cold 7/20 heavy' in doc or 'run403 実測' in doc))
+out.append('KZ3 row has bench run404 3/60: %s' % ('run404A cold 3' in doc))
+out.append('run404 count: %d' % doc.count('run404'))
+out.append('run403 count: %d' % doc.count('run403'))
+# confirm no leftover "run403A cold 3/20" from my original (should be gone, relabeled)
+out.append('stale run403A cold 3/20 present: %s' % ('run403A cold 3/20' in doc))
+open('/tmp/bench_finalchk.txt', 'w').write('\n'.join(out) + '\n')

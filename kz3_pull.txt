@@ -1,0 +1,7 @@
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+c5adb73 bench: K-Z3 night 22h run96A-C (cold 0/0/0, p50 42-47ms, control borderline 1) + scripts

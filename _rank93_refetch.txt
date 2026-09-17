@@ -1,0 +1,48 @@
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+===LOG top8===
+cc98efc falsify 第96回: K-Z3 16時台 n 積み増し run225A-C (cold 2/60), control 分離成立
+c0da368 rank 第92回: K-Z3 16時台 run224 x2 (ID 衝突 独立2計測) 取り込み, 16時台通算 6/300 ~2.0% 低位帯, rank 順位変動なし, NEXT K-Z3 17時台
+cb05bd7 falsify 第95回: K-Z3 16時台 run224A-C n積み増し (cold 3/60, borderline host-load)
+4f187e8 bench 第92回: K-Z3 16時台 n 積み増し run224A-C (cold 1/60 単発, control 分離成立, 16時台通算 4/300 ~1.3% 低位帯) + iteration log
+c31f650 rank 第91回: K-Z3 15時台 8/360 ~2.2% + 16時台帯初 2/180 ~1.1% 低温帯取り込み, rank 順位変動なし, NEXT K-Z3 17時台
+bdf2d4e falsify 第94回: K-Z3 16時台 n 積み増し run223A-C (cold 1/60 単発, control 分離成立, 16時台通算 2/180 ~1.1% 低位帯) + iteration log
+c020215 bench 第91回: K-Z3 現在時刻帯 16時台 n 積み増し run222A-C (cold 1/60 冒頭単発, control 分離成立, 低位帯サンプル) + iteration log
+13b826c falsify 第93回: K-Z3 16時台 run221A-C (cold 0/60 完全静穏, control 静穏分離, 16時台低位帯サンプル)
+===STATUS===
+?? .hermes-tmp.Y0puk9
+?? _b71_append.py
+?? _b71_append_out.txt
+?? _b71_cold.txt
+?? _b71_commit.txt
+?? _b71_eps.txt
+?? _b71_fetch_err.txt
+?? _b71_final.txt
+?? _b71_g.txt
+?? _b71_g2.txt
+?? _b71_git.txt
+?? _b71_head.txt
+?? _b71_line.txt
+?? _b71_log.txt
+?? _b71_meas.txt
+?? _b71_out.txt
+?? _b71_pull.txt
+?? _b71_pull_err.txt
+?? _b71_push.txt
+?? _b71_rc.txt
+?? _b71_verify.txt
+?? _b72_chk.txt
+?? _b72_grep.txt
+?? _b72_run192.sh
+?? _b72_run192.txt
+?? _b72_run192b.sh
+?? _b72_run192b.txt
+?? _b72_sum.py
+?? _b72_sum.txt
+?? _b72_sum2.py
+===REMOTE top===
+cc98efc falsify 第96回: K-Z3 16時台 n 積み増し run225A-C (cold 2/60), control 分離成立

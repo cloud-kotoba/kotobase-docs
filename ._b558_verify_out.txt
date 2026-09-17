@@ -1,0 +1,5 @@
+search?q=test 404 0.192747
+search?q=hello 404 0.060028
+search-bare 404 0.062760
+root 200 0.147661
+signup 200 0.150986

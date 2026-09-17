@@ -1,0 +1,46 @@
+{
+ "purpose": "falsify71 K-Z3 6時台 n 積み増し (run190A-C)",
+ "observedAt": "2026-09-05T21:48:25.766Z",
+ "runs": [
+  {
+   "label": "runA search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 141,
+   "minMs": 59,
+   "maxMs": 381
+  },
+  {
+   "label": "runB search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 143,
+   "minMs": 74,
+   "maxMs": 223
+  },
+  {
+   "label": "runC search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 132,
+   "minMs": 61,
+   "maxMs": 202
+  }
+ ],
+ "control": {
+  "label": "landing control",
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 178,
+  "minMs": 88,
+  "maxMs": 331
+ }
+}

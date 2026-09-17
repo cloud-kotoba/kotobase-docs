@@ -1,0 +1,4 @@
+run328_count= 8
+falsify150= 4
+K-Z3 row line= 279
+iterlog152= 2

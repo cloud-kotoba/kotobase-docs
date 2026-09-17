@@ -1,0 +1,9 @@
+HTTP/2 301 
+date: Mon, 14 Sep 2026 17:10:05 GMT
+content-type: text/html; charset=UTF-8
+location: https://kotoba.cloud/llms-full.txt
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WwsFDx9sa6xq7km6KPaeZ1nE6ix5eJCoXb8jByL4BUpkmqB3t%2F%2FlphZX176Wk5Nopxm%2BM%2FCP908xzB94hiCIsTwH81I5F9XbAwzgsmpcCtDIqnDDh1FqWO2AkGl0qb4FoqYla65ffGxJtWM%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a3b100cbad2a3b87-NRT
+

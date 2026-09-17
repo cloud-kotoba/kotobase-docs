@@ -1,0 +1,5 @@
+||[detached HEAD da9f4df] bench 83: K-Z3 13時台 run210A-C evidence (cold 6/60, run210A冒頭集中型, control分離)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+||To github.com:net-kotobase/docs
+   7a3ad0b..da9f4df  HEAD -> main
+||rc_push=0

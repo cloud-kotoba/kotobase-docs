@@ -1,0 +1,4 @@
+bench_fetch	https://github.com/net-kotobase/docs (fetch)
+bench_fetch	https://github.com/net-kotobase/docs (push)
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)

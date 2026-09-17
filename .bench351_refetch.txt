@@ -1,0 +1,3 @@
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+   f3420d2..c91cb22  main       -> net-kotobase/main

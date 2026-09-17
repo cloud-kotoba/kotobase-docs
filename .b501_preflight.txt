@@ -1,0 +1,20 @@
+=== HEAD vs remote (git rev-parse) ===
+37edc2a525dc3ecf2aec639aece0de9874431442
+37edc2a525dc3ecf2aec639aece0de9874431442
+37edc2a525dc3ecf2aec639aece0de9874431442
+=== worktree doc diff (should be empty) ===
+=== run501 already used in doc? (expect 0) ===
+0
+run501 not found (count 0)
+=== DNS search.kotobase.net ===
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	search.kotobase.net
+=== live smoke (/, /signup, search) ===
+/ 200
+/signup 200
+/search 404
+=== uptime ===
+20:38  up 3 days, 13:21, 8 users, load averages: 33.66 31.82 34.19

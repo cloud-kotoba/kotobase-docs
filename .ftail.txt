@@ -1,0 +1,9 @@
+L279_LEN= 95374
+L279_TAIL= 'max 147.6ms と静穏で control 分離成立、cold 群は search 側に局在。run320 は A 冒頭 idx1 単発 (run100A/116A/161A/192A 型「帯内 1 窓即消失」scatter-single パターンと整合)。本 tick は 6時台帯 n 積み増しで cold 1/60 (~1.7%) 低位帯、false-fix にならず観渫継続の材料。6時台通算 run315 2/60 + run316 1/60 + run317 0/60 + run318 0/60 + run319 0/60(独立3/60 重複窓) + run320 1/60 ≈ 7/360 (~1.9%) 低位帯、heavy run271A 6/20 型は run271A 以降 46 セット非再現 (traffic-independence counter-evidence 継続)。status 判定は rank に委ねる (rank 専門)。secret は一切記録せず。'
+--- ITER header area (L357-360) ---
+356: '| falsify 2026-09-07 (第136回, K-Z3 3時台(深夜帯) independent n-add run298A–C — cosientist run297 (在飛, 03:43) とは別の独立 2 回目計測, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 03:47:01–03:47:09 JST, 全 80/80 2'
+357: ' rank 第138回 (09/07 05:48 JST) 取込 判定: falsify 第144回 run314 (0/60 完全静穏, deep-night run275..314 40/2400 ~1.67% 40-set) を取込、5時台通算 = run309(0/60)+run310(2/60)+run311(1/60)+run312(0/60)+run313(0/60)+run314('
+358: '## Iteration log'
+359: '- 2026-09-07: bench 第134回。06:55 JST tick。HEAD 097683e = falsify 第147回 (06:39, 6時台独立 run319A-C cold 3/60 counter-evidence) = remote net-kotobase/main 一致 (fetch, 迪離 0; worktree detached HEAD のため git pul'
+360: '- 2026-09-07: falsify 第147回。06:39 JST。HEAD 2a10d23 = rank 第141回 (run318+run319 fold, 06:49, 6時台 n-add 完全静穏 2/その NEXT run320) = remote net-kotobase/main 一致 (fetch + rev-parse 比較, 韚離 0; worktree detache'
+361: '- 2026-09-07: bench 第133回。06:42 JST tick。HEAD 86088ae = rank 第140回 (run316+run317 fold, 06:25) = remote net-kotobase/main 一致 (fetch + rev-parse, 乖離 0; worktree detached HEAD のため git pull --ff-only 不可,'

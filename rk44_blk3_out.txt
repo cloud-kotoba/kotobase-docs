@@ -1,0 +1,2 @@
+HIT 75:  bench 2026-09-05 (第39回, K-Q1 backend query path 計測第1段 — rank 第38回 NEXT, production HTTP 実測のため host load gate 外, 同一測定法: 30 sequential + 3 warmup 除外, nearest-rank, Node https keepalive 接続再利用 1 socket, Tokyo, 05:42 JST, secret 不含 — credential なしの unaut
+HIT 129: rank (期待 gain × 確率, 2026-09-05 第43回):

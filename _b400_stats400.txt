@@ -1,0 +1,5 @@
+400A: n=20 p50=72.2ms cold(>=0.5s)=5/20 max=2460.5ms warm_p50=67.6ms
+400B: n=20 p50=55.8ms cold(>=0.5s)=1/20 max=986.7ms warm_p50=55.8ms
+400C: n=20 p50=50.7ms cold(>=0.5s)=1/20 max=1602.1ms warm_p50=50.7ms
+land: n=20 p50=58.0ms cold(>=0.5s)=0/20 max=340.5ms warm_p50=58.0ms
+SEARCH TOTAL n=60 cold=7/60

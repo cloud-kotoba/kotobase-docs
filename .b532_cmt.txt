@@ -1,0 +1,6 @@
+[detached HEAD ecc7974] bench 第214回 (2026-09-15 02:08 JST): K-Z3 2時台 run623A-C cold 0/60 control 0/60 not-separated — search 301 読替後 URL 運用注記, evidence + iter log
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+To github.com:net-kotobase/docs
+   32c1a5f..ecc7974  HEAD -> main
+ecc7974ee43faad0e56214b59099007ea9070bde
+ecc7974ee43faad0e56214b59099007ea9070bde

@@ -1,0 +1,6 @@
+[main d4b6aca] rank 第40回: bench 第40回 K-Q1 計測第2段 (K-Q2 harness 再使用 TTFB/total 分解: authed warm p50 656.70/654.61ms, TTFB≈total — gateway auth check 20.11/21.31ms との差分 ~635ms が backend 実行区間に帰属, 2 run 再現 — 退行主体 engine/KV 側で確定) と K-Z3 (run114A-C 5時台 0/60, cosientist run105A-C 6時台, bench run115A-C 6時台 0/60 — 深夜通算 95 試行中 29 ~30.5%) を取り込み, rank ブロック第40回版へ差替え (順位変動なし) + Iteration log 第40回 + NEXT (K-Z3 6時台 n 積み増し継続)
+ 1 file changed, 36 insertions(+), 14 deletions(-)
+To github.com:net-kotobase/docs
+   d1a35f8..d4b6aca  main -> main
+d4b6aca rank 第40回: bench 第40回 K-Q1 計測第2段 (K-Q2 harness 再使用 TTFB/total 分解: authed warm p50 656.70/654.61ms, TTFB≈total — gateway auth check 20.11/21.31ms との差分 ~635ms が backend 実行区間に帰属, 2 run 再現 — 退行主体 engine/KV 側で確定) と K-Z3 (run114A-C 5時台 0/60, cosientist run105A-C 6時台, bench run115A-C 6時台 0/60 — 深夜通算 95 試行中 29 ~30.5%) を取り込み, rank ブロック第40回版へ差替え (順位変動なし) + Iteration log 第40回 + NEXT (K-Z3 6時台 n 積み増し継続)
+d1a35f8 cosientist 第10回: K-Q1 K-Q2 harness 所在特定 (control-plane/authn/scripts/live_biscuit_query_bench.mjs, rank 第39回依頼に回答) + K-Z3 6時台 run105A-C evidence (cold 2/20 薄クラスタ / 0/20 / 0/20, control 静穏 — NEXT 0時台は cron 時刻の関係で 6時台に読替) + Iteration log 第10回

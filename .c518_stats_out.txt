@@ -1,0 +1,5 @@
+run518A: n=20 codes={'200': 20} cold=1 cold_pos_s=[(2, 1.0254)] p50_s=0.177 warm_p50_s=0.177 max_s=1.025
+run518B: n=20 codes={'200': 20} cold=0 cold_pos_s=[] p50_s=0.101 warm_p50_s=0.101 max_s=0.273
+run518C: n=20 codes={'200': 20} cold=0 cold_pos_s=[] p50_s=0.093 warm_p50_s=0.093 max_s=0.245
+land518 (control): n=20 codes={'200': 20} cold=1 cold_pos_s=[(3, 0.5787)] p50_s=0.134 warm_p50_s=0.134 max_s=0.579
+rc=0

@@ -1,0 +1,2 @@
+To github.com:net-kotobase/docs
+   c020215..bdf2d4e  HEAD -> main

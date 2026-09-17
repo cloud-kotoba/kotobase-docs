@@ -1,0 +1,8 @@
+=== ls .bench329 ===
+-rw-r--r--@ 1 junkawasaki  staff    21 Sep  7 08:14 .bench329_check.txt
+-rw-r--r--@ 1 junkawasaki  staff  2777 Sep  7 08:14 .bench329_run.py
+-rw-r--r--@ 1 junkawasaki  staff     0 Sep  7 08:14 .bench329_stdout.txt
+=== python check ===
+py-ok
+rc=0
+done

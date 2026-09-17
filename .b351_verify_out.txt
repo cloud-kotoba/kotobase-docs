@@ -1,0 +1,6 @@
+line 279 tail has run352: True
+L279 new evidence lex short tail: 発ペアは B/C 0/20 + control 0/20 で即消滅し「帯内 1 窓即消滅」継続 (sibling run351 cold 4/20 の ~9 分後 2/20 への減弱, heavy>=6/20 は再達せず run331A 9/20 heavy 型は非再現継続)。13時台 (9/7) 通算 = falsify run351 (4/60) + 本 tick run352 (2/60) = 6/120 (~5.0%) の 2 セット中位帯候補。status 判定は rank に委ねる (rank 専門)。
+
+IL header L360
+L361: - 2026-09-07: bench 第151回。13:15 JST tick。HEAD f3420d2 = cosientist 第123回 (12:53) → c91cb22
+has bench 151: True

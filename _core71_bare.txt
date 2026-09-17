@@ -1,0 +1,39 @@
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/worker.cljs:32:  (js/Response. (js/JSON.stringify (clj->js {:ok false :error "Unauthorized" :details details}))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:718:                        (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:781:          (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:882:                   (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:970:                   (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:1065:                  {:ok false :error "Unauthorized" :details (:error verified)}
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:1213:    (js/Promise.resolve {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:1242:      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:1854:    seen? (js/Promise.resolve {:ok false :error "Unauthorized" :message "CACAO nonce already used" :status 401})
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2058:                  (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2087:               {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2118:      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2159:               {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2190:      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2254:                   (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2267:                 (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2273:                                (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2283:               (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2543:                 (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2657:                 (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2693:    seen? (js/Promise.resolve {:ok false :error "Unauthorized" :message "CACAO nonce already used" :status 401})
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2716:             (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/causal_commit.cljs:325:       (reject! 401 "Unauthorized" (:error verified)))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/causal_commit.cljs:343:             (reject! (:status verified) "Unauthorized" (:error verified)))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/causal_commit.cljs:383:              (reject! 401 "Unauthorized" "CACAO nonce already used"))
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:718:                        (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:781:          (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:882:                   (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:970:                   (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:1213:    (js/Promise.resolve {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:1854:    seen? (js/Promise.resolve {:ok false :error "Unauthorized" :message "CACAO nonce already used" :status 401})
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2087:               {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2159:               {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2267:                 (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2283:               (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2543:                 (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2657:                 (json-resp {:ok false :error "Unauthorized"
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/xrpc.cljs:2693:    seen? (js/Promise.resolve {:ok false :error "Unauthorized" :message "CACAO nonce already used" :status 401})
+../../net-kotobase/control-plane/kotobase-graph-database/src/kotobase/graph_database/trust_enforcement.cljs:225:                (causal/reject! (:status verified) "Unauthorized"

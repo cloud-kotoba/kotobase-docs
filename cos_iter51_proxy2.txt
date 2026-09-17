@@ -1,0 +1,26 @@
+  [source target]
+  (when-let [receipt-cid (read-audit-receipt-cid source)]
+    (.set (.-headers target) "x-kotobase-read-audit-cid" receipt-cid))
+  (when-let [statement-cid (read-audit-witness-statement-cid source)]
+    (.set (.-headers target)
+          "x-kotobase-read-audit-witness-statement-cid"
+          statement-cid))
+  target)
+
+(defn- public-upstream-json-headers [resp]
+  (let [headers (js/Headers. #js {"content-type" "application/json"})
+        retry-after (.. resp -headers (get "retry-after"))]
+    (when (and (= 409 (.-status resp)) (string? retry-after)
+               (re-matches #"[0-9]{1,4}" retry-after)
+               (<= 1 (js/parseInt retry-after 10) 3600))
+      (.set headers "retry-after" retry-after))
+    (when-let [receipt-cid (read-audit-receipt-cid resp)]
+      (.set headers "x-kotobase-read-audit-cid" receipt-cid))
+    (when-let [statement-cid (read-audit-witness-statement-cid resp)]
+      (.set headers "x-kotobase-read-audit-witness-statement-cid"
+            statement-cid))
+    headers))
+
+(defn upstream-json-response
+  "Faithful port: pass JSON through; sanitize non-JSON error bodies with the pod's
+  status; a non-JSON success is a 502. → Promise<Response>."

@@ -1,0 +1,10 @@
+===L279 tail 400===
+LEN 106077
+' 分離成立 (search/control とも 0 cold)。run329 全 0/60 完全静穏は falsify152-run328 単発直後の再静穏で「帯内 1 窓即消失」散発単発 = 即消失の性質を支持継続, heavy run271A 6/20 型は run271A 以降 54 セット連続非再現。8時台 (9/7) clean separable 通算 = falsify152-run328 (1/60) + 本 tick run329 (0/60) = 1/120 (~0.83%) の 2 セット低位帯 — host load 125 高騰で p50 上振れ (205-231ms) borderline note 付きだが全 max 476ms 未満で cold 閾値 0.5s 未達, 0/60 判定は確定的。status 判定は rank に委ねる (rank 専門)。\n'
+---ITER HEADER---
+iterlog at line 358 next line: '- 2026-09-07: bench 第139回。08:16 JST tick。HEAD d8f6902 = bench 第138回 (07:53, 7時台 run327) = remote net-kotobase/main 一致 (f'
+358 ## Iteration log
+
+359 - 2026-09-07: bench 第139回。08:16 JST tick。HEAD d8f6902 = bench 第138回 (07:53, 7時台 
+360 - 2026-09-07: rank 第144回。08:11 JST tick。HEAD e867ae6 = falsify 第152回 (08:03, 8時台
+361 - 2026-09-07: **falsify 第152回**。08:03 JST tick。HEAD d8f6902 = bench 第138回 (07:53

@@ -1,0 +1,14 @@
+run281A: n=20 codes={'200': 20} cold=2 cold_list_s=[1.0271, 1.3861] p50_s=0.083 warm_p50_s=0.08 max_s=1.386
+run281B: n=20 codes={'200': 20} cold=0 cold_list_s=[] p50_s=0.078 warm_p50_s=0.078 max_s=0.254
+run281C: n=20 codes={'200': 20} cold=0 cold_list_s=[] p50_s=0.051 warm_p50_s=0.051 max_s=0.188
+land281 (control): n=20 codes={'200': 20} cold=0 cold_list_s=[] p50_s=0.041 warm_p50_s=0.041 max_s=0.085
+==== time/codes ====
+start 2026-09-07T01:43:50+0900
+end 2026-09-07T01:44:07+0900
+ 1:44  up 1 day, 18:27, 15 users, load averages: 37.38 42.83 44.99
+done
+==== load1 ====
+ 1:44  up 1 day, 18:27, 15 users, load averages: 37.38 42.83 44.99
+==== smoke ====
+search 200
+land 200

@@ -1,0 +1,14 @@
+run508A: count=20 non200=0
+  cold>=0.50s: 6/20
+  cold_pos=[1, 2, 5, 6, 13, 19] cold_vals=['4.1385', '1.2350', '1.5380', '1.5320', '2.3657', '1.3178']
+  p50=0.1295s max=4.1385s
+run508B: count=20 non200=0
+  cold>=0.50s: 1/20
+  cold_pos=[9] cold_vals=['1.0287']
+  p50=0.1142s max=1.0287s
+run508C: count=20 non200=0
+  cold>=0.50s: 0/20
+  p50=0.1154s max=0.2329s
+control(signup): count=20 non200=0
+  cold>=0.50s: 0/20
+  p50=0.1148s max=0.4773s

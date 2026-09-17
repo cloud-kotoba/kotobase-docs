@@ -1,0 +1,5 @@
+A: n=20 all200=True cold=0/20 coldmax=0.000s warm_p50=52ms p95=135ms min=36 max=136 
+B: n=20 all200=True cold=0/20 coldmax=0.000s warm_p50=44ms p95=131ms min=38 max=135 
+C: n=20 all200=True cold=0/20 coldmax=0.000s warm_p50=41ms p95=128ms min=36 max=128 
+landing: n=20 all200=True cold=0/20 coldmax=0.000s warm_p50=40ms p95=135ms min=34 max=142 
+TOTAL search cold 0/60 (0%)

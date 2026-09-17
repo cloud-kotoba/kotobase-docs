@@ -1,0 +1,4 @@
+push sha:
+da02d6102200767346d11469ef752992fe6d324a
+run175 in main K-Z3: True
+K-Z3 tail: curl, Tokyo, 22:59–23:00 JST, 全 80/80 200, host load1 10.5 は production HTTP 実測のため gate 外): run175A cold(>=0.5s) 0/20 p50 42ms max(除cold) 203ms / run175B cold 0/20 p50 40ms max 53ms / run175C cold 0/20 p50 40ms max 55ms — 合計 0/60 完全静穏, landing control (kotobase.net/, 同時刻, n=20, 全 200) は cold 0/20 p50 47ms と静穏で control 分離成立。23時台第1計測は完全静穏 (0時台 0/60 型と整合, 深夜帯突発の継続観測)。status 判定は rank に委ねる (rank 専門)。 |

@@ -1,0 +1,4 @@
+run167A search: n=20 codes={'200'} cold(>=0.5s) 4/20 [2:0.884s 5:1.083s 14:1.057s 16:1.182s] p50=0.054s min=0.035 max=1.182
+run167B search: n=20 codes={'200'} cold(>=0.5s) 0/20 [none] p50=0.042s min=0.035 max=0.072
+run167C search: n=20 codes={'200'} cold(>=0.5s) 0/20 [none] p50=0.050s min=0.035 max=0.095
+landing control: n=20 codes={'200'} cold(>=0.5s) 0/20 [none] p50=0.091s min=0.038 max=0.141

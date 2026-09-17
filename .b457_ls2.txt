@@ -1,0 +1,8 @@
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  8 11:02 .b457_landing_raw.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  8 11:02 .b457_run457A_raw.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  8 11:02 .b457_run457B_raw.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  8 11:02 .b457_run457C_raw.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  180 Sep  8 11:03 .b457_run457_A.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  180 Sep  8 11:03 .b457_run457_B.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  180 Sep  8 11:03 .b457_run457_C.ttfb
+-rw-r--r--@ 1 junkawasaki  staff  180 Sep  8 11:03 .b457_run457_landing.ttfb

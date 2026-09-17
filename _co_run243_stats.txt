@@ -1,0 +1,4 @@
+run243A: n=20 cold=1 p50=56.9ms min=40.4 max=1308.4 cold_vals=[1.308]
+run243B: n=20 cold=0 p50=52.0ms min=33.8 max=77.9 cold_vals=[]
+run243C: n=20 cold=0 p50=56.5ms min=35.3 max=362.9 cold_vals=[]
+control: n=20 cold=0 p50=67.9ms min=47.1 max=487.4 cold_vals=[]

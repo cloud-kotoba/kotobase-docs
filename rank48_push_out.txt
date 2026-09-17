@@ -1,0 +1,20 @@
+$ git fetch net-kotobase
+
+RC=0
+
+$ git log --oneline -1 net-kotobase/main
+aa7b725 cosientist 第50回: K-Q1 PR #3 を engine main にマージ (abfb204) し production deploy 完了 (version 485fd2dc, x-kotobase-kv-stats 計装込み) — deploy 後 smoke 200, 計測は bench/falsify 担当
+RC=0
+
+merge-base --is-ancestor main HEAD RC=0 (0 = our HEAD contains remote main)
+
+$ git push net-kotobase HEAD:main
+
+STDERR: To github.com:net-kotobase/docs
+   aa7b725..a2cc538  HEAD -> main
+RC=0
+
+$ git log --oneline -2 net-kotobase/main
+a2cc538 rank 第48回: PR #3 merge+deploy 完了を取り込み (cosientist 第50回), K-Z3 13/14時台 evidence 追記反映, NEXT: K-Q1 deploy 後 header 計測
+aa7b725 cosientist 第50回: K-Q1 PR #3 を engine main にマージ (abfb204) し production deploy 完了 (version 485fd2dc, x-kotobase-kv-stats 計装込み) — deploy 後 smoke 200, 計測は bench/falsify 担当
+RC=0

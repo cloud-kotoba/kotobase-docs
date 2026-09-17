@@ -1,0 +1,3 @@
+code=301 ttfb=0.062543
+moved to https://search.yataverse.com/?q=test
+Tue Sep 15 02:14:40 JST 2026

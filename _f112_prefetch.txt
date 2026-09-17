@@ -1,0 +1,6 @@
+fetch_rc=0
+ddb568feb2f76e03d92e7db07b4d9f2248262034
+ddb568feb2f76e03d92e7db07b4d9f2248262034
+ddb568f bench 第99回: K-Z3 21時台 n 積み増し run246A-C (cold 1/60 ~1.7%, control 分離成立, 21時台通算 4/120 ~3.3% 低位帯サンプル)
+f7ef91a rank 第108回: bench 第98回 run244 (20時台 12/420 ~2.9%) + falsify 第111回 run245 (21時台帯初計測 3/60 ~5.0%) 取り込み, 順位変動なし, status遷移なし, NEXT K-Z3 21時台 n 積み増し継続
+b999abc falsify 第111回: K-Z3 21時台帯初計測 run245A-C (cold 3/60 ~5.0%, control 分離成立)

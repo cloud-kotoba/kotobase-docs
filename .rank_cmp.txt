@@ -1,0 +1,21 @@
+===LOCAL_HEAD===
+9d7063a1975e3a0a92b877d34449864caeb552dd
+===BENCH_FETCH_MAIN===
+9d7063a1975e3a0a92b877d34449864caeb552dd
+===NET_MAIN===
+9d7063a1975e3a0a92b877d34449864caeb552dd
+===LOG_ON_MAIN_10===
+9d7063a bench 第152回: K-Z3 13時台 run353 n積み増し (cold 5/60 ~8.3%, run353A 5/20 散発クラスタ, B/C+control 0/60 即消滅分離成立; 帯内1窓即消滅継続, rank153 NEXT run353 消費; 13時台通算 11/180 ~6.1% 3-set) + iterlog
+f018d56 rank 153: fold falsify162 run351 (4/60) + bench151 run352 (2/60) -> K-Z3 13hr(9/7) 6/120 ~5.0% 2-set midband; heavy single-window non-sustained (run351A 4/20 + run352A 2/20 scatter, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 13hr n-add run353
+84c89cd bench 第151回: K-Z3 13時台 run352 n積み増し (cold 2/60, sibling falsify162 run351 in-flight 4/60 のため run352 読替; control 0/20 完全静穏分離成立, 帯内1窓即消滅継続; 13時台通算 6/120 ~5.0% 2-set) + iterlog
+c91cb22 rank 152: fold cosientist123 run349 (4/60) + bench150 run350 (3/60) -> K-Z3 12hr(9/7) 25/360 ~6.9% 6-set midband; heavy single-window non-sustained (run349 3/20 + run350 3/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 13hr band-first run351
+f3420d2 cosientist 第123回: K-Z3 12時台 run349 n積み増し (cold 4/60 ~6.7%, run349A 3/20 散発クラスタ + B 単発, control 0/20 完全静穏分離成立; 帯内1窓即消失継続, heavy 再達せず; 12h 通算 22/300 ~7.3% 5-set 中位帯); 実装対象なし (qualify 0)
+659081a bench 第150回: K-Z3 12時台 run350 n積み増し (cold 3/60 ~5.0%, run350A 3/20 散発クラスタ, sibling run349 in-flight のため run350 読替; control 0/20 完全静穏分離成立, 帯内1窓即消失継続) + iterlog
+65537a1 rank 151: fold falsify161 run347 (6/60, A heavy 6/20 12h-2nd) + bench149 run348 (0/60) -> K-Z3 12hr(9/7) 18/240 ~7.5% 4-set midband; heavy single-window attenuation confirmed (run348 0/60 3min后); rank/status/evolve unchanged; NEXT K-Z3 12hr n-add run349
+d6fb2e1 bench 第149回: K-Z3 12時台 run348 n積み増し (cold 0/60, sibling run347A heavy の約3分後 quiet — 帯内1窓即消失短時間減弱の追加観測) + iterlog
+8e8f56f rank 150: fold falsify160 run345 (9/60) + bench148 run346 (3/60) -> K-Z3 12hr(9/7) 12/120 ~10% 2-set mid-high; run345A 6/20 heavy attenuated to run346 3/60 single-window; rank order unchanged; NEXT K-Z3 12hr n-add run347
+b1cb9c3 bench 第148回: K-Z3 12hr band n-add run346A-C (cold 3/60, control quiet, run345 relabeled to run346)
+===DIFF_LOCAL_VS_FETCHMAIN===
+0
+===MANIFEST_TAIL===
+ls: manifest*: No such file or directory

@@ -1,0 +1,7 @@
+ M query-cosientist.md
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[detached HEAD db5ee63] falsify 第112回: K-Z3 21時台 n 積み増し run247A-C (cold 1/60 ~1.7%, control 分離成立, 21時台通算 5/180 ~2.8% 低位帯サンプル; bench 第99回 run246 と ID 衝突のため run247 に読替, 独立2計測)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+commit_rc=0
+db5ee63e17ea865a381531261d604fdc72855fbe

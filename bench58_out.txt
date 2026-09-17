@@ -1,0 +1,6 @@
+time: 2026-09-05 21:08:36 JST
+host load: 21:08  up 13:51, 15 users, load averages: 92.38 66.22 45.93
+run170A all=20 ok=20 cold(>=2.0s)=0 p50=0.200s colds=1.034s(#2) 1.094s(#8) warm range=0.063-0.275
+run170B all=20 ok=20 cold(>=0.0s)=0 p50=0.176s warm range=0.074-0.266
+run170C all=20 ok=20 cold(>=0.0s)=0 p50=0.176s warm range=0.085-0.426
+landing-control all=20 ok=20 cold(>=0.0s)=0 p50=0.222s warm range=0.179-0.424

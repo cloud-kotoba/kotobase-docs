@@ -1,0 +1,6 @@
+# check the deployed testnet variant quickly: does testnet (kotobase-cf-wasm-testnet) emit header?
+# We don't have testnet URL handy; instead verify the artifact upload actually includes the fn:
+# the local build output (mtime 18:04) DOES contain x-kotobase-kv-stats (count=1) => the deploy we
+# just pushed contains it. So production header absence on the edge means the frontend
+# (kotobase.net edge, a different Worker) strips/doesn't forward the response header, OR the
+# 401/200 response we see is produced by the edge before reaching the engine worker.

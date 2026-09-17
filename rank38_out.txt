@@ -1,0 +1,131 @@
+$ git branch -a -> 0
+* (HEAD detached at net-kotobase/main)
+  cosient-sync
+  main
+  manifest-rev
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/main
+
+$ git rev-parse HEAD -> 0
+668ae461887f32fd45a3f705bfc297e218a6b638
+
+$ git fetch origin -> 128
+
+STDERR: fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+$ git rev-parse origin/main -> 128
+origin/main
+
+STDERR: fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+$ git status -> 0
+3_run101_final.py
+	kz3_run101_out.txt
+	kz3_run101_secreq.py
+	kz3_run101_verify.py
+	kz3_run102.sh
+	kz3_run102_append.py
+	kz3_run102_calc.py
+	kz3_run102_fixnum.py
+	kz3_run102_out.txt
+	kz3_run103.sh
+	kz3_run103_append.py
+	kz3_run103_append_out.txt
+	kz3_run103_calc.py
+	kz3_run103_calc_out.txt
+	kz3_run103_check.py
+	kz3_run103_commit.py
+	kz3_run103_commit_out.txt
+	kz3_run103_ctx_out.txt
+	kz3_run103_math.txt
+	kz3_run103_out.txt
+	kz3_run103_verify.py
+	kz3_run103_verify.txt
+	kz3_run104_append.py
+	kz3_run104_calc.py
+	kz3_run104_calc_out.txt
+	kz3_run104_commit.py
+	kz3_run104_commit_out.txt
+	kz3_run104_push.py
+	kz3_run104_push_out.txt
+	kz3_run104_st.py
+	kz3_run104_st_out.txt
+	kz3_run105.sh
+	kz3_run105_append.py
+	kz3_run105_calc.py
+	kz3_run105_calc_out.txt
+	kz3_run105_final.py
+	kz3_run105_final.txt
+	kz3_run105_out.txt
+	kz3_run105_push2_out.txt
+	kz3_run105_push3.py
+	kz3_run105_push3_out.txt
+	kz3_run105_push_out.txt
+	kz3_run105_remotecheck.py
+	kz3_run105_remotecheck.txt
+	kz3_run105_verify.txt
+	kz3_run107.sh
+	kz3_run107_out.txt
+	kz3_run96_ctx.py
+	kz3_run96_ctx_out.txt
+	kz3_run96_out.txt
+	kz3_run97_calc_out.txt
+	kz3_run98.sh
+	kz3_run98_append.py
+	kz3_run98_append_out.txt
+	kz3_run98_calc.py
+	kz3_run98_calc_out.txt
+	kz3_run98_out.txt
+	kz3_run98_verify.txt
+	kz3_show106.txt
+	kz3_show106b.txt
+	kz3_st.txt
+	kz3_status.py
+	kz3_status_out.txt
+	kz3_syn.txt
+	kz3_tail104.py
+	kz3_tail104.txt
+	kz3_tail200.txt
+	kz3_tail_out.txt
+	kz3_tailcheck.py
+	kz3_time.txt
+	kz3_trace.txt
+	kz3_trace2.txt
+	kz3_trace_run.py
+	kz3_trace_run_out.txt
+	kz3_verify.txt
+	kz3_z2_grep.txt
+	rank38_out.txt
+	rank38_pull.py
+	rank38_pull_out.txt
+	rank38_state.py
+	rk_br.py
+	rk_br_out.txt
+	rk_co.py
+	rk_co_out.txt
+	rk_date.py
+	rk_date_out.txt
+	rk_diff.py
+	rk_diff_out.txt
+	rk_edit.py
+	rk_edit_out.txt
+	rk_fetch.py
+	rk_fetch2.py
+	rk_fetch2_out.txt
+	rk_fetch_out.txt
+	rk_grep.txt
+	rk_log.py
+	rk_log_out.txt
+	rk_push.py
+	rk_push_out.txt
+	rk_wc.py
+	rk_wc_out.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+

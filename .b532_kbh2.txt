@@ -1,0 +1,14 @@
+kb_health=301
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+kb_health_L=200 url=https://kotoba.cloud/health
+{
+  "ok": true,
+  "service": "kotoba-cloud-control-plane",
+  "build": "20260914T2354-org-gw"
+}

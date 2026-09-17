@@ -1,0 +1,16 @@
+HEAD is now at c583278 rank 第84回: falsify 84 run209 / bench 83 run210 (13時台帯初 6/60) 取り込み, K-Z3 帯別分布更新, 順位変動なし + NEXT K-Z3 13時台 n 積み増し
+c583278829d6b742049a222be4d1fb48d690c341
+c583278829d6b742049a222be4d1fb48d690c341
+c583278 rank 第84回: falsify 84 run209 / bench 83 run210 (13時台帯初 6/60) 取り込み, K-Z3 帯別分布更新, 順位変動なし + NEXT K-Z3 13時台 n 積み増し
+da9f4df bench 83: K-Z3 13時台 run210A-C evidence (cold 6/60, run210A冒頭集中型, control分離)
+7a3ad0b falsify 84: K-Z3 12時台 run209A-C evidence (cold 7/60, run209A集中型)
+eb29b15 rank 第83回: K-Q1 切れ手(i) scope 照合反証 (cosient 82続) + falsify 83/bench 82 run207 取り込み, K-Q1 切れ手 (ii) へ収束 + NEXT
+9056d1b bench 第82回: K-Z3 12時台帯初計測 run207A-C cold 0/60, warm p50 53-55ms, control 分離成立
+c583278 rank 第84回: falsify 84 run209 / bench 83 run210 (13時台帯初 6/60) 取り込み, K-Z3 帯別分布更新, 順位変動なし + NEXT K-Z3 13時台 n 積み増し
+da9f4df bench 83: K-Z3 13時台 run210A-C evidence (cold 6/60, run210A冒頭集中型, control分離)
+7a3ad0b falsify 84: K-Z3 12時台 run209A-C evidence (cold 7/60, run209A集中型)
+eb29b15 rank 第83回: K-Q1 切れ手(i) scope 照合反証 (cosient 82続) + falsify 83/bench 82 run207 取り込み, K-Q1 切れ手 (ii) へ収束 + NEXT
+9056d1b bench 第82回: K-Z3 12時台帯初計測 run207A-C cold 0/60, warm p50 53-55ms, control 分離成立
+3d21316 falsify 第83回: K-Z3 run207A-C evidence (11時台 2セット目)
+be8aee8 cosientist 第82回(続): K-Q1 切れ手(i) scope 文字列照合も静的棄却材料 (parity 実測), evidence 追記
+b0ebd94 rank 第82回: K-Z3 10時台 8/240 + 11時台 4/60 取り込み, K-Q1 切れ手再収束 (parity 反証) を rank 更新 + NEXT

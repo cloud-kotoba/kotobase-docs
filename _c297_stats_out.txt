@@ -1,0 +1,5 @@
+run297A: n=20 all200=True cold(>=0.5)=0/20 p50=56.2ms p95=95.1ms max=99.3ms
+run297B: n=20 all200=True cold(>=0.5)=0/20 p50=86.7ms p95=141.8ms max=185.7ms
+run297C: n=20 all200=True cold(>=0.5)=0/20 p50=91.4ms p95=153.3ms max=159.7ms
+control(land): n=20 all200=True cold(>=0.5)=0/20 p50=45.6ms p95=71.0ms max=102.1ms
+SEARCH TOTAL: cold 0/180-60? (3x20=80)  search-side cold sum=0/80

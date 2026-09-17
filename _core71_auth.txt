@@ -1,0 +1,99 @@
+5:   `kotobase.cacao`/`kotobase.cid` -- the SAME primitives
+7:   deployment) composes its own `verify-cacao` from in its `worker.cljc`.
+8:   `kotobase-client`'s `cacao.cljc` is mint-only (no bundled verify fn), so
+9:   `verify-cacao` below is the SAME composition kotobase-cljc-worker uses:
+11:   SIWE message via `kotobase.cacao/cacao-siwe-message` -> `@noble/curves`
+13:   maintained `kotobase.cacao/verify-cacao` -- two CACAO implementations in
+16:   `kotobase-cljc-worker`'s own `verify-cacao` only checks signature +
+30:            [kotobase.cacao :as cacao]
+53:   testing (auth_test.cljs's now-passing verify-cacao-rejects-an-
+55:   correct guard kotobase-api-gateway-cljs's own kotobase.edge-cacao/parse-utc-seconds uses
+63:  "Port of kotobase-api-gateway-cljs's `kotobase.cacao/validate-cacao` payload checks
+65:   payload shape -- kotobase-client's own cacao.cljc doesn't bundle this,
+66:   only mint-cacao's construction side."
+88:(defn verify-cacao-caps
+90:   shape checks identical to `verify-cacao` below, WITHOUT the kotobase:pin
+94:   (reads carry it in the body's :cacao_b64 — kotobase-client's read-cacao
+100:        (let [decoded (.decode dag-cbor (cacao/base64->bytes token))
+109:                  msg (cacao/cacao-siwe-message
+114:                  sig (cacao/base64url->bytes (aget s "s"))]
+121:(defn verify-cacao
+129:        (let [decoded (.decode dag-cbor (cacao/base64->bytes token))
+138:                      msg (cacao/cacao-siwe-message
+143:                      sig (cacao/base64url->bytes (aget s "s"))]
+162:(defn verify-transact-auth
+174:   Do not treat that rewrite as a cacao-less service-account path; it also
+180:    (let [v (verify-cacao authorization now-sec)]
+215:(defn cacao-authorization?
+273:      (not (contains? #{"data:read" "data:write"} permission))
+315:  (verify-biscuit-action env authorization tenant graph "data:write" now-sec))
+325:  [env authorization cacao-b64 tenant graph now-sec]
+342:     :read-auth (some-> cacao-b64 (verify-cacao-caps now-sec))}))
+399:   Gateway-only cacao skip still 401s here. Humans without a CACAO fail
+414:     (cacao-authorization? authorization)
+452:(defn- cacao-resources
+461:        (let [decoded (.decode dag-cbor (cacao/base64->bytes token))
+473:  (some #(second (re-matches graph-resource-re %)) (cacao-resources authorization)))
+2:  "ai.gftd.apps.kotobase.datomic.{q,datoms,transact,pull,fold,entity,entid,
+34:   mode, writes (`transact`) require an exact `data:write` Biscuit. The CACAO
+718:                        (json-resp {:ok false :error "Unauthorized"
+781:          (json-resp {:ok false :error "Unauthorized"
+882:                   (json-resp {:ok false :error "Unauthorized"
+970:                   (json-resp {:ok false :error "Unauthorized"
+1065:                  {:ok false :error "Unauthorized" :details (:error verified)}
+1193:(declare run-write transact-finish write-graph-name)
+1205:  datomic.transact, never the anonymous read route."
+1213:    (js/Promise.resolve {:ok false :error "Unauthorized"
+1227:          (.then (fn [resp] (transact-finish env iss nonce resp)))))))
+1234:        auth-result (auth/resolve-transact-auth
+1242:      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+1323:;; ── write: datomic.transact ──────────────────────────────────────────────────
+1361:   Datomic transaction envelope understood by the shared engine.
+1375:     (throw (ex-info "canonical transaction triples required"
+1376:                     {:kotobase/error :invalid-canonical-transaction})))
+1384:            (h/handle store-map "transact" body auth-did)))
+1417:  "One CAS round for `method` (\"transact\" or \"fold\"): read the head,
+1509:;; datomic.transact. The balance decision MUST execute inside every graph-head
+1547:  will extend. The transaction is valid only for that head; a lost CAS
+1702:                        (-> (h/handle store-map "transact"
+1752:               (-> (h/handle store-map "transact"
+1796:;; -- queued transactions applied in order against one hydration produced a
+1816:(defn- transact-finish [env iss nonce resp]
+1852:(defn- transact-after-nonce-check [env body iss nonce db-name seen?]
+1854:    seen? (js/Promise.resolve {:ok false :error "Unauthorized" :message "CACAO nonce already used" :status 401})
+1868:                     (run-write env g "transact" (assoc body :graph g) iss))))
+1869:          (.then (fn [resp] (transact-finish env iss nonce resp)))))))
+1877:;; transact whose novelty_size crossed the threshold, schedule ONE
+1953:  "Internal (public for tests): does a transact response warrant a
+2032:(defn handle-transact
+2033:  ([request env] (handle-transact request env nil))
+2050:                    auth-result (auth/resolve-transact-auth
+2058:                  (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+2060:                        after (fn [seen?] (transact-after-nonce-check env b iss nonce db-name seen?))]
+2087:               {:ok false :error "Unauthorized"
+2101:                    (.then #(transact-finish env iss nonce %))))))]
+2112:        auth-result (auth/resolve-transact-auth
+2118:      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+2125:  Authentication and immutable owner binding are identical to transact. The
+2159:               {:ok false :error "Unauthorized"
+2173:                    (.then #(transact-finish env iss nonce %))))))]
+2184:        auth-result (auth/resolve-transact-auth
+2190:      (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)}
+2226:  ;; bind-owner! is transact's own precondition (it creates the marker only
+2249:               ;; none of the issuer→graph binding that makes `transact` safe
+2254:                   (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+2267:                 (json-resp {:ok false :error "Unauthorized"
+2273:                                (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))
+2283:               (json-resp {:ok false :error "Unauthorized"
+2543:                 (json-resp {:ok false :error "Unauthorized"
+2657:                 (json-resp {:ok false :error "Unauthorized"
+2676:;; same CAS-with-retry commit orchestration transact/fold already share).
+2678:;; Auth reuses verify-transact-auth VERBATIM -- the SAME
+2680:;; nonce-replay gate datomic.transact/fold already enforce -- a kg write is
+2682:;; one genuine difference from datomic.transact: kg.ingest's wire body
+2689:;; SAME graph a datomic.transact write for that db_name would.
+2693:    seen? (js/Promise.resolve {:ok false :error "Unauthorized" :message "CACAO nonce already used" :status 401})
+2697:      :message "kg write requires a kotoba://graph/<db-name> resource on the CACAO -- the target graph is derived as kotobase/db/<your-did>/<db_name>, same as datomic.transact's db_name"
+2706:          (.then (fn [resp] (transact-finish env iss nonce resp)))))))
+2714:               auth-result (auth/verify-transact-auth authz (aget env "KOTOBASE_OPERATOR_DIDS") (now-sec))]
+2716:             (json-resp {:ok false :error "Unauthorized" :details (:error auth-result)} (:status auth-result))

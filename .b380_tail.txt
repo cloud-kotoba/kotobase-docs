@@ -1,0 +1,6 @@
+LEN=219753
+TAIL>
+control, 別接続 curl, cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 17:41–17:44 JST, 全 80/80 200, host load1 13.03→21.48 (pre/end uptime 実測, gate 7.5 超過) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): cold(>=0.5s) 5/1/0 per 20 = 6/60 (~10%) — run380A cold 5/20 散発クラスタ (0.524/0.784/1.115/1.412/1.921s pos 1/3/6/11/13) p50 0.161s max 1.921s / run380B cold 1/20 (1.180s pos15 単発) p50 0.322s / run380C cold 0/20 p50 0.141s max 0.219s, control (kotobase.net/signup) cold 0/20 p50 0.156s max 0.356s 完全静穏で control 分離成立、cold 群は search 側に局在。run380A 散発クラスタ 5/20 + B 単発は C 0/20 + control 0/20 で即消失し「帯内 1 窓即消失」散発型継続 (heavy>=6/20 は再達せず run368A/373A/377A heavy 型の帯水準持続性は非再現継続)。17時台 (9/7) 本 tick 追加分 = run380 (6/60) — sibling 確定分 (run375 4/60 + run376 6/60 + run377 8/60 + run378 1/60 + run379 2/60 = 21/300 ~7.0%) と合わせ 27/360 ~7.5% の 6 セット候補 (run380 の採用可否は rank 判定に委ねる)。status 判定は rank に委ねる (rank 専門)。
+
+<EOF
+rc=0

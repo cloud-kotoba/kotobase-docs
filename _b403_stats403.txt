@@ -1,0 +1,5 @@
+403A: n=20 p50=67.1ms cold(>=0.5s)=3/20 max=1309.3ms warm_p50=64.5ms
+403B: n=20 p50=59.1ms cold(>=0.5s)=0/20 max=437.9ms warm_p50=59.1ms
+403C: n=20 p50=57.4ms cold(>=0.5s)=0/20 max=276.8ms warm_p50=57.4ms
+land: n=20 p50=53.2ms cold(>=0.5s)=1/20 max=534.1ms warm_p50=53.2ms
+SEARCH TOTAL n=60 cold=3/60

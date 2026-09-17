@@ -1,0 +1,6 @@
+BRANCHES rc= 0
+* (HEAD detached at 423c4d8)
+  manifest-rev
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/main
+MERGE_BASE: 423c4d873048301c58d7717cc109f22c37438746

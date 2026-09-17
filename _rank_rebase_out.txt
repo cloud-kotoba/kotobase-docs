@@ -1,0 +1,16 @@
+===REBASE merge dir===
+ls: .git/rebase-merge/: No such file or directory
+===done===
+cat: .git/rebase-merge/done: No such file or directory
+===git-rebase-todo tail===
+tail: .git/rebase-merge/git-rebase-todo: No such file or directory
+===head-name===
+cat: .git/rebase-merge/head-name: No such file or directory
+===onto===
+cat: .git/rebase-merge/onto: No such file or directory
+===orig-head===
+cat: .git/rebase-merge/orig-head: No such file or directory
+===index conflict?===
+===conflict markers in file?===
+===now===
+20:49:50

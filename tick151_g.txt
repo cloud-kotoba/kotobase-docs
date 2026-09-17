@@ -1,0 +1,19 @@
+0a637f1da49e8ee423f37476aea2a4710b187506	HEAD
+c5332cd30dfcdbebb44607cc91952c2d2cfcca7b	refs/heads/bot/cosient-20260905-kz3-run129
+22bad92d63ab32aa758f02a27fa32265ef54b256	refs/heads/cosient-20260905-run123-obs
+0a637f1da49e8ee423f37476aea2a4710b187506	refs/heads/main
+be8530c6502c5a8d472283bad4e6635e22715980	refs/pull/1/head
+f45e41dbaedee26aa4b1c4fc1a6861a39d03a477	refs/pull/2/head
+c5332cd30dfcdbebb44607cc91952c2d2cfcca7b	refs/pull/3/head
+* (HEAD detached at net-kotobase/main)
+  bot/cosient-20260905-kz3-run129
+  cosient-sync
+  main
+  manifest-rev
+  rank-sync
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/bot/cosient-20260905-kz3-run129
+  remotes/net-kotobase/cosient-20260905-run123-obs
+  remotes/net-kotobase/main
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)

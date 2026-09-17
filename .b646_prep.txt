@@ -1,0 +1,4 @@
+bytes 1938836
+ITER_AT 862292
+TAIL '16.7% (同帯日差 ×~1.4, K-Z4 paired 継続)。evidence は本ファイル末尾に追記済み。status 判定は rank に委ねる (rank 専門)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し継続, 次 run ID は run646 使用)。secret 不含 (curl + python3 stats のみ)。\n'
+KZ3_AT 61547

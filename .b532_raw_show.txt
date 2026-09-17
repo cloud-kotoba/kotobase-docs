@@ -1,0 +1,14 @@
+      23 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.A
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.A.trim
+      43 total
+      23 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.B
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.B.trim
+      43 total
+      23 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.C
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.C.trim
+      43 total
+      23 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.CTRL
+      20 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b532_raw.txt.tag.CTRL.trim
+      43 total
+DONE
+      13 .b532_raw.txt

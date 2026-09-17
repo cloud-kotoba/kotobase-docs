@@ -1,0 +1,13 @@
+1
+run171A
+run170
+run171
+run171A
+run171B
+run171C
+run171A
+run171A
+run171A
+run171B
+run171C
+� (~2-3%) と同水準の低位側に更新 — 22時台帯レートはほぼ確定に近づいた。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し継続、または K-Q1 deploy run 33964821723 進行再確認)。

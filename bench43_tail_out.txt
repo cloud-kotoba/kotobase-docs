@@ -1,0 +1,8 @@
+1239   NEXT: K-Z3 9時台 n 積み増し (朝帯 8時台 1 試行のみで帯発現率未確定 — 5時台/6時台
+1240   と同様に低位が再現するかで平坦パターン帯別分布の裾を確定できる、gate 外で可能)。
+1241 - 2026-09-05: bench 第42回。新規 evidence: K-Z3 8時台 n 積み増し run120A–C (08:33 JST, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 86.6 は production HTTP 実測のため gate
+1242 - 2026-09-05: falsify (cosientist 第43回相当)。K-Z3 9時台 n 積み増し run122A–C (09:31–09:32 JST, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 15.3 は production HTTP 実
+1243 - 2026-09-05: rank 第42回。新規 evidence 1 本を取り込み: falsify run121A–C
+1244   (K-Z3 8時台 n 積み増し 3 セット目, cold 0/60, control 静穏, host load1 104.6
+1245   は production HTTP 実測のため gate 外)。8時台通算は run119 + run120 + 本 tick
+1246   で 0/180 完全静穏 — 朝帯低位が 3 セット連続で再現し 5時台/6時台/8時台のみ低位

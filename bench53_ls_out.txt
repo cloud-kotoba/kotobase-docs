@@ -1,0 +1,932 @@
+bench36_count.py :: import io, re | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | lines = src.split("\n") | out = [] | for i, ln in enumerate(lines, 1): |     if "search.kotobase.net"
+
+bench36_diag.py :: import subprocess, json |  | DOC = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | out = [] |  | def run(cmd): |     r = subprocess.run(cmd, capture_output=True, text=True) |     out.append("$ %s\n%s%s(rc=%s)\n" % (" ".
+
+bench37_append.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | lines = src.split("\n") | idx = [i for i, ln in enumerate(lines) if ln.startswith("| K-Z3 | worker 
+
+bench37_log.py :: import io | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | assert src.count("run107") == 1 | assert src.count("85 試行中 28 試行") == 1 | # iteration log entry | marker 
+
+bench37_verify.py :: import subprocess | r = subprocess.run(["git", "log", "--oneline", "-1"], capture_output=True, text=True, cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | r2 = subprocess.run(["git", "status", "--short"], capture_output=True, text=True
+
+bench37_verify2.py :: import subprocess | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = [] | # 1) confirm pushed commit is on remote | r = subprocess.run(["git", "log", "--oneline", "origin/main", "-1"], capture_output=True, text=True, cwd=cwd) | 
+
+bench37_verify3.py :: import subprocess | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = [] | r = subprocess.run(["git", "remote", "-v"], capture_output=True, text=True, cwd=cwd) | out.append("remotes:\n" + r.stdout.strip()) | r = subprocess.run(["
+
+bench37_verify4.py :: import subprocess | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git", "log", "--oneline", "net-kotobase/main", "-1"], capture_output=True, text=True, cwd=cwd) | with open("bench37_verify4.txt", "w") as f: |  
+
+bench37_z2.py :: import io, json, subprocess, time, datetime |  | BASE = "https://search.kotobase.net/search?q=test" | CONTROL = "https://kotobase.net/" | N = 20 | WARMUP = 0  # falsify/bench K-Z2/K-Z3 runs use n=20 direct, no warmup exclusion | COLD_MS = 500.0 |  | def neares
+
+bench38_append.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | lines = src.split("\n") | idx = [i for i, ln in enumerate(lines) if ln.startswith("| K-Z2 | worker 
+
+bench38_append2.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | lines = src.split("\n") | idx = [i for i, ln in enumerate(lines) if ln.startswith("| K-Z2 | worker 
+
+bench38_append_wrap.py :: import subprocess | r = subprocess.run(["/usr/bin/python3", "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench38_append.py"], |                    capture_output=True, text=True) | with open("/Users/junkawasaki/github/com-junkawasaki/orgs/
+
+bench38_calc.py :: import io, statistics | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench38_run_out.txt" | txt = io.open(path, encoding="utf-8").read() | sections = {} | cur = None | for ln in txt.splitlines(): |     if ln.startswith("==="): |    
+
+bench38_env.py :: import subprocess, sys | with open("bench38_env_out.txt", "w") as f: |     r = subprocess.run(["date"], capture_output=True, text=True) |     f.write("DATE: " + r.stdout + r.stderr + "\n") |     r2 = subprocess.run(["sysctl", "-n", "vm.loadavg"], capture_outpu
+
+bench38_find.py :: import os, re | hits = [] | for fn in sorted(os.listdir(".")): |     if not re.match(r"bench\d+.*\.(py|json|txt)$", fn): |         continue |     try: |         with open(fn, encoding="utf-8", errors="replace") as f: |             content = f.read() |         
+
+bench38_iter.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | entry = ( |     "- 2026-09-05: bench 第38回。新規 evidence: K-Z2 対比 n 増強 run110/run111 " |     "(04:35 J
+
+bench38_log.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | assert "run108" in src, "K-Z2 row addition missing?" | assert src.count("run108") == 1, src.count("
+
+bench38_log_wrap.py :: import subprocess | r = subprocess.run(["/usr/bin/python3", "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench38_log.py"], |                    capture_output=True, text=True) | with open("/Users/junkawasaki/github/com-junkawasaki/orgs/net
+
+bench38_mini.py :: import subprocess, time, datetime | # minimal: fire 3 curls immediately, log results | res = [] | for i in range(3): |     r = subprocess.run(["/usr/bin/curl", "-s", "-o", "/dev/null", "-w", "%{time_starttransfer} %{http_code}", |                         "--ma
+
+bench38_qh.py :: import os, re | hits = [] | for fn in os.listdir("."): |     if not fn.endswith(".md"): |         continue |     try: |         with open(fn, encoding="utf-8", errors="replace") as f: |             for i, line in enumerate(f, 1): |                 if re.search
+
+bench38_run.py :: import subprocess, time, datetime | try: |     r = subprocess.run(["/usr/bin/python3", "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench38_z2.py"], |                        capture_output=True, text=True, timeout=280) |     out = "rc=%s\n
+
+bench38_where2.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | lines = src.split("\n") | for i, ln in enumerate(lines, 1): |     if ln.startswith("| K-Z2 | worker |"
+
+bench38_z2.py :: import io, json, subprocess, time, datetime |  | BASE = "https://search.kotobase.net/search?q=test" | CONTROL = "https://kotobase.net/" | N = 20 | COLD_MS = 500.0 | TICK = 300  # */5 cron period in seconds |  | def nearest_rank(sorted_s, p): |     return sorte
+
+bench39_append.py :: from pathlib import Path |  | p = Path("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md") | src = p.read_text(encoding="utf-8") |  | anchor = "\n| K-Q2 | query |" | assert anchor in src, "K-Q2 row anchor not found" | assert
+
+bench39_commit.py :: import subprocess |  | msg = ( |     "bench 第39回: K-Q1 backend query path 計測第1段 (engine 直叩きは DNS 不解決のため " |     "fallback 条項で gateway 単独分解: POST /api/q no-auth 402 応答 total p50 15.87ms / " |     "GET / 200 p50 13.09ms — gateway 前段 overhead は小さく退行は backend 実行区間
+
+bench40_append.py :: import subprocess, re | u = subprocess.run(["uptime"], capture_output=True, text=True).stdout | load1 = float(re.search(r"load averages?: ([\d.]+)", u).group(1)) | print(load1) |  | doc_path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/q
+
+bench40_env.py :: import os, subprocess | out = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench40_env_out.txt","w") | out.write("cwd: %s\n" % os.getcwd()) | out.write("files: %s\n" % ", ".join(sorted(os.listdir("."))[:40])) | r = subprocess.run(["gi
+
+bench40_find.py :: import re | doc = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md", encoding="utf-8").read() | out = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench40_find.txt","w", encoding="utf-8") | fo
+
+bench40_git.py :: import subprocess | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git","add","query-cosientist.md"], cwd=d, capture_output=True, text=True) | r2 = subprocess.run(["git","commit","-m","bench 第40回: K-Z3 深夜帯 6時台 run
+
+bench40_kz3.py :: import subprocess, json, time, statistics |  | N = 20 | COLD = 0.5 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     ttfbs = [] |     codes = [] |     for _ in range(n): |         r = s
+
+bench40_tail.py :: lines = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md", encoding="utf-8").read().splitlines() | out = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench40_tail.txt","w", encoding="utf-8") |
+
+bench40_verify.py :: doc = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md", encoding="utf-8").read() | out = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench40_verify.txt","w", encoding="utf-8") | out.write("c
+
+bench41_append.py :: import io | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | lines = io.open(p, encoding="utf-8").read().splitlines(keepends=True) | new = "falsify 2026-09-05 (K-Z3 6時台 n 積み増し run118A–C, 同測定法 n=20 × 3 run, 別接続 curl, 
+
+bench41_commit.py :: import subprocess | msg = ("bench 第41回: K-Z3 6時台 n 積み増し run117A-C (cold 0/60 完全静穏, control 静穏 — " |        "6時台通算 12 試行中 2 試行 ~17%, 深夜帯通算 101 試行中 30 試行 ~29.7%)") | r = subprocess.run(["git", "add", "query-cosientist.md"], cwd=".", capture_output=True, text=Tru
+
+bench41_edit.py :: import re | src = open("bench40_kz3.py").read() | src = src.replace("bench40_out.txt", "bench41_out.txt") | src = src.replace("run115A", "run117A").replace("run115B", "run117B").replace("run115C", "run117C") | open("bench41_kz3.py", "w").write(src) | print("wr
+
+bench41_kz3.py :: import subprocess, json, time, statistics |  | N = 20 | COLD = 0.5 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     ttfbs = [] |     codes = [] |     for _ in range(n): |         r = s
+
+bench41_push.py :: import subprocess | r = subprocess.run(["git", "push", "origin", "HEAD:refs/heads/main"], cwd=".", capture_output=True, text=True) | print("PUSH RC", r.returncode) | print(r.stdout, r.stderr) | 
+
+bench42_analyze.py :: import json | d = json.load(open("bench42_raw_data.json")) | print("time:", d["time"]) | for tag in ("A", "B", "C", "landing"): |     seq = d["data"][tag] |     codes = [r["code"] for r in seq] |     ttfbs = [r["ttfb"] for r in seq] |     ok = sum(1 for c in c
+
+bench42_append.py :: path = "query-cosientist.md" | lines = open(path).read().splitlines(keepends=True) | i = 170  # 1-indexed line 171 -> index 170? no: line 170 is index 169 | idx = 169 | l = lines[idx] | assert l.startswith("| K-Z3"), l[:40] | add = (" bench 2026-09-05 (第42回, K
+
+bench42_chk.py :: import os | s = open("bench42_kz3.py").read() | print(repr([l for l in s.splitlines() if "COLD" in l or "colds" in l][:4])) | print("out mtime", os.stat("bench42_out.txt").st_mtime, "py mtime", os.stat("bench42_kz3.py").st_mtime) | 
+
+bench42_find.py :: path = "query-cosientist.md" | lines = open(path).read().splitlines() | for i, l in enumerate(lines, 1): |     if l.startswith("| K-Z3"): |         print(i, l[:200]) | 
+
+bench42_fix.py :: path = "query-cosientist.md" | text = open(path).read() | old1 = ("bench 2026-09-05 (第42回, K-Z3 9時台 n 積み増し run120A–C, 同測定法 n=20 × 3 run, " |         "別接続 curl, Tokyo, 08:33 JST, 全 60/60 200, host load1 86.6 は production HTTP 実測のため gate 外): " |         "run120A
+
+bench42_fmt.py :: COLD = 0.5 | print("fmt: cold(>=%.1fs)" % COLD) | print("f-string:", "cold(>=%.1fs)".__mod__(COLD)) | import sys | print("python:", sys.version) | print("float hex:", float(COLD).hex()) | 
+
+bench42_kz3.py :: import subprocess, time |  | N = 20 | COLD = 0.5 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     ttfbs = [] |     codes = [] |     for _ in range(n): |         r = subprocess.run( |  
+
+bench42_log.py :: path = "query-cosientist.md" | entry = ( |     "- 2026-09-05: bench 第42回。新規 evidence: K-Z3 8時台 n 積み増し run120A–C " |     "(08:33 JST, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, " |     "host load1 86.6 は production HTTP 実測のため
+
+bench42_raw.py :: import hashlib | data = open("bench42_out.txt","rb").read() | print(len(data), hashlib.sha256(data).hexdigest()[:16]) | print(repr(data)) | 
+
+bench42_raw_run.py :: import subprocess, time, json |  | N = 20 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     res = [] |     for _ in range(n): |         r = subprocess.run( |             ["curl", "-o", 
+
+bench42_rerun.py :: import subprocess, time |  | N = 20 | COLD = 0.5 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     ttfbs = [] |     codes = [] |     for _ in range(n): |         r = subprocess.run( |  
+
+bench42_verify.py :: path = "query-cosientist.md" | lines = open(path).read().splitlines(keepends=True) | idx = 169 | tail = lines[idx][-700:] | print(tail) | 
+
+bench43_check.py :: v = open('bench43_out.txt').read() | print([l for l in v.splitlines()]) | 
+
+bench43_kz3.py :: import subprocess, time |  | N = 20 | COLD = 0.5 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     ttfbs = [] |     codes = [] |     for _ in range(n): |         r = subprocess.run( |  
+
+bench43_line.py :: import io |  | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | lines = io.open(p, encoding="utf-8").read().splitlines(keepends=True) | print(repr(lines[1241])) | 
+
+bench43_locate.py :: p = 'query-cosientist.md' | lines = open(p, encoding='utf-8').read().split('\n') | for i, l in enumerate(lines): |     if l.startswith('| K-Z3 |'): |         print('K-Z3 row line no:', i + 1, 'len:', len(l)) |         print('TAIL:', repr(l[-260:])) | # also sh
+
+bench43_tail.py :: import io |  | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | lines = io.open(p, encoding="utf-8").read().splitlines(keepends=True) | for i in range(1238, 1246): |     print(i + 1, lines[i][:200].rstrip()) | 
+
+bench44_kz3.py :: import subprocess, time |  | N = 20 | COLD = 0.5 | SEARCH = "https://search.kotobase.net/search?q=test" | LANDING = "https://kotobase.net/" |  | def run_seq(url, n=N): |     ttfbs = [] |     codes = [] |     for _ in range(n): |         r = subprocess.run( |  
+
+bench45_append.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | lines = src.split("\n") | idx = [i for i, ln in enumerate(lines) if ln.startswith("| K-Z3 | worker 
+
+bench45_commit.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\nSTDOUT:\n%s\nSTDERR:\n%s" % (r.returncode, r.stdout, 
+
+bench45_commit2.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\n%s%s" % (r.returncode, r.stdout, r.stderr) |  | out =
+
+bench45_commit3.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\n%s%s" % (r.returncode, r.stdout, r.stderr) |  | out =
+
+bench45_diag.py :: import io | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | n125 = src.count("run125A") | log_tail = src[-400:] | with open("/Users/junkawasaki/github/com-junkawasak
+
+bench45_diag10.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | # Check eee3314's actual diff to understand what it contains regarding run125 | r = subprocess.run(["git", "show", "--stat", "eee3314"], capture_output=True, tex
+
+bench45_diag11.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r2 = subprocess.run(["git", "show", "eee3314", "--", "query-cosientist.md"], capture_output=True, text=True, cwd=cwd) | lines = r2.stdout.split("\n") | # print t
+
+bench45_diag12.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | # The K-Z3 hypothesis row in the worktree: check if the row evidence appended by us | # landed in HEAD (search K-Z3 row for our exact addition) | blob = subproce
+
+bench45_diag13.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | # Amend is risky; instead just verify push state. Remote net-kotobase/main == HEAD? | r = subprocess.run(["git", "rev-parse", "net-kotobase/main", "HEAD"], captu
+
+bench45_diag2.py :: import io | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | hrow = [ln for ln in src.split("\n") if ln.startswith("| K-Z3 | worker |")][0] | with open("/Users/junkaw
+
+bench45_diag3.py :: import io | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | marker = "NEXT: 委ねる (rank 判断 — 9時台 n 積み増し継続、または K-Q1 engine 内訳の cosientist 実装指定)。\n" | with open("/Users/
+
+bench45_diag5.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\n%s%s" % (r.returncode, r.stdout, r.stderr) |  | out =
+
+bench45_diag6.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | # Search worktree blob for run125 to see if K-Z3 row AND iteration log present in HEAD blob | r = subprocess.run(["git", "show", "HEAD:query-cosientist.md"], cap
+
+bench45_diag7.py :: import subprocess, io, os | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | # Compare worktree file against HEAD blob byte-by-byte to confirm truly identical | blob = subprocess.run(["git", "show", "HEAD:query-cosientist.md"], captur
+
+bench45_diag8.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\n%s%s" % (r.returncode, r.stdout, r.stderr) |  | out =
+
+bench45_diag9.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\n%s%s" % (r.returncode, r.stdout, r.stderr) |  | # Fin
+
+bench45_diff.py :: import subprocess | r = subprocess.run(["git", "diff", "query-cosientist.md"], capture_output=True, text=True, |                    cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | with open("/Users/junkawasaki/github/com-junkawasaki/o
+
+bench45_diff2.py :: import subprocess | r = subprocess.run(["git", "diff", "HEAD", "--", "query-cosientist.md"], capture_output=True, text=True, |                    cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | with open("/Users/junkawasaki/github/com
+
+bench45_fetch.py :: import subprocess, io, time | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\nSTDOUT:\n%s\nSTDERR:\n%s" % (r.returncode, r.st
+
+bench45_gitdiag.py :: import subprocess | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, |                        cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") |     return (r.returncode, r.stdout[:1500], r.stderr[:500]) | ou
+
+bench45_gitdiag2.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return r.stdout + r.stderr |  | out = [] | out.append("== status =="
+
+bench45_gitdiag3.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\nSTDOUT:\n%s\nSTDERR:\n%s" % (r.returncode, r.stdout, 
+
+bench45_gitdiag4.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\nSTDOUT:\n%s\nSTDERR:\n%s" % (r.returncode, r.stdout, 
+
+bench45_log.py :: import io | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() | assert "run125A cold(>=0.5s) 1/20" in src  # hypothesis row edit present | marker = "NEXT: 委ねる (rank 判断 —
+
+bench45_log2.py :: import io, traceback | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | buf = io.StringIO() | try: |     src = io.open(path, encoding="utf-8").read() |     assert "run125A cold(>=0.5s) 1/20" in src, "A" |     mark
+
+bench45_remotecheck.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=cwd) |     return "RC=%d\n%s%s" % (r.returncode, r.stdout, r.stderr) |  | out =
+
+bench45_stagecheck.py :: import subprocess, io | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | # The worktree file has the edits; HEAD does not. Check explicitly. | r = subprocess.run(["git", "status", "--porcelain", "--", "query-cosientist.md"], |     
+
+bench45_verify.py :: import subprocess | r = subprocess.run(["git", "diff", "--stat"], capture_output=True, text=True, |                    cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | r2 = subprocess.run(["git", "status", "--short"], capture_output=Tr
+
+bench47_append.py :: with open("query-cosientist.md", encoding="utf-8") as f: |     lines = f.read().split("\n") | i = next(i for i, ln in enumerate(lines) if ln.startswith("| K-Z3 ")) | entry = ( |     " bench 2026-09-05 (第47回, K-Z3 11時台 n 積み増し run128A–C ※falsify 同時刻帯 11:16–11:17
+
+bench47_git.py :: import subprocess | r = subprocess.run(["git", "log", "--oneline", "-2"], capture_output=True, text=True) | s = subprocess.run(["git", "status", "--short"], capture_output=True, text=True) | p = subprocess.run(["git", "push"], capture_output=True, text=True) |
+
+bench47_mtime.py :: import os, datetime | for f in ["bench47_out.json", "bench47_z3.py"]: |     st = os.stat(f) |     print(f, datetime.datetime.fromtimestamp(st.st_mtime).astimezone().isoformat()) | 
+
+bench47_tail.py :: with open("query-cosientist.md", encoding="utf-8") as f: |     lines = f.read().split("\n") | # find the K-Z3 table row line (starts with '| K-Z3 ') | for i, ln in enumerate(lines): |     if ln.startswith("| K-Z3 "): |         with open("bench47_kz3_tail.txt",
+
+bench47_time.py :: import datetime, subprocess | now = datetime.datetime.now().astimezone() | print("now:", now.isoformat()) | load1 = open("/proc/loadavg").read() if False else None | out = subprocess.run(["/usr/sbin/sysctl", "-n", "vm.loadavg"], capture_output=True, text=True)
+
+bench47_verify.py :: with open("query-cosientist.md", encoding="utf-8") as f: |     txt = f.read() | i = next(i for i, ln in enumerate(txt.split("\n")) if ln.startswith("| K-Z3 ")) | tail = txt.split("\n")[i][-500:] | with open("bench47_verify.txt", "w", encoding="utf-8") as out: 
+
+bench47_z3.py :: import json, subprocess, statistics, time |  | def run(url, n=20): |     tt = [] |     codes = [] |     for i in range(n): |         out = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", |                               "%{http_code} %{time_total}", "--m
+
+bench49_append.py :: #!/usr/bin/env python3 | """bench49 (第49回): query-cosientist.md に bench evidence を追記する。 |  | - Iteration log 末尾に bench 第49回エントリを 1 行追記 | - K-Q1 行の evidence 欄末尾に追記 | """ | import io | import re | import sys |  | PATH = "/Users/junkawasaki/github/com-junkawasaki
+
+bench49_commit.py :: import subprocess, sys |  | PATH = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" |  | subprocess.run(["git", "add", PATH], cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs", check=True) | msg = ("be
+
+bench49_patch.py :: path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/authn/scripts/live_biscuit_query_bench.mjs" | src = open(path).read() | old = '''    const query = await sample("authenticated query", SAMPLE_COUNT, () => |       xrpc("datomic.q
+
+bench50_append.py :: p = "query-cosientist.md" | s = open(p).read() | ev = (" bench 2026-09-05 (第50回, K-Z3 17時台 n 積み増し run156A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 17:32–17:33 JST, 全 60/60 + control 20/20 200, host load1 6.88 (tick 開始時) は production HTTP 実測のため gate
+
+bench50_commit.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(*args): |     return subprocess.run(["git"] + list(args), cwd=repo, capture_output=True, text=True) | r = run("add", "query-cosientist.md") | print("add:", 
+
+bench51_append.py :: p = "query-cosientist.md" | s = open(p).read() | tail = "status 判定は rank に委ねる (rank 専門) |" | i = s.find("K-Z3 | worker |") | j = s.find("\n", i) | row = s[i:j] | assert row.count(tail) == 1, row.count(tail) | ev = (" bench 2026-09-05 (第51回, K-Z3 17時台 n 積み増し ru
+
+bench51_commit.py :: import subprocess, time | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | msg = ("bench 第51回: K-Z3 17時台 n 積み増し run158A-C (cold 0/60 完全静穏, 17時台通算 180 試行中 1 試行 ~0.6% 低位帯維持, " |        "control 静穏, warm p50 63-107ms に上振れしたが cold なし) evide
+
+bench51_ctx.py :: s = open("query-cosientist.md").read() | print(repr(s[21600:22120])) | 
+
+bench51_fetch.py :: import subprocess | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = [] | for cmd in [["git", "fetch", "net-kotobase"], |             ["git", "rev-parse", "HEAD"], |             ["git", "rev-parse", "net-kotobase/main"], |        
+
+bench51_findanchor.py :: import re | s = open("query-cosientist.md").read() | for m in re.finditer(r"。{1,2} \|", s): |     print(m.start(), repr(s[m.start()-40:m.start()+4])) | 
+
+bench51_row.py :: import re | s = open("query-cosientist.md").read() | i = s.find("K-Z3 | worker |") | print(i) | print(repr(s[i:i+200])) | # find end of K-Z3 row | j = s.find("\n", i) | seg = s[i:j] | print("ROWLEN", len(seg)) | print(repr(seg[-300:])) | 
+
+bench51_times.py :: import re, math | lines = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run156_out.txt").read().splitlines() | print(lines[0]); print(lines[-1]) | 
+
+bench52_append.py :: p = "query-cosientist.md" | s = open(p).read() | ev = (" bench 2026-09-05 (第52回, K-Q1 deploy 整合再確認計測 — cosientist 第51回の再 deploy (18:05 JST, version ea383ee7-0f9d-427b-8994-b2da566a05c2, " |       "git revision 7dc6249 = PR #3 マージ済み) を受け deploy 判別を production 実
+
+bench52_check.py :: import subprocess | r = subprocess.run(["date"], capture_output=True, text=True) | print("rc", r.returncode, r.stdout, r.stderr) | 
+
+bench52_commit.py :: import subprocess | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | msg = ("bench 第52回: K-Q1 deploy 整合再確認 — cosientist 第51回再 deploy (ea383ee7, 7dc6249) 後も " |        "x-kotobase-kv-stats header 不在 60/60 (deployed: false), 空 graph warm 
+
+bench52_mk.py :: import re | src = open("cos_iter51_kq1_backenddirect.mjs").read() | src = src.replace('const API = "https://backend.kotobase.net";', 'const API = "https://kotobase.net";') | open("bench52_kq1_edge.mjs", "w").write(src) | print("written") | 
+
+bench52_run.py :: import subprocess | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["node", "bench52_kq1_edge.mjs"], |                    cwd=d, capture_output=True, text=True, timeout=300) | open("bench52_kq1_out.json", "w").write
+
+bench52_verify.py :: p = "query-cosientist.md" | s = open(p).read() | c1 = s.count("第52回, K-Q1 deploy 整合再確認計測") | c2 = s.count("bench 第52回。cosientist 第51回の再 deploy") | open("bench52_verify.txt", "w").write(f"ev_in_row={c1} log_entry={c2}\n") | # also print the appended line fragme
+
+bench53_append.py :: import io |  | path = 'query-cosientist.md' | lines = open(path, encoding='utf-8').read().splitlines(keepends=True) |  | new = ("bench 2026-09-05 (第53回, K-Z3 18時台 n 積み増し run161A–C, rank 第53回 NEXT「委ねる」フォールバック, " |        "同測定法 n=20 × 3 + landing control, 別接続 cu
+
+bench53_calc.py :: import re, sys |  | def stats(path): |     lines = open(path).read().splitlines() |     runs = {} |     ctrl = [] |     cur = None |     for ln in lines: |         m = re.match(r'=== run161(\w) search', ln) |         if m: |             cur = 'run161' + m.grou
+
+bench53_commit.py :: import subprocess |  | cmds = ['git add query-cosientist.md', |         'git commit -m "bench 第53回: K-Z3 18時台 n 積み増し run161A-C (search cold 1/60, p50 40-56ms, control 静穏, run158 型全体遅延窓非再現, 18時台通算 4/180 ~2.2% 低位帯) evidence + iteration log 追記 — status 遷移なし"', | 
+
+bench53_commit2.py :: import subprocess |  | cmds = ['git add query-cosientist.md', |         'git commit -m "bench 第53回追記修正: iteration log 挿入位置を bench 第52回行直前に修正 (rank 第52回エントリの分断解消) + falsify 第59回 (別インスタンス同時実行) との run161 ID 衝突注記を evidence/log 両方に追記"', |         'git push net-koto
+
+bench53_fix.py :: path = 'query-cosientist.md' | text = open(path, encoding='utf-8').read() |  | bad = "\n- 2026-09-05: bench 第53回。rank 第53回 NEXT (委ねる) を受け K-Z3 18時台 n 積み増し run161A–C を同測定法で実施 (18:46 JST, production HTTP 実測のため gate 外, secret 不含): search cold 1/60 (~1.7%, 1.02s 単
+
+bench53_fix2.py :: path = 'query-cosientist.md' | text = open(path, encoding='utf-8').read() |  | old_e = ("bench 2026-09-05 (第53回, K-Z3 18時台 n 積み増し run161A–C, rank 第53回 NEXT「委ねる」フォールバック, " |          "同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 18:46:40–18:46:49 JST, 全 80
+
+bench53_iter.py :: import subprocess |  | path = 'query-cosientist.md' | text = open(path, encoding='utf-8').read() | log = ("- 2026-09-05: bench 第53回。rank 第53回 NEXT (委ねる) を受け K-Z3 18時台 n 積み増し run161A–C を同測定法で実施 " |        "(18:46 JST, production HTTP 実測のため gate 外, secret 不含): s
+
+bench53_ls.py :: import os | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | for f in sorted(os.listdir(d)): |     if f.endswith(".py"): |         head = open(os.path.join(d, f), encoding="utf-8", errors="replace").read(400).replace("\n", " | ") |     
+
+bench53_next.py :: import re | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | lines = open(p, encoding="utf-8").read().splitlines() | hits = [(i+1, l) for i, l in enumerate(lines) if "NEXT" in l] | for i, l in hits[-5:]: |     print(
+
+bench53_state.py :: import subprocess, json | cmds = [ |     ["date"], |     ["sysctl", "-n", "vm.loadavg"], |     ["git", "pull", "--ff-only"], |     ["git", "log", "--oneline", "-2"], | ] | out = {} | for c in cmds: |     r = subprocess.run(c, capture_output=True, text=True, ti
+
+bench53_tail.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | lines = open(p, encoding="utf-8").read().splitlines() | for i in range(1515, len(lines)): |     print(i+1, lines[i][:260]) | 
+
+bench53_tail2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | lines = open(p, encoding="utf-8").read().splitlines() | # print last 3 iteration entries fully | for i in range(1519, len(lines)): |     print(i+1, lines[i]) | 
+
+bench_diag.py :: import datetime, os, subprocess |  | lines = [] | lines.append("cwd=" + os.getcwd()) | lines.append("local=" + datetime.datetime.now().isoformat()) | lines.append("utc=" + datetime.datetime.now(datetime.timezone.utc).isoformat()) | p = subprocess.run(["uptime"
+
+bench_ls.py :: import os |  | root = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | lines = [] | for dirpath, dirnames, filenames in os.walk(root): |     dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules")] |     for name in filename
+
+cos_iter51_append.py :: line = "- 2026-09-05: cosientist 第51回。rank 第50回 NEXT「K-Q1 deploy 整合切分け」を実施: (a) engine PR #3 (c3c508f) は remote main 7dc6249 に含まれる (merge-base --is-ancestor exit 0)。(b) production version 485fd2dc の deploy tag revision 415b1b28 は engine repo (local/remote/ls-r
+
+cos_iter51_ctx1.py :: import re | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | i = src.find("assoc-response-kv-stats") | print(src[i-400:i+200]) | 
+
+cos_iter51_ctx10.py :: src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | # Where is the dispatch table mapping xrpc names to handlers? search for handle-q usage | import re | for m in re.finditer(r'handle-
+
+cos_iter51_ctx11.py :: import re | # dispatch: search all engine cljs for the xrpc route mapping (e.g. "datomic.q") | import glob | for f in glob.glob("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/**/*.cljs", recursive=True): |     s = open(f).read() |     
+
+cos_iter51_ctx12.py :: import glob, re | # find route table: search for "q" handler dispatch in worker.cljs or surface | for f in glob.glob("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/**/*.cljs", recursive=True): |     s = open(f).read() |     for m in re
+
+cos_iter51_ctx13.py :: s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/worker.cljs").read() | print(s[7000:8200]) | 
+
+cos_iter51_ctx14.py :: s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/physical_index_dispatch.cljs").read() | import re | i = s.find("defn handle") | print(s[i:i+1500]) | 
+
+cos_iter51_ctx15.py :: s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/physical_index_dispatch.cljs").read() | # where does handle return primary-response? check tail for response return paths | import re | i = s.find("defn ha
+
+cos_iter51_ctx16.py :: s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/physical_index_dispatch.cljs").read() | i = s.find("defn handle-with") | print(s[i+4500:i+6200]) | 
+
+cos_iter51_ctx17.py :: s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/physical_index_dispatch.cljs").read() | print("len", len(s)) | i = s.find("defn handle-with") | print("handle-with at", i) | # print tail 1500 chars | prin
+
+cos_iter51_ctx18.py :: import subprocess | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:src/
+
+cos_iter51_ctx19.py :: import subprocess | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:src/
+
+cos_iter51_ctx2.py :: import re | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | for m in re.finditer(r'\(assoc-response-kv-stats', src): |     start = src.rfind('\n', 0, m.start()-300) |     print("==
+
+cos_iter51_ctx20.py :: import subprocess, re | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:
+
+cos_iter51_ctx21.py :: import subprocess, re | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:
+
+cos_iter51_ctx22.py :: import subprocess, re | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:
+
+cos_iter51_ctx23.py :: import subprocess, re | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | # built artifact at 7dc6249 — does it contai
+
+cos_iter51_ctx24.py :: import subprocess | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:js/k
+
+cos_iter51_ctx25.py :: import subprocess | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "log", "--oneline", "
+
+cos_iter51_ctx26.py :: import os, re | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | for f in ["js/kotobase-graph-database-worker.js"]: |     st = os.stat(os.path.join(d, f)) |     import datetime |     print(f, "mtime:", datetime.datetime.fromtimestamp(
+
+cos_iter51_ctx27.py :: import os, glob, datetime, re | d = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | for f in glob.glob(d + "/**/wrangler*.toml", recursive=True) + glob.glob(d + "/**/wrangler*.json*", recursive=True): |     print("config:", f.replace(d +
+
+cos_iter51_ctx28.py :: import json, re | s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/wrangler.jsonc").read() | # strip // comments crudely for main/name fields | for line in s.splitlines(): |     if re.search(r'"(name|main)"\s*:', line): |         pr
+
+cos_iter51_ctx29.py :: import re | s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/js/kotobase-graph-database-worker.js").read() | print("len", len(s)) | for pat in ["x-kotobase-kv-stats", "block-fetch-stats-summary", ";distinct=", "l1="]: |     print(pa
+
+cos_iter51_ctx3.py :: import re | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | # find route/table that dispatches xrpc endpoints; print def around 15771 context start | seg = src[13000:17000] | route
+
+cos_iter51_ctx30.py :: s = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/js/kotobase-graph-database-worker.js").read() | i = s.find("x-kotobase-kv-stats") | print(repr(s[i-300:i+300])) | 
+
+cos_iter51_ctx31.py :: import subprocess | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:src/
+
+cos_iter51_ctx32.py :: import subprocess, re | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:
+
+cos_iter51_ctx33.py :: import subprocess | env = {"GIT_DIR": "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/.git", |        "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki"} | r = subprocess.run(["git", "show", "7dc6249:src/
+
+cos_iter51_ctx34.py :: import re | # Find the kotobase.net frontend/edge worker repo: search orgs for a worker that routes xrpc to backend | import glob | for f in glob.glob("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/*/wrangler*.json*") + glob.glob("/Users/junkawas
+
+cos_iter51_ctx35.py :: import re, glob | # The kotobase.net edge: which repo serves it? control-plane? search for "kotobase.net" route bindings | for f in glob.glob("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/*/wrangler*.json*"): |     s = open(f).read() |     if "k
+
+cos_iter51_ctx36.py :: import re, glob | # find the apex worker: search monorepo for KOTOBA_BACKEND_URL | import os | base = "/Users/junkawasaki/github/com-junkawasaki" | hits = [] | for root, dirs, files in os.walk(base): |     dirs[:] = [d for d in dirs if d not in (".git", "node_
+
+cos_iter51_ctx4.py :: import re | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | hits = [(m.start(), m.group(0)) for m in re.finditer(r'datomic[a-z.-]*|q\b', src[:12000])][:0] | for m in re.finditer(r'
+
+cos_iter51_ctx5.py :: src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | i = src.find('"q"') | print(src[i-800:i+400]) | 
+
+cos_iter51_ctx6.py :: src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | i = src.find('"q"', 30000) | print("q at", i) | j = src.find("assoc-response-kv-stats", i) | print("assoc after q at", j) | seg = sr
+
+cos_iter51_ctx7.py :: src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | import re | for m in re.finditer(r'assoc-response-kv-stats', src): |     print(m.start()) | i = src.find("defn run-read") | print("r
+
+cos_iter51_ctx8.py :: src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | import re | # find where handle-q's run-read chain attaches kv-stats: search "run-read" occurrences | for m in re.finditer(r'\(defn 
+
+cos_iter51_ctx9.py :: src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | print(src[550:700]) | 
+
+cos_iter51_deploy.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["npx", "wrangler", "deployments", "list"], cwd=repo, capture_output=True, text=True, timeout=120) | open("/Users/junkawasaki/github/com-junkaw
+
+cos_iter51_deploy_run.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["node", "scripts/deploy-versioned.mjs", "production", "--confirm-production", "7dc62497d0ffe6c492c3b3b5510f1c12ad5a9fe9"], |                  
+
+cos_iter51_deploy_run2.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | sha = "7dc62497d0ffe6c492c3b3b5510f1c12ad5a9fe9" | r = subprocess.run(["node", "scripts/deploy-versioned.mjs", "production", "--confirm-production", sha], |      
+
+cos_iter51_deploy_run3.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | sha = "7dc62497d0ffe6c492c3b3b5510f1c12ad5a9fe9" | env = {"GIT_DIR": repo + "/.git", "GIT_WORK_TREE": repo, "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bi
+
+cos_iter51_diag2.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | # Reproduce deploy()'s exact call sequence with spawnSync semantics from repo ROOT (like the script does). | r = subprocess.run(["node", "-e", "console.log(proces
+
+cos_iter51_diag3.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | sha = "7dc62497d0ffe6c492c3b3b5510f1c12ad5a9fe9" | env = {"GIT_DIR": repo + "/.git", "GIT_WORK_TREE": repo, "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bi
+
+cos_iter51_diag_subprocess.py :: import subprocess | # Diagnose: what SHA does deploy-versioned.mjs actually see as HEAD when run via subprocess from repo root? | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["git", "-c", "core.fsmonitor=fal
+
+cos_iter51_grepxrpc.py :: import re | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/src/kotobase/graph_database/xrpc.cljs").read() | for m in re.finditer(r'.*kv-stats.*', src): |     print(m.group(0).strip()[:160]) | 
+
+cos_iter51_gwscripts.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs" | env = {"PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki", "CI": "1"} | r = subprocess.run(["
+
+cos_iter51_gwtest.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs" | env = {"PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki", "CI": "1"} | r = subprocess.run(["
+
+cos_iter51_gwtest2.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs" | env = {"PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": "/Users/junkawasaki", "CI": "1"} | r = subprocess.run(["
+
+cos_iter51_mkdirect.py :: import re | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/bench49_kq1_warmquery.mjs").read() | src = src.replace('const API = "https://kotobase.net";', 'const API = "https://backend.kotobase.net";') | src = src.replace('"schema":
+
+cos_iter51_patch_gw.py :: old = '''(defn- public-upstream-json-headers [resp] |   (let [headers (js/Headers. #js {"content-type" "application/json"}) |         retry-after (.. resp -headers (get "retry-after"))] |     (when (and (= 409 (.-status resp)) (string? retry-after) |          
+
+cos_iter51_verview.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | env = {"GIT_DIR": repo + "/.git", "GIT_WORK_TREE": repo, "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", |        "HOME": "/Users/junkawasaki"} | r = su
+
+cos_iter51_vtag.py :: import json | d = json.load(open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/cos_iter51_verview.txt".replace("cos_iter51_verview.txt", "cos_iter51_verview.txt").split("\nRC=0\n")[0] if False else "/Users/junkawasaki/github/com-junkawasaki
+
+cosient_iter10_append.py :: #!/usr/bin/env python3 | """cosientist: append K-Z3 run105 evidence + K-Q1 harness location to query-cosientist.md.""" | PATH = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" |  | Z3 = ( |     "cosientist 2026-09-05 (K-Z
+
+cosient_iter10_log.py :: #!/usr/bin/env python3 | """cosientist: append iteration log entry #10.""" | PATH = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" |  | ENTRY = ( |     "- 2026-09-05: cosientist 第10回。rank 第39回の 2 項目に対応。\n" |     "  (1) K
+
+cosient_iter49_append.py :: import io | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = io.open(p, encoding="utf-8").read() | anchor = "  計測を bench 担当として即実行)。\n" | assert s.count(anchor) == 1, s.count(anchor) | block = ("cosientist 2026-09
+
+cosient_iter50_append.py :: import io | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = io.open(p, encoding="utf-8").read() | anchor = "NEXT: K-Z3 14時台 n 積み増し継続 (限界利得低下のため rank 判断優先)。\n" | assert s.count(anchor) == 1, s.count(anchor) | blo
+
+eng12_deploy.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["node", "scripts/deploy-versioned.mjs", "production", "--confirm-production", "415b1b28ff1c64ae3ef7a34c6f7c1738b830cc11"], |                  
+
+eng13_versions.py :: import subprocess, json, time | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | out = [] | r = subprocess.run(["npx", "wrangler", "versions", "list"], cwd=repo, capture_output=True, text=True, timeout=120) | out.append("$ wrangler
+
+eng14_versions.py :: import subprocess, json | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["npx", "wrangler", "versions", "list", "--json"], cwd=repo, capture_output=True, text=True, timeout=120) | open("/Users/junkawasaki/gith
+
+eng15_versions.py :: import subprocess, json | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["npx", "wrangler", "versions", "list", "--json"], cwd=repo, capture_output=True, text=True, timeout=120) | try: |     data = json.loads(
+
+eng16_deployments.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["npx", "wrangler", "deployments", "list"], cwd=repo, capture_output=True, text=True, timeout=120) | open("/Users/junkawasaki/github/com-junkaw
+
+eng5_state.py :: import subprocess | cmds = [ |  ["git", "status", "--short", "--untracked-files=no"], |  ["git", "log", "--oneline", "-2"], |  ["git", "branch", "-a", "--list", "*cosient*"], | ] | out = [] | for c in cmds: |     r = subprocess.run(c, cwd="/Users/junkawasaki/g
+
+eng6_state.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | cmds = [ |  ["git", "checkout", "net-kotobase/main"], |  ["git", "log", "--oneline", "-2"], |  ["git", "status", "--short", "--untracked-files=no"], | ] | out = [
+
+eng7_state.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["git", "diff", "--stat", "js/kotobase-graph-database-worker.js"], cwd=repo, capture_output=True, text=True) | out = r.stdout + r.stderr | r2 =
+
+eng8_state.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | cmds = [ |  ["git", "stash", "push", "-m", "cosient49: stray artifact diff before deploy sync"], |  ["git", "status", "--short", "--untracked-files=no"], |  ["git
+
+eng9_build.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine" | r = subprocess.run(["npx", "shadow-cljs", "release", "worker"], cwd=repo, capture_output=True, text=True, timeout=540) | out = "RC=%d\n" % r.returncode + r.stdout
+
+falsify113_state.py :: import subprocess, sys |  | def run(cmd, timeout=120): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip()
+
+falsify113_state2.py :: import subprocess |  | def run(cmd, timeout=120): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip() |  |
+
+falsify113_state3.py :: import subprocess |  | def run(cmd, timeout=120): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip() |  |
+
+falsify113_state4.py :: import subprocess |  | def run(cmd, timeout=120): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip() |  |
+
+falsify113_state5.py :: import subprocess, json |  | def run(cmd, timeout=120): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip(
+
+fz127_append.py :: p='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | txt=open(p).read() | lines=txt.split('\n') | i=178  # K-Z3 row, 0-indexed | assert lines[i].startswith('| K-Z3 |') | ev=" falsify 2026-09-05 (K-Z3 11時台 n 積み増し run127A–C,
+
+fz127_git.py :: import subprocess | d='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs' | msg=("falsify: K-Z3 11時台 n 積み増し run127A-C (11:16 JST, cold 0/60 完全静穏, control 静穏 — bench 第46回 run126 10/60 と正反対で 11時台通算 10/120 は 1 セットのみの寄与, 帯内突発性が再確認, traffic 依存説判定は対称 
+
+fz127_inspect.py :: import re | p='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | lines=open(p).read().split('\n') | out=open('/tmp/fz127_inspect.txt','w') | # find K-Z3 row and K-S1 row boundaries | for i,l in enumerate(lines): |     if l
+
+fz127_pushverify.py :: import subprocess | d='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs' | r=subprocess.run(['git','fetch','net-kotobase'],cwd=d,capture_output=True,text=True) | r2=subprocess.run(['git','rev-parse','HEAD','net-kotobase/main'],cwd=d,capture_out
+
+fz127_tailcheck.py :: p='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | lines=open(p).read().split('\n') | i=178 | l=lines[i] | assert l.startswith('| K-Z3 |') | out=open('/tmp/fz127_tail.txt','w') | out.write("LEN=%d\n"%len(l)) | out.write(
+
+fz151_append.py :: import re | P = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | text = open(P, encoding="utf-8").read() | lines = text.split("\n") | ev = ("falsify 2026-09-05 第51回 (K-Z3 13時台 n 積み増し run151A–C, 同測定法 n=20 × 3 + " |       
+
+fz151_append2.py :: import re | P = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | text = open(P, encoding="utf-8").read() | lines = text.split("\n") | ev = ("falsify 2026-09-05 第51回 (K-Z3 13時台 n 積み増し run151A–C, 同測定法 n=20 × 3 + " |       
+
+fz151_calc.py :: import re, statistics | from collections import Counter |  | def parse(path): |     runs = {} |     cur = None |     for line in open(path): |         m = re.match(r"=== run(\S+) search ===", line) |         if m: |             cur = m.group(1); runs[cur] = []
+
+fz151_commit.py :: import subprocess | D = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | cmds = [ |     ["git", "-C", D, "add", "query-cosientist.md"], |     ["git", "-C", D, "commit", "-m", |      "falsify 第51回: K-Z3 13時台 n 積み増し run151A-C (cold 4/60 ~6.7%
+
+fz151_deploycheck.py :: import subprocess | # K-Q1 deploy check: x-kotobase-kv-stats header presence on search.kotobase.net (1 request) | out = subprocess.run( |     ["curl", "-s", "-D", "-", "-o", "/dev/null", |      "https://search.kotobase.net/search?q=test"], |     capture_output
+
+fz153_append.py :: src = open('query-cosientist.md').read() | add = (' falsify 2026-09-05 (K-Z3 14時台 n 積み増し run153A–C, 同測定法 n=20 × 3 + ' |        'landing control, 別接続 curl, Tokyo, 14:30–14:31 JST, 全 60/60 + control 20/20 200): ' |        'run153A cold(>=1s) 0/20 p50 201.7ms max
+
+fz153_commit.py :: import subprocess | msg = """falsify 第52回: K-Z3 14時台 n 積み増し run153A-C (cold 0/60 完全静穏, control 静穏 — 14時台初計測) + landing control 同時刻 n=20 静穏""" | r = subprocess.run(['git', 'add', 'query-cosientist.md'], capture_output=True, text=True) | print(r.stdout, r.stderr
+
+fz153_qc.py :: src = open('query-cosientist.md').read() | i = src.find('| K-Z3') | print(src[i:i+1400]) | print('---LAST ITER---') | print(src[-1600:]) | 
+
+fz153_verify.py :: src = open('query-cosientist.md').read() | i = src.find('| K-Z3') | print(src[i:i+900]) | 
+
+fz154_append.py :: src = open('query-cosientist.md').read() | add = (' falsify 2026-09-05 (K-Z3 16時台 n 積み増し run154A–C, 同測定法 n=20 × 3 + ' |        'landing control, 別接続 curl, Tokyo, 16:25–16:26 JST, 全 60/60 + control 20/20 200): ' |        'run154A cold(>=1s) 6/20 (max 1.896s, 前半
+
+fz154_commit.py :: import subprocess | subprocess.run(['git', 'add', 'query-cosientist.md', 'kz3_run154.sh', 'kz3_run154_out.txt', |                 'kz3_run154_calc.py', 'kz3_run154_calc.txt', 'fz154_append.py', |                 'fz154_append_out.txt', 'fz154_diff.txt'], check
+
+fz155_append.py :: p = "query-cosientist.md" | s = open(p).read() | ev = (" falsify 2026-09-05 (K-Z3 17時台 n 積み増し run155A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 17:19–17:21 JST, 全 60/60 + control 20/20 200): " |       "run155A cold(>=0.5s) 4/20 (1.026–1.648s 前半~中盤散発
+
+fz155_commit.py :: import subprocess, time | ts = time.strftime("%Y-%m-%d %H:%M") | msg = f"falsify 第54回: K-Z3 17時台 n 積み増し run155A-C (cold 4/1/0 per 20 = 5/60 ~8.3%, search のみ 1s 超外れ値, control 静穏 p50 53ms) evidence 追記 — status 遷移なし" | for cmd in [ |     ["git", "add", "query-cos
+
+fz158_append.py :: import io |  | path = "query-cosientist.md" | with io.open(path, encoding="utf-8") as f: |     text = f.read() |  | anchor = "falsify 2026-09-05 (K-Z3 8時台 n 積み増し run121A–C" | idx = text.index(anchor) | entry = ("falsify 2026-09-05 (K-Z3 18時台 n 積み増し run158A–C, 
+
+fz158_run.py :: import json, subprocess, time, datetime |  | def curl(url, timeout=10): |     t0 = time.perf_counter() |     r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", url, "--max-time", str(timeout)], |                        capture_output=Tr
+
+fz158b_run.py :: import json, subprocess, time, datetime |  | def curl(url): |     t0 = time.perf_counter() |     r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", url, "--max-time", "10"], |                        capture_output=True, text=True) |    
+
+fz160_append.py :: import io, re |  | path = "query-cosientist.md" | with io.open(path, "r", encoding="utf-8") as f: |     lines = f.readlines() |  | target = None | for i, ln in enumerate(lines): |     if ln.startswith("| K-Z3 |"): |         target = i |         break | assert 
+
+fz160_git.py :: import subprocess |  | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=".") |     with open("fz160_git.txt", "a") as f: |         f.write("$ " + " ".join(args) + "\n" + (r.stdout or "") + (r.stderr or "") + "\n") |  | open("fz
+
+fz160_log.py :: import io |  | path = "query-cosientist.md" | with io.open(path, "r", encoding="utf-8") as f: |     text = f.read() |  | entry = ("- 2026-09-05: falsify 第58回。rank 第52回 NEXT (委ねる; K-Q1 切分けは cosientist 担当) を受け、" |          "K-Z3 18時台 control 付き追加 n run160A–C を同測
+
+fz160_run.py :: import json, subprocess, time, datetime |  | def curl(url, timeout=10): |     t0 = time.perf_counter() |     r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", url, "--max-time", str(timeout)], |                        capture_output=Tr
+
+fz160_verify.py :: lines = open("query-cosientist.md").readlines() | with open("fz160_verify.txt", "w") as f: |     row = lines[211] |     f.write(row[:400] + "\n---TAIL---\n" + row[-250:] + "\n") |     f.write("cols=%d\n" % row.count(" | ")) | 
+
+fz161_append.py :: import io |  | path = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | with io.open(path, 'r', encoding='utf-8') as f: |     text = f.read() |  | anchor = '| open | falsify 2026-09-05 (K-Z3 18\u6642\u53f0 control \u4ed8\
+
+fz161_iter.py :: import io |  | path = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | with io.open(path, 'r', encoding='utf-8') as f: |     text = f.read() |  | entry = ("- 2026-09-05: falsify 第59回。rank 第52回 NEXT (委ねる) を受け、K-Z3 18時台 co
+
+fz162_append.py :: import io |  | path = "query-cosientist.md" | with io.open(path, "r", encoding="utf-8") as f: |     lines = f.readlines() |  | target = None | for i, ln in enumerate(lines): |     if ln.startswith("| K-Z3 |"): |         target = i |         break | assert targ
+
+fz162_log.py :: import io |  | path = "query-cosientist.md" | with io.open(path, "r", encoding="utf-8") as f: |     lines = f.readlines() |  | anchor = None | for i, ln in enumerate(lines): |     if ln.startswith("- 2026-09-05: falsify 第59回。"): |         anchor = i |         
+
+fz_append.py :: import re, subprocess |  | path = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | text = open(path).read() |  | evidence = ("bench 2026-09-05 (第40回, K-Q1 backend query path 計測第2段 — rank 第38回 NEXT, production HTTP 実測のため 
+
+fz_check_wt.py :: #!/usr/bin/env python3 | import subprocess, difflib |  | head = subprocess.run(["git", "show", "HEAD:query-cosientist.md"], capture_output=True, text=True).stdout | wt = open("query-cosientist.md").read() |  | def kz3_lines(s): |     out = [] |     for i, line
+
+fz_commit.py :: import subprocess, os | repo = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs' | out = open('/tmp/fz_git.txt', 'w') | def run(cmd): |     r = subprocess.run(cmd, shell=True, cwd=repo, capture_output=True, text=True) |     out.write(f'$ {cmd}
+
+fz_harness_head.py :: #!/usr/bin/env python3 | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/authn/scripts/live_biscuit_query_bench.mjs").read() | lines = src.splitlines() | print("total lines:", len(lines)) | # print first 80 lines | for i i
+
+fz_harness_mid.py :: #!/usr/bin/env python3 | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/authn/scripts/live_biscuit_query_bench.mjs").read() | lines = src.splitlines() | for i in range(80, 220): |     print(f"{i+1}: {lines[i][:180]}") | p
+
+fz_harness_tail.py :: #!/usr/bin/env python3 | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/authn/scripts/live_biscuit_query_bench.mjs").read() | lines = src.splitlines() | for i in range(220, 346): |     print(f"{i+1}: {lines[i][:180]}") | 
+
+fz_kq1_bench39.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i in range(74, 77): |     if i < len(txt): |         print(f"L{i+1} (len {len(txt[i])}):") |         print(txt[i]) |         print("---") | print("<<END>>") | 
+
+fz_kq1_block.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | # find K-Q1 block lines 52-75 (0-indexed 51-74), print each line's first 260 chars | for i in range(51, 75): |     if i < len(txt): |         print(f"L{i+1} (len {len(txt[i])}): {
+
+fz_kq1_blockmap.py :: #!/usr/bin/env python3 | path = "query-cosientist.md" | lines = open(path, encoding="utf-8").read().splitlines(keepends=True) | idx = None | for i, line in enumerate(lines): |     if line.startswith("| K-Q1 "): |         idx = i |         break | assert idx is
+
+fz_kq1_chunk.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         # print in 200-char chunks |         for j in range(0, len(line), 200): |             print(f"CHUN
+
+fz_kq1_commit.py :: import subprocess | msg = ("falsify: K-Q1 engine 内訳計測 第3段 (rank 第43回 NEXT, K-Q2 harness 10:29 JST): " |        "authenticated warm query p50 683.73ms / p95 995.39ms (200 30/30, NRT) — 第2段と同水準で退行存続。" |        "同窓 Biscuit verify p50 17.28ms / gateway auth check 
+
+fz_kq1_evidence.py :: #!/usr/bin/env python3 | path = "query-cosientist.md" | lines = open(path, encoding="utf-8").read().splitlines(keepends=True) |  | evidence = (" falsify 2026-09-05 (第3段, K-Q1 engine 内訳計測 — rank 第43回 NEXT, K-Q2 harness 再実行 " |             "--provision ephemeral
+
+fz_kq1_evidence2.py :: #!/usr/bin/env python3 | path = "query-cosientist.md" | lines = open(path, encoding="utf-8").read().splitlines(keepends=True) |  | evidence = (" falsify 2026-09-05 (第3段, K-Q1 engine 内訳計測 — rank 第43回 NEXT, K-Q2 harness 再実行 " |             "--provision ephemeral
+
+fz_kq1_evidence3.py :: #!/usr/bin/env python3 | path = "query-cosientist.md" | lines = open(path, encoding="utf-8").read().splitlines(keepends=True) |  | evidence = (" falsify 2026-09-05 (第3段, K-Q1 engine 内訳計測 — rank 第43回 NEXT, K-Q2 harness 再実行 " |             "--provision ephemeral
+
+fz_kq1_full.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         # split by evidence separator: columns are | ID | area | hypothesis | status | evidence | |       
+
+fz_kq1_l74rest.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | # L74 is 0-indexed 73 | print(txt[73][260:1518]) | print("<<END>>") | 
+
+fz_kq1_l75a.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | print(txt[74][:1000]) | print("<<END>>") | 
+
+fz_kq1_next.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | # print lines 52-56 | for i in range(51, 56): |     print(f"L{i+1}: {txt[i][:200]}") | print("<<END>>") | 
+
+fz_kq1_next2.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i in range(51, 62): |     if i < len(txt): |         print(f"L{i+1}: {txt[i][:220]}") | print("<<END>>") | 
+
+fz_kq1_next3.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i in range(61, 80): |     if i < len(txt): |         print(f"L{i+1}: {txt[i][:220]}") | print("<<END>>") | 
+
+fz_kq1_parse.py :: #!/usr/bin/env python3 | import json, os | p = "/tmp/kq1_run3.json" | err = open("/tmp/kq1_run3.err").read() | out = {"err": err[:500]} | if os.path.exists(p) and os.path.getsize(p) > 0: |     d = json.load(open(p)) |     out["observedAt"] = d["observedAt"] | 
+
+fz_kq1_raw.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         print("LINE", i) |         print(line) | 
+
+fz_kq1_read.py :: #!/usr/bin/env python3 | import re | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         print("LINE", i, "len", len(line)) |         print(line[:3000]) |         print("...TA
+
+fz_kq1_rest.py :: #!/usr/bin/env python3 | import sys | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         sys.stdout.write(line[800:2400]) |         sys.stdout.write("\n<<END>>\n") | 
+
+fz_kq1_rest2.py :: #!/usr/bin/env python3 | import sys | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         print("LEN", len(line)) |         seg = line[800:2600] |         print(seg) |        
+
+fz_kq1_rowtail.py :: #!/usr/bin/env python3 | path = "query-cosientist.md" | lines = open(path, encoding="utf-8").read().splitlines(keepends=True) | for i, line in enumerate(lines): |     if line.startswith("| K-Q1 "): |         print("LINE", i + 1, "len", len(line)) |         pri
+
+fz_kq1_tail.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[800:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail10.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[889:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail11.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[884:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail12.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[875:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail13.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[860:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail14.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[840:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail15.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[830:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail16.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[820:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail17.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[790:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail18.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[770:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail19.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[700:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail2.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[860:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail20.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[650:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail21.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[550:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail22.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[400:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail23.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[860:890] |         print(seg) |         print("<<END>>") |         # also check the cha
+
+fz_kq1_tail3.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[870:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail4.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[878:890] |         print(seg) |         print("<<END len", len(line), ">>") | 
+
+fz_kq1_tail5.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[883:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail6.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[885:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail7.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[886:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail8.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[887:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_tail9.py :: #!/usr/bin/env python3 | txt = open("query-cosientist.md").read().splitlines() | for i, line in enumerate(txt, 1): |     if line.startswith("| K-Q1 "): |         seg = line[888:890] |         print(seg) |         print("<<END>>") | 
+
+fz_kq1_verify.py :: #!/usr/bin/env python3 | import subprocess | d = subprocess.run(["git", "diff", "query-cosientist.md"], capture_output=True, text=True).stdout | # show the added part only (lines starting with +) | for line in d.splitlines(): |     if line.startswith("+") and 
+
+fz_kq1_verify_push.py :: import subprocess | # verify remote state matches local push | r = subprocess.run(["git", "fetch", "net-kotobase"], capture_output=True, text=True) | print("fetch:", r.returncode) | r = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=Tru
+
+fz_kz3_append.py :: import io | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = io.open(p, encoding="utf-8").read() | anchor = "falsify 2026-09-05 (K-Z3 深夜帯 5時台 n 積み増し run112A–C" | new = """falsify 2026-09-05 (K-Z3 6時台 n 積み増し run11
+
+fz_read_qc.py :: import sys | p = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | lines = open(p, encoding='utf-8').read().splitlines() | out = open('/tmp/qc_head.txt', 'w', encoding='utf-8') | for i, l in enumerate(lines[:120], 1): |  
+
+fz_run119_append.py :: f = "query-cosientist.md" | text = open(f, encoding="utf-8").read() | line = "falsify 2026-09-05 (K-Z3 8時台 n 積み増し run119A–C, 同測定法 n=20 × 3 run, 別接続 curl, Tokyo, 08:17–08:17 JST, 全 80/80 200, host load1 41–48 (1/5/15min 41.17/74.45/66.88, 5/15min は前 tick 遺残の可能性
+
+fz_run121_append.py :: import re |  | path = "query-cosientist.md" | with open(path) as f: |     lines = f.readlines() |  | EV = ("falsify 2026-09-05 (K-Z3 8時台 n 積み増し run121A–C, 同測定法 n=20 × 3 + landing control, " |       "別接続 curl, Tokyo, 08:47 JST, 全 60/60 + control 20/20 200, host
+
+fz_run128_append.py :: import re | p = 'query-cosientist.md' | s = open(p, encoding='utf-8').read() | lines = s.split('\n') | target = None | for i, l in enumerate(lines): |     if l.startswith('| K-Z3 | worker |'): |         target = i |         break | assert target is not None, '
+
+fz_run128_commit.py :: import subprocess | # Stage only the intended file, commit, push | cmds = [ |     ['git', 'add', 'query-cosientist.md'], |     ['git', 'commit', '-m', 'falsify 第48回: K-Z3 12時台 n 積み増し run128A–C (0/60 完全静穏, 12時台通算 6/80 ~7.5%, bench run127A 多発型は即時非再現)'], |     ['
+
+fz_run128_verify.py :: p = 'query-cosientist.md' | s = open(p, encoding='utf-8').read() | needle = 'run128A' | idx = s.find(needle) | # find the K-Z3 row containing it | line_no = s[:idx].count('\n') + 1 | lines = s.split('\n') | row = lines[line_no - 1] | out = open('/tmp/app128_ch
+
+fz_run128_verify2.py :: p = 'query-cosientist.md' | s = open(p, encoding='utf-8').read() | needle = 'falsify 2026-09-05 (K-Z3 12時台 n 積み増し run128A' | assert needle in s | # Verify no secret-like patterns in appended area | i = s.find(needle) | seg = s[i:i+1200] | import re | bad = re.
+
+fz_run159_append.py :: import io |  | path = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | with io.open(path, 'r', encoding='utf-8') as f: |     text = f.read() |  | anchor = '| open | falsify 2026-09-05 (K-Z3 18\u6642\u53f0 n \u7a4d\u307f\
+
+fz_run159_calc.py :: import re |  | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/fz_run159_out.txt').read().splitlines() | cur = None | data = {} | for line in out: |     m = re.match(r'=== (run159([ABC]) search|landing control)', line) |     if m: 
+
+fz_run159_verify.py :: import io | path = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md' | with io.open(path, 'r', encoding='utf-8') as f: |     for i, line in enumerate(f, 1): |         if 'run159A' in line: |             print(f'line {i}: {l
+
+fz_stats.py :: import sys | f=sys.argv[1] | vals=[float(l.split()[1]) for l in open(f) if l.strip()] | if not vals: |     print("EMPTY") |     sys.exit(0) | s=sorted(vals) | n=len(s) | p50=s[(n-1)//2] | cold=[f"{i+1}:{v:.3f}" for i,v in enumerate(vals) if v>=0.5] | print(f"n
+
+kq1_commit.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = open("kq1_commit_out.txt", "w", encoding="utf-8") |  | def run(*args): |     r = subprocess.run(["git"] + list(args), cwd=cwd, capture_output=True, text=Tru
+
+kq1_evidence_append.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | marker = "(run40–42, 詳細は K-Z2/K-Z3 evidence)。 |" | assert src.count(marker) == 1, f"marker count={s
+
+kq1_iter_append.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | marker = "  戻った tick は K-Z3 深夜帯 0時台 n 積み増しを優先してよい)。\n" | assert src.count(marker) == 1, f"marker co
+
+kz3_append.py :: import io, sys | p = 'query-cosientist.md' | s = open(p, encoding='utf-8').read() | old = "22\u6642\u53f0\u306f 6 \u8a66\u884c\u4e2d 1 \u8a66\u884c\u3001\u591c\u5e2f\u901a\u7b97 cold>0 \u306f 45 \u8a66\u884c\u4e2d 12 \u8a66\u884c (~27%)\u3002\nstatus \u5224\u5
+
+kz3_fixtypo.py :: import sys | p = 'query-cosientist.md' | s = open(p, encoding='utf-8').read() | bad = '\u5b8c\u5168\u9759\u7a42'  # 完全静穂 (typo) | good = '\u5b8c\u5168\u9759\u7a4f'  # 完全静穏 | n = s.count(bad) | s = s.replace(bad, good) | s = s.replace('\u3002\n\n\nfalsify 2026-
+
+kz3_gitcheck.py :: import subprocess, sys | def run(cmd): |     r = subprocess.run(cmd, shell=True, capture_output=True, text=True) |     sys.stdout.write(r.stdout + r.stderr) | run('git log --oneline -3') | run('git status --short') | run('grep -c run96A query-cosientist.md') |
+
+kz3_rank32_append.py :: # -*- coding: utf-8 -*- | # rank 第32回 iteration log 追記 (append only) | entry = """- 2026-09-04: rank 第32回。新規 evidence: falsify K-Z3 夜帯 22時台 run97A–C |   (22:17–21 JST, run97A cold 3/20 (0.747–1.026s, 散発配置 5/8/20番目) p50 0.074s |   薄いクラスタ型 12 例目 / run97B–C cold 
+
+kz3_run100_append.py :: import re |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | evidence = ("falsify 2026-09-04 (K-Z3 深夜帯 23時台 n 積み増し run99A–C, 同測定法 n=20 × 3 run,\n" | "別接続 curl, Tokyo, 23:20 JST, 全 80/80 200, host load1 27.83 は 
+
+kz3_run100_calc.py :: import re |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run99_out.txt" | runs = {} | cur = None | for line in open(path): |     m = re.match(r"=== run(\w+) search ===", line) |     if m: |         cur = m.group(1) |         
+
+kz3_run100_commit.py :: import subprocess |  | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | msg = ("falsify: K-Z3 midnight 23h run100A-C evidence (100A cold 2/20 scattered " |        "1.073/2.062s, 100B-C cold 0/20, control clean, separate from cosienti
+
+kz3_run100_fix.py :: import re |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" |  | old_ev = """falsify 2026-09-04 (K-Z3 深夜帯 23時台 n 積み増し run99A–C, 同測定法 n=20 × 3 run, | 別接続 curl, Tokyo, 23:20 JST, 全 80/80 200, host load1 27.83 は pr
+
+kz3_run101_append.py :: import io, sys |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | text = open(path, encoding="utf-8").read() |  | # 1) Append evidence to the K-Z3 hypothesis line (line starting "| K-Z3 |") | ev = (" bench 2026
+
+kz3_run101_calc.py :: import re, sys |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run101_out.txt" | lines = open(path).read().splitlines() | runs = {} | cur = None | ctrl = [] | for ln in lines: |     m = re.match(r"=== run(\S+) search ===", ln)
+
+kz3_run101_commit.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | msg = ("bench: K-Z3 midnight 23h run101A-C evidence (101A cold 3/20 scattered 1.08-1.52s, " |        "101B-C cold 0/20, control clean, 3rd consecutive midnight co
+
+kz3_run101_final.py :: import subprocess | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git", "log", "--oneline", "-2"], capture_output=True, text=True, cwd=cwd) | print(r.stdout) | s = open(cwd + "/query-cosientist.md", encoding="u
+
+kz3_run101_secreq.py :: import re | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = open(p, encoding="utf-8").read() | for m in re.finditer(r"token|cookie|credential", s, re.I): |     a = max(0, m.start()-60) |     print(repr(s[a:m.end
+
+kz3_run101_verify.py :: import subprocess |  | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | out = subprocess.run(["git", "diff", "--stat", "--", "query-cosientist.md"], |                      capture_output=True, text=True, cwd="/Users/
+
+kz3_run102_append.py :: import io, sys |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | text = open(path, encoding="utf-8").read() |  | # 1. Append cosientist evidence line after falsify run100 block (before "| K-Z2 |" row) | eviden
+
+kz3_run102_calc.py :: import re, statistics |  | def parse(path): |     runs = {} |     cur = None |     ctrl = [] |     mode = None |     for line in open(path): |         m = re.match(r"=== run(\S+) search ===", line) |         if m: |             cur = m.group(1); runs[cur] = []
+
+kz3_run102_fixnum.py :: path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | text = open(path, encoding="utf-8").read() |  | # Fix 1: evidence line - midnight cumulative denominator and rate | a1 = "4 例目で、深夜帯通算 cold>0 は\n78 試行中 23 試行 (~29%)。
+
+kz3_run103_append.py :: import io |  | DOC = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | text = open(DOC, encoding="utf-8").read() |  | entry = """- 2026-09-05: falsify 第35回。新規 evidence: K-Z3 深夜帯 0時台 run103A–C (00:27–00:30 JST, |   n=20 × 
+
+kz3_run103_calc.py :: import re, statistics |  | def parse(path): |     runs = {} |     cur = None |     ctrl = [] |     mode = None |     for line in open(path): |         m = re.match(r"=== run(\S+) search ===", line) |         if m: |             cur = m.group(1); runs[cur] = []
+
+kz3_run103_check.py :: import re |  | text = open("query-cosientist.md", encoding="utf-8").read() |  | # Extract the run103 sentence(s) | idx = text.find("run103") | snippet = text[max(0, idx - 300): idx + 900] | with open("kz3_run103_ctx_out.txt", "w", encoding="utf-8") as f: |    
+
+kz3_run103_commit.py :: import subprocess |  | cmds = [ |     ["git", "add", "query-cosientist.md"], |     ["git", "commit", "-m", |      "falsify 第35回: K-Z3 midnight 00h run103A-C evidence (all clean 0/20 cold, p50 0.067-0.116s, control quiet - run102A-type cluster did not recur in 
+
+kz3_run103_verify.py :: import re |  | text = open("query-cosientist.md", encoding="utf-8").read() | nums = sorted(int(n) for n in re.findall(r"bench 第(\d+)回", text)) | runs = sorted(set(int(m) for m in re.findall(r"run(\d+)[A-Z]?", text))) | with open("kz3_run103_verify.txt", "w", e
+
+kz3_run104_append.py :: text = open("query-cosientist.md", encoding="utf-8").read() |  | entry = ( |     "\n- 2026-09-05: bench 第35回。新規 evidence: K-Z3 深夜帯 0時台 run104A–C " |     "(00:43 JST, n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control " |     "20/20 200, host load1 
+
+kz3_run104_calc.py :: import math |  | lines = open("kz3_run103_out.txt", encoding="utf-8").read().splitlines() | sections = {} | cur = None | for ln in lines: |     if ln.startswith("=== run103A"): |         cur = "runA" |     elif ln.startswith("=== run103B"): |         cur = "ru
+
+kz3_run104_commit.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git", "add", "query-cosientist.md"], cwd=cwd, |                    capture_output=True, text=True) | r2 = subprocess.run(["git", "commit", "-
+
+kz3_run104_push.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git", "remote", "-v"], cwd=cwd, capture_output=True, text=True) | r2 = subprocess.run(["git", "push", "net-kotobase", "cosient-sync:main"], |
+
+kz3_run104_st.py :: import subprocess |  | p = subprocess.run(["git", "status", "--porcelain"], |                    capture_output=True, text=True, |                    cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | with open("kz3_run104_st_out.txt", "
+
+kz3_run105_append.py :: text = open("query-cosientist.md", encoding="utf-8").read() |  | entry = ( |     "\n- 2026-09-05: cosientist 第8回。新規 evidence: K-Z3 深夜帯 0時台 run105A–C " |     "(00:42–00:43 JST, n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + " |     "control 20/20 200, h
+
+kz3_run105_calc.py :: #!/usr/bin/env python3 | """K-Z3 run105 aggregation: cold(>=0.5s) count + p50 + control.""" | import re, statistics, json |  | OUT = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run105_out.txt" | res = {} | cur = None | for line in ope
+
+kz3_run105_final.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = open("kz3_run105_final.txt", "w", encoding="utf-8") |  | def run(*args): |     r = subprocess.run(["git"] + list(args), cwd=cwd, capture_output=True, text=T
+
+kz3_run105_push3.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = open("kz3_run105_push3_out.txt", "w", encoding="utf-8") |  | def run(*args, **kw): |     r = subprocess.run(["git"] + list(args), cwd=cwd, capture_output=Tr
+
+kz3_run105_remotecheck.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = open("kz3_run105_remotecheck.txt", "w", encoding="utf-8") |  | def run(*args): |     r = subprocess.run(["git"] + list(args), cwd=cwd, capture_output=True, 
+
+kz3_run105_wrap.py :: import subprocess | r = subprocess.run(["python3", "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run105_calc.py"], capture_output=True, text=True) | open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run105_calc_
+
+kz3_run107_append.py :: from pathlib import Path |  | p = Path("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md") | src = p.read_text(encoding="utf-8") |  | anchor = "status 判定は rank に委ねる \n" | # the run106 falsify line ends with that phrase befor
+
+kz3_run107_calc.py :: import re |  | src = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run107_out.txt", encoding="utf-8").read().splitlines() | out = open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run107_calc_out.txt", "w",
+
+kz3_run113_calc.py :: import re, statistics |  | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run113_out.txt" | src = open(p, encoding="utf-8").read().splitlines() |  | runs = {} | cur = None | for line in src: |     m = re.match(r"=== (run\S+|landing c
+
+kz3_run114_append.py ::  | import io |  | path = 'query-cosientist.md' | text = open(path, encoding='utf-8').read() | lines = text.split('\n') |  | # find the K-Z2 hypothesis row line (starts with '| K-Z2 |') | idx = None | for i, l in enumerate(lines): |     if l.startswith('| K-Z2 
+
+kz3_run114_append_wrap.py :: import subprocess |  | def run(cmd, timeout=60): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip() |  | 
+
+kz3_run114_calc.py :: import re, subprocess |  | # Parse kz3_run114_out.txt | path = '/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run114_out.txt' | sections = {} | cur = None | for line in open(path): |     line = line.strip() |     m = re.match(r'^=== (run
+
+kz3_run114_calc_bench.py :: import re, statistics |  | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run114_out.txt" | src = open(p, encoding="utf-8").read().splitlines() | runs, cur = {}, None | for line in src: |     m = re.match(r"=== (run114[A-C]|landing c
+
+kz3_run114_commit.py :: import subprocess |  | def run(cmd, timeout=120): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip() |  |
+
+kz3_run114_verify.py :: import subprocess |  | def run(cmd, timeout=60): |     p = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout, cwd='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') |     return (p.stdout + p.stderr).strip() |  | 
+
+kz3_run122_analyze.py :: import re | lines = open('kz3_run122_out.txt').read().splitlines() | rid = None | stats = {} | for l in lines: |     m = re.match(r'=== run(\S+) search ===', l) |     if m: rid = m.group(1); stats[rid] = [] |     elif 'landing control' in l: rid = 'CTRL'; stat
+
+kz3_run122_append.py :: import re | p = 'query-cosientist.md' | s = open(p).read() | entry = """- 2026-09-05: falsify (cosientist 第43回相当)。K-Z3 9時台 n 積み増し run122A–C (09:31–09:32 JST, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 15.3 は produ
+
+kz3_run123_append.py :: path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with open(path) as f: |     text = f.read() |  | anchor = " bench 2026-09-04 (run60, 同測定法 n=20, 別接続 curl, Tokyo, 14:11 JST" | assert text.count(anchor) == 1, "ancho
+
+kz3_run123_summary.py :: import re, statistics, json |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run123_out.txt" | runs = {} | current = None | with open(path) as f: |     for line in f: |         line = line.strip() |         m = re.match(r"=== (
+
+kz3_run152_calc.py :: import re, statistics | from collections import Counter |  | def parse(path): |     runs = {} |     cur = None |     for line in open(path): |         m = re.match(r"=== run(\S+) search ===", line) |         if m: |             cur = m.group(1); runs[cur] = []
+
+kz3_run153_calc.py :: import re, statistics | lines = open('kz3_run153_out.txt').read().splitlines() | runs = {} | cur = None | for l in lines: |     m = re.match(r'=== run(\S+) search ===', l) |     if m: |         cur = 'run' + m.group(1); runs[cur] = [] |         continue |     
+
+kz3_run154_calc.py :: import re |  | lines = open('kz3_run154_out.txt').read().splitlines() | runs = {} | cur = None | for l in lines: |     m = re.match(r'=== run(\w+) search ===', l) |     if m: |         cur = 'run' + m.group(1); runs[cur] = [] |     elif l == '=== landing contr
+
+kz3_run155_calc.py :: import re, statistics, sys | lines = open("kz3_run155_out.txt").read().splitlines() | sections = {} | cur = None | for ln in lines: |     m = re.match(r"=== run(\w+) search", ln) |     if m: |         cur = "run" + m.group(1); sections[cur] = []; continue |   
+
+kz3_run156_calc.py :: import re, math | lines = open("kz3_run156_out.txt").read().splitlines() | sections = {} | cur = None | for ln in lines: |     m = re.match(r"=== run(\w+) search", ln) |     if m: |         cur = "run" + m.group(1); sections[cur] = []; continue |     if ln.sta
+
+kz3_run78_calc.py :: import statistics as st | runs = { | "78A":[0.138078,1.319808,2.402440,0.480847,1.121188,1.109770,2.458223,1.082638,0.147024,0.230840,0.154875,0.177659,0.299059,0.138840,0.213986,0.315986,0.169689,0.253067,0.265176,0.148681], | "78B":[0.141969,0.144890,0.21534
+
+kz3_run79_calc.py :: #!/usr/bin/env python3 | import re, statistics |  | lines = open('/tmp/kz3_run79_out.txt').read().splitlines() | runs = {} | cur = None | for ln in lines: |     m = re.match(r'=== run(\S+) search ===', ln) |     if m: |         cur = m.group(1); runs[cur] = []
+
+kz3_run82_calc.py :: import re, statistics, sys |  | path = sys.argv[1] | blocks = [] | cur = None | for line in open(path): |     m = re.match(r"=== (run\w+) search", line) |     if m: |         cur = {"id": m.group(1), "vals": [], "codes": []} |         blocks.append(cur) |     
+
+kz3_run83_calc.py :: runs = { | "83A":[0.118488,0.255677,0.231944,0.260878,0.299513,0.177092,0.161781,0.170096,0.066352,0.120540,0.067887,0.127896,0.127977,0.133704,0.119855,0.114119,0.161051,0.158068,0.085356,0.125584], | "83B":[0.104996,0.119574,0.092544,0.092982,0.095939,0.0775
+
+kz3_run85_calc.py :: import sys | lines = open(sys.argv[1]).read().splitlines() | block = None | data = {} | for ln in lines: |     ln = ln.strip() |     if ln.startswith("=== run") or ln.startswith("=== landing"): |         block = ln.strip("= ") |         data[block] = [] |     
+
+kz3_run86_calc.py :: import re, statistics | runs = {"86A": [], "86B": [], "86C": [], "L": []} | cur = None | data = open("kz3_run86_out.txt").read().splitlines() | for line in data: |     m = re.match(r"=== (\S+)", line) |     if m: |         rid = m.group(1) |         cur = "L" 
+
+kz3_run87_calc.py :: import sys |  | def parse_block(lines): |     vals = [] |     for ln in lines: |         parts = ln.split() |         if len(parts) == 2 and parts[0] == "200": |             vals.append(float(parts[1])) |     return vals |  | def nearest_rank(vals, p): |     i
+
+kz3_run88_calc.py :: import math |  | def parse_block(lines): |     vals = [] |     for ln in lines: |         parts = ln.split() |         if len(parts) == 2 and parts[0] == "200": |             vals.append(float(parts[1])) |     return vals |  | def nearest_rank(vals, p): |     
+
+kz3_run89_calc.py :: import re |  | lines = open("kz3_run89_out.txt").read().splitlines() | section = None | runs = {} | order = [] | for ln in lines: |     m = re.match(r"== (run89[A-C]|landing control).*", ln) |     if m: |         section = m.group(1) |         runs[section] = 
+
+kz3_run90_calc.py :: def p50_nearest(sorted_vals): |     import math |     n = len(sorted_vals) |     idx = math.ceil(0.5 * n) - 1 |     return sorted_vals[idx] |  | def load(path, section): |     vals = [] |     inside = False |     for line in open(path): |         line = line.s
+
+kz3_run91_calc.py :: import sys, re | lines = open('kz3_run91_out.txt').read().splitlines() | secs, cur = {}, None | for ln in lines: |     m = re.match(r'=== run(\S+) search ===', ln) |     if m: cur = m.group(1); secs[cur] = [] |     elif ln.startswith('=== landing'): cur = 'CTR
+
+kz3_run92_calc.py :: def p50_nearest(sorted_vals): |     import math |     n = len(sorted_vals) |     idx = math.ceil(0.5 * n) - 1 |     return sorted_vals[idx] |  | def load(path, section): |     vals = [] |     inside = False |     for line in open(path): |         line = line.s
+
+kz3_run93_calc.py :: import re |  | cold_th = 0.5 |  | lines = open('kz3_run93_out.txt').read().splitlines() | runs = {} | cur = None | for ln in lines: |     m = re.match(r'=== (run\S+|landing control)', ln) |     if m: |         cur = m.group(1) |         runs[cur] = [] |     el
+
+kz3_run94_calc.py :: import sys |  | def p50_nearest_rank(xs): |     xs = sorted(xs) |     import math |     return xs[math.ceil(0.5 * len(xs)) - 1] |  | for name in ["run94A", "run94B", "run94C", "control"]: |     vals = [] |     with open("kz3_run94_out.txt") as f: |         sec
+
+kz3_run95_calc.py :: #!/usr/bin/env python3 | """Summarize kz3_run95_out.txt: per run n, http codes, cold count (TTFB>=0.5s), | warm p50 (nearest-rank), min/max, cold positions.""" | import re | import statistics |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-koto
+
+kz3_run96_calc.py :: import re, statistics | txt = open('kz3_run96_out.txt').read().splitlines() | runs, cur = {}, None | for line in txt: |     m = re.match(r'=== (.+) ===', line) |     if m: cur = m.group(1); runs[cur] = [] |     elif line.startswith('200') and cur: |         ru
+
+kz3_run96_ctx.py :: import sys | hits = [] | with open('query-cosientist.md') as f: |     for i, line in enumerate(f, 1): |         if 'run96' in line: |             # show context around each occurrence |             idx = 0 |             while True: |                 idx = line
+
+kz3_run97_calc.py :: import re, sys | txt = open('kz3_run97_out.txt').read().splitlines() | runs, cur = {}, None | for line in txt: |     m = re.match(r'=== (.+) ===', line) |     if m: cur = m.group(1); runs[cur] = [] |     elif line.startswith('200') and cur: |         runs[cur]
+
+kz3_run98_append.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with io.open(path, "r", encoding="utf-8") as f: |     text = f.read() |  | old = """22時台は 7 試行中 2 試行、夜帯通算 cold>0 は 48 試行中 13 試行 (~27%)。 | status 判定は 
+
+kz3_run98_calc.py :: import re |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run98_out.txt" | lines = open(path).read().splitlines() | groups = {} | cur = None | for ln in lines: |     m = re.match(r"=== run(\w+) search ===", ln) |     if m: |  
+
+kz3_status.py :: import subprocess, sys | r = subprocess.run('date; uptime; wc -l kz3_run97_out.txt', shell=True, capture_output=True, text=True) | sys.stdout.write(r.stdout + r.stderr) | 
+
+kz3_tail104.py :: lines = open("query-cosientist.md", encoding="utf-8").read().splitlines() | with open("kz3_tail104.txt", "w", encoding="utf-8") as f: |     for i, ln in enumerate(lines[-30:], start=len(lines) - 29): |         f.write("%d|%s\n" % (i, ln)) | print("ok") | 
+
+kz3_tailcheck.py :: import sys | with open('query-cosientist.md') as f: |     lines = f.read().splitlines() | line = lines[128] | sys.stdout.write("TAIL: " + repr(line[-300:]) + "\n") | sys.stdout.write("ENDS_WITH_PIPE: " + str(line.rstrip().endswith('|')) + "\n") | 
+
+kz3_trace_run.py :: import subprocess, time, os | p = subprocess.Popen(["bash", "-x", "kz3_run107.sh"], |                      stdout=open("kz3_trace2.txt", "w"), |                      stderr=subprocess.STDOUT, |                      cwd="/Users/junkawasaki/github/com-junkawasak
+
+rank38_apply.py :: import sys, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | P = 'query-cosientist.md' | txt = open(P, encoding='utf-8').read() |  | START = 'rank (期待 gain × 確率, 2026-09-05 第36回):' | END = '( K-Q2 / K-W1 / K-W2 / K-Z1 は判定済みのた
+
+rank38_commit.py :: import sys, os | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out15.txt','w') | sys.stdout = out | import subprocess | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | def run(*cmd): |     r 
+
+rank38_count.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out6.txt','w') | sys.stdout = out | import os, re | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | p = 'query-cosientist.md' | txt 
+
+rank38_diff.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out7.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | for cmd in [ |     ['git
+
+rank38_fetch.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out2.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | for cmd in [ |     ['git
+
+rank38_fetch2.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out5.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | for cmd in [ |     ['git
+
+rank38_final.py :: import sys, os | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out16.txt','w') | sys.stdout = out | import subprocess | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | def run(*cmd): |     r 
+
+rank38_pull.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_pull_out.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | for cmd in [ |     [
+
+rank38_read.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out3.txt','w') | sys.stdout = out | import os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | p = 'query-cosientist.md' | lines = 
+
+rank38_read2.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out4.txt','w') | sys.stdout = out | import os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | p = 'query-cosientist.md' | lines = 
+
+rank38_show.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out8.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | r = subprocess.run(['git
+
+rank38_show2.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out9.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | # HEAD moved? worktree c
+
+rank38_state.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out.txt','w') | sys.stdout = out | import subprocess, os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | for cmd in [ |     ['git'
+
+rank38_state2.py :: import sys, os | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out13.txt','w') | sys.stdout = out | import subprocess | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | print('exists:', os.pat
+
+rank38_verify.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out10.txt','w') | sys.stdout = out | import os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | data = open('query-cosientist.md','
+
+rank38_verify2.py :: import sys, os | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out14.txt','w') | sys.stdout = out | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | txt = open('query-cosientist.md', encoding=
+
+rank38_where.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out11.txt','w') | sys.stdout = out | import os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | txt = open('query-cosientist.md', e
+
+rank38_where2.py :: import sys | out = open('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank38_out12.txt','w') | sys.stdout = out | import os | os.chdir('/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs') | txt = open('query-cosientist.md', e
+
+rank39_edit.py :: import io |  | path = "query-cosientist.md" | with io.open(path, encoding="utf-8") as f: |     text = f.read() |  | old = """rank (期待 gain × 確率, 2026-09-05 第38回): | 1. K-Q1 — 恒常的 query path 退行 (+3.5〜3.9 倍) の切り分け。graph-for (0.018ms) / |    verify-session (削減上限 
+
+rank40_commit.py :: import subprocess, io | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | def run(cmd): |     r = subprocess.run(cmd, cwd=p, capture_output=True, text=True) |     return r.stdout + r.stderr |  | out = run(["git", "add", "query-cosientist
+
+rank40_edit.py :: import io |  | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = io.open(p, encoding="utf-8").read() |  | old = """rank (期待 gain × 確率, 2026-09-05 第39回): | 1. K-Q1 — 恒常的 query path 退行 (+3.5〜3.9 倍) の切り分け。graph-for (
+
+rank42_commit.py :: import subprocess |  | msg = ('rank 第42回: K-Z3 run121A-C 採用 (8時台 3 セット連続 cold 0/180 完全静穏, ' |        '深夜帯通算 116 試行中 30 試行 ~25.9%), status 遷移なし, ' |        'NEXT: K-Z3 9時台 n 積み増し') | subprocess.run(['git', 'add', 'query-cosientist.md'], check=True) | subprocess
+
+rank42_edit.py :: import re |  | path = 'query-cosientist.md' | with open(path) as f: |     text = f.read() |  | # --- 1. rank header: 第41回 -> 第42回 --- | old_head = 'rank (期待 gain × 確率, 2026-09-05 第41回):' | new_head = 'rank (期待 gain × 確率, 2026-09-05 第42回):' | assert text.count(
+
+rank45_edit.py :: import io, re |  | path = "query-cosientist.md" | src = io.open(path, encoding="utf-8").read() |  | # 1) rank block: update header to 第45回 and K-Q1 section | old_head = "rank (期待 gain × 確率, 2026-09-05 第44回):" | new_head = "rank (期待 gain × 確率, 2026-09-05 第45回):
+
+rank47_edit.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with io.open(path, encoding="utf-8") as f: |     text = f.read() |  | # 1) rank ブロック見出しを第47回版へ + K-Q1 項目の末尾に第47回進展を追記 | old1 = "rank (期待 gain × 確率, 2
+
+rank47_fetch.py :: import subprocess, json |  | CWD = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     r = subprocess.run(["git"] + args, capture_output=True, text=True, cwd=CWD) |     return (r.stdout + r.stderr).strip() |  | print("=
+
+rank47_fixtime.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with io.open(path, encoding="utf-8") as f: |     text = f.read() |  | old = "13時台は falsify 第51回 run151A–C (13時台帯初計測, 13:0x JST, cold 4/60 ~6.7%" | ne
+
+rank47_gitstate.py :: import subprocess, os |  | def run(args): |     r = subprocess.run(["git"] + args, capture_output=True, text=True, |                        cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") |     return (r.stdout + r.stderr).strip() |  | 
+
+rank47_push.py :: import subprocess |  | CWD = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     r = subprocess.run(["git"] + args, capture_output=True, text=True, cwd=CWD) |     return (r.stdout + r.stderr).strip() |  | print("=== add
+
+rank47_time.py :: import subprocess, os, json, re |  | CWD = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     r = subprocess.run(["git"] + args, capture_output=True, text=True, cwd=CWD) |     return (r.stdout + r.stderr).strip() |  | 
+
+rank48_commit.py :: import subprocess, datetime |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | lines = [] | def run(*cmd): |     p = subprocess.run(list(cmd), cwd=cwd, capture_output=True, text=True) |     lines.append("$ " + " ".join(cmd)) |     
+
+rank48_edit.py :: import io, traceback |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | logpath = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank48_edit_log.txt" |  | old = """rank (期待 gain × 確率, 2026-09
+
+rank48_gitstat.py :: import subprocess | lines = [] | for cmd in [ |     ["git", "diff", "--stat"], |     ["git", "status", "--short"], | ]: |     p = subprocess.run(cmd, cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs", |                        capture_outpu
+
+rank48_probe.py :: import io, sys, traceback |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | out = [] | try: |     with io.open(path, encoding="utf-8") as f: |         text = f.read() |     out.append("len=%d" % len(text)) |  
+
+rank48_probe2.py :: import io, traceback |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | logpath = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rank48_edit_log.txt" | lines = [] | try: |     with io.open(pa
+
+rank48_push.py :: import subprocess |  | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | lines = [] | def run(*cmd): |     p = subprocess.run(list(cmd), cwd=cwd, capture_output=True, text=True) |     lines.append("$ " + " ".join(cmd)) |     lines.appe
+
+rank49_apply.py :: import io |  | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with io.open(path, encoding="utf-8") as f: |     text = f.read() |  | orig_len = len(text) | repls = [] |  | # 1) rank header version bump | old = "r
+
+rank49_commit.py :: import subprocess, sys |  | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, |                        cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") |     return (r.returncode, r.stdout.strip(), r.stderr.st
+
+rank49_log.py :: import io | path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with io.open(path, encoding="utf-8") as f: |     text = f.read() | entry = ( |     "- 2026-09-05: rank 第49回。git fetch で net-kotobase/main 先端確認 — local b
+
+rank49_push.py :: import subprocess |  | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, |                        cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") |     return (r.returncode, r.stdout.strip(), r.stderr.strip()
+
+rank50_append.py :: #!/usr/bin/env python3 | """rank 第50回: Iteration log に rank ブロックを追記する (重複適用防止付き)。""" | import io |  | PATH = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" |  | ENTRY = """- 2026-09-05: rank 第50回。git pull --ff-only — rem
+
+rank50_fix.py :: #!/usr/bin/env python3 | """rank 第50回 (追記): 4fa6a0c の run155 evidence (17時台) を取り込んで log を修正する。""" | import io, subprocess, re |  | REPO = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | PATH = REPO + "/query-cosientist.md" |  | FIXED_ENTRY
+
+rank50_gitcheck.py :: #!/usr/bin/env python3 | import subprocess | cmds = [ |     ["git", "show", "--stat", "--oneline", "4fa6a0c"], |     ["git", "log", "--oneline", "-3", "--all", "--source"], |     ["git", "status", "-sb"], | ] | out = [] | for c in cmds: |     r = subprocess.ru
+
+rank50_pushcheck.py :: #!/usr/bin/env python3 | import subprocess | r = subprocess.run(["git", "log", "--oneline", "-2", "net-kotobase/main"], |                    capture_output=True, text=True, |                    cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/d
+
+rk38_commit.py :: # rank 第38回の編集を commit + push する。 | import subprocess |  | DOCS = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args, **kw): |     r = subprocess.run(args, capture_output=True, text=True, cwd=DOCS, **kw) |     return r.returnc
+
+rk38_commit2.py :: # 修正分の commit + push + 検証。 | import subprocess |  | DOCS = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=DOCS) |     return r.returncode, (r.stdout + r.
+
+rk38_fix112.py :: # rank 第38回の push 後取り込み修正 (v2): | # (a) bench 第38回の 4時台単体試行を run113 に改名 (falsify run112A-C との ID 衝突回避) | # (b) falsify run112A-C (5時台, cold 1/60) を取り込み 深夜帯通算を 89/29 (~32.6%) に修正 | # 根拠はいずれも既存 evidence の実測数字のみ。 | import io |  | P = "/Users/junkawasaki/github/co
+
+rk38_probe.py :: import io | P = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = io.open(P, encoding="utf-8").read() | i = s.find("86 試行中 29 試行") | while i >= 0: |     print("=== at", i, "===") |     print(repr(s[max(0,i-260):i+160]
+
+rk38_rank38.py :: # rank 第38回: query-cosientist.md への rank 編集を一括適用する。 | # 編集根拠はすべて既存 evidence (bench 第38回, falsify 第38回) の数字のみ。 | import io |  | P = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | s = io.open(P, encoding="utf-8").read() 
+
+rk38_show112.py :: # f5c423f (falsify run112A-C) の内容と本 tick の取り込み状況を確認する。 | import subprocess |  | DOCS = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git", "show", "f5c423f", "--stat"], |                    capture_output=True, text=
+
+rk38_verify.py :: # push 後の検証: HEAD/remote 状態と編集の反映を確認する。 | import subprocess |  | DOCS = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     r = subprocess.run(args, capture_output=True, text=True, cwd=DOCS) |     return (r.returncode, 
+
+rk41_calc.py :: # 深夜帯通算: run118 evidence 時点 104 試行中 30 試行 | # + run119A-C (0/60, cold>0 なし) -> 107 試行中 30 試行 | # 6時台通算: run105A-C(3) + run115A-C(3) + run116A-C(3) + run117A-C(3) + run118A-C(3) = 15 試行... | print("6時台試行数:", 3+3+3+3+3) | # run105: cold 2/20 -> 試行=1セットではなく試行単位は 
+
+rk41_commit.py :: import subprocess | r = subprocess.run(['git', 'add', 'query-cosientist.md'], capture_output=True, text=True) | print(r.returncode, r.stdout, r.stderr) | r = subprocess.run(['git', 'commit', '-m', |   'rank 第41回: K-Z3 run116-119 採用 (6時台 15試行中2試行 ~13%, 8時台帯初計測 
+
+rk41_edit.py :: import io | p = 'query-cosientist.md' | s = io.open(p, encoding='utf-8').read() |  | # 1) rank header | s = s.replace('rank (期待 gain × 確率, 2026-09-05 第40回):', |               'rank (期待 gain × 確率, 2026-09-05 第41回):') |  | # 2) K-Z3 rank block: update 6時台 tally 
+
+rk41_fix.py :: import io | p = 'query-cosientist.md' | s = io.open(p, encoding='utf-8').read() | a = '6時台通算 20 試行中 3 試行 (~15%)' | b = '6時台通算 15 試行中 2 試行 (~13%)' | assert a in s, 'rank block pattern not found' | s = s.replace(a, b) | c = 'falsify run118 で 20 試行中 3 試行\n  ~15%)
+
+rk41_push.py :: import subprocess | r = subprocess.run(['git', 'push', 'net-kotobase', 'HEAD:main'], capture_output=True, text=True) | print('PUSH_RC', r.returncode) | print(r.stdout) | print(r.stderr) | 
+
+rk44_125.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.split("\n") | # Show the run125 segment within line 175 (K-Z3 row) | i = lines[174].find("run125
+
+rk44_acc.py :: import os | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | out = [] | out.append("exists: %s" % os.path.exists(p)) | out.append("access R: %s" % os.access(p, os.R_OK)) | out.append("access W: %s" % os.access(p, os.
+
+rk44_blk.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | i = txt.find("| bench 2026-09-05 (第39回") | out = ["pos: %d" % i] | print(i) | # K-Q1 rank block: search for 
+
+rk44_blk2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | import re | out = [] | for m in re.finditer(r"rank ブロック", txt): |     ln = txt[:m.start()].count("\n")+1 |  
+
+rk44_blk3.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | # rank block = population section. 第43回版 mentions around line 1281 are iteration log.  | # The actual "rank 
+
+rk44_chk.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | res = [] | import re | for m in re.finditer(r"run125", txt): |     ln = txt[:m.start()].count("\n")+1 |     
+
+rk44_ctx.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | # context around 第43回版 at 117299 | open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rk
+
+rk44_diff.py :: import subprocess | r = subprocess.run(["git","diff","--stat"], capture_output=True, text=True, |                    cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | out = [r.stdout + r.stderr] | r2 = subprocess.run(["git","diff","quer
+
+rk44_edit.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() |  | # 1. Update rank block header + item 1 (K-Q1) to 第44回版 | old1 = """rank (期待 gain × 確率, 2026-09-05 第43回): 
+
+rk44_fetch.py :: import subprocess | out = [] | for cmd in [["git","fetch","net-kotobase"],["git","log","--oneline","-3","net-kotobase/main"],["git","rev-parse","HEAD","net-kotobase/main"],["git","diff","--stat","HEAD","net-kotobase/main","--","query-cosientist.md"]]: |     r 
+
+rk44_file.py :: import subprocess, os | out = [] | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | out.append("exists: %s" % os.path.exists(p)) | if os.path.exists(p): |     out.append("size: %d" % os.path.getsize(p)) |     txt = o
+
+rk44_heads.py :: import re | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | res = [] | for m in re.finditer(r"^#{1,4} .*$',?$", txt, re.M): |     pass | res = [] | for m in
+
+rk44_log.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.splitlines() | # Iteration log section: find last entries. Find index of "## Iteration log" | i 
+
+rk44_log2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | idx = txt.find("## Iteration log") | out = ["index: %d, char pos: %d" % (txt.count("## Iteration log"), idx)
+
+rk44_now.py :: import datetime | open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rk44_now_out.txt","w").write(datetime.datetime.now().isoformat()) | 
+
+rk44_pop.py :: import re | p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.splitlines() | out = [] | # Find hypothesis table rows (K-xx) and hypothesis populat
+
+rk44_push.py :: import subprocess | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | out = [] | cmds = [ |     ["git","add","query-cosientist.md"], |     ["git","commit","-m","rank 第44回: K-Q1 falsify 第3段取り込み (warm p50 683.73ms, auth plane ~28ms 分離で退行
+
+rk44_q1.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.splitlines() | out = [] | out.append("=== K-Q1 row L52 tail 12000 ===") | out.append(lines[51][-
+
+rk44_q1b.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | # K-Q1 row: split on '| K-Q1 |' then next '| open |' | i = txt.index("| K-Q1 |") | seg = txt[i:i+25000] | j 
+
+rk44_rank.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.split("\n") | out = [] | for idx in range(126, 165): |     out.append("%d: %s" % (idx+1, lines[i
+
+rk44_rank2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.split("\n") | out = [] | for idx in range(164, 201): |     out.append("%d: %s" % (idx+1, lines[i
+
+rk44_remote.py :: import subprocess, json, os | out = [] | # check for new remote branches / commits beyond 8847fdd | for cmd in [["git","log","--oneline","-8","net-kotobase/main"],["git","branch","-r"]]: |     r = subprocess.run(cmd, capture_output=True, text=True, cwd="/Users
+
+rk44_row.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.split("\n") | # Examine the K-Q1 hypothesis description and status cell boundary: extract full r
+
+rk44_rows.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.splitlines() | out = [] | # K-Q1 row (L52) full text, K-Z3 row tail (L175) full | out.append("==
+
+rk44_rows2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.splitlines() | out = [] | out.append("=== K-Q1 row L52 tail 4000 ===") | out.append(lines[51][-4
+
+rk44_sec.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.split("\n") | # lines 44-200 (0-indexed 43-199) — the population section body, look for rank blo
+
+rk44_sec2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | lines = txt.split("\n") | # show lines 176-202 (population tail: notes under table, maybe rank block) | out 
+
+rk44_show.py :: import subprocess | out = [] | # new commits on remote not yet in local log file (falsify run after eee3314): 8847fdd | # read the diff of 8847fdd to see what evidence it added | for cmd in [["git","show","8847fdd","--stat"],["git","show","8847fdd","--","query
+
+rk44_state.py :: import subprocess | out = [] | for cmd in [["git","branch","-vv","--all"],["git","log","HEAD..origin/main","--oneline"],["git","symbolic-ref","HEAD"],["git","remote","-v"]]: |     r = subprocess.run(cmd, capture_output=True, text=True) |     out.append("$ " + 
+
+rk44_tail.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | tail = txt[-6000:] | open("/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/rk44_tail_out.tx
+
+rk44_verify.py :: import subprocess | cwd = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | r = subprocess.run(["git","fetch","net-kotobase"], capture_output=True, text=True, cwd=cwd) | r2 = subprocess.run(["git","rev-parse","net-kotobase/main"], capture_ou
+
+rk44_wc.py :: import subprocess | out = [] | # Confirm working tree is clean wrt tracked files, and confirm HEAD == net-kotobase/main == 8847fdd | for cmd in [["git","status","--porcelain","--","query-cosientist.md"],["git","rev-parse","HEAD"],["git","stash","list"]]: |    
+
+rk44_z2.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | i = txt.index("| K-Z2 |") | seg = txt[i:i+60000] | j = seg.index("| open |") | rest = seg[j+len("| open |"):
+
+rk44_z3.py :: p = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | txt = open(p, encoding="utf-8", errors="replace").read() | i = txt.index("| K-Z3 |") | seg = txt[i:i+60000] | j = seg.index("| open |") | rest = seg[j+len("| open |"):
+
+rk51_edit.py :: import io | import sys | import subprocess |  | PATH = "query-cosientist.md" |  | with io.open(PATH, "r", encoding="utf-8") as f: |     txt = f.read() |  | orig_len = len(txt) | results = [] |  |  | def rep(old, new, label, required=True): |     global txt |  
+
+rk52_edit.py :: import io |  | p = "query-cosientist.md" | with io.open(p, "r", encoding="utf-8") as f: |     txt = f.read() |  | old = """  実査, 未反映なら再 deploy — 理由: bench 第49回 header 不在 6/6 実測で K-Q1 内訳計測の |   唯一の滞留切れ手。bench/falsify は deploy 整合確認まで帯 n 積み増しは非優先)。 | """ |  | new
+
+rk_br.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     p = subprocess.run(["git", "-C", repo] + args, capture_output=True, text=True, timeout=120) |     return (p.returncode, p.stdout.strip(), p.
+
+rk_co.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     p = subprocess.run(["git", "-C", repo] + args, capture_output=True, text=True, timeout=120) |     return (p.returncode, p.stdout.strip(), p.
+
+rk_date.py :: import subprocess | p = subprocess.run(["date"], capture_output=True, text=True) | print(p.stdout.strip()) | p2 = subprocess.run(["uptime"], capture_output=True, text=True) | print(p2.stdout.strip()) | 
+
+rk_diff.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" | p = subprocess.run(["git", "-C", repo, "diff", "--stat"], capture_output=True, text=True) | print("rc:", p.returncode) | print(p.stdout or p.stderr) | p2 = subproce
+
+rk_edit.py :: path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with open(path) as f: |     text = f.read() |  | old = """rank (期待 gain × 確率, 2026-09-04 第23回): | 1. K-Z2 — 日中帯 cold 群の短時間スケール再発の機構切分け。発火直後 vs 経過後対比 |    は n 薄く非一貫 
+
+rk_fetch.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     p = subprocess.run(["git", "-C", repo] + args, capture_output=True, text=True, timeout=120) |     return (p.returncode, p.stdout.strip(), p.
+
+rk_fetch2.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     p = subprocess.run(["git", "-C", repo] + args, capture_output=True, text=True, timeout=120) |     return (p.returncode, p.stdout.strip(), p.
+
+rk_log.py :: path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md" | with open(path) as f: |     text = f.read() |  | anchor = """  status 判定は rank に委ねる。NEXT: K-Z3 深夜帯 23時台 n 積み増し継続。 | """ | assert text.count(anchor) == 1, f"anchor o
+
+rk_push.py :: import subprocess | repo = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs" |  | def run(args): |     p = subprocess.run(["git", "-C", repo] + args, capture_output=True, text=True) |     return p.returncode, p.stdout.strip(), p.stderr.strip()
+
+rk_wc.py :: import subprocess | p = subprocess.run(["wc", "-l", "query-cosientist.md"], capture_output=True, text=True, cwd="/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs") | print(p.stdout.strip()) | # print lines 112-139 exactly | with open("/Users/ju
+

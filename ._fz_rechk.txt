@@ -1,0 +1,28 @@
+04:13:16
+== fetch ==
+Fetching net-kotobase
+Fetching bench_fetch
+== HEAD ==
+e47ccb17f02f52c0c17b5395d1531b5ee87b10b7
+== main ==
+e47ccb17f02f52c0c17b5395d1531b5ee87b10b7
+== log5 ==
+e47ccb1 rank 第234回: 3時台 run529/530 fold (16/360 ~4.4% 6set), K-Z3 open 継続, NEXT 4時台 run531
+799a736 bench237: K-Z3 3時台 run530 n-add (cold 5/60 ~8.3%, control 0/20 完全静穏分離成立), iter/evidence 追記
+29f90c1 falsify236: K-Z3 3時台 n 積み増し run529A-C (cold 1/60 ~1.7%, control 0/20 完全静穏分離成立), iter/evidence 追記
+cc66b02 rank 第233回: 3時台 run525-528 fold (10/240 ~4.2% 4set), K-Z3 open 継続, NEXT run529
+94026af bench 第233回: K-Z3 3時台 run528 n 積み増し (cold 1/60, control 分離成立)
+== status ==
+ M query-cosientist.md
+?? $
+?? ._b531_count.txt
+?? ._b531_count2.txt
+?? ._b531_count3.txt
+?? ._b531_evloc_out.txt
+?? ._b531_patch_out.txt
+?? ._b531_pre_out.txt
+?? ._b531_run.txt
+?? ._b531_run2.txt
+== diff stat ==
+ query-cosientist.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)

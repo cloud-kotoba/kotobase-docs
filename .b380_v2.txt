@@ -1,0 +1,7 @@
+L280_HEAD>
+ falsify 2026-09-07 (第173回, K-Z3 18時台帯初計測 run381A–C (run380 は cosientist 第126回 17時台 使用済みのため読替, 前例に従う),同測定法 n=20 × 3
+<EOF
+ query-cosientist.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ M query-cosientist.md
+DONE

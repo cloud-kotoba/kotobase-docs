@@ -1,0 +1,150 @@
+{
+  "schema": "https://kotoba.cloud/schemas/control-plane/v1",
+  "service": "kotoba-cloud",
+  "delegation": {
+    "subject": "kotoba.cloud/delegation",
+    "logPath": "/.well-known/biscuit-rootkey.json",
+    "published": false,
+    "authority": "the-log-not-this-document",
+    "pinnedBy": "the-calling-plane-not-this-document",
+    "verifiedLocally": false,
+    "verifierToday": "identity-service"
+  },
+  "libraries": {
+    "pqKeyRotateEndpoint": "https://kotoba.cloud/v1/pq-keys/rotate",
+    "hostedPublishEndpoint": "https://kotoba.cloud/v1/libraries/publish",
+    "defaultDryRun": true,
+    "minimumByteCompleteStorageProviders": 2,
+    "availabilityProofSchema": "kotoba.library-availability.v1",
+    "packageSignatureSuite": "ed25519+ml-dsa-65",
+    "inspectCommand": "kotoba library inspect",
+    "storageOrigin": "https://api.kotoba.cloud",
+    "publicationRequestReplayPolicy": "single-use-request-id",
+    "catalogPath": "/libraries/",
+    "runLockedCommand": "kotoba package run",
+    "catalogOrigin": "https://kotoba-lang.org",
+    "verifyCommand": "kotoba library verify",
+    "publishMode": "local-signed-passkey-plus-principal-pinned-ml-dsa-relay-distributed-gated",
+    "publishCommand": "kotoba library publish",
+    "packageRegistryPath": "/.well-known/kotoba-package-registry.edn",
+    "hostedPasskeyPublish": true,
+    "minimumRoutedPeerIds": 2,
+    "packageRegistryCid": "bafkreidcy5stqvnyfpmud6ozz5qz3supd3r3uzk7glmntuv36ezliaxstm",
+    "releaseSchema": "kotoba.library-release.v1",
+    "pqKeyEpochPolicy": "monotonic-principal-pinned",
+    "pqKeyLifecycle": "publication-and-passkey-authenticated-transitions-live",
+    "pqKeyRecovery": "blocked-independent-quorum-not-implemented",
+    "runCommand": "kotoba library run",
+    "installCommand": "kotoba package add --catalog-cid bafkreidcy5stqvnyfpmud6ozz5qz3supd3r3uzk7glmntuv36ezliaxstm",
+    "pqKeyRevokeEndpoint": "https://kotoba.cloud/v1/pq-keys/revoke",
+    "pqKeyTransitionSchema": "https://kotoba.cloud/schemas/pq-key-transition-request/v1",
+    "machineCatalogPath": "/.well-known/kotoba-libraries.json",
+    "requestSchema": "https://kotoba.cloud/schemas/library-publication-request/v3"
+  },
+  "security": {
+    "sessionProjection": "https://kotoba.cloud/v1/session",
+    "passkeyPqScope": "hosted-library-publication-and-pq-key-transition-approval",
+    "passkeyPqLimitation": "the-authenticator-passkey-itself-is-not-claimed-post-quantum",
+    "passkeyCryptography": "authenticator-selected-webauthn-cose-algorithm",
+    "untrustedDeploymentsUnderKotobaCloud": false,
+    "sessionCookieScope": "registrable-domain:kotoba.cloud",
+    "passkeyPqMode": "webauthn-session+principal-pinned-ml-dsa-65",
+    "passkeyRpId": "auth.kotoba.cloud",
+    "passkeyPqEnrollment": "first-valid-passkey-session-binds-ml-dsa-key",
+    "passkeyOrigin": "https://auth.kotoba.cloud"
+  },
+  "boot": {
+    "catalogUrl": "https://boot.kotoba.cloud/.well-known/aiueos-boot.json",
+    "bootstrapUrl": "https://boot.kotoba.cloud/aiueos/x86_64/gmktec-k16/bootstrap/v1.efi",
+    "channel": "k16-candidate",
+    "manifestCid": "bafkreidoda772r75zjksrkieq62ow5vf75sgoyhbktkrvmpbylhptm6nwi",
+    "ipnsName": "k51qzi5uqu5dgygymic1xyzizaigh10gn3qlr48u5eb073lnnnyonjxkr31g9z",
+    "status": "candidate",
+    "physicalK16": "unverified",
+    "internalDiskWrites": false
+  },
+  "roles": {
+    "identity": {
+      "origin": "https://auth.kotoba.cloud",
+      "rpId": "auth.kotoba.cloud",
+      "purpose": "stable-principal-and-controller-authentication"
+    },
+    "control": {
+      "origin": "https://api.kotoba.cloud",
+      "purpose": "cli-and-deploy-control"
+    },
+    "boot": {
+      "origin": "https://boot.kotoba.cloud",
+      "purpose": "network-boot-discovery-and-immutable-bootstrap"
+    },
+    "storage": {
+      "origin": "https://api.kotoba.cloud",
+      "purpose": "content-addressed-artifacts-state-and-receipts",
+      "capabilities": {
+        "pinning": {
+          "purpose": "ipfs-pinning-service-api-over-the-shared-block-space",
+          "path": "/v1/database/pins",
+          "authorization": "bearer-or-cacao",
+          "credentialIssuer": "kotoba-cloud",
+          "principalIssuedCredentials": false
+        }
+      }
+    },
+    "compute": {
+      "origin": "https://api.murakumo.cloud",
+      "publicOrigin": "https://murakumo.cloud",
+      "purpose": "cpu-gpu-placement-and-execution",
+      "capabilities": {
+        "llm": {
+          "purpose": "hosted-inference-on-the-murakumo-fleet",
+          "path": "/v1/messages",
+          "modelAliasPath": "/infer/models/murakumo-main",
+          "authorization": "bearer-or-x-api-key",
+          "credentialIssuer": "murakumo",
+          "principalIssuedCredentials": false
+        }
+      }
+    },
+    "agentWork": {
+      "origin": "https://itonami.cloud",
+      "purpose": "agent-workspaces-goals-tools-and-approvals"
+    },
+    "language": {
+      "origin": "https://kotoba-lang.org",
+      "purpose": "language-specification-documentation-and-conformance"
+    }
+  },
+  "cryptography": {
+    "defaultPolicy": "post-quantum-required-for-new-boundaries",
+    "confidentialitySuite": "x25519+ml-kem-768+aes-256-gcm",
+    "publicationSignatureSuite": "ed25519+ml-dsa-65",
+    "downgradePolicy": "reject-missing-pq-or-unknown-suite",
+    "legacyCompatibilityRequired": false
+  },
+  "version": "1",
+  "tiers": {
+    "enforcedAt": "enrollment",
+    "costSurface": "https://api.murakumo.cloud/infer/cost",
+    "secureEnrollment": "operator-authorized-only",
+    "communityProvider": "each-node-presents-its-own-did-key",
+    "secureProvider": "did:web:awai.network",
+    "trustTiers": [
+      "awai-secure",
+      "community"
+    ],
+    "creditsSurface": "https://api.murakumo.cloud/infer/credits",
+    "planSurface": "https://api.murakumo.cloud/itonami/plans",
+    "communityEnrollment": "public-default-admission-pending",
+    "dispatchTierFiltering": false,
+    "enrollmentSurface": "https://api.murakumo.cloud/infer/nodes"
+  },
+  "deploy": {
+    "mode": "local-admission-remote-compute",
+    "hostedApply": false,
+    "controlOrigin": "https://api.kotoba.cloud",
+    "storageOrigin": "https://api.kotoba.cloud",
+    "computeOrigin": "https://api.murakumo.cloud",
+    "publicComputeOrigin": "https://murakumo.cloud",
+    "agentWorkOrigin": "https://itonami.cloud"
+  }
+}

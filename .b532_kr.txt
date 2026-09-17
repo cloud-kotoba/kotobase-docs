@@ -1,0 +1,9 @@
+HTTP/2 301 
+date: Mon, 14 Sep 2026 17:10:05 GMT
+content-type: text/html; charset=UTF-8
+location: https://kotoba.cloud/docs/graph/
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BYBRHyDCbRUwY%2FXe6gFjNZidxueGDEYUurbg1w56ndgDVkzgUf2UhJ6sxG8FVl0NUq%2Fq6KClciLsiIIThXRJ81T4y%2Bm%2BiJ0F2Bn1n9KrsN6vQCKB75YzNihF9BUaLEzoCWsFrgXFAGfT8Og%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a3b100cb4b7b7967-NRT
+

@@ -1,0 +1,2 @@
+https://kotobase.net/api/search?q=test
+https://kotobase.net/signup

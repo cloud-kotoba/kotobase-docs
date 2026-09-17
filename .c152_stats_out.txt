@@ -1,0 +1,5 @@
+run575A: n=20 ok=20 cold=11 (55.0%) p50=0.8654s p95=1.5722s min=0.0395s max=1.6110s cold_list=[0.9177, 1.4538, 0.8654, 0.9324, 1.3961, 1.4667, 1.0094, 1.2962, 1.0209, 1.5722, 1.611]
+run575B: n=20 ok=20 cold=0 (0.0%) p50=0.0460s p95=0.1445s min=0.0357s max=0.3981s cold_list=[]
+run575C: n=20 ok=20 cold=0 (0.0%) p50=0.0438s p95=0.1208s min=0.0353s max=0.2426s cold_list=[]
+control: n=20 ok=20 cold=0 (0.0%) p50=0.0455s p95=0.2713s min=0.0382s max=0.3399s cold_list=[]
+TOTAL_SEARCH n=60 ok=60 cold=11 (18.3%)

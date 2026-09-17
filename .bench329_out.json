@@ -1,0 +1,54 @@
+{
+  "results": {
+    "searchA": {
+      "name": "searchA",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_vals": [],
+      "cold_idxs": [],
+      "p50_ms": 231.3,
+      "max_ms": 475.6,
+      "min_ms": 67.1,
+      "errors": []
+    },
+    "searchB": {
+      "name": "searchB",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_vals": [],
+      "cold_idxs": [],
+      "p50_ms": 205.8,
+      "max_ms": 392.4,
+      "min_ms": 85.6,
+      "errors": []
+    },
+    "searchC": {
+      "name": "searchC",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_vals": [],
+      "cold_idxs": [],
+      "p50_ms": 222.5,
+      "max_ms": 456.8,
+      "min_ms": 61.9,
+      "errors": []
+    },
+    "landing": {
+      "name": "landing",
+      "n": 20,
+      "all200": true,
+      "cold": 0,
+      "cold_vals": [],
+      "cold_idxs": [],
+      "p50_ms": 157.1,
+      "max_ms": 465.0,
+      "min_ms": 52.2,
+      "errors": []
+    }
+  },
+  "uptime": "8:16  up 2 days, 59 mins, 15 users, load averages: 125.12 108.06 95.98",
+  "started": "2026-09-07 08:16:35 JST"
+}

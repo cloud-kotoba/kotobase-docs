@@ -1,0 +1,13 @@
+=== push net-kotobase ===
+To github.com:net-kotobase/docs
+   8e8f56f..d6fb2e1  HEAD -> main
+rc=0
+=== head ===
+d6fb2e1071218560004adbe5b52d696dd9257ae6
+=== remote net-kotobase/main ===
+d6fb2e1071218560004adbe5b52d696dd9257ae6
+=== fetch bench_fetch ===
+From https://github.com/net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+   8e8f56f..d6fb2e1  main       -> bench_fetch/main
+rc=0

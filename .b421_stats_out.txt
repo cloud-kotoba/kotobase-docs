@@ -1,0 +1,29 @@
+=== .b421_run421_A.txt ===
+n=      20 ok200=20
+cold_count=3
+cold_values: 0.858 1.299 0.880
+p50=0.119535
+min=0.055497
+max=1.299466
+=== .b421_run421_B.txt ===
+n=      20 ok200=20
+cold_count=0
+cold_values:
+p50=0.073779
+min=0.038291
+max=0.182730
+=== .b421_run421_C.txt ===
+n=      20 ok200=20
+cold_count=1
+cold_values: 1.519
+p50=0.062662
+min=0.037395
+max=1.519439
+=== .b421_run421_land.txt ===
+n=      20 ok200=20
+cold_count=0
+cold_values:
+p50=0.047359
+min=0.042942
+max=0.172785
+stat done

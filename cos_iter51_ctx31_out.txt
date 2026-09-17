@@ -1,0 +1,35 @@
+CALL1 around 15772
+k (read-cache-get! ck))]
+               (json-resp cached (if (:ok cached) 200 400))
+               (-> (store/run-with-bounded-store env g (:chain-cid head-state)
+                                                 (read-store-extras env g)
+                                                 (fn [store-map]
+                                                   (h/handle store-map method body auth)))
+                   (.then (fn [{:keys [result]}] result))
+                   (.then (fn [resp]
+                            (when (and ck (:ok resp)) (read-cache-put! ck resp))
+                            (assoc-response-kv-stats
+                             (json-resp resp (if (:ok resp) 200 400)))))
+                   ;; The budget refusal is a DIFFERENT outcome from a failed
+                   ;; query: the request was well formed and the caller is
+                   ;; authorized -- this graph sim
+=====
+CALL2 around 16644
+ed
+                   ;; query: the request was well formed and the caller is
+                   ;; authorized -- this graph simply cannot be hydrated inside
+                   ;; the Worker's CPU limit. Say so, with the numbers an
+                   ;; operator needs to act (fold it, or raise the budget), and
+                   ;; mark it non-retryable so a polling client backs off
+                   ;; instead of re-queueing the same 30-second burn.
+                   (.catch (fn [e]
+                             (if-not (store/block-budget-exceeded? e)
+                               (js/Promise.reject e)
+                               (let [d (ex-data e)]
+                                 (assoc-response-kv-stats
+                             (json-resp {:ok false
+                                             :error "GraphTooLargeToHydrate"
+                                             :retryable false
+                                             :details (str "read would touch more than "
+                                                           (:limit d) " blocks")
+                

@@ -1,0 +1,6 @@
+RUNA n=20 cold=2/20 p50=0.1433s max=1.7329s http200=20/20 cold_vals:[1.1342, 1.7329]
+RUNB n=20 cold=1/20 p50=0.0790s max=0.9598s http200=20/20 cold_vals:[0.9598]
+RUNC n=20 cold=0/20 p50=0.0645s max=0.2974s http200=20/20 cold_vals:[]
+RUNlanding n=20 cold=0/20 p50=0.0946s max=0.3061s http200=20/20 cold_vals:[]
+SEARCH_TOTAL cold=3/60 (~5.0%) http200=60/60
+RUNlanding n=20 cold=0/20 p50=0.0946s max=0.3061s http200=20/20 cold_vals:[]

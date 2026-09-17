@@ -1,0 +1,27 @@
+$ git checkout net-kotobase/main
+M	js/kotobase-graph-database-worker.js
+Note: switching to 'net-kotobase/main'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0d04d00 testnet: enable KOTOBASE_PACK_WRITES (ADR-2608170300 step 1)
+
+$ git log --oneline -2
+0d04d00 testnet: enable KOTOBASE_PACK_WRITES (ADR-2608170300 step 1)
+abfb204 testnet: enable KOTOBASE_PACK_WRITES (ADR-2608170300 step 1)
+
+$ git status --short --untracked-files=no
+ M js/kotobase-graph-database-worker.js

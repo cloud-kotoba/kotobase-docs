@@ -1,0 +1,41 @@
+1058
+505:;; `x-kotobase-ref` string. Only datomic.transact's body carries a literal
+511:;; table records (cid, ref_name) on every successful transact (via
+517:;; protocol change needed. A ref nothing has transacted into yet 404s from
+586:  {"transact" "/api/transact" "q" "/api/q" "pull" "/api/pull" "datoms" "/api/datoms"
+594:  literal db_name nor a graph CID. Prefers db_name (transact's convention)
+610:    "transact"
+655:       "link" "</api/q>; rel=\"successor-version\", </api/transact>; rel=\"successor-version\""
+712:  closure + Service Binding）。method ∈ #{\"transact\" \"q\" \"pull\" \"datoms\" …}。
+713:  refはbodyの db_name（transact）またはgraph CID（q/pull/datoms）から
+925:   identity only. kotobase-graph-database verify-transact-auth parses CACAO,
+926:   so this rewrite is rejected at handle-transact; it also does not rebind
+986:  not grant cacao-less transact. The operator-DID allowlist is a separate
+1012:       ;; transact. is-operator-allowed-at-edge treats empty as allow-all; this
+1016:       ;; the tenant graph, which handle-transact then rejects as non-CACAO.
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/pay/x402.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/x402.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/evm_index.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/geo.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/mcp.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/plans.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/core.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/git_ref_event.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/site_page.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/domain_search.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/component.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/web.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/schema.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/marketing_pages.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/git_bundle.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/client_api.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/transit_bridge.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/transit.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/proxy.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/worker.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/x402_offer.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/psa.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/git_witness.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/site_i18n.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/admin_page.cljc
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/treasury/core.cljc

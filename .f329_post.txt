@@ -1,0 +1,10 @@
+===fetch===
+===remote main===
+142071f7edd97f00c42bd768bc50bc323b566a30
+===HEAD===
+142071f7edd97f00c42bd768bc50bc323b566a30
+===status===
+===log top===
+142071f falsify 153: K-Z3 8時台 independent run330A-C n-add cold 0/60 completely-quiet (bench139 が run329 先行使用のため run330 に読替, 独立2計測; 同 8時台ウィンドで独立 2 セット連続再静穏, control 0/20 p50 109ms max 234.5ms control 分離成立, host load 88-102 gate-exempt production HTTP; 8時台 clean separable 1/180 ~0.56% 3セット; heavy run271A+55 非再現; status/rank to rank)
+4e24a24 bench 139: K-Z3 8時台 run329A-C cold 0/60 completely-quiet (run328 単発直後再静穏; control 0/20 p50 157ms max 465ms control sepr, host load 125 gate-exempt production HTTP; 8時台 clean separable 通算 1/120 ~0.83%; heavy run271A+54 non-reproduced; traffic-independence counter-evidence; status/rank to rank)
+85e69b5 rank 144: fold falsify151 run326 + bench138 run327 (7hr 11/360 ~3.1%) + falsify152 run328 (8hr band-first 1/60); K-Z3 open continue, rank order unchanged (K-Q1>K-Z2>K-Z3>K-S1>K-S2); NEXT K-Z3 current-band(8hr) n-add run329

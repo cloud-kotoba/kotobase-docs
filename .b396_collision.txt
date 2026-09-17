@@ -1,0 +1,12 @@
+collision check:
+.b395_395A.txt
+.b395_395B.txt
+.b395_395C.txt
+.b395_395land.txt
+.b395_insert.py
+.b395_runner.sh
+.b395_stats.py
+.b395_stats_out.txt
+.b395_zfind.py
+.b396_collision.txt
+.b396_runner.sh

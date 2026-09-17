@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.rk249_insert.py", line 12, in <module>
+    assert txt.count(HDR) == 1, 'duplicate header'
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: duplicate header
+18
+1
+# query / worker / storage co-scientist — kotobase.net
+
+co-scientist アプローチ (仮説生成→反証→ランク→進化→メタレビュー) を
+kotobase.net の **query・worker・storage** 処理の改善に適用する。
+**測定のみ**が証拠。主観や雰囲気は証拠にな�## Iteration log
+
+- 2026-09-17: bench (02:0x JST tick)。HEAD 0006b728 = fetch 後 net-kotobase/main 先端一致 (fetch net-kotobase + rev-parse 比較, 
+- 2026-09-16: falsify 第161回 (23:2x JST tick)。HEAD 8c3416c = fetch 後 net-kotobase/main 先端一致 (worktree detached HEAD のため f

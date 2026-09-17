@@ -1,0 +1,32 @@
+== git log HEAD..upstream ==
+RC=128
+STDOUT:
+
+STDERR:
+fatal: HEAD does not point to a branch
+
+== rev-parse HEAD ==
+RC=0
+STDOUT:
+eee331461be9829b9c72f0f6c2fd285633bbb83e
+
+STDERR:
+
+== rev-parse upstream ==
+RC=128
+STDOUT:
+
+STDERR:
+fatal: HEAD does not point to a branch
+
+== reflog -5 ==
+RC=0
+STDOUT:
+eee3314 HEAD@{0}: checkout: moving from rank-sync to net-kotobase/main
+eee3314 HEAD@{1}: commit: rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+22bad92 HEAD@{2}: commit: cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+9b1a466 HEAD@{3}: commit: falsify: K-Z3 9時台 run123A-C (cold 2/60, control 静穏 — 9時台通算 7/120, traffic 依存説を支持)
+1827abb HEAD@{4}: checkout: moving from 1827abb5e0f8e61d6238f14499e5d74133bc462d to rank-sync
+
+STDERR:
+

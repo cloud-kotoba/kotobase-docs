@@ -1,0 +1,5 @@
+1
+0
+�� ただし host load 急上昇 (終了時 219) tick の全体的上振れ (p50 165–224ms) で not-separated 注記付き。run186A 型群発は非再現で薄クラスタ型。7時台通算 4/180 (~2.2%) 低位帯。status 遷移なし (rank 専門)。secret は一切記録せず (curl のみ)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 7時台 n 積み増し継続)。
+Sun Sep  6 08:20:34 JST 2026
+

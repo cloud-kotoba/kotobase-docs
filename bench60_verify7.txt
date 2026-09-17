@@ -1,0 +1,4 @@
+KZ3 rows: [206], run174A in row: True
+row tail: '.998s, 20番目末尾の単発) p50 39ms / run174C cold 0/20 p50 47ms (0.033–0.088s) — 合計 1/60, landing control (kotobase.net/, 同時刻, n=20, 全 200) は cold 0/20 p50 48ms と静穏で control 分離成立 (cold 群は search 側単発, run168/169/173A 型)。22時台通算は run172 (5/60) + run173 (1/60) + run174 (1/60) = 7/180 (~3.9%) — 21時台 (~58%) より低位、18–20時台 (~2-3%) と同水準の低位側に更新。status 判定は rank に委ねる |'
+log line1718 head: '- 2026-09-05: bench 第60回。rank 第59回 NEXT フォールバック (K-Z3 現在時刻帯 n 積み増し) を受け、K-Z3 22時台 n 積み増し run174A–C を同測定法で実施 (22:49:35–22'
+total lines: 1719

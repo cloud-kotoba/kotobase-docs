@@ -1,0 +1,2 @@
+[detached HEAD 4813e93] cosientist 119: K-Z3 3hr(deep-night) n-add run297A-C cold 0/60 fully-quiet (run297A 56.2 / B 86.7 / C 91.4ms, control 0/20 p50 45.6ms completely-quiet sep; fully-quiet 5th run283/289/293/296-type, 3hr cum 7/420 ~1.7% 7-set, deep-night run275..297 29/1440 ~2.0% 24-set, heavy non-reproduced run271A+24, traffic-independence counter-evidence continues; qualify evidence 0 -> no implementation; status/rank to rank)
+ 1 file changed, 1 insertion(+)

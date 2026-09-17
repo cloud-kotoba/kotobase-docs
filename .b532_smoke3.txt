@@ -1,0 +1,4 @@
+searchL=404
+signupL=404
+kc_search=404
+kc_signup=404

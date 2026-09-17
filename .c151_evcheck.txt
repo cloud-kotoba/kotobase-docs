@@ -1,0 +1,4 @@
+line279 new length: 275156
+tail after insert:
+t/search?q=test, 00:48:11-00:48:53 JST, 全 80/80 200, host load1 26.65-30.89 (00:48 uptime, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 - curl + python3 stats のみ): cold(>=0.5s) 1/0/0 per 20 = 1/60 (~1.7%) - run519A 冒頭単発 1.0254s (2番目) p50 0.177s / run519B cold 0/20 p50 0.101s max 0.273s / run519C cold 0/20 p50 0.093s max 0.245s - control (kotobase.net/signup) cold 1/20 (max 0.5787s 閾値 0.5s 直上 境界) で 分離 は 境界成立 (完全静穏 未達) - 0時台帯 通算 (falsify run516 5/60 + bench run517 6/60 + falsify run518 10/60 + 本 run519 1/60) = 22/240 (~9.2%) の 4 セット - 深夜帯 traffic 最低帯 0時台 で falsify run518A 重クラスタ 9/20 の ~6 分後 散発単発 減衰 (heavy 非再現, 「帯内 1 窓即消失」型継続) で traffic 依存説 の 反証材料 継続, status 判定 は rank に委ねる (rank 専門)
+count run519: 6

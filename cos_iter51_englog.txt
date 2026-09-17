@@ -1,0 +1,14 @@
+0d04d00 testnet: enable KOTOBASE_PACK_WRITES (ADR-2608170300 step 1)
+abfb204 testnet: enable KOTOBASE_PACK_WRITES (ADR-2608170300 step 1)
+bc51f61 Merge agent/read-block-budget: a read budget that refuses, and a prefetch wave that stops the waiting
+94739e8 Refuse the read that cannot finish, and stop making it wait in single file
+5c4ccee merge: rebuilt artifact
+40d5bd5 rebuild the tracked artifact for the revocation change
+8b91c8d merge: revocation on the biscuit read path
+713cb0e check revocation on the read path, and build the fixture that proves it fires
+ M js/kotobase-graph-database-worker.js
+?? scripts/cosient_kq1_instrument.cjs
+?? scripts/cosient_kq1_instrument.js
+?? scripts/cosient_kq1_instrument_xrpc.cjs
+?? scripts/cosient_kq1_pr.sh
+?? scripts/cosient_kq1_staticcheck.js

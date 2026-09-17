@@ -1,0 +1,16 @@
+start=1165 total=1180
+1166: - 2026-09-05: rank 第39回。新規 evidence 2 本を取り込み。(1) bench 第39回 K-Q1
+1167:   backend query path 計測第1段: engine.kotobase.net は DNS 不解決 (NXDOMAIN) で
+1168:   backend 直叩き不可のため fallback 条項に従い gateway 単独分解のみ記録 — POST /api/q
+1169:   no-auth 402 応答 total p50 15.87ms / p95 29.54ms, GET / p50 13.09ms。gateway authn
+1170:   前段 base overhead ~13-16ms は小さく、退行 +~700ms は backend 実行区間寄りを下から
+1171:   支持。ただし第1段は short-circuit 応答で backend 実行を含まず、決定的ではない。
+1172:   (2) falsify run114A-C (K-Z3 深夜 5時台, cold 0/60 初の完全静穏, control 静穏) —
+1173:   5時台通算 120 試行中 1 試行と帯内最静穏だが深夜帯通算は 92 試行中 29 試行 (~31.5%)
+1174:   で帯別 ~29-33% 平坦パターン維持。status 遷移なし: K-Q1/K-Z2/K-Z3 とも open 維持
+1175:   (いずれも機構確定に至らず、transition 要件を満たす測定はなし)。rank ブロックを
+1176:   第38回版から第39回版へ差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、
+1177:   K-Q1 の次切れ手を K-Q2 harness 再使用による auth 済み query 実行区間計測へ更新 —
+1178:   harness 所在特定を cosientist に依頼)。深夜追加 n の限界利得低下は維持。
+1179:   NEXT: K-Q1 第2段 (K-Q2 harness (--provision) の所在特定と auth 済み query 実行区間
+1180:   production 計測 — cosientist が harness 特定、bench/falsify が実測を分担)。

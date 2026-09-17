@@ -1,0 +1,48 @@
+exists: True
+size: 136942
+$ git status --short -> 0
+?? bench36_count.py
+?? bench36_count_out.txt
+?? bench36_diag.py
+?? bench36_diag_out.txt
+?? bench37_append.py
+?? bench37_log.py
+?? bench37_out.json
+?? bench37_verify.py
+?? bench37_verify.txt
+?? bench37_verify2.py
+?? bench37_verify2.txt
+?? bench37_verify3.py
+?? bench37_verify3.txt
+?? bench37_verify4.py
+?? bench37_verify4.txt
+?? bench37_z2.py
+?? bench38_run.py
+?? bench38_z2.py
+?? bench_diag.py
+?? bench_diag_out.txt
+?? bench_ls.py
+?? bench_ls.txt
+?? kq1_commit.py
+?? kq1_commit_out.txt
+?? kq1_evidence_append.py
+?? kq1_graph_cid_bench.mjs
+?? kq1_graph_cid_out.txt
+?? kq1_iter_append.py
+?? kq1_verify_hop_bench.mjs
+?? kq1_verify_hop_out.txt
+?? kz3_append.py
+?? kz3_append_out.txt
+?? kz3_br.txt
+?? kz3_calc_run.txt
+?? kz3_ci.txt
+?? kz3_cmt.txt
+?? kz3_co_out.txt
+?? kz3_commit.txt
+?? kz3_diff.txt
+?? kz3
+$ git rev-parse HEAD -> 0
+5d168059b71e80c88f61e80a6e9eb04d76a9feda
+
+$ git diff --stat -> 0
+

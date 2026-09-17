@@ -1,0 +1,15 @@
+* (HEAD detached at 0d04d00)
+  bot/cosient-20260905-kq1-kvstats
+  manifest-rev
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/agent/artifact-rev
+  remotes/net-kotobase/agent/biscuit-wire-read
+  remotes/net-kotobase/agent/retire-deleted-head-d1-20260814
+  remotes/net-kotobase/agent/retire-disabled-production-cron-20260815
+  remotes/net-kotobase/bot/cosient-20260905-kq1-kvstats
+  remotes/net-kotobase/main
+  remotes/net-kotobase/rescue/agent-retire-deleted-head-d1-20260814-20260823
+net-kotobase	git@github.com:net-kotobase/engine (fetch)
+net-kotobase	git@github.com:net-kotobase/engine (push)
+7dc6249 Merge pull request #3 from net-kotobase/bot/cosient-20260905-kq1-kvstats
+c3c508f K-Q1 engine 内訳計測: per-request block-fetch stats (L1/L2/pack/B2/miss) を観察専用カウンタ + x-kotobase-kv-stats response header として計測可能に (cosientist, rank 第44回 NEXT) — fetch path 構造変更なし

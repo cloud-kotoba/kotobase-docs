@@ -1,0 +1,5 @@
+RUNA n=20 cold=1/20 non200=[] p50=0.1986s max=1.2170s coldvals=[1.2170]
+RUNB n=20 cold=0/20 non200=[] p50=0.1686s max=0.4981s coldvals=[]
+RUNC n=20 cold=0/20 non200=[] p50=0.1351s max=0.4515s coldvals=[]
+RUNlanding n=20 cold=0/20 non200=[] p50=0.1866s max=0.2804s coldvals=[]
+SEARCH_TOTAL cold=1/60 (~1.7%) non200=[]

@@ -1,0 +1,6 @@
+porcelain: ''
+numstat: ''
+worktree has K-Z3 row evidence: True
+worktree has iteration log entry: True
+add RC=0 
+porcelain after add: ''

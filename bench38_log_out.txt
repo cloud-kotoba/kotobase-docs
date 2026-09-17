@@ -1,0 +1,6 @@
+rc=0
+stdout:
+iteration log appended
+
+stderr:
+

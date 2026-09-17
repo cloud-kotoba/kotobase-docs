@@ -1,0 +1,27 @@
+{
+  "service": "kotoba-cloud",
+  "funnel": {
+    "visitors": 0,
+    "signups": 0,
+    "signup_completed": 0
+  },
+  "registrations": 0,
+  "labels": {
+    "visitors": "unique first-party visitor sessions (deduped)",
+    "signups": "sign-in intent — opened or clicked registration, not completed auth",
+    "signup_completed": "auth completed — valid Stable Principal session",
+    "registrations": "alias of signup_completed; not a second counter"
+  },
+  "by-source": {
+    "visitors": {},
+    "signups": {},
+    "signup_completed": {}
+  },
+  "persistence": {
+    "kind": "isolate-memory",
+    "durable": false,
+    "hold": "No KV or D1 binding is present on this Worker. R2 PUBLIC_BLOCKS is IPLD/boot storage, not a counter store. PQ_KEY_REGISTRY is a Principal key Durable Object, not a funnel ledger. Counters live in isolate memory and reset when the isolate recycles. Do not treat these as lifetime totals.",
+    "openai_ads": "HOLD — no OPENAI_ADS_* secrets, pixel, or Ads conversion in this Worker."
+  },
+  "seeded": false
+}

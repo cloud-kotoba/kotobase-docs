@@ -1,0 +1,4 @@
+(defn- assoc-response-kv-stats
+(.. resp -headers (set "x-kotobase-kv-stats" (store/block-fetch-stats-summary)))
+(assoc-response-kv-stats
+(assoc-response-kv-stats

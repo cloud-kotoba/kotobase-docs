@@ -1,0 +1,5 @@
+151A: n=20 codes={200: 20} cold(>=0.5s)=3/20 cold_vals=[0.882, 0.918, 1.025] p50=0.057s p95=0.918s max=1.025s
+151B: n=20 codes={200: 20} cold(>=0.5s)=1/20 cold_vals=[1.15] p50=0.051s p95=0.096s max=1.150s
+151C: n=20 codes={200: 20} cold(>=0.5s)=0/20 cold_vals=[] p50=0.043s p95=0.060s max=0.065s
+landing: n=20 codes={200: 20} cold(>=0.5s)=0/20 cold_vals=[] p50=0.052s p95=0.237s max=0.242s
+search total: cold 4/60 (6.7%)

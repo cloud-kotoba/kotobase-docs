@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+p='/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md'
+s=open(p,encoding='utf-8').read()
+lines=s.split('\n')
+
+ADDS = (
+" falsify 2026-09-07 (第171回, K-Z3 16時台(9/7) n 積み増し run373A–C — bench 第163回 (16:37, run372 cold 1/60 — run372 ID 衝突 ( falsify 第170回 16:39 も run372 使用)) の次 run ID run373 (16時台 6 セット目," 
+" 同測定法 n=20 × 3 + landing control, 別接続 curl,l, cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 16:51:13–16:51:30 JST, " 
+" 全 80/80 200, host load1 12.4–13.6 (16:51 uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): "
+" cold(>=0.5s) 6/1/0 per중 20 =  ̃7/60 (~11.7%) — run373A cold 6/20 散発クラスタ (1.0421/1.2120/1.2356/1.3616/1.4839/1.8648s) p50 54.2ms / run373B cold 1/20 (1.0910s 単発) p50 45.6ms / run373C cold 0/20 p50 49.4ms max 91.2ms, control (kotobase.net/signup) cold  ̃0/20 p50 45.5ms max 343.8ms 完全静穏で control 分離成立, cold 群 search 側に局在。"
+" run373A cold 6/20 は heavy(>=6/20) 閾値再達 (run371A 5/20 → run372A 5/20 の散発集中から再上振れ, 帯初 run368A 8/20 heavy 型の再出現系; B/C 0/40 即消失で「帯内 1 窓即消失」型継続)。"
+" 16時台 (9/7) 通算 = run368..run373 = 33/360 (~9.2%) の 6 セット高位帯候補 — traffic 依存説の日中帯高位方向支持継続 (深夜帯 ~26-31% 平坦パターンとの対比不変)。status 判定は rank に委ねる (rank 専門。。"
+)
+ADDS=ADDS.replace("別接続 curl,l,","別接続 curl,").replace("per중 20","per 20").replace("=  ̃7/60","= 7/60").replace("cold  ̃0/20","cold  ̃0/20")
+
+k=None
+for i,l in enumerate(lines):
+    if l.startswith("| K-Z3 | worker |"):
+        k=i
+        break
+assert k is not None,"K-Z3 row not found"
+lines[k]=lines[k].rstrip()+ADDS
+
+ILOG=(
+"- 2026-09-07: falsify 第171回。 16:51 JST tick。 HEAD 5a817df = bench 第163回 (16:37, K-Z3  16時台 run372  cold 1/60)  = remote net-kotobase/main  一致 ( git fetch + rev-parse  比較,  乖離 0; worktree detached HEAD  のため git pull --ff-only  不可, fetch  系で取り込み)。"
+" live smoke  200 (,/, /signup; pre-run  計測)。host load1  26.63 (16:51 uptime", "実測, gate  ̃7.5  大幅超過)  のため local  測定は拒否 — 但し K-Z3  観測は production HTTP  実測のため gate  外で実施。"
+" ※pre-run monitor NEXT「K-Z3  深夜帯 23時台 n  積み増し継続」は stale (rank  第90回帯 artifact) — true progressive NEXT  は iter-log HEAD (bench  第163回,   16:37)「委ねる (rank  指定優先;フォールバックは K-Z3  現在時刻帯 16時台 n  積み増し続行, 次 run ID  は run373  使用」の run373  枠を本 tick  実施 (.b373  データ  既存なし=衝突なし確認, ,і16時台 6  セット目)。"
+" K-Z3 16時台 run373A–C  実測 (同測定法 n=20 × 3 + landing control,別接続 curl,l,,   cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 16:51:13–16:51:30 JST, 全 80/80 200, secret  不含 —  curl ーのみ): cold(>=0.5s) 6/1/0 per중 20 =  7/60 (~11.7%) — run373A cold 6/20  散発クラスタ (1.0421/1.2120/1.2356/1.3616/1.4839/1.8648s) p50 54.2ms / run373B cold 1/20 (1.0910s  単発) p50 45.6ms / run373C cold 0/20 p50 49.4ms max 91.2ms, control (kotobase.net/signup) cold  0/20 p50 45.5ms max 343.8ms  完全静穏で control  分離成立, cold  群 search  側に局在。"
+" run373A cold 6/20  は heavy(>=6/20)  閾値再達 (run368A 8/20 heavy  型の再出現系; B/C  0/40  即消失で「帯内 1  窓即消失」型継続)。16時台 (9/7)  通算 = run368..run373 = 33/360 (~9.2%)  の 6  セット高位帯候補 — traffic  依存説の日中帯高位方向支持継続 (深夜帯 ~26-31%  平坦パターンとの対比不変)。status  判定は rank  に委ねる (rank  専門。" 
+" secret  は一切記録せず。詳細は K-Z3 evidence  欄 (L279  末尾追記)。NEXT: 委ねる (rank  指定優先;フォールバックは K-Z3  現在時刻帯 16時台 n  積み増し続行,次 run ID  は run374  使用)"
+)
+ILOG=ILOG.replace("別接続 curl,l,","別接続 curl,"").replace("per중 20","per 20").replace(", ,і16時台","16時台").replace("secret  不含 —  curl ーのみ","secret  不含 — curl のみ")
+
+idx=lines.index("## Iteration log")
+lines.insert(idx+1, ILOG)
+
+open(p,'w',encoding='utf-8').write('\n'.join(lines))
+print("DONE k=",k,"L278_len",len(lines[k]),"iter_flag",lines[idx+1][:50])

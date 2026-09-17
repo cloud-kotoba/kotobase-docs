@@ -1,0 +1,17 @@
+$ git add query-cosientist.md -> 0
+
+$ git commit -m rank 第37回: K-Z2 対比 4 源累計 (run106 2/4 窓同方向, run107 直後 0 + 逆方向寄り) の方向非一貫確定, K-Z3 深夜帯 3時台 run107 を反映 (通算 28/85 ~32.9%, traffic 依存説反証材料増加), rank ブロック第37回版へ差替え, NEXT: K-Z2 対比 n 増強継続 (quiet-host tick は K-Q1 backend 計測優先) -> 0
+[detached HEAD 299c98b] rank 第37回: K-Z2 対比 4 源累計 (run106 2/4 窓同方向, run107 直後 0 + 逆方向寄り) の方向非一貫確定, K-Z3 深夜帯 3時台 run107 を反映 (通算 28/85 ~32.9%, traffic 依存説反証材料増加), rank ブロック第37回版へ差替え, NEXT: K-Z2 対比 n 増強継続 (quiet-host tick は K-Q1 backend 計測優先)
+ 1 file changed, 35 insertions(+), 14 deletions(-)
+
+$ git push net-kotobase HEAD:main -> 0
+
+STDERR: To github.com:net-kotobase/docs
+   5d16805..299c98b  HEAD -> main
+
+$ git fetch net-kotobase -> 0
+
+$ git log --oneline -2 net-kotobase/main -> 0
+299c98b rank 第37回: K-Z2 対比 4 源累計 (run106 2/4 窓同方向, run107 直後 0 + 逆方向寄り) の方向非一貫確定, K-Z3 深夜帯 3時台 run107 を反映 (通算 28/85 ~32.9%, traffic 依存説反証材料増加), rank ブロック第37回版へ差替え, NEXT: K-Z2 対比 n 増強継続 (quiet-host tick は K-Q1 backend 計測優先)
+5d16805 cosientist 第9回: K-Z2 発火直後 vs 経過後対比 n 増強 run107 evidence (深夜3時帯 2/4窓 direct-after cold 0/20, 方向非一貫で機構確定に至らず) + Iteration log
+

@@ -1,0 +1,8 @@
+== evidence at L279 tail ==
+ run350C cold 0/20 p50 41.7ms max 58.9ms, control (kotobase.net/signup) cold 0/20 p50 45.0ms max 129.7ms 完全静穏で control 分離成立、cold 群は search 側に局在。run350A cold 3/20 は B/C 0/20 + control 0/20 で即消失し「帯内 1 窓即消失」散発クラスタ継続 (sibling run347A heavy 6/20 の ~20 分後弱い再出現, heavy>=6/20 は再達せず run331A 9/20 heavy 型は非再現継続)。12時台 (9/7) 通算 = run345 9/60 + run346 3/60 + run347 6/60 + run348 0/60 + 本 tick run350 3/60 = 21/300 (~7.0%) 5 セット中位帯。status 判定は rank に委ねる (rank 専門)。
+== iterlog head ==
+L360: ## Iteration log
+L361: - 2026-09-07: bench 第150回。12:58 JST tick。HEAD 65537a1 = rank 第151回 (12:52, fold falsify161 run347 + bench149 run348, NEXT run349) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0; worktree detached HEAD のため git pull --ff-only 不可, fetch 系
+=== git diff stat ===
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)

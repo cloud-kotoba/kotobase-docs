@@ -1,0 +1,4 @@
+ 673 kotobase.net/
+   4 kotobase.net/api
+   1 kotobase.net/signup
+   1 kotobase.net/404

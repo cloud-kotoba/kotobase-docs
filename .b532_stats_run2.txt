@@ -1,0 +1,6 @@
+A: 200 0/20 n=0 INVALID (non-200: 404 endpoint dead)
+B: 200 0/20 n=0 INVALID (non-200: 404 endpoint dead)
+C: 200 0/20 n=0 INVALID (non-200: 404 endpoint dead)
+CTRL: 200 20/20 cold 0/20 p50 39.2ms p95 60.8ms max 71.8ms
+05:16:08
+ 5:16  up 8 days, 21:59, 6 users, load averages: 8.82 11.57 12.52

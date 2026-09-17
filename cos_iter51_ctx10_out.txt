@@ -1,0 +1,9 @@
+handle-q at 638
+ a plain read |    (unauthenticated, explicit `:graph`), so each is just a thin |    `run-read` wrapper with its own extra required-field check, matching |    `handle-q`/`handle-pull`'s existing shape exactly; no new aut
+---
+handle-q at 31179
+st) |       (.then (fn [body] (run-read env "datoms" (js-body->clj body) (caller-did request)))) |       (.catch (fn [e] (handler-failure e))))) |  | (defn handle-q [request env] |   (-> (parse-json request) |       (.th
+---
+handle-q at 32429
+y one of these is `run-read` (unauthenticated, explicit `:graph`, | ;; already checked) plus its own extra required-field check -- identical | ;; shape to `handle-q`/`handle-pull` above, no new auth surface. |  | (defn- 
+---

@@ -1,0 +1,4 @@
+5c53939b888abce29bf4d9502a3d4578c4d1503c
+5c53939b888abce29bf4d9502a3d4578c4d1503c
+5c53939 bench 218: K-Z3 20時台帯初 run499 cold 0/60 (0/0/0) complete quiet, control 0/20 quiet separation (20時台帯初, due-fallback thing; evidence+iter-log)
+071728b bench 217: K-Z3 19時台 run498 cold 1/60 (~1.7%) control 0/20 完全静穏 separation 成立 (19時台 9/240 ~3.8% 4セット) evidence+iter-log

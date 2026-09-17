@@ -1,0 +1,2 @@
+（ K-Q2 / K-W -> False None
+( K-Q2 / K-W -> True 48324

@@ -1,0 +1,8 @@
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+diff --git a/query-cosientist.md b/query-cosientist.md
+index 693221f..d06a096 100644
+--- a/query-cosientist.md
++++ b/query-cosientist.md
+@@ -353,8 +353,9 @@ bench 2026-09-07 (第121回, K-Z3 3時台(深夜帯) n 積み増し run294A–C
+       7 _b299_diffstat.txt

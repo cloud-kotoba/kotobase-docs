@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.f613_insert3.py", line 12, in <module>
+    assert lines[i].startswith("| K-Z3 |")
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError
+0
+7

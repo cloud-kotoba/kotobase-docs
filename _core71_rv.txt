@@ -1,0 +1,82 @@
+208:(defn resolve-viewer
+      {:presented "bearer" :details "the presented bearer credential was not accepted"}
+
+      (re-find #"(?:^|;\s*)gftd_session=" cookie)
+      {:presented "session" :details "the presented session is not valid"}
+
+      :else
+      {:presented "none" :details (str "no credential was presented; " accepted)})))
+
+(defn resolve-viewer
+  "→ Promise<viewer|nil>. Faithful port of resolveViewer (CACAO / AUTHN binding /
+  unsigned-JWT dev fallback).
+
+  The viewer DID this returns is a TENANT BOUNDARY, not a hint: `scope-tenant-read`
+  replaces the query graph with `kotobase/db/<viewer-did>/<db_name>` and
+  `authorize-tenant-cap-write` confines writes the same way. So a DID that the
+  edge did not cryptographically verify is a cross-tenant read/write — a caller
+  could name a victim's DID in `x-kotoba-did` and be handed the victim's graph.
+  Backend mode therefore verifies the CACAO here too; it does not defer identity
+  to the backend (the backend verifies for its OWN write path, but reads reach it
+  with the edge's already-resolved viewer)."
+  [request env]
+  (let [authorization (or (req-header request "authorization") "")
+        cookie (or (req-header request "cookie") "")
+        tenant-selector (some-> (req-header request "x-kotobase-tenant") str/trim)]
+    (cond
+      (re-find #"(?i)^CACAO\s+" authorization)
+      (let [hint (some-> (req-header request "x-kotoba-did") str/trim)
+            trust-hint? (= (env-get env "KOTOBASE_WORKER_TRUST_CACAO_HINT") "1")]
+        (cond
+          ;; Worker-B2: verify + durable nonce-replay rejection (B2-backed).
+          (and (worker-b2-mode? env) (not trust-hint?))
+          (-> (verify-worker-b2-cacao env authorization hint)
+              (.then (fn [did] (viewer did :cacao :low)))
+              (.catch (fn [_] nil)))
+
+          ;; Local/dev escape hatch ONLY: accept the client-asserted DID with no
+          ;; signature check. Production and B2 staging must never set this.
+          trust-hint?
+          (js/Promise.resolve (if-let [did (core/tenant-did hint)] (viewer did :unverified-hint :anonymous) nil))
+
+          ;; Backend mode: cryptographically verify the CACAO at the edge and use
+          ;; the VERIFIED issuer as the viewer. Nonce replay stays with the
+          ;; backend, which owns the durable nonce store; the edge proves identity.
+          :else
+          ;; chain-capable: for a delegation the viewer -- which is a tenant
+          ;; boundary, not a hint -- is the chain's ROOT issuer. One link, the
+          ;; only shape any client sends today, resolves to the same DID this
+          ;; always returned.
+          (let [v (cacao/verify-cacao-identity-chain authorization hint
+                                                     (js/Math.floor (/ (js/Date.now) 1000))
+                                                     (service-binding env))]
+            (js/Promise.resolve
+             (when-not (aget v "error")
+               (when-let [did (core/tenant-did (aget v "iss"))] (viewer did :cacao :low)))))))
+
+      :else
+      (let [has-jwt (re-find #"^Bearer\s+eyJ" authorization)
+            ;; Service-account credentials are opaque, high-entropy bearer
+            ;; tokens. Forward only a bounded, header-safe shape to authn;
+            ;; never interpret it locally and never widen the unsigned-JWT
+            ;; development fallback below.
+            has-bearer (re-matches #"^Bearer [A-Za-z0-9._~-]{20,2048}$" authorization)
+            ;; Biscuit is verified by the authn service against the shared
+            ;; public root. The gateway forwards the bounded wire value and
+            ;; consumes the same viewer payload as sessions/service tokens;
+            ;; it never becomes a second policy engine here.
+            has-biscuit (re-matches #"(?i)^Biscuit [A-Za-z0-9_-]{80,8192}$" authorization)
+            has-authn-credential (or has-bearer has-biscuit)]
+        (cond
+          (and (not has-authn-credential)
+               (not (re-find #"(?:^|;\s*)gftd_session=" cookie))) (js/Promise.resolve nil)
+          (env-get env "AUTHN_SERVICE")
+          (-> (.fetch (env-get env "AUTHN_SERVICE")
+                      (js/Request. "https://authn.internal/rpc/verify-session"
+                                   #js {:method "POST"
+                                        :headers (let [headers #js {"cookie" cookie
+                                                                    "authorization" authorization
+                                                                    "content-type" "application/json"}]
+                                                   (when (and (string? tenant-selector)
+                                                              (re-matches #"^t_[a-z0-9]{12,48}$"
+                                                                          tenant-selector))

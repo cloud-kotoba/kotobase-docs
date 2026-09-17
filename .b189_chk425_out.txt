@@ -1,0 +1,2 @@
+->  に委ねる (rank 専門)。secret は一切 記録せず。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 5時台 n 積み増し 続行, 次 run ID は run425 使用 — sibling bench .b423 in-flight (5時台 n-add, 05:40) は commit 後 rank 判定の取込対象)。  - 2026-09-08: rank 第184回。05:42 JST tick（作業中に falsify 第186回 commit 到着 aa4b7da を取込）。HEAD aa4b7
+

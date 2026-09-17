@@ -1,0 +1,39 @@
+{
+  "schema": "kotobase.benchmark.biscuit-auth-query.v1.bench49r2",
+  "observedAt": "2026-09-05T07:13:47.482Z",
+  "environment": {
+    "authnUrl": "https://auth.kotobase.net",
+    "apiUrl": "https://kotobase.net",
+    "runtime": "Node 26.0.0",
+    "clientRegion": "Tokyo, Japan"
+  },
+  "workload": {
+    "authentication": "EIP-4361 SIWE with a real secp256k1 EIP-191 signature",
+    "samplesPerSeries": 30,
+    "excludedWarmupsPerSeries": 3,
+    "database": "biscuit-query-1788592414714",
+    "transactStatus": 401,
+    "transactData": {
+      "ok": false,
+      "error": "Unauthorized"
+    }
+  },
+  "latencyMs": {
+    "min": 290.44,
+    "p50": 309.81,
+    "p95": 448.89,
+    "p99": 553.62,
+    "max": 553.62,
+    "mean": 329.97
+  },
+  "xKotobaseKvStatsHeaderObserved": 0,
+  "xKotobaseKvStatsHeaderValues": [],
+  "deployed": false,
+  "method": {
+    "percentile": "nearest-rank over successful measured requests",
+    "concurrency": 1,
+    "connectionPolicy": "Node fetch connection reuse; no forced cache clear",
+    "secretsRecorded": false
+  }
+}
+rc=0

@@ -1,0 +1,5 @@
+A: n=20 codes={'404'} cold(>=0.5s)=0 cold_vals=[] p50=44.1ms p95=381.8ms max=415.2ms
+B: n=20 codes={'404'} cold(>=0.5s)=0 cold_vals=[] p50=38.3ms p95=53.5ms max=58.5ms
+C: n=20 codes={'404'} cold(>=0.5s)=0 cold_vals=[] p50=38.5ms p95=52.5ms max=86.1ms
+CTL: n=20 codes={'200'} cold(>=0.5s)=0 cold_vals=[] p50=59.7ms p95=72.2ms max=109.4ms
+3:41  up 8 days, 20:24, 6 users, load averages: 11.04 14.22 15.99

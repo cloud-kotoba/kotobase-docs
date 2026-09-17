@@ -1,0 +1,6 @@
+header count before fix: 0
+header count after fix: 1
+entry count: 1
+line0: # query / worker / storage co-scientist 
+line1: 
+line2: co-scientist アプローチ (仮説生成→反証→ランク→進化→メタレビュ

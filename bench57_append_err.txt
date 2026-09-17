@@ -1,0 +1,3 @@
+RC:1
+OUT:
+ERR:row does not end with |: tail='ank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し継続)。'

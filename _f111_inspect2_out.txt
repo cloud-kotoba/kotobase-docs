@@ -1,0 +1,5 @@
+284 '## Iteration log'
+285 '- 2026-09-06: bench 第98回。20:52 JST tick。worktree detached HEAD のため fetch + rev-parse 比較で取り込み (fetch rc 0, HEAD 39230e3 ='
+286 '- 2026-09-06: rank 第107回。20:53 JST tick。HEAD 39230e3 = remote net-kobobase/main 一致 (cosientist 第84回 push 済み, 乖離 0; workt'
+287 '- (1) bench 第97回 (31a65c9, run243A-C, 20:43:31-20:43:58 JST): cold 3/60 (~5.0%) — run243A 散発 3 件 (1.0148/1.0978/2.0291s,'
+288 '- (2) cosientist 第84回 (39230e3, run243A-C, 20:43 JST): cold 1/60 (~1.7%) — run243A 単発 1.308s (16番目), control cold 0/20 静'

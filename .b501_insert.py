@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+# Append bench run501 K-Z3 evidence + iter-log entry. UTF-8, string anchors.
+import io
+
+DOC = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md"
+
+EVIDENCE = (
+    " bench 2026-09-08 (第219回, K-Z3 20時台 n 積み増し run501A–C — falsify 第222回 run500 済の続行枠 "
+    "(iter-log HEAD falsify 第222回 NEXT 委ねる → フォールバック K-Z3 現在時刻帯 20時台 n 積み増し, 次 run ID run501), "
+    "同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, nearest-rank p50, "
+    "正 endpoint search.kotobase.net/search?q=test, 20:39–20:40 JST, 全 80/80 200, "
+    "host load1 33.66 (20:38 uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, "
+    "secret 不含 — curl + python stats のみ): cold(>=0.5s) 4/0/0 per 20 = 4/60 (~6.7%) — "
+    "run501A 散発クラスタ 4/20 (1.3608s pos1 / 1.2145s pos3 / 1.5125s pos4 / 1.8686s pos14 — 冒頭隣接ペア + 中盤以降散発) "
+    "p50 139.0ms max 1868.6ms / run501B cold 0/20 p50 117.7ms max 302.0ms / run501C cold 0/20 p50 117.0ms max 179.4ms, "
+    "control (kotobase.net/signup) cold 0/20 p50 122.7ms max 205.6ms 完全静穏で control 分離成立、cold 群は search 側に局在。"
+    "run501A 散発クラスタ 4/20 は B/C 0/40 + control 0/20 で即消失し「帯内 1 窓即消失」散発クラスタ型継続 "
+    "(run500A 6/20 (20:27) の ~12 分後再上振れ, heavy>=6/20 は本 tick 非再現)。"
+    "20時台 (9/8) 通算 = bench run499 (0/60, 帯初) + falsify run500 (6/60) + 本 tick run501 (4/60) = 10/180 (~5.6%) の 3 セット "
+    "— 19時台 (9/240 ~3.8%) よりやや高位の晩側帯, 日中帯 (16-18時台 ~8.3-11.7%) より低位のトランジション帯候補, "
+    "traffic 依存説の日中帯方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変。"
+    "帯 n=3 セットで帯水準確定・機構判断には rank 追加 n を要する。status 判定は rank に委ねる (rank 専門)。"
+)
+
+ITER_ENTRY = (
+    "- 2026-09-08: bench 第219回。20:39 JST tick。HEAD 37edc2a = falsify 第222回 (20:29, K-Z3 20時台 independent run500 cold 6/60) "
+    "= remote net-kotobase/main 一致 (fetch + rev-parse 乖離 0; detached HEAD のため fetch 系で取込, "
+    "terminal stdout 空=既知のため状態確認・計測出力はファイル書出経由; worktree doc clean + run501 未使用確認済)。"
+    "pre-run monitor NEXT「委ねる。NEXT: K-Z3 深夜帯 23時台 n 積み増し継続。」は stale (rank 帯 artifact) — "
+    "true progressive NEXT は iter-log HEAD 連鎖 (falsify 第222回 NEXT 委ねる → フォールバック K-Z3 現在時刻帯 20時台 n 積み増し, 次 run ID run501)。"
+    "host load1 33.66 (20:38 uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外で実施。"
+    "live smoke 200 (/, /signup, search.kotobase.net/search?q=test; 本 tick 実測 200)。"
+    "K-Z3 20時台 n 積み増し run501A–C を実測 (同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, "
+    "nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 20:39:30–20:39:52 JST, 全 80/80 200, "
+    "secret 不含 — curl + python stats のみ): cold(>=0.5s) 4/0/0 per 20 = 4/60 (~6.7%) — "
+    "run501A 散発クラスタ 4/20 (pos1 1.3608s / pos3 1.2145s / pos4 1.5125s / pos14 1.8686s) p50 139.0ms max 1868.6ms / "
+    "run501B 0/20 p50 117.7ms / run501C 0/20 p50 117.0ms, control (kotobase.net/signup) 0/20 p50 122.7ms max 205.6ms "
+    "完全静穏で control 分離成立, cold 群 search 側局在。run501A 散発クラスタ 4/20 は B/C 0/40 + control 0/20 で即消失し"
+    "「帯内 1 窓即消失」型継続 (run500A 6/20 (20:27) の ~12 分後再上振れ, heavy>=6/20 は本 tick 非再現)。"
+    "20時台 (9/8) 通算 = run499 (0/60) + run500 (6/60) + run501 (4/60) = 10/180 (~5.6%) 3 セット — "
+    "19時台 (9/240 ~3.8%) よりやや高位の晩側トランジション帯候補, traffic 依存説の日中帯方向支持継続, "
+    "深夜帯 ~26-31% 平坦パターンとの対比不変。status 判定は rank に委ねる (rank 専門)。"
+    "詳細は K-Z3 evidence 欄 (L279 末尾追記)。secret は一切記録せず。"
+)
+
+with io.open(DOC, "r", encoding="utf-8") as f:
+    lines = f.readlines()
+
+# 1) Append evidence to K-Z3 hypothesis row (line starting with "| K-Z3 |")
+kz3_idx = None
+for i, ln in enumerate(lines):
+    if ln.lstrip().startswith("| K-Z3 |"):
+        kz3_idx = i
+        break
+assert kz3_idx is not None, "K-Z3 row not found"
+lines[kz3_idx] = lines[kz3_idx].rstrip("\n") + EVIDENCE + "\n"
+
+# 2) Insert iter-log entry right after "## Iteration log" header line
+hdr_idx = None
+for i, ln in enumerate(lines):
+    if ln.rstrip("\n") == "## Iteration log":
+        hdr_idx = i
+        break
+assert hdr_idx is not None, "Iteration log header not found"
+lines.insert(hdr_idx + 1, ITER_ENTRY + "\n")
+
+with io.open(DOC, "w", encoding="utf-8") as f:
+    f.writelines(lines)
+
+print("OK: K-Z3 row line=%d, iter-log header line=%d" % (kz3_idx + 1, hdr_idx + 1))

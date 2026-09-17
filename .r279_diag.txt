@@ -1,0 +1,8 @@
+HEAD: 2db320c7f1377820b344185f1e2dcf3d398867d0
+
+log: 2db320c bench 222nd: K-Z3 5時台 run630A-C evidence (10/60 ~16.7%) + iter-log entry
+c4c3d72 falsify 第155回: K-Z3 3時台 n 積み増し run635A-C evidence 追記 (cold 1/60 ~1.7%, control 分離成立)
+98bc575 rank 278: K-Z3 9/15-16 深夜 5 run fold (run633/634/636/625/629), K-Z4 1時台 3日系列完成, NEXT run637 3時台
+
+worktree has rank279: True ; headers: 18
+HEAD blob has rank279: False

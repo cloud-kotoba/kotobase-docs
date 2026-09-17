@@ -1,0 +1,19 @@
+HTTP/2 200 
+date: Mon, 14 Sep 2026 17:09:36 GMT
+content-type: text/plain
+content-length: 5643
+cf-cache-status: HIT
+cache-control: public, max-age=0, must-revalidate
+etag: "a17cbac7734a8a21d91a73e9d8f84bce"
+content-security-policy: default-src 'none'; style-src 'unsafe-inline'; script-src 'self' https://freebuff.com; connect-src 'self' https://freebuff.com; base-uri 'none'; frame-ancestors 'none'; form-action 'none'
+cross-origin-opener-policy: same-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=()
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-frame-options: DENY
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2Fqx%2B74Qn%2FRthTA28nqpWOXrn1ZCaDeP%2FO5wihZgeD2MwBEH51fdZ3OzZl7KHsx6byFA8yPgpRyhVDLm1rXh6WNe4DRNFbetYtdt5cYGBeu8JAEsxa9OHL1MVWX%2F1Hn32YAHKz7eiXL2Kj1I%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a3b100176902fd48-NRT
+alt-svc: h3=":443"; ma=86400
+

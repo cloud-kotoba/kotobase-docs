@@ -1,0 +1,10 @@
+file:///Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/cos_iter51_kq1_backenddirect.mjs:114
+      throw new Error(`query ${index}: HTTP ${q.response.status} ${JSON.stringify(q.data)}`);
+            ^
+
+Error: query 0: HTTP 401 {"ok":false,"error":"Unauthorized","details":"this backend is reachable only through the kotobase.net edge"}
+    at file:///Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/cos_iter51_kq1_backenddirect.mjs:114:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v26.0.0
+rc=1

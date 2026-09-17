@@ -1,0 +1,4 @@
+.b573_A.ttfb pairs= 27
+.b573_B.ttfb pairs= 30
+.b573_C.ttfb pairs= 30
+.b573_ctl.ttfb pairs= 30

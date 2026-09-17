@@ -1,0 +1,6 @@
+28:kz3_row_start = doc.index("| K-Z3 | worker |")
+29:kz3_next = doc.index("| K-Z2 |", kz3_row_start)
+kz3_next = doc.index("| K-Z2 |", kz3_row_start)
+# 挿入点は " | K-Z2 |" の cell 区切りの直前
+kz3_add = (" bench 2026-09-06 (第63回, K-Z3 3時台帯初計測 run180A–C — rank 第63回 NEXT の transact 401 継続による fallback,"
+    " 同測定法 n=20 × 3 run + landing control, 別接続 curl, Tokyo, 03:29 JST, 全 80/80 200, host load1 6.07 は production HTTP 実測のため gate 外):"

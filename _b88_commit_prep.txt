@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/_b88_append.py", line 16, in <module>
+    assert idx is not None
+           ^^^^^^^^^^^^^^^
+AssertionError

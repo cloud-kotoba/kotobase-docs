@@ -1,0 +1,14 @@
+1231:                 (json-resp {:ok false :error "Unauthorized"} 401))))
+1232:      (.catch (fn [_] (json-resp {:ok false :error "Unauthorized"} 401)))))
+1276:                   (json-resp {:ok false :error "Unauthorized"} 401)
+1298:      (.catch (fn [_] (json-resp {:ok false :error "Unauthorized"} 401)))))
+1338:                   (json-resp {:ok false :error "Unauthorized"} 401)
+1368:      (.catch (fn [_] (json-resp {:ok false :error "Unauthorized"} 401)))))
+2080:                 (json-resp {:ok false :error "Unauthorized"} 401)
+2139:           (json-resp {:ok false :error "Unauthorized"} 401)
+2198:      (.catch (fn [_] (json-resp {:ok false :error "Unauthorized"} 401)))))
+2354:                   (json-resp (merge {:ok false :error "Unauthorized"}
+2648:                       (json-resp {:ok false :error "Unauthorized"
+750:  (case status 400 "Bad Request" 401 "Unauthorized" 403 "Forbidden" 404 "NotFound"
+749:(defn- upstream-error-name [status]
+914:                                    (js/Response. (js/JSON.stringify #js {:ok false :error (upstream-error-name (.-status resp)) :details detail})

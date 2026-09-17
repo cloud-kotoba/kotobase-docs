@@ -1,0 +1,5 @@
+[detached HEAD 428dc0c] falsify 254th: K-Z3 13hr run571A-C cold 1/60 control separated (evidence + iter-log)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+428dc0c falsify 254th: K-Z3 13hr run571A-C cold 1/60 control separated (evidence + iter-log)
+428dc0c273e8c5f692f8cbc2a238700352d88c9e
+069c8d4bae115cdc4f3b737e494c5418d643ba22

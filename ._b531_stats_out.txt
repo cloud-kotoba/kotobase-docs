@@ -1,0 +1,6 @@
+run531A: n=20 cold=1/20 p50=329.5ms max=552.0ms cold_vals=[0.5520]
+run531B: n=20 cold=0/20 p50=235.5ms max=401.1ms cold_vals=[none]
+run531C: n=20 cold=0/20 p50=239.9ms max=412.0ms cold_vals=[none]
+landing_control: n=20 cold=0/20 p50=275.2ms max=494.9ms cold_vals=[none]
+TOTAL_SEARCH_COLD=1/60
+cold_pos A=[8] B=[] C=[]

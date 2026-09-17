@@ -1,0 +1,6 @@
+run216A: n=20 cold(>1s)=1 min=0.038 p50=46.9ms max=1.118
+run216B: n=20 cold(>1s)=0 min=0.038 p50=41.4ms max=0.075
+run216C: n=20 cold(>1s)=0 min=0.035 p50=43.3ms max=0.071
+control: n=20 cold(>1s)=0 min=0.046 p50=52.5ms max=0.296
+  run216A[2] cold 1.118
+TOTAL search: n=60 cold=1 p50=43.5ms max=1.118 -> cold rate 1/60 ~1.7%

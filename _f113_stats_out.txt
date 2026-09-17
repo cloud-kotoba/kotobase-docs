@@ -1,0 +1,7 @@
+run249A n=20 cold=2/20 p50=74.2ms warm_p50=67.4ms max=2022.6ms
+   cold @1 = 2022.6ms
+   cold @9 = 1300.4ms
+run249B n=20 cold=0/20 p50=86.0ms warm_p50=86.0ms max=326.4ms
+run249C n=20 cold=0/20 p50=62.4ms warm_p50=62.4ms max=243.1ms
+control n=20 cold=0/20 p50=67.5ms warm_p50=67.5ms max=214.2ms
+EXIT=0

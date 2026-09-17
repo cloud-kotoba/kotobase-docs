@@ -1,0 +1,6 @@
+[detached HEAD 4d0e26b] falsify: K-Z3 23時台 2セット目 run647A-C evidence (5/60 cold ~8.3%, control 1/20 partial separation; 23時台同日2セットでK-Z4 n>=2要件初充足) + iter log
+ 1 file changed, 2 insertions(+)
+To github.com:net-kotobase/docs
+   8c3416c..4d0e26b  HEAD -> main
+4d0e26bbda19b79fec12eb8637f2a688f9681714
+4d0e26bbda19b79fec12eb8637f2a688f9681714

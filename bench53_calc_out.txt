@@ -1,0 +1,6 @@
+dates: Sat Sep  5 18:46:40 JST 2026 | Sat Sep  5 18:46:49 JST 2026
+run161A: n=20 codes={200} cold(>=0.5s)=1/20 cold_vals=[1.016673] p50=0.056s min=0.038 max=1.017
+run161B: n=20 codes={200} cold(>=0.5s)=0/20 cold_vals=[] p50=0.040s min=0.031 max=0.104
+run161C: n=20 codes={200} cold(>=0.5s)=0/20 cold_vals=[] p50=0.050s min=0.030 max=0.136
+landing control: n=20 codes={200} cold=0/20 cold_vals=[] p50=0.049s max=0.318
+search cold total: 1/60 (1.7%)

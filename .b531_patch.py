@@ -1,0 +1,5 @@
+src = open('.b531_stats_work.py', encoding='utf-8').read()
+src = src.replace('.b529_run529_', '.b531_')
+src = src.replace('run529', 'run531')
+open('.b531_stats_work.py', 'w', encoding='utf-8').write(src)
+print('patched', src.count('.b531_'), src.count('run531'))

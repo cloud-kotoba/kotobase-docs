@@ -1,0 +1,10 @@
+import subprocess
+p = subprocess.run(['git','push','net-kotobase','HEAD:refs/heads/net-kotobase/main'], capture_output=True, text=True)
+print('push rc', p.returncode)
+print((p.stdout + p.stderr).strip())
+v = subprocess.run(['git','fetch','net-kotobase'], capture_output=True, text=True)
+print('fetch rc', v.returncode)
+r = subprocess.run(['git','rev-parse','net-kotobase/main'], capture_output=True, text=True)
+print('remote main', r.stdout.strip())
+r2 = subprocess.run(['git','rev-parse','HEAD'], capture_output=True, text=True)
+print('HEAD', r2.stdout.strip())

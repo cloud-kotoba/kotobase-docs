@@ -1,0 +1,49 @@
+{
+ "purpose": "bench65 K-Z3 4時台帯初計測 (run182A-C)",
+ "observedAt": "2026-09-05T19:11:50.918Z",
+ "runs": [
+  {
+   "label": "run1 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 2,
+   "coldValues": [
+    "1198ms",
+    "769ms"
+   ],
+   "p50ms": 41,
+   "minMs": 37,
+   "maxMs": 1198
+  },
+  {
+   "label": "run2 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 37,
+   "minMs": 33,
+   "maxMs": 55
+  },
+  {
+   "label": "run3 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 38,
+   "minMs": 34,
+   "maxMs": 58
+  }
+ ],
+ "control": {
+  "label": "landing control",
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 46,
+  "minMs": 39,
+  "maxMs": 76
+ }
+}

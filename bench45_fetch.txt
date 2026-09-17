@@ -1,0 +1,12 @@
+== fetch ==
+RC=0
+STDOUT:
+
+STDERR:
+
+== log HEAD..net-kotobase/main after fetch ==
+RC=0
+STDOUT:
+
+STDERR:
+

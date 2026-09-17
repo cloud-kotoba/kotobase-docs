@@ -1,0 +1,3 @@
+[detached HEAD a22c900] bench 第167回: K-Z3 17hr(9/7) n-add run379A-C cold 2/60 ~3.3% (A 冒頭集中ペア 2/20, B/C+control 0/60 即消失, run377A heavy 16分後 weak 散発, run378読替; 17hr確定分 5セット 21/300 ~7.0%)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+rc=0

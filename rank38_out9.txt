@@ -1,0 +1,6 @@
+5d16805 cosientist 第9回: K-Z2 発火直後 vs 経過後対比 n 増強 run107 evidence (深夜3時帯 2/4窓 direct-after cold 0/20, 方向非一貫で機構確定に至らず) + Iteration log
+668ae46 bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+88c2c0a falsify: K-Z2 evidence (run106, 02:40-02:46 JST direct-after vs elapsed, n=40x2+control)
+
+HEAD now: 5d168059b71e80c88f61e80a6e9eb04d76a9feda
+diff vs HEAD: 

@@ -1,0 +1,8 @@
+ADD 4 DEL 2
+  + | K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再発 (run4–6, run13–16: cold 群と w
+  + - 2026-09-07: bench 第145回。11:10 JST tick。HEAD 5f52235 = bench 第144回 (1
+  + - 2026-09-07: falsify 第158回。11:05 JST tick。HEAD 5f52235 = bench 第144回 
+  + - NEXT: K-Q1 transact 401 切れ手(ii) cacao_b64 経路への harness 変更 — gateway 
+  - | K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再発 (run4–6, run13–16: cold 群と w
+  - - NEXT: K-Q1 transact 401 切れ手(ii) cacao_b64 経路への harness 変更 — gateway 
+ends with newline: True

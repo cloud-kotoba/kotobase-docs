@@ -1,0 +1,7 @@
+run104A: n=20 all200 cold>=0.5s 2/20 p50 0.056s min 0.043s max 1.218s
+run104B: n=20 all200 cold>=0.5s 0/20 p50 0.056s min 0.042s max 0.089s
+run104C: n=20 all200 cold>=0.5s 0/20 p50 0.052s min 0.041s max 0.093s
+landing-control: n=20 all200 cold>=0.5s 0/20 p50 0.056s min 0.042s max 0.118s
+runs total: n=60, trials with cold>0 = 1/3
+0h-band cumulative: 9 trials, cold>0 = 2 (run102A, run104A)
+midnight-band cumulative: 81 trials, cold>0 = 24 (29.6%)

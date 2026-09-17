@@ -1,0 +1,6 @@
+===L279 tail 500===
+'ontrol 分離成立 (search/control とも 0 cold). run330 全 0/60 完全静穏は bench 第139回 run329 (0/60, 08:16) と同 8時台ウィンドで独立累計 2 セット連続の再静穏で、 falsify152-run328 (1/60) 単発直後の再静穏「帯内 1 窓即消失」分散単発型を継続支持, heavy run271A 6/20 型は run271A 以降 55 セット連続非再現. 8時台 (9/7) clean separable 通算 = falsify152-run328 (1/60) + bench139-run329 (0/60) + 本 tick run330 (0/60) = 1/180 (~0.56%) の 3 セット低位帯候補 — host load 高騰 (88-102) で p50 上振れ (99-181ms) borderline note だが全 max 278ms 未満で cold 闘値 0.5s 未達, 0/60 判定は確定的. status 判定は rank に委ねる (rank 専門).\n'
+---iter log line 359---
+- 2026-09-07: **falsify 第153回**。08:19 JST tick。HEAD 4e24a24 = bench 第139回 (08:16, 8時台 run329 0/60) = remote net-kotobase/main 一致 (fetch + rev-parse 比較, 傍離 0; worktree detached HEAD のため git pull --ff-only 不可, fetch 系で取り込み)。live smoke 200 (/, /signup; pre-run 計測)。host load1 121.35 (08:15 uptime) → 88-
+---run330A-C count in full file---
+10

@@ -1,0 +1,2 @@
+ENTRY inserted at line 368 | check: False
+header line still: ## Iteration log

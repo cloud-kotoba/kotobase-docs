@@ -1,0 +1,5 @@
+294A: n=20 p50=44.1ms cold(>=0.5s)=2/20 max=1530.2ms
+294B: n=20 p50=41.4ms cold(>=0.5s)=0/20 max=63.8ms
+294C: n=20 p50=39.2ms cold(>=0.5s)=0/20 max=47.6ms
+land: n=20 p50=39.2ms cold(>=0.5s)=0/20 max=47.6ms
+SEARCH TOTAL n=60 cold=2/60

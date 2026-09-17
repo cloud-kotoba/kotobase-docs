@@ -1,0 +1,5 @@
+'run378A–C — sibling bench が run377 を in-flight 先行実施 (.b377 17:39-17:40 計測済, cold 7/1/0 = 8/60, land 1 境界 0.517s borderli'
+===MID===
+'ne not-separated 弱) のため run377→run378 に読替 (run216/run256/run263 precedent, 独立 2 計測), 同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, 正 endpoint search.kotobase.net/search?q=test, 17:44:18–17:44:57 JST, 全 80/80 200, host load1 16.19→21.48 (pre/end uptime 実測, gate 7.5 超過) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): cold(>=0.5s) 1/0/0 per  ̃20 =  ̃1/60 (~1.7%) — r'
+===ALLEVID tail after run378===
+'1%) の中位帯候補 (sibling bench-run377 8/60 は land 境界 1 件の取込可否を rank 判定に委ねる, host load 高騰 tick の p50 上振れ borderline note 付き)。status 判定は rank に委ねる (rank 専門)。'

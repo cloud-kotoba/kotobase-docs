@@ -1,0 +1,17 @@
+$ git fetch net-kotobase
+
+---
+$ git log --oneline -3 net-kotobase/main
+8847fdd falsify: K-Q1 engine 内訳計測 第3段 (rank 第43回 NEXT, K-Q2 harness 10:29 JST): authenticated warm query p50 683.73ms / p95 995.39ms (200 30/30, NRT) — 第2段と同水準で退行存続。同窓 Biscuit verify p50 17.28ms / gateway auth check p50 10.78ms — auth plane 計 ~28ms で 退行分 ~+470ms は backend query 実行区間に帰属確定、残る切れ手は engine KV read 内訳
+eee3314 rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+
+---
+$ git rev-parse HEAD net-kotobase/main
+8847fddba0ac8abde28f61bb33ecbeab7ae7b40e
+8847fddba0ac8abde28f61bb33ecbeab7ae7b40e
+
+---
+$ git diff --stat HEAD net-kotobase/main -- query-cosientist.md
+
+---

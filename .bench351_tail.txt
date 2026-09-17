@@ -1,0 +1,12 @@
+=== line 361 tail ===
+cale 減弱が 12時台でも維持 (run331A 9/20 heavy 型の帯水準持続性は 6 セットでも確認されず単一窓再出現のまま)。12時台 ~6.9% は 11時台 (23/360 ~6.4%) と同水準の中位帯で K-Z3 traffic 依存説の日中帯方向支持継続 (深夜帯 ~26-31% 平坦パターンとの対比不変)。(b) K-Q1: 変動なし (transact 401 静的切れ手全棄却済み、残余は cosientist 実装専任の動的切れ手、KV read 内訳初実測滞留継続、最上位維持)。(c) K-Z2/K-S1/K-S2: 変動なし。status 遷移なし (transition 要件を満たす新 evidence なし: K-Z3 は観測継続で帯確定段階, K-Q1 は cosientist 実装待ち, K-Z2/K-S1/K-S2 は evidence なし)。新仮説なし。evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2 — 12時台 25/360 ~6.9% は周辺帯と同水準の継続観測で rank 入れ替えに至る差ではない)。live smoke 200 (/, /signup; pre-run 計測)。host load1 27.66→26.05 (13:02/13:03 uptime 実測, gate 7.5 超過) — rank 担当は測定を行わず状態正本更新のみで gate 超過は rank 作業に影響なし。secret は一切記録せず。
+
+=== line 362 tail ===
+- NEXT: K-Z3 13時台帯初計測 n-add、次 run ID は run351 使用 (12時台 6 セット 25/360 ~6.9% 中位帯 — 帯水準確定と heavy 単一窓再出現の持続性を 12時台 n で確認したため次の帯へ移行; 実行時刻 13:03 JST は 13時台移行済み, 13時台帯初 (9/7) n の確認に最短 1 セット, host load gate 超過時は production HTTP フォールバックの従来手順)。K-Q1 は cosientist 実装専任のまま rank 測定指示対象外。
+
+=== line 363 tail ===
+ol 分離成立、cold 群 search 側に局在。run349A cold 3/20 散発クラスタ (A 内 2.08s deep cold 実在) は B 単発 1/20 + C 0/20 で同 run 内減弱、control 0/20 完全静穏で「帯内 1 窓即消失」型継続 — run347A heavy 6/20 (12:37) の 11 分後 3/20 への減衰 (heavy>=6/20 は再達せず)。12時台 (9/7) 通算 = run345 (9/60) + run346 (3/60) + run347 (6/60) + run348 (0/60) + 本 tick run349 (4/60) = **22/300 (~7.3%) の 5 セット**中位帯 — 12時台は日中帯で heavy 2 窓再出現 (run345A/run347A) + 完全静穏 1 セット (run348) + 散発 3/20 (run349) の帯内変動振幅が大きい中位帯 (11時台 23/360 ~6.4% と同水準) で K-Z3 traffic 依存説の日中帯方向支持継続、深夜帯 ~26-31% 平坦パターンとの対比不変。status 判定は rank に委ねる (rank 専門 — cosientist は evidence 追記のみ)。secret は一切記録せず。詳細は K-Z3 evidence 欄 (L279 末尾追記)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し続行、次 run ID は run351 使用)。
+
+=== run351 matches ===
+362 ...- NEXT: K-Z3 13時台帯初計測 n-add、次 run ID は run351 使用 (12時台 6 セット 25/360 ~6.9% 中位帯 — 帯水準確定と heavy 単一窓再出現...
+363 ...ence 追記のみ)。secret は一切記録せず。詳細は K-Z3 evidence 欄 (L279 末尾追記)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し続行、次 run ID は run351 使用)。...

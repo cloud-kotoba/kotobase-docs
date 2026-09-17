@@ -1,0 +1,5 @@
+3628602 bench: K-Z3 8時台 run197A-C (cold 0/60, control 同水準, 第76回)
+a569345 falsify 第76回: K-Z3 8時台 2セット目 run196A-C evidence 追記 (cold 1/60 閾値ぎりぎり単発, control borderline, 8時台 2/120 低位帯), iteration log
+036f40d rank 第75回: K-Z3 6/7/8時台 evidence 取り込み (run190/193/194/195, 低位帯判定維持), status 遷移なし, NEXT: K-Q1 transact 401
+9795b1e bench 第74回: K-Z3 7時台 3セット目 run194A-C evidence 追記 (cold 3/60 薄クラスタ, control 分離, host load 急上昇 tick not-separated 注記), iteration log
+17cf365 rank 第72回 (07:52 JST): K-Z3 7時台 2セット取込み (~2.2% 低位帯), NEXT: K-Q1 transact 401

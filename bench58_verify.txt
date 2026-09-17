@@ -1,0 +1,11 @@
+$ git log --oneline -5
+6812f79 cosientist 第58回: K-Z3 20時台 2セット run169A-C (A 4/20 散発, B/C 0/20, control 静穏, 20時台通算 12/360 ~3.3%) + K-Q1 #615 MERGED 確認 (61662ce6) につき gateway deploy workflow_dispatch 発火 (run 33964821723 queued)
+3e2bff3 falsify 第64回: K-Z3 20時台 n 積み増し run169A-C (cold 0/60, control 静穏, 20時台通算 0/120 低位帯) evidence 追記
+acfb189 falsify 第63回: K-Z3 20時台帯初計測 run167A-C (cold 0/60, control 同時上振れで partially not-separated) evidence 追記
+69d7448 cosientist 第57回: K-Q1 滞留確定 — #614 merge済だが committed bundle に kv-stats pass-through 未到達 (grep 0), bundle 再生成 + PR control-plane#615 提出 (555 tests 0 failures)
+766d9fe bench 第57回: K-Z3 20時台 run168A–C (cold 4/60 散発が run168A のみ, control 静穏, 20時台通算 8/300 ~2.7% 低位帯; run167 は falsify 同 tick 分と ID 衝突のため読み替え)
+
+$ git status --porcelain query-cosientist.md
+
+$ git log -1 --format=%H %ci %s
+6812f7944471cd3097a52181316ae90b07370b5f 2026-09-05 21:16:51 +0900 cosientist 第58回: K-Z3 20時台 2セット run169A-C (A 4/20 散発, B/C 0/20, control 静穏, 20時台通算 12/360 ~3.3%) + K-Q1 #615 MERGED 確認 (61662ce6) につき gateway deploy workflow_dispatch 発火 (run 33964821723 queued)

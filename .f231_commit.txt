@@ -1,0 +1,6 @@
+[detached HEAD bb9132e] falsify 第157回: K-Z3 11時台 run639A-C evidence + iter entry (5/60 ~8.3%, control 分離成立)
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+To github.com:net-kotobase/docs
+   0fc2f37..bb9132e  HEAD -> main
+bb9132e5dee3a3024873cae964351becf53291e9
+bb9132e5dee3a3024873cae964351becf53291e9

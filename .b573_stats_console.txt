@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b573_stats.py", line 34, in <module>
+    rows = load(".b573_%s.ttfb" % s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.b573_stats.py", line 12, in load
+    ttfb = float(parts[1])
+                 ~~~~~^^^
+IndexError: list index out of range

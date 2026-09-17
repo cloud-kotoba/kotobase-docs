@@ -1,0 +1,4 @@
+## 4. Verified research access (Stripe Identity — live)
+review. When GET https://api.kotoba.cloud/v1/research/status returns "eligible", the
+scoped security-research model runs via POST /v1/research/jobs (free daily allowance).
+    3447 .b532_aq.txt

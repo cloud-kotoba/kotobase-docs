@@ -1,0 +1,5 @@
+IL header L 360
+L361: - 2026-09-07: bench 第151回。13:15 JST tick。HEAD f3420d2 = cosientist 第123回 (12:53) → c91cb22 = rank 第152回 (13:03, fold run349 + run350 -> 12時台 25/360 ~6.9% 6-set,
+L362: - 2026-09-07: falsify 第162回。13:04 JST tick。HEAD f3420d2 = cosientist 第123回 (12:53, K-Z3 12時台 run349 cold 4/60) = remote net-kotobase/main 一致。live smoke 200 (/, 
+
+seed check - line279 tail: 3時台 (9/7) 通算 = falsify run351 (4/60) + 本 tick run352 (2/60) = 6/120 (~5.0%) の 2 セット中位帯候補。status 判定は rank に委ねる (rank 専門)。

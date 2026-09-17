@@ -1,0 +1,7 @@
+push rc 1
+To github.com:net-kotobase/docs
+ ! [remote rejected] HEAD -> net-kotobase/main (directory file conflict)
+error: failed to push some refs to 'github.com:net-kotobase/docs'
+fetch rc 0
+remote main 3d213161da96a340458bc7321ed83e6ca80d2306
+HEAD 9056d1b1c8eaff108d7f06fab84e9cc72c1f207c

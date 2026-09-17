@@ -1,0 +1,1 @@
+bdf2d4e falsify 第94回: K-Z3 16時台 n 積み増し run223A-C (cold 1/60 単発, control 分離成立, 16時台通算 2/180 ~1.1% 低位帯) + iteration log

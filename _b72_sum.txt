@@ -1,0 +1,4 @@
+A: n=20 non200=40 cold(>=0.5s)=0 p50=7ms p95=111ms max=245ms
+B: n=20 non200=40 cold(>=0.5s)=0 p50=24ms p95=127ms max=143ms
+C: n=20 non200=40 cold(>=0.5s)=0 p50=7ms p95=121ms max=196ms
+CTRL: n=20 non200=0 cold(>=0.5s)=0 p50=225ms p95=363ms max=445ms

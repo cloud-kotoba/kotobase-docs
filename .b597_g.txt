@@ -1,0 +1,1 @@
+12:idxs = [i for i,l in enumerate(lines) if l.startswith("| K-Z3 |")]

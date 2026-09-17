@@ -1,0 +1,7 @@
+data=open("query-cosientist.md",encoding="utf-8").read()
+i=data.find("第104回, K-Z3 19時台 n 積み増し run235")
+print("line~", data[:i].count("\n")+1)
+print(data[i-200:i+150])
+print("...")
+j=data.find("| K-Z2 | worker |", i)
+print("next K-Z2 row at", j, "offset from evidence end:", j-i)

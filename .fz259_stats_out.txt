@@ -1,0 +1,8 @@
+.fz259_run574A.ttfb: n=20 codes={'200': 20} p50=134.2ms max=2504.9ms cold>=0.5s: 7 ['1.1596', '1.2328', '1.3012', '1.3238', '2.0315', '2.1048', '2.5049']
+.fz259_run574B.ttfb: n=20 codes={'200': 20} p50=67.6ms max=2224.4ms cold>=0.5s: 1 ['2.2244']
+.fz259_run574C.ttfb: n=20 codes={'200': 20} p50=57.3ms max=1234.1ms cold>=0.5s: 1 ['1.2341']
+.fz259_landing.ttfb: n=20 codes={'200': 20} p50=94.3ms max=497.8ms cold>=0.5s: 0 []
+TOTAL query: 9/60 (15.0%) all200=True
+2026-09-09 23:28:21
+2026-09-09 23:28:45
+23:28  up 4 days, 16:11, 8 users, load averages: 32.32 23.71 21.09

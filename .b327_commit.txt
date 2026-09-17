@@ -1,0 +1,6 @@
+[detached HEAD d8f6902] bench 138: K-Z3 7時台 run327A-C n-add cold 2/60 (~3.3%) (A idx8/idx18 散発 max 0.9725s, B/C+CTRL 0/20 control 完全静穏 分離成立, 正 endpoint search.kotobase.net/search?q=test, host load 24-86 extreme gate-exempt production HTTP, p50 38-55ms clean; run ID collision falsify151 が run326 先行使用のため run327 改番; 7時台 clean separable 通算 11/360 ~3.1% 低位帯, heavy run271A 非再現52セット; traffic-independence counter-evidence; status/rank to rank)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+commit_rc=0
+To github.com:net-kotobase/docs
+   9d2260d..d8f6902  HEAD -> main
+push_rc=0

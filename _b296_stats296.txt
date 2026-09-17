@@ -1,0 +1,5 @@
+296A: n=20 p50=53.6ms cold(>=0.5s)=0/20 max=106.7ms warm_p50=53.6ms
+296B: n=20 p50=51.9ms cold(>=0.5s)=0/20 max=81.3ms warm_p50=51.9ms
+296C: n=20 p50=53.5ms cold(>=0.5s)=0/20 max=96.2ms warm_p50=53.5ms
+land: n=20 p50=56.2ms cold(>=0.5s)=0/20 max=156.4ms warm_p50=56.2ms
+SEARCH TOTAL n=60 cold=0/60

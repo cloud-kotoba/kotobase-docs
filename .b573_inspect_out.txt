@@ -1,0 +1,16 @@
+.b573_A.ttfb bytes= 440 lines= 40 bad= 20
+  BAD: '1.301664'
+  BAD: '0.040366'
+  BAD: '1.195089'
+.b573_B.ttfb bytes= 440 lines= 40 bad= 20
+  BAD: '0.064803'
+  BAD: '0.130230'
+  BAD: '0.053252'
+.b573_C.ttfb bytes= 440 lines= 40 bad= 20
+  BAD: '0.050926'
+  BAD: '0.135194'
+  BAD: '0.138976'
+.b573_ctl.ttfb bytes= 440 lines= 40 bad= 20
+  BAD: '0.073386'
+  BAD: '0.042769'
+  BAD: '0.121716'

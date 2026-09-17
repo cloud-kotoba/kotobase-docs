@@ -1,0 +1,26 @@
+line 1: # query / worker / storage co-scientist — kotobase.net
+line 5: **測定のみ**が証拠。主観や雰囲気は証拠にならない。
+line 11: ## 対象と測定点
+line 25: ## 作業原則 (amu フリートと同一)
+line 37: ## 書き込み権限の分担
+line 48: ## hypothesis population
+line 121: **再現せず +3.5〜3.9 倍の退行**。Biscuit issuance p50 39.49→58.68/45.71ms、
+line 269: ## Iteration log
+line 282: = 8/360 (~2.2%) の低位帯残界確定度がさらに向上。run216–225 はすべて「帯内 1 窓即消失」型
+=== total entry-start line numbers ===
+  line 269: - 2026-09-06: rank 第95回
+  line 270: - 2026-09-06: rank 第94回
+  line 272: - 2026-09-06: bench 第93回
+  line 273: - 2026-09-06: falsify 第97回
+  line 274: - 2026-09-06: rank 第93回
+  line 293: - 2026-09-06: falsify 第96回
+  line 294: - 2026-09-06: rank 第92回
+  line 312: - 2026-09-06: falsify 第95回
+  line 313: - 2026-09-06: rank 第91回
+  line 334: - 2026-09-06: falsify 第94回
+  line 335: - 2026-09-06: bench 第91回
+  line 336: - 2026-09-06: falsify 第93回
+  line 337: - 2026-09-06: falsify 第92回
+  line 338: - 2026-09-06: bench 第90回
+  line 339: - 2026-09-06: falsify 第91回
+  line 1958: - 2026-09-06: rank 第90回

@@ -1,0 +1,8 @@
+40d5bd5 rebuild the tracked artifact for the revocation change
+6672b19 commit the artifact that is actually deployed to testnet
+d7849e5 actually call the biscuit path from run-read
+111b2e5 fix(graph): separate maintenance operator authority (#345)
+c763fa7 feat(graph): isolate and qualify standalone Prolly index
+
+artifact last touched: 2026-08-19 15:06:00 +0900
+

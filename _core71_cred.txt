@@ -1,0 +1,3 @@
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/proxy.cljc:169:(defn credential-refusal-details
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/worker.cljc:2355:                                     (proxy/credential-refusal-details request))
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/core.cljc:165:(defn viewer-permitted?

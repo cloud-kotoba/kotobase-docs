@@ -1,0 +1,4 @@
+To github.com:net-kotobase/docs
+   de436f4..e343910  HEAD -> main
+PUSH_RC=0
+e343910 2026-09-07 21:17:25 +0900 bench 第178回: K-Z3 21hr band-first run397 (cold 0/1/2 = 3/60 ~5.0% A0/B1/C2, control borderline 0.50s -> not-separated-leaning; 21hr 帯初計測) + iter-log

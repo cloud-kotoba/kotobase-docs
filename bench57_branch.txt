@@ -1,0 +1,24 @@
+CMD: git branch --show-current
+RC:0
+
+
+=====
+CMD: git remote -v
+RC:0
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+
+
+=====
+CMD: git log --oneline origin/main -1
+RC:128
+fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+
+=====
+CMD: git rev-parse HEAD
+RC:0
+766d9fea7b2b7d7b7ceffe418014a0d0fce83197
+

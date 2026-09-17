@@ -1,0 +1,4 @@
+To github.com:net-kotobase/docs
+   31a65c9..39230e3  co84_work -> main
+rc_push=0
+main now: 39230e3cc2e74d99ae05dc719be18758f747b574

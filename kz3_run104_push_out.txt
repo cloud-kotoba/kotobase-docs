@@ -1,0 +1,9 @@
+remotes:
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+
+push rc=0
+
+To github.com:net-kotobase/docs
+   be79142..90774bb  cosient-sync -> main
+

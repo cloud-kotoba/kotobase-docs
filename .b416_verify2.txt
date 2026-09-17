@@ -1,0 +1,11 @@
+HAVE juken=12
+HAVE 深費=0
+run415 mentions=26
+GITSTATUS:
+?? .b327_bcnt.txt
+?? .b327_bcnt2.txt
+?? .b327_bcnt3.txt
+?? .b327_commit.sh
+?? .b327_commit.txt
+HEAD:
+923ddd8 falsify(K-Z3 2hr n-add run417) evidence append: cold 2/60 ~3.3% (v184)

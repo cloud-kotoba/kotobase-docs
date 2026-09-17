@@ -1,0 +1,19 @@
+===REMOTES===
+bench_fetch	https://github.com/net-kotobase/docs (fetch)
+bench_fetch	https://github.com/net-kotobase/docs (push)
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+===LOG===
+e867ae6 falsify 152: K-Z3 8時台帯初 n-add run328A-C cold 1/60 (A 単発 1.084s, B/C+CTRL 0/20 control 完全静穏 分離成立, host load 83 high tick p50 上振れ borderline note, heavy run271A+53 非再現; 8時台 帯初 ~1.7% 低位帯候補; status/rank to rank)
+d8f6902 bench 138: K-Z3 7時台 run327A-C n-add cold 2/60 (~3.3%) (A idx8/idx18 散発 max 0.9725s, B/C+CTRL 0/20 control 完全静穏 分離成立, 正 endpoint search.kotobase.net/search?q=test, host load 24-86 extreme gate-exempt production HTTP, p50 38-55ms clean; run ID collision falsify151 が run326 先行使用のため run327 改番; 7時台 clean separable 通算 11/360 ~3.1% 低位帯, heavy run271A 非再現52セット; traffic-independence counter-evidence; status/rank to rank)
+9d2260d falsify 151: K-Z3 7時台 n-add run326A-C cold 2/60 (~3.3%) (run326A 単発散発 1.5311s idx9 / 0.8244s idx14, B/C+CTRL 0/20 control 完全静穏 分離成立, host load 132-143 extreme gate-exempt production HTTP, p50 46-66ms 上振れ最小 clean; 7時台 clean separable 通算 9/300 ~3.0% 低位帯, heavy run271A 非再現51セット; traffic-independence counter-evidence; status/rank to rank)
+8b4ec73 rank 143 (amend): fold concurrent bench137 run325 (cold 1/60 control clean) into 7hr clean separable 7/240 ~2.9%; bump NEXT run326 (run325 consumed)
+0cd9700 bench 137: K-Z3 7時台 run325A-C n-add cold 1/60 (run325A 単発散発 1.594s, B/C+CTRL 0/20 control分離成立, host load 171 extreme gate-exempt production HTTP); 7時台通算はrank判定に委ねる; status/rank to rank
+ffefff4 falsify 150: K-Z3 7時台 n-add run324A-C cold 6/60 (A3/B2/C1, 1.47/1.12/0.64s 冒頭+中盤散発 etc) but control cold 2/20 + 全 p50 上振れ 211-265ms (host load 146 極端高負荷 tick) borderline not-separated; heavy run271A非再現50セット; 7時台通算算入可否 rank 判定に委ねる; status/rank to rank
+3c72b7f bench 136: K-Z3 7時台 run323A-C cold 1/60 (~1.7%) (A 0.9511s 単発, B/C 0/20, CTRL 0/20 静穏 control 分離成立, host load 105 gou-over gate-exempt production HTTP, heavy run271A+49 非再現); 7時台通算 12/420 ~2.9%; status/rank to rank
+b08c6e4 falsify 149: K-Z3 7時台 independent run322-indep cold 2/60 (A idx8 1.0307s 単発 + B idx3 0.5172s 境界値, C 0/20, CTRL 0/20 分離成立 clean vs bench run322 control 3/20 not-separated; bench134 run322 先行使用により independent 2計測記録; 7時台通算 11/360 ~3.1% 低位帯, traffic-independence counter-evidence; status/rank to rank)
+===DIFF STAT query-cosientist===
+ query-cosientist.md | 1 +
+ 1 file changed, 1 insertion(+)
+===HEAD time===
+2026-09-07 08:10:15 +0900 e867ae6 falsify 152: K-Z3 8時台帯初 n-add run328A-C cold 1/60 (A 単発 1.084s, B/C+CTRL 0/20 control 完全静穏 分離成立, host load 83 high tick p50 上振れ borderline note, heavy run271A+53 非再現; 8時台 帯初 ~1.7% 低位帯候補; status/rank to rank)

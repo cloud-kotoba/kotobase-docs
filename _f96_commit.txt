@@ -1,0 +1,2 @@
+[detached HEAD cc98efc] falsify 第96回: K-Z3 16時台 n 積み増し run225A-C (cold 2/60), control 分離成立
+ 1 file changed, 2 insertions(+)

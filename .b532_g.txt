@@ -1,0 +1,3 @@
+docs_graph=200
+signup_kc=404
+auth_signin=200

@@ -1,0 +1,8 @@
+===FETCH===
+===LOG after fetch===
+fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+===STATUS now===
+===diff cached===
+===diff worktree===

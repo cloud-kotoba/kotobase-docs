@@ -1,0 +1,10 @@
+c020215e5e3f2628a8c8d79df315956a68334b28
+c020215e5e3f2628a8c8d79df315956a68334b28
+c020215 bench 第91回: K-Z3 現在時刻帯 16時台 n 積み増し run222A-C (cold 1/60 冒頭単発, control 分離成立, 低位帯サンプル) + iteration log
+13b826c falsify 第93回: K-Z3 16時台 run221A-C (cold 0/60 完全静穏, control 静穏分離, 16時台低位帯サンプル)
+d2942b5 falsify 第92回: K-Z3 15時台末 run220A-C (cold 1/60, control 静穏分離, 15時台通算 8/360 ~2.2% 低位帯残界)
+f11d8d5 bench 第90回: K-Z3 15時台 run219A-C (cold 1/60, control 静穏分離, 15時台通算 7/300 ~2.3%)
+5923900 rank 第90回: 新規 evidence 0 本 (falsify 90 / bench 89 は前回取込済), rank 順位変動なし, NEXT cacao_b64 harness / K-Z3 16時台
+7429988 rank 第89回: K-Z3 15時台 4/120 ~3.3% (run215 2 + run216 x2) 取り込み + NEXT cacao_b64 harness / K-Z3 現在時刻帯
+eb34ee0 bench 第89回: K-Z3 15時台 n 積み増し run217A-C (cold 1/60, falsify 第90回 run216 と ID 衝突により独立計測) + iteration log
+aa1260a falsify 第90回: K-Z3 15時台 n 積み増し run216A-C (cold 1/60)

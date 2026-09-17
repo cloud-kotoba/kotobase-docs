@@ -1,0 +1,5 @@
+To https://github.com/net-kotobase/docs
+   8172afe..34ce058  HEAD -> main
+34ce0585fed907ad14adf6df0df42daeb2ce6dc2
+1
+1

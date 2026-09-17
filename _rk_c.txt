@@ -1,0 +1,15 @@
+[detached HEAD 51488e0] rank66: iteration log entry (K-Z3 run184/185 取り込み, status 遷移なし, NEXT K-Q1 transact 401)
+ 1 file changed, 2 insertions(+)
+error: The destination you provided is not a full refname (i.e.,
+starting with "refs/"). We tried to guess what you meant by:
+
+- Looking for a ref that matches 'net-kotobase/main' on the remote side.
+- Checking if the <src> being pushed ('HEAD')
+  is a ref in "refs/{heads,tags}/". If so we add a corresponding
+  refs/{heads,tags}/ prefix on the remote side.
+
+Neither worked, so we gave up. You must fully qualify the ref.
+hint: The <src> part of the refspec is a commit object.
+hint: Did you mean to create a new branch by pushing to
+hint: 'HEAD:refs/heads/net-kotobase/main'?
+error: failed to push some refs to 'github.com:net-kotobase/docs'

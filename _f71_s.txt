@@ -1,0 +1,8 @@
+HEAD detached from dc551d4
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	_b71_append.py
+	_b71_append_out.txt
+9795b1eb10a851320d5db3412caa135e840f992a
+08:16:25 JST
+ 8:16  up 1 day, 59 mins, 11 users, load averages: 52.66 82.79 108.85

@@ -1,0 +1,18 @@
+import io
+
+new_entry = (
+u"- 2026-09-09: rank\u3000第232回\u3002 03:05 JST tick\u3002HEAD 5b65014b = rank\u3000第231回 (02:44, fold falsify233 run523 + bench231 run524 \u2192 2時台 16/120 ~13.3%) \u3092 remote bench_fetch/main\u30fbn\u30a7t-kotobase/main \u4e00\u81f4\u3068\u3057\u3066\u78ba\u8a8d (git fetch + rev-parse \u6bd4\u8f03 \u602a\u96e2 0; detached HEAD \u306e\u305f\u3081 fetch \u7a2f\u3067\u53d6\u8fbc; worktree diff HEAD -- query-cosientist.md \u7a7a \u30af\u30ea\u30fc\u30f3 + HDR_COUNT=1 \u4e8b\u524d\u78ba\u8a8d; terminal stdout \u7a7a=\u65a2\u77e5\u306e\u305f\u3081\u72b6\u6148\u78ba\u8a8d\u306f\u30d5\u30a1\u30a4\u30eb\u66f8\u51fa\u3057\u7d4c\u7531\u3002\n"
+u"pre-run monitor NEXT\u300c\u59d4\u306d\u308b\u3002NEXT: K-Z3 \u6df1\u591c\u5e2f 23\u6642\u53f0 n \u7a2d\u307f\u5897\u3057\u7d9c\u7d9a\u3002\u300d\u306f stale(rank \u7b2c90\u56de\u5e2f artifact) \u2014 true progressive NEXT \u306f iter-log HEAD \u9023\u9396b (rank \u7b2c231\u56de NEXT \u59d4\u306d\u308b \u2192 \u30d5\u30a9\u30fc\u30eb\u30d5\u30c3\u30af K-Z3 \u73fe\u5728\u6642\u523b\u5e2f n \u7a2d\u307f\u5897\u3057\u7d9c\u7d9a, \u6b21 run ID \u306f run525 \u4f7f\u7528)))\u3002rank\u3000第231回 (5b65014b, 02:44) \u4ee5\u964d\u306e\u65b0\u898f\u78ba\u5b9a evidence \u306f 0 commit \u2014 \u672c tick (03:05) \u307e\u3067\u306b falsify/bench/cosientist \u306e\u65b0 commit \u306f\u5165\u3063\u3066\u304a\u3089\u305a (HEAD \u636e\u7f6e 5b65014b, \u53d6\u308a\u8fbc\u3080\u3079\u304d\u6e2c\u5b9a\u306a\u3057)\u3002\u53d6\u308a\u8fbc\u307f\u5224\u5b9a: \u5909\u52d5\u306a\u3057 \u2014 K-Q1 (\u6700\u4e0a\u4f4d\u7dad\u6301, \u6b8a\u4f59\u306f cosientist \u5bd f\u88c5\u5c02\u4efb\u306e transact 401 write path \u52d5\u7684\u7167\u5408\u306e\u307f\u3002 K-Z3 \u306f\u89b3\u6e2c\u7d9c\u7d9a (2時台 16/120 ~13.3% 2\u30bb\u30c3\u30c8 \u306f rank \u7b2c231\u56de\u3067 fold \u6e08f\u307f, \u5e2f\u6c34\u6e96\u78ba\u5b9a\u672a\u9054 \u2014 \u672c tick\u4ee5\u964d\u306e\u6b21\u5e2f\u306f 3時台\u3002 K-Z2/K-S1/K-S2 \u306f evidence \u306a\u3057\u3002) status \u9077\u79fb\u306a\u3057 (transition \u8981\u4ef6\u3092\u6e80\u305f\u3057\u65b0 evidence \u306a\u3057\u3002\u65b0\u4eee\u8a2c\u306a\u3057\u3002evolve \u5224\u65b7\u306a\u3057 (\u5408\u6210\u5bfe\u8c61\u306e\u78ba\u8a8d\u6e08f\u307f\u52dd\u3061\u4eee\u8a2c\u306a\u3057\u3002rank \u9806\u4f4d\u5909\u52d5\u306a\u3057 (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)\u3002live smoke 200 (/, /signup; pre-run \u8a08\u6e2c)\u3002host load1 49.72 (03:05 uptime \u5bd f\u6e2c, gate  ̈7.5 \u5927\u5e45\u8d85\u904e) \u2014 rank\u3000\u306f\u6e2c\u5b9a\u3055\u305a\u72b6\u6148\u6b63\u672c\u306e\u66f4\u65b0\u306e\u307f\u3067\u5f71\u97ff\u306a\u3057\u3002secret \u306f\u4e00\u5207\u8a18\u9332\u3055\u305a\u3002NEXT: \u59d4\u306d\u308b (K-Q1 \u306f cosientist \u5bdf\u88c5\u5c02\u4efb\u306e transact 401 write path \u52d5\u7684\u7167\u5408\u306e\u307f;\u30d5\u30a9\u30fc\u30eb\u30d5\u30c3\u30af\u306f K-Z3 \u73fe\u5728\u6642\u523b\u5e2f 3時台 n \u7a2d\u307f\u5897\u3057\u7d9c\u7d9a, \u6b21 run ID \u306f run525 \u4f7f\u7528 \u2014 run523 \u306f falsify \u7b2c233\u56de, run524 \u306f bench \u7b2c231\u56de \u304c\u6d88\u8cbb\u6e08f\u307f\u306e\u305f\u3081\u6b21\u30bb\u30c3\u30c8\u306f run525)\u3002"
+)
+
+path = 'query-cosientist.md'
+wt = open(path, encoding='utf-8').read()
+
+hdr = '## Iteration log\n'
+idx = wt.find(hdr)
+if idx < 0:
+    raise SystemExit('ERROR: header not found')
+pos = idx + len(hdr)
+new_wt = wt[:pos] + new_entry + '\n' + wt[pos:]
+open(path, 'w', encoding='utf-8').write(new_wt)
+print('ok, new len', len(new_wt), 'hdr count', new_wt.count('## Iteration log'))

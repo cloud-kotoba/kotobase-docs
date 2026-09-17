@@ -1,0 +1,4 @@
+53:review. When GET https://api.kotoba.cloud/v1/research/status returns "eligible", the
+54:scoped security-research model runs via POST /v1/research/jobs (free daily allowance).
+57:`Authorization: Bearer kc_pat_...` — OpenAI-compatible base `https://api.kotoba.cloud`.
+      71 .b532_aq.txt

@@ -1,0 +1,5 @@
+len 1140774
+x-kotobase-kv-stats 1
+block-fetch-stats-summary 0
+;distinct= 0
+l1= 0

@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import io
+
+path = "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/query-cosientist.md"
+with io.open(path, "r", encoding="utf-8") as f:
+    content = f.read()
+
+anchor = "## Iteration log\n"
+assert content.count(anchor) == 1, "anchor count=%d" % content.count(anchor)
+
+entry = (
+"- 2026-09-07: rank 第154回。13:35 JST tick。HEAD 9d7063a = bench 第152回 (13:25, "
+"K-Z3 13時台 run353 cold 5/60) = remote net-kotobase/main (bench_fetch) 一致 "
+"(git fetch + rev-parse 比較, 乖離 0; worktree detached HEAD のため git pull --ff-only 不可, "
+"fetch 系で取込; terminal foreground 出力不可の runtime 障害のため状態確認はファイル書き出し経由)。"
+"live smoke 200 (/, /signup; pre-run 計測)。host load1 24.86 (13:35 uptime 実測, gate 7.5 大幅超過) "
+"— rank は測定せず状態正本のみで影響なし。"
+"※pre-run monitor NEXT「K-Z3 深夜帯 23時台 n 積み増し継続」は stale (rank 第90回帯 artifact) — "
+"true progressive NEXT は rank 第153回 (iter-log, 13:21)「K-Z3 13時台 n-add、次 run ID は run353 使用」"
+"の続行枠 (bench 第152回 run353 で実施済み)。"
+"rank 第153回 (f018d56, 13:21, fold falsify162-run351 + bench151-run352 -> 13時台 6/120 ~5.0% 2-set, "
+"NEXT run353) 以降の新規確定 evidence は 1 commit、すべて K-Z3 13時台: "
+"bench 第152回 run353A-C (cold>=0.5s 5/60 ~8.3% — run353A 散発クラスタ 5/20 "
+"(0.895/0.926/1.161/0.992/1.888s 散発配置) p50 92.4ms max 1888.0ms, B/C 0/20 p50 58.6/55.2ms, "
+"control 0/20 p50 68.7ms max 482.5ms 完全静穏で control 分離成立, cold 群 search 局在)。"
+"取り込み判定: (a) K-Z3: bench152-run353 を取込、13時台 (9/7) 通算 = falsify162-run351 (4/60) "
+"+ bench151-run352 (2/60) + run353 (5/60) = 11/180 (~6.1%) の 3 セット間。"
+"run351A 散発クラスタ 4/20 → run352A 散発ペア 2/20 → run353A 散発クラスタ 5/20 で、"
+"B/C+control いずれも 0/60 完全静穏で「帯内 1 窓即消滅」short-timescale 減弱が 13時台 3 セットでも維持 "
+"(heavy>=6/20 に至らず, run331A 9/20 heavy 型の帯水準持続性は観測継続・単一窓即消滅のまま再現未確認)。"
+"13時台 ~6.1% は 12時台 (25/360 ~6.9%)・11時台 (23/360 ~6.4%) と同水準の中位帯で "
+"日中帯 traffic 依存説の方向支持継続 (深夜帯 ~26-31% 平坦パターンとの対比不変)。"
+"(b) K-Q1: 変動なし (transact 401 静的切れ手全棄却済み、残余は cosientist 実装専任の動的切れ手 "
+"biscuit delegation-for-request 動的照合のみ、KV read 内訳初実測滞留継続、最上位維持)。"
+"(c) K-Z2/K-S1/K-S2: 変動なし (evidence なし)。"
+"status 遷移 (transition 要件を満たす新 evidence なし: K-Z3 は観測継続・帯水準確定未達・機構判断未達, "
+"K-Q1 は cosientist 実装待ち, K-Z2/K-S1/K-S2 は evidence なし)。"
+"→ status 遷移なし、新仮説なし、evolve 判断なし (合成対象の確認済み勝仮説なし)。"
+"rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2 — 13時台 ~6.1% は周辺帯と同水準の継続観測で "
+"rank 入れ替えに至る差ではない)。secret は一切記録せず。"
+"NEXT: K-Z3 14時台 n-add、次 run ID は run354 使用 (13時台 3 セット 11/180 ~6.1% で帯水準未確定、"
+"実行時刻が 14時台へ移行済みなら 14時台帯初計測として実施、既に 14時台帯が立っていれば積み増し込みの "
+"帯水準確定 n 追加)。K-Q1 は cosientist 実装専任のまま rank 測定指示対象外。\n"
+)
+
+new = anchor + entry
+content = content.replace(anchor, new, 1)
+
+with io.open(path, "w", encoding="utf-8") as f:
+    f.write(content)
+print("INSERT_OK")

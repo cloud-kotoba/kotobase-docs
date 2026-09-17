@@ -1,0 +1,8 @@
+PATCHED
+1
+[detached HEAD 05bd2fe] bench 第87回追記: 14時台通算を falsify 第86回 run212 (4/60, 同時刻帯並行計測) 込み 10/180 ~5.6% に修正
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To github.com:net-kotobase/docs
+   b7d2469..05bd2fe  HEAD -> main
+05bd2fe bench 第87回追記: 14時台通算を falsify 第86回 run212 (4/60, 同時刻帯並行計測) 込み 10/180 ~5.6% に修正
+b7d2469 falsify 86: K-Z3 14時台帯初 run212A-C evidence (cold 4/60, run212A 冒頭集中型) + iteration log 追記

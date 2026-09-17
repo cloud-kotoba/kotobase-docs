@@ -1,0 +1,12 @@
+funnel=200
+{
+  "service": "kotoba-cloud",
+  "funnel": {
+    "visitors": 0,
+    "signups": 0,
+    "signup_completed": 0
+  },
+  "registrations": 0,
+  "labels": {
+    "visitors": "unique first-party visitor sessions (deduped)",
+    "signups": "sign-in intent — opened or clicked registration, not completed auth"Tue Sep 15 02:13:26 JST 2026

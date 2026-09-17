@@ -1,0 +1,4 @@
+run97A search: n=20 cold(>=0.5s) 3/20 p50 0.074s min 0.046 max 1.026
+run97B search: n=20 cold(>=0.5s) 0/20 p50 0.064s min 0.040 max 0.117
+run97C search: n=20 cold(>=0.5s) 0/20 p50 0.062s min 0.043 max 0.107
+landing control: n=20 cold(>=0.5s) 0/20 p50 0.065s min 0.049 max 0.100

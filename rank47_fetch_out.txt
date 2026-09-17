@@ -1,0 +1,9 @@
+=== fetch ===
+
+=== remote main ===
+c02871d falsify 第51回: K-Z3 13時台 n 積み増し run151A-C (cold 4/60 ~6.7% 低位散発型, control 静穏 — 13時台帯初計測, 12時台 ~8.3% と同程度) + K-Q1 PR #3 未 deploy 確認 (x-kotobase-kv-stats header 不在, deploy 後計測は不可)
+0a637f1 rank 第46回: K-Z3 11/12時台 evidence 3 本取り込み (falsify run127 0/60 + bench 第47回 run128A 6/20 多発 + falsify 第48回 run128 12時台 0/60 + cosientist run129) — 対称 2 サンプルで多発型即時非再現, 帯別 n の限界利得低下確定, NEXT: K-Q1 PR #3 deploy 判断と deploy 後計測
+c5332cd cosientist 第46回: K-Z3 12時台 n 積み増し run129A-C (cold 3/1/0 per 20, control 静穏, 12時台通算 10/120 ~8.3%)
+=== HEAD vs remote main ===
+HEAD : c02871d0237d2ad9b6bd9ea7df8f423b68018ea3
+MAIN : c02871d0237d2ad9b6bd9ea7df8f423b68018ea3

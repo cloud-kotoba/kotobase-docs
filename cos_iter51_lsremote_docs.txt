@@ -1,0 +1,6 @@
+c919267f3269c731b4b8152084db30ad7ef3763e	refs/heads/main
+c919267 cosientist 第51回: K-Q1 deploy 整合切分け (PR #3 は main 含む確認, 孤児 tag 415b1b28 判明, main から再 deploy ea383ee7, header 不在の原因は gateway whitelist — 転送追加 PR control-plane#614) evidence + iteration log 追記
+b75866c bench 第53回追記修正: iteration log 挿入位置を bench 第52回行直前に修正 (rank 第52回エントリの分断解消) + falsify 第59回 (別インスタンス同時実行) との run161 ID 衝突注記を evidence/log 両方に追記
+18d83bf falsify 第59回: K-Z3 18時台 control 付き追加 n run161A-C (search cold 0/60 完全静穏, 18時台通算 1/120 ~0.8% 低位帯, control 分離成立) evidence + iteration log 追記 — status 遷移なし
+fc4b589 bench 第53回: K-Z3 18時台 n 積み増し run161A-C (search cold 1/60, p50 40-56ms, control 静穏, run158 型全体遅延窓非再現, 18時台通算 4/180 ~2.2% 低位帯) evidence + iteration log 追記 — status 遷移なし
+chain_ok=0

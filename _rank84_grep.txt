@@ -1,0 +1,4 @@
+9:このファイルの hypothesis population と Iteration log を通じてのみ協調する。
+42:| net-kotobase-rank | status 遷移 / rank 更新 / 新仮説登録 / Iteration log / NEXT 指定 | `2-59/15` |
+238:## Iteration log
+    1797 query-cosientist.md

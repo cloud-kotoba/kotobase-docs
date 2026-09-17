@@ -1,0 +1,97 @@
+4:  kotobaBackendBaseUrl / clientMetaOf / parseJsonBody / upstreamJsonResponse +
+20:(defn- req-header [request k] (.. request -headers (get k)))
+39:  "Sign one S3/B2 request. → Promise<{:method :url :headers :body}>.
+43:  [env method key body & [query extra-headers]]
+44:  (object-store/signed-request env method key body query extra-headers))
+47:  "Signed S3/B2 request. Returns a Promise<Response>. method ∈ GET/PUT/…
+49:  [env method key body & [query extra-headers]]
+50:  (object-store/fetch env method key body query extra-headers))
+56:  "GET an object → the Response (for body streaming) or nil on 404."
+275:                                        :headers (let [headers #js {"cookie" cookie
+281:                                                     (aset headers "x-kotobase-tenant" tenant-selector))
+282:                                                   headers)
+324:       :dbName (req-header request "x-datomic-db-name")})
+380:    (js/Response. (js/JSON.stringify #js {:ok false :error error :details details})
+381:                  #js {:status status :headers #js {"content-type" "application/json"}})))
+384:  "POST {…body, tenant_did} to the backend NSID. → Promise<Response>.
+391:        opts #js {:method "POST" :headers h :body (js/JSON.stringify payload)}]
+397:      (aset h "x-datomic-db-name" (aget client-meta "dbName")))
+406:   raw upstream Response or rejects with AbortError / fetch TypeError."
+432:        headers #js {}
+433:        opts #js {:method method :headers headers}]
+435:      (aset headers "content-type" content-type))
+437:      (aset headers "authorization" authorization))
+439:      (aset headers "range" range-value))
+441:      (aset headers "x-kotobase-pack-range" pack-range))
+452:        headers #js {"content-type" "application/json"}
+453:        opts #js {:method "POST" :headers headers
+455:    (when authorization (aset headers "authorization" authorization))
+457:      (aset headers "x-request-id" (aget client-meta "rid")))
+465:        headers #js {"content-type" "application/vnd.ipld.dag-cbor"}
+466:        opts #js {:method "PUT" :headers headers :body (.-body request)}]
+468:      (aset headers "authorization" authorization))
+478:        headers #js {}
+479:        opts #js {:method method :headers headers}]
+481:      (aset headers "authorization" authorization))
+492:        headers #js {"content-type" "application/json"}
+493:        opts #js {:method "POST" :headers headers :body (.-body request)}]
+495:      (aset headers "authorization" authorization))
+497:      (aset headers "x-kotobase-causal-route" route))
+499:      (aset headers "x-request-id" request-id))
+505:;; `x-kotobase-ref` string. Only datomic.transact's body carries a literal
+507:;; datomic.q/pull/datoms only ever send a pre-computed content-addressed
+536:(defn xrpc-datomic-mode
+537:  "XRPC `datomic.*` surface policy from `KOTOBASE_XRPC_DATOMIC`.
+540:  - `:legacy` — served with Deprecation/Sunset headers (default)
+550:(defn xrpc-datomic-disabled? [env]
+551:  (= :off (xrpc-datomic-mode env)))
+553:(defn datomic-prefer-d1?
+556:  URLs while keeping STORAGE_MODE=backend for non-datomic surfaces."
+649:  (js/Response. (js/JSON.stringify #js {:ok false :error error :details details})
+650:                #js {:status status :headers #js {"content-type" "application/json"}}))
+652:(def ^:private xrpc-deprecation-headers
+658:       "x-kotobase-api" "datomic.client.api"
+659:       "warning" "299 - \"XRPC datomic.* is legacy; use POST /api/* Client API (EDN or transit+json)\""})
+661:(defn- with-xrpc-deprecation [headers mode]
+663:    headers
+664:    (js/Object.assign #js {} xrpc-deprecation-headers headers)))
+669:  [env path headers body & [signal]]
+671:        h (js/Object.assign #js {} headers)
+672:        opts #js {:method "POST" :headers h :body (or body "{}")}]
+693:  XRPC responses carry deprecation headers (unless mode=:on) pointing at /api/*."
+697:               (let [ct (-> (or (.. resp -headers (get "content-type")) "") str/lower-case)
+698:                     headers (with-xrpc-deprecation
+704:                   (js/Response. (js/JSON.stringify #js {:ok true :result_edn text
+707:                                 #js {:status (.-status resp) :headers headers})
+708:                   (js/Response. text #js {:status (.-status resp) :headers headers})))))))
+714:  `d1-ref-for`で解決。→ Promise<Response>。"
+717:        mode (xrpc-datomic-mode env)
+722:                        (str "datomic." method " request body has neither a db_name nor a graph field")))
+752:;; public content-type predicate (used by the datomic qseq/db handlers)
+754:  (let [t (-> (or (.. resp -headers (get "content-type")) "") (.split ";") (aget 0) str/trim .toLowerCase)]
+757:  (let [t (-> (or (.. resp -headers (get "content-type")) "") (.split ";") (aget 0) str/trim .toLowerCase)]
+841:   Arbitrary upstream response headers never cross this public boundary."
+843:  (let [value (when resp (.. resp -headers (get "x-kotobase-read-audit-cid")))]
+852:                (.. resp -headers
+862:    (.set (.-headers target) "x-kotobase-read-audit-cid" receipt-cid))
+864:    (.set (.-headers target)
+869:(defn- public-upstream-json-headers [resp]
+870:  (let [headers (js/Headers. #js {"content-type" "application/json"})
+871:        retry-after (.. resp -headers (get "retry-after"))]
+875:      (.set headers "retry-after" retry-after))
+877:      (.set headers "x-kotobase-read-audit-cid" receipt-cid))
+879:      (.set headers "x-kotobase-read-audit-witness-statement-cid"
+881:    headers))
+885:  status; a non-JSON success is a 502. → Promise<Response>."
+897:                       (js/Response. (js/JSON.stringify #js {:ok false :error "Bad Gateway" :details "upstream returned invalid JSON response"})
+898:                                     #js {:status 502 :headers #js {"content-type" "application/json"}})
+899:                       (js/Response. (js/JSON.stringify (public-upstream-json-data resp data))
+901:                                          :headers (public-upstream-json-headers resp)})))
+908:                                    (js/Response. (js/JSON.stringify #js {:ok false :error (upstream-error-name (.-status resp)) :details detail})
+909:                                                  #js {:status (.-status resp) :headers #js {"content-type" "application/json"}})))))
+910:                     (js/Response. (js/JSON.stringify #js {:ok false :error "Bad Gateway" :details (aget parsed "details")})
+911:                                   #js {:status 502 :headers #js {"content-type" "application/json"}}))))))))
+1031:;; `resolve-db-graph` call at all on the `datomic.q` path -- see
+1032:;; `kotobase.datomic/handle-q`), unlike the write path, unlike the read
+1033:;; `datomic.db`/`withDb`/`connect` handlers which already call
+    1052 /Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/proxy.cljc

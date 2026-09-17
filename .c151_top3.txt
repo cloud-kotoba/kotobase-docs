@@ -1,0 +1,4 @@
+L409: - 2026-09-09: bench 第230回 (00:52 JST tick)。HEAD f418dea = falsify 第230回 (00:42–00:43, 0時台 n-add run518 cold 10/60 ~16.7%, control 1/20 境界) を
+L410: - 2026-09-09: falsify 第230回: 0時台帯 3セット目 n-add run518A-C (00:42:27-00:43:18 JST) cold(>=0.5s) 9/1/0 per  ̂20 =  ̂10/60 (~16.7%), control (sig
+L411: - 2026-09-09: rank 第225回。00:37 JST tick。HEAD b8d4b5f = bench 第228回 (00:04, K-Z3 0時台 n-add run517 cold 6/60 ~10.0%; parent falsify 第229回 00:1
+(total lines 2627)

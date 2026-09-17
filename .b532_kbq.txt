@@ -1,0 +1,9 @@
+HTTP/2 301 
+date: Mon, 14 Sep 2026 17:12:15 GMT
+content-type: text/html; charset=UTF-8
+location: https://kotoba.cloud/agent-quickstart.md
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=A%2BbBuZMi462eMg1VbWT02R3cxSW007Omuz8M3PgcsMatt10e9Nb4HLJ2kD13I%2F1q3SvJPiFOUmyMUxdCI7vamsnGqBt8Uo2yOc503I5M3hMpDlny8RtfPTIwHEbXwoZgXAK6e07DHT4kKQM%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a3b103f88e1ce38e-NRT
+

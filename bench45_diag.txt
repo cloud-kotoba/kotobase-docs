@@ -1,0 +1,3 @@
+run125A count: 2
+---tail---
+40–0.042s), landing control も cold 0/20 (p50 0.049s) と静穏で control 分離成立。9時台は run122A–C (falsify, cold 5/60) に続き本計測 0/60 (falsify 同時刻 run123 別計測は 2/60) — 9時台通算 180 試行中 7 試行 (~3.9%) で 8時台 (0/180) に近い低位だが run122 の突発 1 セットがあり 5/6/8時台のみ低位という分布の裾の確定には追加 n 要。実装はなし (qualify 済みの実装候補は K-Q1 engine 内訳のみだが rank 実装指定待ち)。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — 9時台 n 積み増し継続、または K-Q1 engine 内訳の cosientist 実装指定)。

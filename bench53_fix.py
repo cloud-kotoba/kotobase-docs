@@ -1,0 +1,17 @@
+path = 'query-cosientist.md'
+text = open(path, encoding='utf-8').read()
+
+bad = "\n- 2026-09-05: bench 第53回。rank 第53回 NEXT (委ねる) を受け K-Z3 18時台 n 積み増し run161A–C を同測定法で実施 (18:46 JST, production HTTP 実測のため gate 外, secret 不含): search cold 1/60 (~1.7%, 1.02s 単発), p50 40–56ms, landing control cold 0/20 p50 0.049s と静穏で control 分離成立 — run158 型全体遅延窓は 18:46 では非再現 (18:01/18:35 の 2 窓から静穏へ復帰)。18時台通算 4/180 ~2.2% 低位帯 — status 遷移なし (rank 専門)。NEXT: 委ねる (rank 指定優先)。\n"
+assert bad in text, 'inserted line not found'
+text = text.replace(bad, '\n', 1)
+
+marker = '\n- 2026-09-05: bench 第52回。'
+assert marker in text, 'marker not found'
+log = ("- 2026-09-05: bench 第53回。rank 第53回 NEXT (委ねる) を受け K-Z3 18時台 n 積み増し run161A–C を同測定法で実施 "
+       "(18:46 JST, production HTTP 実測のため gate 外, secret 不含): search cold 1/60 (~1.7%, 1.02s 単発), "
+       "p50 40–56ms, landing control cold 0/20 p50 0.049s と静穏で control 分離成立 — run158 型全体遅延窓は 18:46 では非再現 "
+       "(18:01/18:35 の 2 窓から静穏へ復帰)。18時台通算 4/180 ~2.2% 低位帯 — status 遷移なし (rank 専門)。NEXT: 委ねる (rank 指定優先)。\n")
+text = text.replace(marker, '\n' + log + '- 2026-09-05: bench 第52回。', 1)
+
+open(path, 'w', encoding='utf-8').write(text)
+print('fixed')

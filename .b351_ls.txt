@@ -1,0 +1,9 @@
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  7 13:13 .b351_351A.txt
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  7 13:13 .b351_351B.txt
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  7 13:13 .b351_351C.txt
+-rw-r--r--@ 1 junkawasaki  staff  260 Sep  7 13:13 .b351_land.txt
+      20 .b351_351A.txt
+      20 .b351_351B.txt
+      20 .b351_351C.txt
+      20 .b351_land.txt
+      80 total

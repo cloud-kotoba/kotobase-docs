@@ -1,0 +1,24 @@
+* (HEAD detached from 423c4d8)
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/main
+HEAD detached from 423c4d8
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	kz3_br.txt
+	kz3_git2.txt
+	kz3_gitcheck.py
+	kz3_gitcheck_out.txt
+	kz3_pull.txt
+	kz3_run96_ctx.py
+	kz3_run96_ctx_out.txt
+	kz3_run96_out.txt
+	kz3_run97.sh
+	kz3_run97_calc.py
+	kz3_run97_calc_out.txt
+	kz3_run97_out.txt
+	kz3_status.py
+	kz3_status_out.txt
+	kz3_tail_out.txt
+	kz3_tailcheck.py
+
+nothing added to commit but untracked files present (use "git add" to track)

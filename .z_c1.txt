@@ -1,0 +1,8 @@
+rc=0
+---HEAD---
+f8d4b17987b2e7810a076e2f7a366c8bb8d64ed5
+---remote---
+f8d4b17987b2e7810a076e2f7a366c8bb8d64ed5
+---git add---
+commit rc=0
+db82376fc5efba42027feb7fd339b7ceec0ca30f

@@ -1,0 +1,16 @@
+[detached HEAD 036f40d] rank 第75回: K-Z3 6/7/8時台 evidence 取り込み (run190/193/194/195, 低位帯判定維持), status 遷移なし, NEXT: K-Q1 transact 401
+ 1 file changed, 1 insertion(+)
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push net-kotobase HEAD:<name-of-remote-branch>
+
+036f40df3b32f4aec2b6eeee5396c12bebc0cd94
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+036f40d rank 第75回: K-Z3 6/7/8時台 evidence 取り込み (run190/193/194/195, 低位帯判定維持), status 遷移なし, NEXT: K-Q1 transact 401

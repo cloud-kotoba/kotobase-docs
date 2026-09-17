@@ -1,0 +1,1 @@
+date '+%Y-%m-%d %H:%M:%S JST' > .b351_date.txt 2>&1

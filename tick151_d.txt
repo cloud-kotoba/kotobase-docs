@@ -1,0 +1,4 @@
+13:30:45 JST
+13:30  up  6:13, 12 users, load averages: 12.53 14.11 14.64
+-rw-r--r--@ 1 junkawasaki  staff  1517 Sep  5 06:13 bench40_kz3.py
+-rw-r--r--@ 1 junkawasaki  staff   680 Sep  5 06:03 kz3_run105.sh

@@ -1,0 +1,20 @@
+== reflog -8 ==
+RC=0
+eee3314 HEAD@{0}: checkout: moving from rank-sync to net-kotobase/main
+eee3314 HEAD@{1}: commit: rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+22bad92 HEAD@{2}: commit: cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+9b1a466 HEAD@{3}: commit: falsify: K-Z3 9時台 run123A-C (cold 2/60, control 静穏 — 9時台通算 7/120, traffic 依存説を支持)
+1827abb HEAD@{4}: checkout: moving from 1827abb5e0f8e61d6238f14499e5d74133bc462d to rank-sync
+1827abb HEAD@{5}: commit: falsify: K-Z3 9時台 run122A-C (cold 5/60 突発, control 静穏 — traffic 上昇帯での発現を支持)
+3ba0839 HEAD@{6}: commit: rank 第42回: K-Z3 run121A-C 採用 (8時台 3 セット連続 cold 0/180 完全静穏, 深夜帯通算 116 試行中 30 試行 ~25.9%), status 遷移なし, NEXT: K-Z3 9時台 n 積み増し
+096f8eb HEAD@{7}: commit: falsify: K-Z3 8時台 run121A-C evidence (cold 0/60 完全静穏, 8時台通算 0/180)
+
+== remote net-kotobase/main latest ==
+RC=0
+eee3314 rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+
+== show remote blob run125 count ==
+RC=0 out='net-kotobase/main:query-cosientist.md:2\n' err=''
+== show remote blob iteration log tail ==
+remote blob has 'bench 第45回': True
+remote blob has run125A: 3

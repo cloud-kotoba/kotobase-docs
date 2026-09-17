@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/.rk260_insert.py", line 23, in <module>
+    assert txt[real[0]+17:real[0]+17+22] == '- 2026-09-11: rank 第260', txt[real[0]+17:real[0]+17+40]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: - 2026-09-11: rank 第260回。19:04 JST tick。
+rc=1

@@ -1,0 +1,40 @@
+{
+ "run192A search": {
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 1,
+  "coldValues": [
+   0.93504
+  ],
+  "p50ms": 189.0,
+  "minMs": 44.0,
+  "maxMs": 935.0
+ },
+ "run192B search": {
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 142.2,
+  "minMs": 41.9,
+  "maxMs": 202.1
+ },
+ "run192C search": {
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 88.9,
+  "minMs": 41.7,
+  "maxMs": 232.9
+ },
+ "landing control": {
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 161.2,
+  "minMs": 48.6,
+  "maxMs": 226.6
+ }
+}

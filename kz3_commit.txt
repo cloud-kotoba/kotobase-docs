@@ -1,0 +1,7 @@
+[detached HEAD cc98037] falsify K-Z3 night 22:00-hour run97A-C evidence (evidence-append only)
+ 4 files changed, 126 insertions(+)
+ create mode 100644 kz3_run97.sh
+ create mode 100644 kz3_run97_calc.py
+ create mode 100644 kz3_run97_out.txt
+To github.com:net-kotobase/docs
+   c5adb73..cc98037  HEAD -> main

@@ -1,0 +1,7 @@
+run212A: n=20 cold=4 p50=64.3ms max=1146.0ms
+run212B: n=20 cold=0 p50=66.6ms max=187.3ms
+run212C: n=20 cold=0 p50=61.5ms max=156.2ms
+total cold=4/60 non200=0
+cold latencies: 0.842s, 0.934s, 1.100s, 1.146s
+control: n=20 p50=121.9ms max=213.9ms cold=0
+span: 2026-09-06T14:06:31+0900 .. 2026-09-06T14:07:00+0900

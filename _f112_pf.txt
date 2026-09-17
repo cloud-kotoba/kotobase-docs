@@ -1,0 +1,4 @@
+fetch_rc=0
+HEAD=db5ee63e17ea865a381531261d604fdc72855fbe
+MAIN=ddb568feb2f76e03d92e7db07b4d9f2248262034
+ddb568f bench 第99回: K-Z3 21時台 n 積み増し run246A-C (cold 1/60 ~1.7%, control 分離成立, 21時台通算 4/120 ~3.3% 低位帯サンプル)

@@ -1,0 +1,5 @@
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+a51977e38cd61c2c2000d9353857a1dca05b73bc
+a51977e38cd61c2c2000d9353857a1dca05b73bc
+ANC_RC=0

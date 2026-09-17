@@ -1,0 +1,12 @@
+remotes:
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+branches:
+cosient-sync
+* main
+  manifest-rev
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/main
+push: rc=0
+Everything up-to-date
+

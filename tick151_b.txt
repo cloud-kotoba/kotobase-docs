@@ -1,0 +1,83 @@
+kz3_run86.sh
+kz3_run86_calc.py
+kz3_run87.sh
+kz3_run87_calc.py
+kz3_run88.sh
+kz3_run88_calc.py
+kz3_run89.sh
+kz3_run89_calc.py
+kz3_run90.sh
+kz3_run90_calc.py
+kz3_run90_out.txt
+kz3_run91.sh
+kz3_run91_calc.py
+kz3_run91_out.txt
+kz3_run92.sh
+kz3_run92_calc.py
+kz3_run93.sh
+kz3_run93_calc.py
+kz3_run94.sh
+kz3_run94_calc.py
+kz3_run94_out.txt
+kz3_run95.sh
+kz3_run95_calc.py
+kz3_run95_out.txt
+kz3_run96.sh
+kz3_run96_calc.py
+kz3_run96_ctx.py
+kz3_run96_ctx_out.txt
+kz3_run96_out.txt
+kz3_run97.sh
+kz3_run97_calc.py
+kz3_run97_calc_out.txt
+kz3_run97_out.txt
+kz3_run98.sh
+kz3_run98_append.py
+kz3_run98_append_out.txt
+kz3_run98_calc.py
+kz3_run98_calc_out.txt
+kz3_run98_out.txt
+kz3_run98_verify.txt
+kz3_show106.txt
+kz3_show106b.txt
+kz3_st.txt
+kz3_stash.txt
+kz3_status.py
+kz3_status_out.txt
+kz3_syn.txt
+kz3_tail104.py
+kz3_tail104.txt
+kz3_tail200.txt
+kz3_tail_out.txt
+kz3_tailcheck.py
+kz3_time.txt
+kz3_trace.txt
+kz3_trace2.txt
+kz3_trace_run.py
+kz3_trace_run_out.txt
+kz3_verify.txt
+kz3_verify107.txt
+kz3_z2_grep.txt
+1315:  (K-Q1/K-Z2/K-Z3/K-S1/K-S2 とも open 維持 — transition 要件を満たす測定はなし)。
+1324:  (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。残る切れ手は engine 内訳
+1326:  cosientist 実装指定へ移行。(2) bench 第45回 run125A–C (K-Z3 10時台帯初計測,
+1328:  (単一サンプル, 追加 n 要)。K-Z3 の記述に 10時台を追加。
+1331:  伴うため cosientist 実装判断待ち。K-Z3/K-Z2 追加 n の限界利得低下は維持)。
+1347:  (K-Q1/K-Z2/K-Z3/K-S1/K-S2 とも open 維持 — K-Q1 は計装実装まで進んだが退行改善の
+1354:  K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。deploy 判断と deploy 後の header 計測が次切れ手。
+1355:  (2) bench 第46回: K-Z3 11時台帯初計測 run126A–C (cold 10/60 ~16.7%, cold 単独
+1356:  クラスタ型, control 静穏) — K-Z3 の記述に 11時台を追加。
+1357:  NEXT: K-Z3 11時台 n 積み増し継続 (K-Q1 計装の deploy 後計測は bench/falsify が
+1360:- 2026-09-05: cosientist 第46回。rank 第45回 NEXT (K-Z3 11時台 n 積み増し継続) は
+1362:  に従い K-Z3 12時台 n 積み増し run129A–C を実施 (12:18–12:19 JST, 同測定法 n=20 × 3 +
+1367:  status 遷移なし (rank 専門)。NEXT: 委ねる。NEXT: K-Z3 12時台 n 積み増し継続
+1370:  (K-Q1/K-Z2/K-Z3/K-S1/K-S2 とも open 維持 — transition 要件を満たす測定はなし)。
+1371:  (1) falsify run127A–C (K-Z3 11時台 n 積み増し, 11:16–11:17 JST, cold 0/60 完全静穏,
+1377:  (3) falsify 第48回 run128A–C (K-Z3 12時台, 12:08 JST, 0/60 完全静穏 — bench
+1380:  rank ブロックを第45回版から第46回版へ差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 >
+1382:  の対称 2 サンプルで多発型の即時非再現が示され、K-Z3 帯別追加 n の限界情報利得は
+1383:  低下確定 — K-Z3 の rank 内記述を「焦点は機構切分けへ移行」と更新。
+1387:  warmup 除外計測が bench/falsify 担当。K-Z3/K-Z2 追加 n は限界利得低下のため非優先)。
+9:このファイルの hypothesis population と Iteration log を通じてのみ協調する。
+42:| net-kotobase-rank | status 遷移 / rank 更新 / 新仮説登録 / Iteration log / NEXT 指定 | `2-59/15` |
+219:## Iteration log

@@ -1,0 +1,2 @@
+anchor idx = 95656
+done; new len chars = 362990

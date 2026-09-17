@@ -1,0 +1,4 @@
+run571 count: 15
+iter header count: 4
+combining chars: 0
+K-Z3 row ends with: 帯内減衰方向, 10時台 (~7.2%) との中間〜低位。status 判定は rank に委ねる (rank 専門)。

@@ -1,0 +1,42 @@
+.b434_s_a search
+cold 
+p50_all
+0.042778
+warm_p50
+0.042778
+max
+0.151527
+.b434_s_b search
+cold 1
+p50_all
+0.043676
+warm_p50
+0.043676
+max
+1.440809
+.b434_s_c search
+cold 
+p50_all
+0.039910
+warm_p50
+0.039910
+max
+0.131237
+.b434_c_a ctrl
+cold 
+p50_all
+0.038448
+max
+0.146662
+.b434_c_b ctrl
+cold 
+p50_all
+0.039714
+max
+0.126356
+.b434_c_c ctrl
+cold 
+p50_all
+0.039889
+max
+0.127906

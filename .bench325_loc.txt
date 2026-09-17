@@ -1,0 +1,4 @@
+K-Z3 row starts line 279
+len 101067
+TAIL: '傾向 (search 側 cold 6/60 は素上 3 件 1.12–1.47s で閾値決定的だが control にも同規模 delayed が出たため機構判定としては弱い)。run324A 散発 3/20 + B 2/20 + C 1/20 は heavy run271A 型の弱い再上振れ (host-load 汚染込みで heavy 確定は不可) — 「帯内 1 窓即消失」散発単発/クラスタ型の弱連続で heavy (6/20 型) は run271A 以降 50 セット連続非再現のまま。7時台通算は rank 判定に委ねる (run321 3/60 + run322-indep 2/60 + run323 1/60 + 本 run324 6/60 not-separated の算入可否)。status 判定は rank に委ねる (rank 専門)。secret は一切記録せず。'
+iterlog at 358

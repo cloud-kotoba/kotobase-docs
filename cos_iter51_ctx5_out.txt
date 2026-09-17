@@ -1,0 +1,30 @@
+              (now-sec))]
+               (if-not (:ok? verified)
+                 (candidate-benchmark-response
+                  {:ok false :error "Unauthorized" :details (:error verified)}
+                  (:status verified))
+                 (run-candidate-benchmark-read env method query authz)))))))
+      (.catch handler-failure)))
+
+(defn handle-datoms [request env]
+  (-> (parse-json request)
+      (.then (fn [body] (run-read env "datoms" (js-body->clj body) (caller-did request))))
+      (.catch (fn [e] (handler-failure e)))))
+
+(defn handle-q [request env]
+  (-> (parse-json request)
+      (.then (fn [body]
+               (let [b (js-body->clj body)]
+                 (if-not (string? (:query_edn b))
+                   (bad-request "query_edn required")
+                   (run-read env "q" b (caller-did request))))))
+      (.catch (fn [e] (handler-failure e)))))
+
+(defn handle-pull [request env]
+  (-> (parse-json request)
+      (.then (fn [body]
+               (let [b (js-body->clj body)]
+                 (if-not (string? (:entity b))
+                   (bad-request "entity required")
+                   (run-read env "pull" b (caller-did request))))))
+      (.catch (fn [e] (handl

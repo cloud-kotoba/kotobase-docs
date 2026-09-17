@@ -1,0 +1,4 @@
+fixed and written
+4E57 leftover: 0
+combining: 0
+run639: 2

@@ -1,0 +1,18 @@
+=== HEAD ===
+523dc0b0855c9453a4a83e8854790c2373f28445
+=== remotes (net-kotobase/main, bench_fetch/main) ===
+523dc0b0855c9453a4a83e8854790c2373f28445
+523dc0b0855c9453a4a83e8854790c2373f28445
+=== worktree doc clean vs HEAD? (bytes) ===
+       0
+=== tracked modified (M/A/D) ===
+(end)
+=== run519 committed benchmark numbers (from bench230 iter line 409) ===
+cold(>=0.5s) 0/0/0/0 per 20 = 0/60 完全静穏 - run312A cold 0/20 p50 52.9ms max 131.3ms / run312B cold 0/20 p50 84.2ms max 145.1ms / run312C cold 0/20 p50 54.7ms max 100.9ms, control (kotobase.net/signup) cold 0/20 p50 57.5ms max 132.8ms 完全静穏で control 分離成立 (search/control とも 0 cold)。run312 全 0/60 完全静穏で 5時台の完全静穏 0/60 は run283/289/293/296/297/298/303/307/309 型の 10 例目 (run310 2/60 散発単発直後の再静穏 = 散発単発=即消失の性質を 10 例目で支持, heavy クラスタ run271A 6/20 型は run271A 以降 37 セット連続非再現)。5時台通算 run309 (0/60) + run310 (2/60) + run311 (1/60) + 本 tick run312 (0/60) = 3/240 (~1.25%) 4 セット、deep-n 累計 run275..312 = 40/2280 (~1.75%) 38 セットで低位帯水準継続 - 深夜帯 traffic 最低帯 (5時台) での完全静穏多発 (0/60 が run309 + run312 の 2/4 セット) は K-Z3 traffic 依存説への反証材料を続行 (深夜帯 ~26-31% 平坦パターンと整合方向)。status 判定は rank に委ねる (rank 専門)。 bench 2026-09-07 (第130回, K-Z3 5時台(deep-n) n-add run313A–C 
+=== 0時台 band: run516/517/518/519 present ===
+run516: 8
+run517: 6
+run518: 4
+run519: 2
+=== time ===
+2026-09-09 01:00:11 +0900

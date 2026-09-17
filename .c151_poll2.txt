@@ -1,0 +1,11 @@
+start HEAD=f418deafd4218048b08f82205f40a6af9e57d1a4
+poll still at f418dea (elapsed 12s)
+poll still at f418dea (elapsed 24s)
+poll still at f418dea (elapsed 36s)
+advanced at t=48 HEAD=523dc0b0855c9453a4a83e8854790c2373f28445
+final advanced=True newhead=523dc0b0855c9453a4a83e8854790c2373f28445
+recent:
+523dc0b bench 230: K-Z3 0hr(run519) n-add cold 1/60 ~1.7% control sep (run518 falsey collide relabel(run
+f418dea falsify 230: K-Z3 0hr n-add run518 cold 10/60 ~16.7% control 1/20 border(spike 9/1/0)
+2bc45c4 rank 第225回: 0時台 fold run516 5/60 + run517 6/60 = 11/120 ~9.2% 2set, K-Z3 open 継続
+

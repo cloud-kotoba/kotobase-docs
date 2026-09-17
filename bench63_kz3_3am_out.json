@@ -1,0 +1,58 @@
+{
+ "purpose": "bench63 K-Z3 3時台 n 積み増し (rank 第63回 fallback)",
+ "observedAt": "2026-09-05T18:29:08.402Z",
+ "runs": [
+  {
+   "label": "run1 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 9,
+   "coldValues": [
+    "942ms",
+    "695ms",
+    "1245ms",
+    "903ms",
+    "1348ms",
+    "1077ms",
+    "899ms",
+    "1139ms",
+    "844ms"
+   ],
+   "p50ms": 37,
+   "minMs": 31,
+   "maxMs": 1348
+  },
+  {
+   "label": "run2 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 0,
+   "coldValues": [],
+   "p50ms": 34,
+   "minMs": 31,
+   "maxMs": 50
+  },
+  {
+   "label": "run3 search",
+   "n": 20,
+   "ok200": 20,
+   "coldCount": 1,
+   "coldValues": [
+    "1167ms"
+   ],
+   "p50ms": 35,
+   "minMs": 31,
+   "maxMs": 1167
+  }
+ ],
+ "control": {
+  "label": "landing control",
+  "n": 20,
+  "ok200": 20,
+  "coldCount": 0,
+  "coldValues": [],
+  "p50ms": 42,
+  "minMs": 36,
+  "maxMs": 221
+ }
+}

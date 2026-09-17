@@ -1,0 +1,15 @@
+== HEAD ==
+36e89b34ce833e1b9a7f2e6aa2d3048433ea4cf0
+== fetch ==
+Fetching net-kotobase
+Fetching bench_fetch
+== main ==
+e47ccb17f02f52c0c17b5395d1531b5ee87b10b7
+== status ==
+?? $
+?? ._b531_count.txt
+?? ._b531_count2.txt
+?? ._b531_count3.txt
+?? ._b531_evloc_out.txt
+?? ._b531_patch_out.txt
+== diff stat ==

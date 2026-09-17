@@ -1,0 +1,12 @@
+commit eee331461be9829b9c72f0f6c2fd285633bbb83e
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Sat Sep 5 10:12:19 2026 +0900
+
+    rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+
+ query-cosientist.md | 49 ++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 40 insertions(+), 9 deletions(-)
+
+DIFF LEN: 33313
+hunk line 47: +| K-Z3 | worker | K-Z1/K-Z2 の日中帯短時間スケール再発 (run4–6, run13–16: cold 群と warm 群の遅延上振れが同時に出る突発パターン, 10:41–11:47 JST の 14 試行中 5 試行で cold>0) は時間帯依存の traffic 変動に追従する — 午前/午後/夕方の複数時間帯で同測定法 (n=20) の発現率とタイミング分布を確定し、*/2 高頻度化の要否判断の直接の証拠とする | open | falsify 2026-09-05 (K-Z3 8時台 n 積み増し run121A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 08:47 JST, 全 60/60 + control 20/20 200, host load1 104.6 は production HTTP 実測のため gate 外。※ rank 第41回 NEXT は 9時台だが cron 実行時刻が 08時台のため帯逸脱 — run105/run116/run120 前例に従い 8時
+hunk line 60: +  K-Z3 10時台帯初計測 run125A-C を実施 (10:08 JST, 同測定法 n=20 x 3 + landing

@@ -1,0 +1,4 @@
+run103A: n=20 ok=20/20 cold>=0.5s 0/20 p50=0.067s min=0.046 max=0.149 colds=[]
+run103B: n=20 ok=20/20 cold>=0.5s 0/20 p50=0.078s min=0.047 max=0.194 colds=[]
+run103C: n=20 ok=20/20 cold>=0.5s 0/20 p50=0.116s min=0.049 max=0.212 colds=[]
+landing control: n=20 ok=20/20 cold>=0.5s 0/20 p50=0.101s min=0.056 max=0.442 colds=[]

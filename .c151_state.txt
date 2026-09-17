@@ -1,0 +1,76 @@
+=== DATE ===
+2026-09-09 00:46:50 +0900 (JST)
+=== UPTIME/LOAD ===
+ 0:46  up 3 days, 17:29, 6 users, load averages: 20.95 32.49 41.45
+=== HEAD ===
+2bc45c4a767a1775c9b176dee50b66619c6a179c
+2bc45c4 rank 第225回: 0時台 fold run516 5/60 + run517 6/60 = 11/120 ~9.2% 2set, K-Z3 open 継続
+b8d4b5f bench 228 K-Z3 0hr n-add run517A-C cold 6/60 ~10.0 pct control 020 separated
+8676b70 falsify 229: K-Z3 0hr(24hr) n-add run516 cold 5/60 ~8.3% control sep
+50870c7 rank 第224回: 23時台 23/240 ~9.6% 4セット fold (run514 6/60 + run515 7/60), K-Z3 open 継続
+29006e4 falsify 228: K-Z3 23hr n-add run515 cold 7/60 ~11.7% control 0/20 quiet separated (23:52 JST) evidence+iter-log
+=== REMOTE refs (net-kotobase/main, bench_fetch/main) ===
+2bc45c4a767a1775c9b176dee50b66619c6a179c
+2bc45c4a767a1775c9b176dee50b66619c6a179c
+=== detached? ===
+symbolic_ref_rc=1
+=== worktree diff to HEAD (query-cosientist.md) ===
+doc clean: NO
+=== highest run5xx used in doc ===
+run500
+run501
+run502
+run503
+run504
+run505
+run506
+run507
+run508
+run509
+run510
+run511
+run512
+run513
+run514
+run515
+run516
+run517
+run518
+=== does run518 appear as MEASURED (not just NEXT reference)? ===
+1
+=== remote URL ===
+bench_fetch	https://github.com/net-kotobase/docs (fetch)
+bench_fetch	https://github.com/net-kotobase/docs (push)
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+=== branch list (local) ===
+* (HEAD detached from 0b76dfb)
+  _f106_tmp
+  bench-104-run258
+  bot/cosient-20260905-kz3-run129
+  bot/cosient-20260906234425
+  co84_work
+  cosient-85
+  cosient-sync
+  cosient-sync-60
+  fzwork
+  main
+  manifest-rev
+  rank-sync
+  rk139
+  remotes/bench_fetch/HEAD -> bench_fetch/main
+  remotes/bench_fetch/agent/cleanup-land-20260905
+  remotes/bench_fetch/bot/cosient-20260905-kz3-run129
+  remotes/bench_fetch/bot/cosient-20260906234425
+  remotes/bench_fetch/cosient-20260905-run123-obs
+  remotes/bench_fetch/cosient-sync-60
+  remotes/bench_fetch/cursor/align-security-service-pointer-c9a9
+  remotes/bench_fetch/main
+  remotes/bench_fetch/net-kotobase
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/agent/cleanup-land-20260905
+  remotes/net-kotobase/bot/cosient-20260905-kz3-run129
+  remotes/net-kotobase/bot/cosient-20260906234425
+  remotes/net-kotobase/cosient-20260905-run123-obs
+  remotes/net-kotobase/cosient-sync-60
+  remotes/net-kotobase/cursor/align-security-service-pointer-c9a9

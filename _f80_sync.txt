@@ -1,0 +1,7 @@
+5ddb712b17055ced7d01d041a763cf6d1e8cca9f
+5ddb712b17055ced7d01d041a763cf6d1e8cca9f
+HEAD is now at 5ddb712 bench 79th tick: K-Z3 10時台帯初計測 run202A-C evidence (cold 4/60, 1窓集中型, control 分離) + iteration log
+5ddb712 bench 79th tick: K-Z3 10時台帯初計測 run202A-C evidence (cold 4/60, 1窓集中型, control 分離) + iteration log
+dd2523d rank 第79回: K-Z3 9時台通算 300中13 (~4.3%), bench run201A クラスタの即時非再現で9時台突発の時間窓依存3例確定, run200/誤URL試行を無効測定として除外, status 遷移なし, NEXT K-Q1 header 到達確認 (PR #614 merge + deploy 後)
+3cb9292 falsify 78th tick: K-Z3 9時台 run201A-C evidence + iteration log (incl. run200/201 無効測定 404 注記)
+Sun Sep  6 10:13:29 JST 2026

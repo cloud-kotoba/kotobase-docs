@@ -1,0 +1,7 @@
+=== iter log top after insert ===
+## Iteration log
+- 2026-09-09: rank 第229回。01:34 JST tick。HEAD 52912ca = rank 第228回 (01:21, K-Z3 1時台帯初 fold falsify 第231回 run520 = cold 4/60 ~6.7% 1セット; NEXT 委ねる → フォールバック K-Z3 現
+- 2026-09-09: rank 第228回。01:21 JST tick。HEAD 90209f5 = falsify 第231回 (01:14, K-Z3 1時台帯初計測 run520A-C: cold 4/0/0 per 20 = 4/60 ~6.7%, run520A 散発クラスタ 4/20 max 1.2
+- 2026-09-09: falsify 第231回。01:14 JST tick。K-Z3 1時台帯初計測 run520A-C (cold 4/60 ~6.7%, control 0/20 完全静穏分離成立)。HEAD 86a3005 = rank 第226回 = remote net-kotobase/main 
+=== rank229 present ===
+1

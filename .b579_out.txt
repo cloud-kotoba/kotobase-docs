@@ -1,0 +1,7 @@
+A: n=20 cold=0 (-) p50=37.8ms p95=396.8ms max=396.8ms
+B: n=20 cold=0 (-) p50=37.0ms p95=372.4ms max=372.4ms
+C: n=20 cold=0 (-) p50=37.1ms p95=489.8ms max=489.8ms
+CONTROL: n=20 cold=0 (-) p50=45.7ms max=197.9ms
+DONE
+09-11T02:25:30Z
+11:25  up 6 days,  4:08, 7 users, load averages: 57.12 82.68 100.07

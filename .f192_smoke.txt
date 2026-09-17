@@ -1,0 +1,4 @@
+200
+200
+ 7:37  up 3 days, 20 mins, 10 users, load averages: 21.09 26.07 24.28
+07:37:11 JST

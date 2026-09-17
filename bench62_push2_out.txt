@@ -1,0 +1,9 @@
+fetch rc 0 From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+
+ancestor rc 0
+push rc 0
+
+To github.com:net-kotobase/docs
+   fdd935b..38bb30f  HEAD -> main
+

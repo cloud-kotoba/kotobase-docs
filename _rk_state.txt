@@ -1,0 +1,28 @@
+===HEAD now===
+3863ce6e80eab224a163594e70ac263c0d767053
+===bench_fetch/main===
+3863ce6e80eab224a163594e70ac263c0d767053
+===LOG -6===
+3863ce6 falsify 第192回: K-Z3 7時台 n-add run434 2/60 散発単発即消失型, 7時台通算 5/240 low-band継続
+b0dcd16 rank 190th: fold falsify190-run431+bench-run432+falsify191-run433 -> 7hr 3/180 ~1.7% 3-set low-band candidate; status/rank/evolve unchanged; NEXT K-Z3 7hr n-add run434
+f63cc21 falsify 191th: K-Z3 7hr run433A-C cold 0/60 complete-quiet; 7hr total 3/180 ~1.7% low band candidate
+f1939ef bench 07:09 JST: K-Z3 7hr band-in-2 run432 (run431 was falsify-190 band-first collision -> relabel run432; cold 2/60 ~3.3% run432A 散発 2/20 pos1+14; control clean separation; total 7hr 3/120 ~2.5% low band; next run433
+8d6d0a3 falsify 190th: K-Z3 7hr run431A-C cold 1/60
+d5776c9 rank 189th: fold bench191-run430 -> 6hr 6/360 ~1.7% 6-set low-mid band candidate; status/rank/evolve unchanged; NEXT K-Z3 7hr band-first run431
+===STATUS query-tracked===
+ M query-cosientist.md
+===NUMSTAT vs HEAD===
+1	0	query-cosientist.md
+===DIFF vs HEAD (first 6 lines)===
+diff --git a/query-cosientist.md b/query-cosientist.md
+index f5071e9..baa2720 100644
+--- a/query-cosientist.md
++++ b/query-cosientist.md
+@@ -401,6 +401,7 @@ run424C cold 0/20 p50 43.7ms max 160.1ms, control (kotobase.net/signup) cold 0/2
+  bench 2026-09-08 (第191回, K-Z3 6時台 6セット目 run430A-C, 同測定法 n=20 x 3 + landing control, 別接続 curl,cold>=0.5s, 正 endpoint search.kotobase.net/search?q=test + landing kotobase.net/signup, 全 80/80 200, host load1 ~30-33 (pre-run uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 - curl + bash/awk stats のみ): cold(>=0.5s) 1/0/0 per 20 =  1/60 (~1.7%) - run430A 単発散発 1/20 (1.344s, p50 44.4ms, max 1344.2ms) / run430B cold 0/20 p50 49.3ms max 400.3ms / run430C cold 0/20 p50 53.1ms max 160.6ms, control (kotobase.net/signup) cold 0/20 p50 60.0ms max 143.3ms 完全静穏で control 分離成立, cold 群 search 側局在,「帯内 1 窓即消失」散発単発型継続 (run428A/429A 単発 → 本 tick A 単発, heavy>=6/20 は run413A 以降非再現継続)。6時台 (9/8) 通算 = falsify-run425 (0/60, 帯初) + bench-run426 (2/60) + falsify-run427 (1/60) + bench-run428 (1/60) + falsify-run429 (1/60) + 本 tick run430 (1/60) =  6/360 (~1.7%) の 6 セット低〜中位帯候補確定側 - 朝帯境の歴朝低位帯 (9/5 2/300, 9/7 7/420 ~1.7%) と同水準の低位帯継続で, 深夜帯→朝帯境静穏方向に整合し K-Z3 traffic 依存説への強反証材料なし, band n=6 セットで帯水準・機構判断確定には rank 判定を要する).status 判定は rank に委ねる (rank 専門)。 bench 2026-09-08 (第190回, K-Z3 7時台帯初計測 run431A-C, 同測定法 n=20 x 3 + landing control, 別接続 curl,cold>=0.5s, 正 endpoint search.kotobase.net/search?q=test, 07:01-07:02 JST, 全 80/80 200, host load1 ~22-28 (pre-run, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 - curl + awk stats のみ): cold(>=0.5s) 1/0/0 per  20 =  1/60 (~1.7%) - run431A 単発散発 1/20 (1.431s, p50 50.5ms, max 1431.4ms) / run431B cold 0/20 p50 44.8ms max 117.8ms / run431C cold 0/20 p50 40.8ms max 133.7ms, control (kotobase.net/signup) cold  0/20 p50 40.8ms max 144.6ms 完全静穏で control 分離成立, cold 群 search 側局在,「帯内 1 窓即消失」散発単発型継続 (run428A/429A/430A 単発 → 本 tick A 単発, heavy>=6/20 は run413A 以降非再現継続)。7時台 (9/8) 帯初計測 cold  1/60 ~1.7% - 6時台 (6/360 ~1.7%) に続く朝帯境低位帯継続で深夜帯→朝帯境静穏方向に整合し K-Z3 traffic 依存説への強反証材料なし,帯水準確定は rank 判定を要る)。status 判定は rank に委ねる (rank 専門)。
+===COMMITTED 3863ce6 top iter===
+403: ## Iteration log
+404: - 2026-09-08: falsify 第192回。07:33 JST tick。HEAD b0dc
+405: - 2026-09-08: rank 第190回。07:20 JST tick。HEAD f63cc21
+===which commit added falsify 192===
+3863ce6 falsify 第192回: K-Z3 7時台 n-add run434 2/60 散発単発即消失型, 7時台通算 5/240 low-band継続

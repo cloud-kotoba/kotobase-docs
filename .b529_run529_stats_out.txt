@@ -1,0 +1,7 @@
+run529A: n=20 cold=0/20 p50=49.8ms max=146.0ms cold_vals=[none]
+run529B: n=20 cold=1/20 p50=44.9ms max=839.6ms cold_vals=[0.8396]
+run529C: n=20 cold=0/20 p50=50.7ms max=142.5ms cold_vals=[none]
+landing_control: n=20 cold=0/20 p50=44.2ms max=132.1ms cold_vals=[none]
+TOTAL_SEARCH_COLD=1/60
+cold_pos A=[] B=[1] C=[]
+stats_rc=0

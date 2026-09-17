@@ -1,0 +1,6 @@
+$ git diff --stat -- query-cosientist.md -> 0
+
+$ git diff -- query-cosientist.md -> 0
+
+$ git status --short -- query-cosientist.md -> 0
+

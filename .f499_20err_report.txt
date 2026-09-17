@@ -1,0 +1,13 @@
+falsify K-Z3 20:00-hour sample (NOT committed this tick — doc under concurrent multi-bot edit)
+Run label: provisional run499 (20:00 hour band; run498 was consumed by bench217 19:00hour while I measured).
+t0 (start): 2026-09-08 20:05:13 JST. End: ~20:05:30 JST. All 80/80 HTTP 200.
+Method: n=20 x3 search.kotobase.net/search?q=test + landing control kotobase.net/signup,
+        separate-connection curl, TTFB, cold>=0.5s, nearest-rank p50 (same established method).
+run499A: n=20 p50 0.0561 max 1.9301 cold 2
+run499B: n=20 p50 0.0526 max 0.1781 cold 0
+run499C: n=20 p50 0.0518 max 0.1373 cold 0
+landing: n=20 p50 0.0531 max 0.3458 cold 0
+=> cold 2/60 (~3.3%) search side; control 0/20 完全静穏 => control separation 成立, cold 群 search 側局在.
+20:00hour(09/08) band-first: cold 2/60 (~3.3%). A cold 2/20 散発, B/C 0/40 block => 帯内1窓即消失型継続.
+Raw data: .b499_A/B/C/landing.ttfb + .code
+Deferred: evidence append to K-Z3 row + iter-log row deferred (shared doc actively edited by rank216/bench217 in-flight; committing would sweep foreign edits).

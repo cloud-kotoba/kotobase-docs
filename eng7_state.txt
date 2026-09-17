@@ -1,0 +1,6 @@
+ js/kotobase-graph-database-worker.js | 717 ++++++++++++++++++-----------------
+ 1 file changed, 360 insertions(+), 357 deletions(-)
+
+40d5bd5	refs/remotes/net-kotobase/agent/artifact-rev rebuild the tracked artifact for the revocation change
+6672b19	refs/remotes/net-kotobase/agent/artifact-rev commit the artifact that is actually deployed to testnet
+d7849e5	refs/remotes/net-kotobase/agent/biscuit-wire-read actually call the biscuit path from run-read

@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+lines=open('query-cosientist.md',encoding='utf-8').read().split('\n')
+print('total_lines=',len(lines))
+print('line279 len=',len(lines[278]))
+print('line279 tail:',repr(lines[278][-40:]))
+print('run337A-C in 279:', lines[278].count('run337A\u2013C'))
+print('run337A-C in iter:', lines[358].count('run337A\u2013C'))
+print('iter hdr line358:', repr(lines[357]))
+print('iter entry line358 starts:', lines[358][:80])
+print('line359 starts(still bench143?):', lines[359][:60])
+print('279 starts with |:', lines[278][0]=='|')

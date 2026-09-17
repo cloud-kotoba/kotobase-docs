@@ -1,0 +1,7 @@
+run107A-direct-after: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.128s min=0.049 max=0.234
+run107B-elapsed: n=20 non200=0 cold(>=0.5s)=1 cold_vals=[0.86] p50=0.080s min=0.046 max=0.860
+run107C-direct-after: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.050s min=0.040 max=0.086
+run107D-elapsed: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.043s min=0.029 max=0.059
+landing-control: n=20 non200=0 cold(>=0.5s)=0 cold_vals=[] p50=0.053s min=0.034 max=0.087
+
+windows: direct-after cold>0 0/2, elapsed cold>0 1/2

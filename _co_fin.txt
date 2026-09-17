@@ -1,0 +1,5 @@
+=== remote log ===
+39230e3 cosientist 第84回: K-Z3 20時台 run243 独立2計測 (cold 1/60 ~1.7%), bench run243 とのID衝突を両方採用, 20時台通算 10/360 ~2.8% 低位帯確定方向, コード変更なし
+31a65c9 bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+=== divergence HEAD vs main ===
+0	1

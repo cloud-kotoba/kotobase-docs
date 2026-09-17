@@ -1,0 +1,6 @@
+index: 1, char pos: 47758
+11: ## 対象と測定点
+25: ## 作業原則 (amu フリートと同一)
+37: ## 書き込み権限の分担
+48: ## hypothesis population
+202: ## Iteration log

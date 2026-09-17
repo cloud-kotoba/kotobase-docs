@@ -1,0 +1,1 @@
+-rw-r--r--@ 1 junkawasaki  staff  559938 Sep  6 21:16 query-cosientist.md

@@ -1,0 +1,17 @@
+tree=5831445a1375b7e4984c6095f4aedd083d25d2c9
+new=39230e3cc2e74d99ae05dc719be18758f747b574
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  80c405c cosientist 第84回: K-Z3 20時台 run243 (cold 1/60 ~1.7%), 20時台通算 7/300 ~2.3% 低位帯確定方向, コード変更なし
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 80c405c
+
+Switched to branch 'co84_work'
+rc=0
+39230e3 cosientist 第84回: K-Z3 20時台 run243 独立2計測 (cold 1/60 ~1.7%), bench run243 とのID衝突を両方採用, 20時台通算 10/360 ~2.8% 低位帯確定方向, コード変更なし
+31a65c9 bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+5639692 rank 第106回: bench 第96回 run241 + falsify 第108回 run242 (K-Z3 20時台 n積み増し) 取り込み, 20時台通算 6/240-300 ~2.0-2.5% 低位帯確定方向, status遷移なし, 順位変動なし, NEXT K-Z3 20時台 run243 / 21時台帯初計測

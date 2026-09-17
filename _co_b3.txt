@@ -1,0 +1,4 @@
+=== bench run243 in row ===
+NOT FOUND
+=== 第84回 occurrences ===
+       7

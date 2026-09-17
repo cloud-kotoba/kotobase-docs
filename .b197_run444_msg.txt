@@ -1,0 +1,1 @@
+falsify 第197回: K-Z3 8hr n-add run444 cold 2/60 ~3.3% (run444A 散発 2/20, B/C 0) control 0/20 clean separation; iter-log entry

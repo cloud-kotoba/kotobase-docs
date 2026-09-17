@@ -1,0 +1,6 @@
+kroot_final=200 url=https://kotoba.cloud/docs/graph/
+   1 KOTOBA CLOUD
+   5 Kotoba Cloud
+   1 Kotobase
+   7 kotobase
+  109910 .b532_kroot.html

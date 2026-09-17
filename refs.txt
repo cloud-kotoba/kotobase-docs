@@ -1,0 +1,9 @@
+029b2654c43455a1d03532987f84de6aaeebc1ae
+029b2654c43455a1d03532987f84de6aaeebc1ae
+029b2654c43455a1d03532987f84de6aaeebc1ae
+029b265 falsify 第248回: K-Z3 19時台 n 積み増し run584A-C cold 11/60 (~18.3%), control borderline, evidence+iter-log
+3ede3dd Merge kbb cutover (adr-2609112000-kbb-cutover-clojure-cli-text)
+5caaed3 kbb: rewrite 20 Clojure-CLI/bb/nbb/shadow-cljs invocation(s) in 5 file(s) to kbb/amu
+5dee185 bench run583: K-Z3 17時台 (9/11) n 積み増し — cold 11/60, control 7/20 not-separated (bench 第219回)
+8ad1e1f rank 259th: fold run578/579/582 (11h/14h 9-11 band clusters, K-Z4 registered), NEXT K-Z3 15h-band run583
+3ce1c7b bench 218: K-Z3 14時台 run582A-C (8/60, control borderline); falsify 248 run579 (11時台 0/60) fold

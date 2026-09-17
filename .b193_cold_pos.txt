@@ -1,0 +1,2 @@
+.b193_run437_A.txt: pos=3 ttfb=1.418861
+.b193_run437_B.txt: pos=16 ttfb=0.964238

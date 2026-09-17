@@ -1,0 +1,7 @@
+CHECKOUT rc= 0
+
+Previous HEAD position was 423c4d8 docs: publish Biscuit auth query benchmark (#2)
+HEAD is now at 2304859 bench: K-Z3 midnight 23h run101A-C evidence (101A cold 3/20 scattered 1.08-1.52s, 101B-C cold 0/20, control clean, 3rd consecutive midnight cold-cluster like run99A/100A)
+2304859 bench: K-Z3 midnight 23h run101A-C evidence (101A cold 3/20 scattered 1.08-1.52s, 101B-C cold 0/20, control clean, 3rd consecutive midnight cold-cluster like run99A/100A)
+8607811 falsify: K-Z3 midnight 23h run100A-C evidence (100A cold 2/20 scattered 1.073/2.062s, 100B-C cold 0/20, control clean, separate from cosientist run99)
+62dcc2b cosientist K-Z3 night 23:00-hour run99A-C evidence + iteration log (evidence-append + log)

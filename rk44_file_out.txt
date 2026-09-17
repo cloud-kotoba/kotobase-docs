@@ -1,0 +1,77 @@
+exists: True
+size: 177598
+chars: 117555, lines: 1286
+=== head 40 lines ===
+# query / worker / storage co-scientist — kotobase.net
+
+co-scientist アプローチ (仮説生成→反証→ランク→進化→メタレビュー) を
+kotobase.net の **query・worker・storage** 処理の改善に適用する。
+**測定のみ**が証拠。主観や雰囲気は証拠にならない。
+
+正本リポジトリ: `net-kotobase/docs` (このファイル)。
+fleet の cowork bot (net-kotobase-cosientist / -falsify / -rank / -bench) が
+このファイルの hypothesis population と Iteration log を通じてのみ協調する。
+
+## 対象と測定点
+
+| 軸 | 対象 | 測定点 | 正本 evidence |
+|---|---|---|---|
+| query | datom query (engine / gateway query 経路) | 認証済み warm query latency (p50/p95), Datalog point select | BISCUIT-AUTH-QUERY-BENCHMARK.md (2026-08-26 Tokyo: warm query p50 187.35ms / p95 219.51ms, n=30) |
+| worker | Cloudflare Workers (engine.kotobase.net, search.kotobase.net, gateway) | CPU time, error rate, cold start, / live smoke 200 | net-kotobase-maint の live smoke + CI |
+| storage | L2 storage hosting (content-addressed KG, 1 commit CID) | pack write/read, KOTOBASE_PACK_WRITES 効果, commit CID サイズ | engine repo (ADR-2608170300 step 1 testnet 有効化済み) |
+
+claim contract (初期):
+- 「query 軸: 認証済み warm query の p50 を 187.35ms 基準に測定改善 (同一測定法:
+  30 sequential + 3 warmup除外, nearest-rank, Node fetch接続再利用, Tokyo colo)」
+- 「worker 軸: 変更候補は production smoke (/, /signup 200) とエラー率を悪化させない」
+- 「storage 軸: pack write 有効時の write path が測定で劣化しない」
+
+## 作業原則 (amu フリートと同一)
+
+1. **反証が先** — コード変更の前に hand-patch / local 実験で効果を予測する。
+2. **production が審判** — 判定は同一測定法の実測のみ。測定法を変えて比較しない。
+3. **falsify cheaply** — 1 iteration = 1 hypothesis × 1 measured verdict。
+   production への負荷計測は最小回数 (n=30 など) で行い、4xx/エラー率を監視する。
+4. **ladder を伸ばす** — 1 軸での勝ちを別軸・別エンドポイントに広げる。
+5. **進化は結合** — 閾値未満の確認済み仮説は捨てず、次の mechanism と合成する。
+6. **状態はこのファイルに残す** — worktree に散らさない。
+7. **secret 禁止** — token / cookie / credential を一切記録しない
+   (BISCUIT-AUTH-QUERY-BENCHMARK.md の方法に従う)。
+
+## 書き込み権限の分担
+
+| bot | 書き込み権限 | cron |
+|---|---|---|
+=== tail 30 lines ===
+  裾の確定と、traffic 上昇に転じる時間帯での発現率変化が K-Z3 traffic 依存説への
+  直接の反証/支持材料になる、gate 外で可能)。
+- 2026-09-05: cosientist 第44回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し) に従い run123A–C を実施 (09:48 JST, ※同一時間帯に falsify が別インスタンスで同時実行しており run ID run123 が重複 — falsify 分 (cold 2/60) と本 bot 分 (cold 0/60) は 同一時刻の独立 2 計測であり, ID 衝突のため本 bot 分を cosientist run124A–C として読み替えて記録 (run105/run100 前例に従う): 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, production HTTP 実測のため gate 外): cold(≥0.5s) 0/20 × 3 (p50 0.040–0.042s), landing control も cold 0/20 (p50 0.049s) と静穏で control 分離成立。9時台は run122A–C (falsify, cold 5/60) に続き本計測 0/60 (falsify 同時刻 run123 別計測は 2/60) — 9時台通算 180 試行中 7 試行 (~3.9%) で 8時台 (0/180) に近い低位だが run122 の突発 1 セットがあり 5/6/8時台のみ低位という分布の裾の確定には追加 n 要。実装はなし (qualify 済みの実装候補は K-Q1 engine 内訳のみだが rank 実装指定待ち)。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 — 9時台 n 積み増し継続、または K-Q1 engine 内訳の cosientist 実装指定)。
+- 2026-09-05: bench 第45回。rank 第42回 NEXT (K-Z3 9時台 n 積み増し継続) に従うが
+  cron 実行時刻が 10時台のため帯逸脱 (run105/run116/run120 前例に従い記録):
+  K-Z3 10時台帯初計測 run125A-C を実施 (10:08 JST, 同測定法 n=20 x 3 + landing
+  control, 別接続 curl, Tokyo, 全 60/60 + control 20/20 200, host load1 36.0 は
+  production HTTP 実測のため gate 外)。cold(>=0.5s) 1/20 (1.042s 薄単発) / 0/20 /
+  0/20 - 計 1/60 発現, landing control 静穏 (cold 0/20, p50 0.040s) で control 分離成立。
+  10時台は 9時台 (180 試行中 7 試行 ~3.9%) に近い低位 - 5/6/8時台に続き低位帯候補が増え
+  平坦パターン帯別分布の裾の確定に材料を追加 (単一サンプル, 追加 n 要)。
+  status 遷移なし (rank 専門)。NEXT: 委ねる (rank 判断 - 10時台 n 積み増し継続、
+  または K-Q1 engine 内訳の cosientist 実装指定)。
+- 2026-09-05: rank 第43回。新規 evidence 2 本を取り込み (いずれも K-Z3 9時台、
+  status 遷移なし: K-Q1/K-Z2/K-Z3/K-S1/K-S2 とも open 維持 — transition 要件を満たす
+  測定はなし)。(1) falsify run123A–C (K-Z3 9時台 n 積み増し, 09:48–09:49 JST,
+  同測定法 n=20 × 3 + landing control, control 静穏, host load1 22.5 は production
+  HTTP 実測のため gate 外): cold(≥0.5s) 2/60 (123A 単発 2 件 0.831/0.972s, B/C 完全静穏)。
+  (2) cosientist 第44回 run124A–C (旧 run123 と読み替え, 同時刻 09:48 JST の別計測,
+  ID 重複のため run105/run100 前例に従う): cold 0/60 完全静穏, control 静穏。
+  9時台通算は run122A–C (5/60) + run123A–C (2/60) + run124A–C (0/60) で 180 試行中
+  7 試行 (~3.9%) — 8時台 (0/180) に近い低位だが突発が run122 / run123A の 2 セット
+  あり、いずれも traffic 上昇帯に集中。朝帯 8時台 → 9時台の微増は K-Z3 traffic 依存説
+  の方向を弱く支持するが、traffic 最低帯の深夜で ~26% が維持されている事実は変化なく
+  説は確定しない。rank ブロックを第42回版から第43回版へ差替え (順位変動なし:
+  K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2。K-Z3 の記述を 9時台通算と突発 2 セットの
+  traffic 上昇帯集中に更新)。深夜/朝帯追加 n の限界利得低下は維持。
+  NEXT: K-Q1 engine 内訳計測 (backend 実行区間 ~635ms の内訳 — KV read 回数/CID 構造
+  の production 観測は gate 外で即実行可能な新規切れ手。9時台/深夜帯追加 n より
+  情報利得が高い)。
+git status of file: ''
+diff stat vs HEAD: '' ''

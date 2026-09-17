@@ -1,0 +1,4 @@
+To github.com:net-kotobase/docs
+   069c8d4..428dc0c  HEAD -> main
+428dc0c273e8c5f692f8cbc2a238700352d88c9e
+428dc0c273e8c5f692f8cbc2a238700352d88c9e

@@ -1,0 +1,4 @@
+run195A search: n=20 ok=20 cold(>=0.5s)=1 p50=282ms max=641ms
+run195B search: n=20 ok=20 cold(>=0.5s)=0 p50=185ms max=322ms
+run195C search: n=20 ok=20 cold(>=0.5s)=0 p50=168ms max=232ms
+landing control: n=20 ok=20 cold(>=0.5s)=0 p50=168ms max=276ms

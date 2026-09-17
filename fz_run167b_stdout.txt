@@ -1,0 +1,2 @@
+RC:0
+ls: fz_run167b_out.txt: No such file or directory

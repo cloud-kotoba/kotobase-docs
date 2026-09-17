@@ -1,0 +1,2 @@
+suspicious: [('现', '0x73b0'), ('稳', '0x7a33'), ('现', '0x73b0'), ('綜', '0x7d9c')]
+'- 2026-09-05: falsify 第63回。rank NEXT「委ねる」のフォールバック (K-Z3 現在時刻帯 n 積み増し) を受け、K-Z3 20時台帯初計測 run167A–C を同測定法で実施 (20:18 JST, production HTTP 実測のため gate 外, secret 不含): search cold(>=0.5s) 0/60 完全静穏だが p50 74–149ms と landing control (p50 119ms, cold 0/20) と同時上振れの run158 型部分全体遅延窓の可能性 (partially not-separated) — 20時台帯初計測。status 遷移なし (rank 専門)。NEXT: 委ねる (rank 指定優先; フォールバックは K-Z3 現在時刻帯 n 積み増し継続)。\n\n- 2026-09-03'

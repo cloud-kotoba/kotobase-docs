@@ -1,0 +1,10 @@
+=== add only query-cosientist.md ===
+=== staged ===
+query-cosientist.md
+=== commit ===
+[detached HEAD d6fb2e1] bench 第149回: K-Z3 12時台 run348 n積み増し (cold 0/60, sibling run347A heavy の約3分後 quiet — 帯内1窓即消失短時間減弱の追加観測) + iterlog
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+rc=0
+=== log ===
+d6fb2e1 bench 第149回: K-Z3 12時台 run348 n積み増し (cold 0/60, sibling run347A heavy の約3分後 quiet — 帯内1窓即消失短時間減弱の追加観測) + iterlog
+8e8f56f rank 150: fold falsify160 run345 (9/60) + bench148 run346 (3/60) -> K-Z3 12hr(9/7) 12/120 ~10% 2-set mid-high; run345A 6/20 heavy attenuated to run346 3/60 single-window; rank order unchanged; NEXT K-Z3 12hr n-add run347

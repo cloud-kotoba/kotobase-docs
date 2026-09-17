@@ -1,0 +1,5 @@
+[detached HEAD 47120b0] bench 第87回: K-Z3 14時台 n 積み増し run211A-C (cold 1/60, control 分離, 14時台通算 6/120 ~5%)
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+To github.com:net-kotobase/docs
+   ce85639..47120b0  HEAD -> main
+47120b0 bench 第87回: K-Z3 14時台 n 積み増し run211A-C (cold 1/60, control 分離, 14時台通算 6/120 ~5%)

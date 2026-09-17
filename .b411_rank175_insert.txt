@@ -1,0 +1,25 @@
+header_count= 1
+entry_present= True
+---HEAD1200---
+# query / worker / storage co-scientist — kotobase.net
+
+co-scientist アプローチ (仮説生成→反証→ランク→進化→メタレビュー) を
+kotobase.net の **query・worker・storage** 処理の改善に適用する。
+**測定のみ**が証拠。主観や雰囲気は証拠にならない。
+
+正本リポジトリ: `net-kotobase/docs` (このファイル)。
+fleet の cowork bot (net-kotobase-cosientist / -falsify / -rank / -bench) が
+このファイルの hypothesis population と Iteration log を通じてのみ協調する。
+
+## 対象と測定点
+
+| 軸 | 対象 | 測定点 | 正本 evidence |
+|---|---|---|---|
+| query | datom query (engine / gateway query 経路) | 認証済み warm query latency (p50/p95), Datalog point select | BISCUIT-AUTH-QUERY-BENCHMARK.md (2026-08-26 Tokyo: warm query p50 187.35ms / p95 219.51ms, n=30) |
+| worker | Cloudflare Workers (engine.kotobase.net, search.kotobase.net, gateway) | CPU time, error rate, cold start, / live smoke 200 | net-kotobase-maint の live smoke + CI |
+| storage | L2 storage hosting (content-addressed KG, 1 commit CID) | pack write/read, KOTOBASE_PACK_WRITES 効果, commit CID サイズ | engine repo (ADR-2608170300 step 1 testnet 有効化済み) |
+
+claim contract (初期):
+- 「query 軸: 認証済み warm query の p50 を 187.35ms 基準に測定改善 (同一測定法:
+  30 sequential + 3 warmup除外, nearest-rank, Node fetch接続再利用, Tokyo colo)」
+- 「worker 軸: 変更候補は production smoke (/, /signup 200) とエラー率を悪化さ

@@ -1,0 +1,42 @@
++ URL_S='https://search.kotobase.net/search?q=test'
++ URL_L=https://kotobase.net/
++ OUT=/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/docs/kz3_run107_out.txt
++ :
+++ date
++ echo 'start Sat Sep  5 03:34:54 JST 2026'
+++ date +%s
++ '[' 294 -ge 5 ']'
++ sleep 1
+++ date +%s
++ '[' 296 -ge 5 ']'
++ sleep 1
+++ date +%s
++ '[' 297 -ge 5 ']'
++ sleep 1
+++ date +%s
++ '[' 298 -ge 5 ']'
++ sleep 1
+++ date +%s
++ '[' 299 -ge 5 ']'
++ sleep 1
+++ date +%s
++ '[' 0 -ge 5 ']'
+++ date
++ echo '=== run107A direct-after Sat Sep  5 03:35:00 JST 2026 ==='
+++ seq 1 20
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
++ for i in $(seq 1 20)
++ curl -o /dev/null -s -w '%{http_code} %{time_starttransfer}\n' 'https://search.kotobase.net/search?q=test'
+
+[terminated after 8s]

@@ -1,0 +1,7 @@
+has ev: True
+has log: True
+ends with newline: False
+simplified chars anywhere: 3
+/20 p50 0.055s (max 0.105s) と静稳で control 分離成立。全 3 run 完全静稳 (
+ と静稳で control 分離成立。全 3 run 完全静稳 (run157 に続く 18時台 2 セット目の 0/6
+/20 p50 0.055s (max 0.089s) と静稳で control 分離成立。run158A–C 型の s

@@ -1,0 +1,30 @@
+988|  rank ブロックを第23回版から第34回版へ差替え (順位変動なし、K-Z3 の帯別分布に
+989|  深夜帯を追加)。host load1 30.22 (本 tick 実測 00:12) で gate (7.5) 超過継続の
+990|  ため K-Q1 local profiling は不実施。live smoke は / と /signup とも 200。
+991|  0時台 (00:00–00:59) への帯移行観測が次の情報利得 — 23時台 (~29–32%) が
+992|  深夜の高止まりなのか単一窓なのかを切分ける。
+993|  NEXT: K-Z3 0時台 (00:00 以降) n=20 × 3 + landing control (23時台 3 例連続の
+994|  cold 単独クラスタが 0時台でも再現するか — 連続再現なら traffic 依存説への
+995|  反証材料として重みが増す)。
+996|- 2026-09-05: cosientist 第7回。repo は detached HEAD (423c4d8, origin が付かない
+997|  manifest-rev 構成) で git pull --ff-only が不可だったため、git fetch net-kotobase +
+998|  checkout -B cosient-sync net-kotobase/main で正本に同期 (HEAD は a825a3b = rank 第34回
+999|  済み、未取り込み分なし)。新規 evidence: K-Z3 深夜帯 0時台 run102A–C (00:22–00:24 JST,
+1000|  rank 第34回 NEXT の 0時台帯移行観測を実行) — run102A cold 8/20 (前半クラスタ型) /
+1001|  run102B cold 1/20 / run102C cold 0/20, landing control cold 0/20 で control 分離成立。
+1002|  0時台最初の試行で 23時台と同型の cold 単独クラスタが出現し深夜帯連続再現は 4 例目 —
+1003|  traffic 最低帯での連続再現は K-Z3 traffic 依存説への反証材料として重みを増す
+1004|  (深夜帯通算 cold>0 75 試行中 23 試行 ~31%)。status 遷移なし: K-Z2/K-Z3 とも open 維持、
+1005|  */2 高頻度化介入は引き続き反証まで保留。rank 順位変動なし、本 tick は観測 tick で
+1006|  実装対象なし (open 仮説のうち qualify 確定の evidence を持つものはなし)。host load1
+1007|  35.50 (本 tick 実測 00:24) で gate (7.5) 超過継続のため K-Q1 local profiling は不実施。
+1008|  NEXT: K-Z3 0時台 n 積み増し継続 (帯発現率 2/3、確定には n 不足)。
+1009|
+1010|- 2026-09-05: falsify 第35回。新規 evidence: K-Z3 深夜帯 0時台 run103A–C (00:27–00:30 JST,
+1011|  n=20 × 3 + landing control, 全 200)。run103A/B/C cold 0/20, p50 0.067/0.078/0.116s,
+1012|  landing control cold 0/20 p50 0.101s で静穏 — run102A 型 cold クラスタは 0時台
+1013|  2 試行目では再現せず。0時台通算 cold>0 は 4 試行中 1 試行、深夜帯通算は
+1014|  78 試行中 23 試行 (~29.5%)。traffic 依存説に対しては 23時台〜0時台の連続再現
+1015|  (4 例) と本試行の消失が混在し、帯発現率はばらつき継続。status 遷移なし
+1016|  (rank 専門)。host load1 26.46 (tick 開始時) で K-Q1 local profiling gate
+1017|  (7.5) 超過のため不実施。NEXT: K-Z3 0時台 n 積み増し継続。

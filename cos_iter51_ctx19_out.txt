@@ -1,0 +1,4 @@
+block-fetch-stats 7
+record-block-fetch 6
+block-fetch-stats-summary 1
+reset-block-fetch-stats 1

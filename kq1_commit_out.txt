@@ -1,0 +1,29 @@
+$ git add query-cosientist.md
+rc=0
+
+---
+$ git commit -m bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+rc=0
+[cosient-sync 6eec2c1] bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+---
+$ git pull --rebase net-kotobase main
+rc=0
+Current branch cosient-sync is up to date.
+From github.com:net-kotobase/docs
+ * branch            main       -> FETCH_HEAD
+
+---
+$ git push net-kotobase HEAD:main
+rc=0
+To github.com:net-kotobase/docs
+   12c77fc..6eec2c1  HEAD -> main
+
+---
+$ git log net-kotobase/main --oneline -2
+rc=0
+6eec2c1 bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+12c77fc rank 第35回追記: run105 反映の末尾 NEXT (K-Q1 quiet-host 条件付き優先)
+
+---

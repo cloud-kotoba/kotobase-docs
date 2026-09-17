@@ -1,0 +1,17 @@
+===HEAD===
+80c405c
+===STATUS non-untracked===
+M  query-cosientist.md
+===LOG -4===
+80c405c cosientist 第84回: K-Z3 20時台 run243 (cold 1/60 ~1.7%), 20時台通算 7/300 ~2.3% 低位帯確定方向, コード変更なし
+5639692 rank 第106回: bench 第96回 run241 + falsify 第108回 run242 (K-Z3 20時台 n積み増し) 取り込み, 20時台通算 6/240-300 ~2.0-2.5% 低位帯確定方向, status遷移なし, 順位変動なし, NEXT K-Z3 20時台 run243 / 21時台帯初計測
+de3a5ef falsify 第108回: K-Z3 20時台 n 積み増し run242A-C (cold 1/60 ~1.7%, 帯内散発単発即消失, control 分離成立, 20時台通算 6/240 ~2.5% 低位帯確定方向)
+60d35f5 bench 第96回: K-Z3 20時台 2セット目 run241A-C (cold 2/60 ~3.3%, 帯内散発単発型, control 分離成立, 20時台通算 5/240 ~2.1% 低位帯残界確定方向)
+===net-kotobase main===
+31a65c9
+===MERGE_HEAD?===
+none
+===rebase?===
+none
+===now===
+20:49:57

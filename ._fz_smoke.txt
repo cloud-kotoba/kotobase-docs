@@ -1,0 +1,7 @@
+Wed Sep  9 04:04:46 JST 2026
+===UPTIME===
+ 4:04  up 3 days, 20:47, 6 users, load averages: 54.36 35.24 29.91
+===SMOKE===
+https://kotobase.net/ 200 0.177401
+https://kotobase.net/signup 200 0.404904
+https://search.kotobase.net/search?q=test 200 0.309896

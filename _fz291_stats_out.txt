@@ -1,0 +1,4 @@
+run291A: n=20 cold>=0.5s=1 p50(nr)=0.0482 min=0.0398 max=0.9367
+run291B: n=20 cold>=0.5s=1 p50(nr)=0.0452 min=0.0340 max=1.6194
+run291C: n=20 cold>=0.5s=0 p50(nr)=0.0496 min=0.0408 max=0.1523
+control: n=20 cold>=0.5s=0 p50(nr)=0.0423 min=0.0361 max=0.0551

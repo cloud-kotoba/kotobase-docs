@@ -1,0 +1,12 @@
+../../net-kotobase/control-plane/kotobase-api-gateway-cljs/src/kotobase/worker.cljc
+10:  transact/with + transit), PSA /pins, account/pin/usage (B2 mode), archive,
+330:(def ^:private tenant-cap-write-nsids #{"datomic.transact" "datomic.with"})
+1891:                               :details "XRPC quads pinning has no quota-enforcing backend; use graph transact followed by PSA /pins with meta.graph"}
+2317:              "link" "</api/q>; rel=\"successor-version\", </api/transact>; rel=\"successor-version\""
+2394:                   (tb/handle-transit-transact request env viewer nsid)
+2414:                   ;; tenant-cap datomic.transact plane (ADR-2607072330)
+2469:                                                     ;; d1モード: datomic.transact のみ proxy-to-kotoba-d1 へ
+2472:                                                     (if (and (proxy/datomic-prefer-d1? env) (= suffix "datomic.transact"))
+2473:                                                       (proxy/proxy-to-kotoba-d1 env "transact" (aget gate "body") did
+2805:          ;; only offer the self-facilitated `transaction` fallback rather than
+2807:          schemes (if (x402/facilitator-url env) ["exact" "transaction"] ["transaction"])]

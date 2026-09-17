@@ -1,0 +1,6 @@
+run175 hits: []
+
+K-Z3 lines: 1
+
+line 207 tail:
+ Tokyo, 22:49:35–22:49:41 JST, 全 80/80 200, host load1 6.77 は production HTTP 実測のため gate 外): run174A cold(>=0.5s) 0/20 p50 47ms / run174B cold 1/20 (0.998s, 20番目末尾の単発) p50 39ms / run174C cold 0/20 p50 47ms (0.033–0.088s) — 合計 1/60, landing control (kotobase.net/, 同時刻, n=20, 全 200) は cold 0/20 p50 48ms と静穏で control 分離成立 (cold 群は search 側単発, run168/169/173A 型)。22時台通算は run172 (5/60) + run173 (1/60) + run174 (1/60) = 7/180 (~3.9%) — 21時台 (~58%) より低位、18–20時台 (~2-3%) と同水準の低位側に更新。status 判定は rank に委ねる |

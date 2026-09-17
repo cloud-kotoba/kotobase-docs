@@ -1,0 +1,10 @@
+===STATUS===
+ M query-cosientist.md
+===DIFFSTAT===
+ query-cosientist.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+===HEAD===
+ffefff4af1104079d89866a9b0dd308f0475a020
+===FETCHHEAD===
+ffefff4af1104079d89866a9b0dd308f0475a020
+FETCH_HEAD

@@ -1,0 +1,4 @@
+search_A: n=20 codes={'200': 20} cold(>=0.5s)=3 p50=89.5ms p95=806.9ms max=889.4ms cold_positions=[(3, 806.9), (7, 690.8), (10, 889.4)]
+search_B: n=20 codes={'200': 20} cold(>=0.5s)=0 p50=56.5ms p95=165.2ms max=175.0ms cold_positions=[]
+search_C: n=20 codes={'200': 20} cold(>=0.5s)=0 p50=48.8ms p95=136.1ms max=143.9ms cold_positions=[]
+control: n=20 codes={'200': 20} cold(>=0.5s)=0 p50=89.0ms p95=339.1ms max=348.7ms cold_positions=[]

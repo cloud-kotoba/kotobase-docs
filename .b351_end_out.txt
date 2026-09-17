@@ -1,0 +1,7 @@
+LEN: 128433
+RAW TAIL 300: 'ol (kotobase.net/signup) cold 0/20 p50 47.0ms max 55.4ms 完全静穏で control 分離成立、cold 群は search 側に局在。run351A cold 4/20 は B/C 0/20 + control 0/20 で即消滅し「帯内 1 窓即消滅」散発クラスタ継続 (run350A 3/20 の ~9 分後弱い再出現, heavy>=6/20 は再達せず run331A 9/20 heavy 型は非再現継続)。13時台帯初計測 4/60 ~6.7% 中位帯初期サンプル。status 判定は rank に委ねる (rank 専門)。'
+
+run352 count: 0
+run351 count: 4
+tail-marker idx: 811
+context around marker: 'un192+run193+run194 で 4/180 (~2.2%) 低位帯。status 判定は rank に委ねる'

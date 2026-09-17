@@ -1,0 +1,20 @@
+===run328 runner files===
+ls: .fz328*: No such file or directory
+-rw-r--r--@ 1 junkawasaki  staff   743 Sep  7 08:09 .f328_fix2.py
+-rw-r--r--@ 1 junkawasaki  staff    35 Sep  7 08:09 .f328_fix2.txt
+-rw-r--r--@ 1 junkawasaki  staff  5264 Sep  7 08:04 .f328_insert.py
+-rw-r--r--@ 1 junkawasaki  staff    34 Sep  7 08:05 .f328_insert.txt
+-rw-r--r--@ 1 junkawasaki  staff  1221 Sep  7 08:03 .f328_out.json
+-rw-r--r--@ 1 junkawasaki  staff     5 Sep  7 08:05 .f328_rc.txt
+-rw-r--r--@ 1 junkawasaki  staff  2828 Sep  7 08:01 .f328_runner.py
+-rw-r--r--@ 1 junkawasaki  staff   573 Sep  7 08:05 .f328_verify.py
+-rw-r--r--@ 1 junkawasaki  staff    63 Sep  7 08:05 .f328_verify.txt
+===find any run329===
+ls: .f*run329*: No such file or directory
+===recent falsify runners===
+ls: .f312_runner*: No such file or directory
+-rw-r--r--@ 1 junkawasaki  staff  694 Sep  7 04:48 .fz306_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  706 Sep  7 05:18 .fz310_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  716 Sep  7 06:16 .fz317_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  716 Sep  7 07:03 .fz321_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  716 Sep  7 07:18 .fz322_runner.sh

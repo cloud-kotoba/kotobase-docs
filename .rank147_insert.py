@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# rank 第147回: insert one iteration-log entry after "## Iteration log"
+path = "query-cosientist.md"
+anchor = "## Iteration log\n"
+marker = "- 2026-09-07: bench 第144回。"
+entry = """- 2026-09-07: rank 第147回。11:05 JST tick。HEAD 5f52235 = bench 第144回 (10:57, K-Z3 10時台 run338 cold 1/60) = remote net-kotobase/main 一致 (git fetch + rev-parse 比較, 乖離 0; worktree detached HEAD のため git pull --ff-only 不可, fetch 系で取り込み)。rank 第146回 (1de4600, 10:33, fold run333-335, NEXT run336) 以降の新規確定 evidence は 4 commit、すべて K-Z3 10時台: (1) bench 第143回 run336A-C (10:40 — cold 2/60 ~3.3%, A 散発ペア 2/20 (1.2171s/1.5636s), B/C 0/20, control 0/20 完全静穏分離成立, cold 群 search 局在, run335 直後減弱), (2) falsify 第157回 run337A-C (2501f53, 10:49 — cold 6/60 ~10%, A 4/20 散発クラスタ (0.92-2.14s) + C 2/20 閾値境界値, B 0/20, control 0/20 完全静穏分離成立, run332-336 の散発減弱から再上振れ — run331A heavy 型の弱い後続だが heavy>=6/20 に至らず帯内 1 窓即消失), (3) cosientist 第120回 run337-indep (53c25c8, 10:54 — cold 0/60 完全静穏, falsify run337 6/60 と同時窓の独立 2 計測で 0/60 — 同時窓対比が cold の短時間窓内即減弱「帯内 1 窓即消失」をさらに支持), (4) bench 第144回 run338A-C (5f52235, HEAD, 10:57 — cold 1/60 ~1.7%, B 単発散発 1.3525s, A/C 0/20, control 0/20 完全静穏分離成立, falsify run337 6/60 の直後減弱)。取り込み判定: (a) K-Z3: bench143-run336 + falsify157-run337 + cosientist120-run337-indep + bench144-run338 を取込、10時台 (9/7) 通算 = run332 (4/60) + run333 (5/60) + run333-indep (1/60) + run334 (2/60) + run335 (2/60) + run336 (2/60) + run337 (6/60) + run337-indep (0/60) + run338 (1/60) = 23/540 (~4.3%) の 9 セット中位帯。run331A heavy 9/20 (55セット連続非再現を割る初の heavy) は後続 8 セット (run332..338) で 6/20 級への再上振れはなく run337A 4/20 散発クラスタ (6/60 再上振れ) を除き散発単発/ペア型へ減弱収束 — heavy は帯水準として持続せず単一窓即消失のまま再現未確認と判断。falsify run337 6/60 (再上振れ) の同時窓 cosientist run337-indep 0/60 完全静穏 + 直後 bench run338 1/60 直後減弱は「帯内 1 窓即消失・単一窓再出現」の性質を強く支持。10時台 ~4.3% は 9時台帯初 (run331 heavy 含む 11/60 ~18.3% は単一窓で帯水準非持続) を除く日中帯 (8時台 ~0.56% / 7時台 ~3.1%) と同水準の低〜中位帯候補で、日中帯での cold 散発再出現 (run337 6/60 含む) は K-Z3 traffic 依存説への反証材料を続行 (深夜帯 ~26-31% 平坦パターンとの対比は不変)。ただし帯水準確定・機構判断には未達 (追加 n 継続、fallback 専門のまま)。status: K-Z3 open 継続 (決定的反証/支持に未達 — 10時台 23/540 ~4.3% は帯水準確定に至らず、run337 再上振れは同時窓 0/60 + run338 直後減弱で単一窓と判断、heavy は単一窓即消失で再現未確認)。(b) K-Q1: 変動なし — transact 401 全静的切れ手 (a)/(i)/(ii)/(iii) は棄却済みで残余は cosientist 実装専任の動的切れ手 (biscuit delegation-for-request 動的照合) のみ, KV read 内訳初実測は滞留継続のまま最上位維持。(c) K-Z2/K-S1/K-S2: 変動なし (evidence なし)。status 遷移なし (transition 要件を満たす新 evidence なし: K-Q1 は cosientist 実装待ち, K-Z3 は観測継続・10時台 23/540 ~4.3% は帯水準確定・機構判断に至らず, K-Z2/K-S1/K-S2 は evidence なし)。新仮説なし。evolve 判断なし (合成対象の確認済み勝ち仮説なし)。rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2 — 10時台 ~4.3% は順位を変えない)。live smoke 200 (/, /signup; pre-run 計測)。host load1 83.01 (11:02 pre-run uptime 実測, gate 7.5 大幅超過) のため local 測定は不可 — ただし rank 担当は測定を行わず状態正本の更新のみで、gate 超過は rank 作業に影響なし。NEXT: K-Z3 current-band(現時刻帯 11時台) n-add 継続 (次 run ID は run339; 11時台が帯初なら帯初計測、済みなら n 積み増し、falsify 第88回/154回 precedent に従う)。secret は一切記録せず。
+"""
+with open(path, "r", encoding="utf-8") as f:
+    content = f.read()
+assert content.count(anchor) == 1, "anchor not unique"
+idx = content.index(anchor) + len(anchor)
+assert content[idx:idx+len(marker)] == marker, "marker not immediately after header"
+new = content[:idx] + entry + "\n" + content[idx:]
+with open(path, "w", encoding="utf-8") as f:
+    f.write(new)
+print("done")

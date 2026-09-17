@@ -1,0 +1,26 @@
+$ git branch -vv --all
+* (HEAD detached from eee3314)                     8847fdd falsify: K-Q1 engine 内訳計測 第3段 (rank 第43回 NEXT, K-Q2 harness 10:29 JST): authenticated warm query p50 683.73ms / p95 995.39ms (200 30/30, NRT) — 第2段と同水準で退行存続。同窓 Biscuit verify p50 17.28ms / gateway auth check p50 10.78ms — auth plane 計 ~28ms で 退行分 ~+470ms は backend query 実行区間に帰属確定、残る切れ手は engine KV read 内訳
+  cosient-sync                                     6eec2c1 [net-kotobase/main: behind 31] bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+  main                                             d4b6aca [net-kotobase/main: behind 13] rank 第40回: bench 第40回 K-Q1 計測第2段 (K-Q2 harness 再使用 TTFB/total 分解: authed warm p50 656.70/654.61ms, TTFB≈total — gateway auth check 20.11/21.31ms との差分 ~635ms が backend 実行区間に帰属, 2 run 再現 — 退行主体 engine/KV 側で確定) と K-Z3 (run114A-C 5時台 0/60, cosientist run105A-C 6時台, bench run115A-C 6時台 0/60 — 深夜通算 95 試行中 29 ~30.5%) を取り込み, rank ブロック第40回版へ差替え (順位変動なし) + Iteration log 第40回 + NEXT (K-Z3 6時台 n 積み増し継続)
+  manifest-rev                                     423c4d8 docs: publish Biscuit auth query benchmark (#2)
+  rank-sync                                        eee3314 [net-kotobase/main: behind 1] rank 第43回: K-Z3 9時台 n 積み増し 2 evidence 取り込み (falsify run123A-C cold 2/60 + cosientist run124A-C 0/60 — 9時台通算 7/180 ~3.9%, 突発 2 セットは traffic 上昇帯集中, traffic 依存説を弱く支持するが深夜 ~26% 維持で確定せず) — rank ブロック第43回版へ差替え, 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2), status 遷移なし。NEXT: K-Q1 engine 内訳計測
+  remotes/net-kotobase/HEAD                        -> net-kotobase/main
+  remotes/net-kotobase/cosient-20260905-run123-obs 22bad92 cosientist 第44回: K-Z3 9時台 n 積み増し 09:48 JST 計測 (cold 0/60 完全静穏, control 静穏 — falsify run123 同時刻別計測 2/60 と ID 重複のため本分は run124 として読み替え記録, 9時台通算 7/180)
+  remotes/net-kotobase/main                        8847fdd falsify: K-Q1 engine 内訳計測 第3段 (rank 第43回 NEXT, K-Q2 harness 10:29 JST): authenticated warm query p50 683.73ms / p95 995.39ms (200 30/30, NRT) — 第2段と同水準で退行存続。同窓 Biscuit verify p50 17.28ms / gateway auth check p50 10.78ms — auth plane 計 ~28ms で 退行分 ~+470ms は backend query 実行区間に帰属確定、残る切れ手は engine KV read 内訳
+
+---
+$ git log HEAD..origin/main --oneline
+fatal: ambiguous argument 'HEAD..origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+---
+$ git symbolic-ref HEAD
+fatal: ref HEAD is not a symbolic ref
+
+---
+$ git remote -v
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+
+---

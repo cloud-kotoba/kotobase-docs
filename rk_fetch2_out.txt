@@ -1,0 +1,13 @@
+FETCH rc=0
+
+
+== LOG_REMOTE_MAIN rc=0
+2304859 bench: K-Z3 midnight 23h run101A-C evidence (101A cold 3/20 scattered 1.08-1.52s, 101B-C cold 0/20, control clean, 3rd consecutive midnight cold-cluster like run99A/100A)
+8607811 falsify: K-Z3 midnight 23h run100A-C evidence (100A cold 2/20 scattered 1.073/2.062s, 100B-C cold 0/20, control clean, separate from cosientist run99)
+62dcc2b cosientist K-Z3 night 23:00-hour run99A-C evidence + iteration log (evidence-append + log)
+22244de rank 第33回: 新規 evidence なし, 深夜帯 (23:23 JST) 到達のため NEXT を K-Z3 深夜帯 n=20 x 3 + control に切替, status 遷移なし
+e9024bb rank 第32回: K-Z3 夜帯 22時台 run97A-C/run98A-C 取り込み, status 遷移なし, NEXT 22時台継続/深夜到達時はそちら優先
+== LOCAL_HEAD rc=0
+423c4d8 docs: publish Biscuit auth query benchmark (#2)
+86c6f2c security: add a repository-specific SECURITY.md
+d0fa1f0 security: state how to report, what the boundary is, and what is not claimed

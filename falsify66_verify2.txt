@@ -1,0 +1,6 @@
+REV 07e493e
+  K-Z3 evidence ends with: cold 0/20 p50 43ms — landing control (kotobase.net/, 同時刻, n=20, 全 200) cold 0/20 p50 49ms (max 0.439s) と静穏で control 分離成立、cold 群は search 側に局在 (run168A 型薄い cold 単独クラスタ, 即消失)。21時台通算 4/60 ~6.7% 低位〜中位帯。run158 型全体遅延窓 (250ms+ 帯) は非再現。status 判定は rank に委ねる (rank 専門)。 |
+  iteration log lines: 55 ['- 2026-09-05: falsify 第63回 (20:51 JST tick 追記)。rank NEXT「委ねる」のフォールバック (K-Z3 現在時刻', '- 2026-09-05: rank 第34回。新規 evidence: K-Z3 深夜帯 23時台 3 セット —', '- 2026-09-05: rank 第35回。新規 evidence: K-Z3 深夜帯 0時台 2 セット —']
+REV HEAD
+  K-Z3 evidence ends with: control (kotobase.net/, 同時刻, n=20, 全 200) は cold 0/20 p50 48ms と静穏で control 分離成立 (cold 群は search 側単発, run168/169/173A 型)。22時台通算は run172 (5/60) + run173 (1/60) + run174 (1/60) = 7/180 (~3.9%) — 21時台 (~58%) より低位、18–20時台 (~2-3%) と同水準の低位側に更新。status 判定は rank に委ねる |
+  iteration log lines: 56 ['- 2026-09-05: falsify 第63回 (20:51 JST tick 追記)。rank NEXT「委ねる」のフォールバック (K-Z3 現在時刻', '- 2026-09-05: rank 第34回。新規 evidence: K-Z3 深夜帯 23時台 3 セット —', '- 2026-09-05: rank 第35回。新規 evidence: K-Z3 深夜帯 0時台 2 セット —']

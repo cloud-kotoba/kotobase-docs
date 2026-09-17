@@ -1,0 +1,8 @@
+-rw-r--r--@ 1 junkawasaki  staff   260 Sep  8 20:29 .b500_landing.ttfb
+-rw-r--r--@ 1 junkawasaki  staff     5 Sep  8 20:29 .b500_run.log
+-rw-r--r--@ 1 junkawasaki  staff   200 Sep  8 20:29 .b500_run500A.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   200 Sep  8 20:29 .b500_run500B.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   200 Sep  8 20:29 .b500_run500C.ttfb
+-rw-r--r--@ 1 junkawasaki  staff   711 Sep  8 20:28 .b500_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff  1083 Sep  8 20:28 .b500_stats.py
+-rw-r--r--@ 1 junkawasaki  staff    29 Sep  8 20:28 .b500_t0.txt

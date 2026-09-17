@@ -1,0 +1,4 @@
+A: n=20 codes=200 cold(>=500ms)=4/20 cold_ms=[808.7, 799.8, 1009.7, 1411.9] p50=119.2ms p95=1009.7ms max=1411.9ms
+B: n=20 codes=200 cold(>=500ms)=1/20 cold_ms=[854.2] p50=67.9ms p95=144.9ms max=854.2ms
+C: n=20 codes=200 cold(>=500ms)=0/20 cold_ms=[] p50=60.1ms p95=142.7ms max=171.5ms
+ctl: n=20 codes=200 cold(>=500ms)=1/20 cold_ms=[621.3] p50=144.3ms p95=490.3ms max=621.3ms

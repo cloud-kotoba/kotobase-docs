@@ -1,0 +1,2 @@
+well_known=200
+    6293 .b532_wk.json

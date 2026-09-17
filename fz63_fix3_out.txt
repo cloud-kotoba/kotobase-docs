@@ -1,0 +1,2 @@
+moji1 remaining: 0
+'- 2026-09-05: falsify 第63回。rank NEXT「委ねる」のフォールバック (K-Z3 现在時刻帯 n 積み増し) を受け、K-Z3 20時台帯初計測 run167A–C を同測定法で実施 (20:18 JST, production HTTP 実測のため gate 外, secret 不含): search cold(>=0.5s) 0/60 完全静稳だが p50 74–149ms と landing control (p50 119ms, cold 0/20) と同時上振れの run15'

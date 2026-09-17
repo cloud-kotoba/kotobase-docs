@@ -1,0 +1,2 @@
+[detached HEAD 5ccd827] falsify 第82回: K-Z3 run205A-C (10時台 4セット目) evidence 追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)

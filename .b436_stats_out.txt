@@ -1,0 +1,6 @@
+ run436A n=20 code200=20/20 cold=2/20 p50=142.8ms max=1637.3ms
+ run436B n=20 code200=20/20 cold=0/20 p50=123.4ms max=263.3ms
+ run436C n=20 code200=20/20 cold=0/20 p50=77.2ms max=229.2ms
+ landing n=20 code200=20/20 cold=0/20 p50=177.9ms max=289.5ms
+---VERDICT---
+search cold total=2/60; landing cold=0/20 -> control clean separation cold level confined to search side

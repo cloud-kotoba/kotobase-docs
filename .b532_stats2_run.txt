@@ -1,0 +1,6 @@
+A: 200 20/20 cold 4/20 p50 47.1ms p95 1136.6ms max 1263.5ms
+B: 200 20/20 cold 1/20 p50 46.3ms p95 238.3ms max 1294.2ms
+C: 200 20/20 cold 0/20 p50 41.2ms p95 49.9ms max 66.1ms
+CTRL: 200 20/20 cold 0/20 p50 39.4ms p95 55.4ms max 59.0ms
+05:18:31
+ 5:18  up 8 days, 22:01, 6 users, load averages: 10.43 11.18 12.21

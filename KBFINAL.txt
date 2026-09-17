@@ -1,0 +1,5 @@
+L=
+5c53939b888abce29bf4d9502a3d4578c4d1503c
+R=
+5c53939b888abce29bf4d9502a3d4578c4d1503c
+/opt/homebrew/bin/bash: 行 5: echo-: command not found

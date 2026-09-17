@@ -1,0 +1,2 @@
+v26.0.0
+ls: node_modules/@noble: No such file or directory

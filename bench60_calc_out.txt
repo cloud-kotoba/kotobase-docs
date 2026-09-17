@@ -1,0 +1,4 @@
+run174A n=20 codes=['200'] cold(>=0.5s)=0 [] p50=0.047s min=0.036 max=0.088
+run174B n=20 codes=['200'] cold(>=0.5s)=1 ['20番目 0.997911s'] p50=0.039s min=0.033 max=0.998
+run174C n=20 codes=['200'] cold(>=0.5s)=0 [] p50=0.047s min=0.037 max=0.072
+LC n=20 codes=['200'] cold(>=0.5s)=0 [] p50=0.048s min=0.040 max=0.265

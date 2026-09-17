@@ -1,0 +1,5 @@
+ltxt=200
+44:- Kotobase is the content-addressed graph state layer: https://kotobase.net/
+60:- Graph CLI and MCP onboarding: https://kotobase.net/agent-quickstart.md
+64:- Graph documentation: https://kotobase.net/llms-full.txt
+lfull=200 size=    7636

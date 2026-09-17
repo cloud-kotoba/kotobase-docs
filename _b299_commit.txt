@@ -1,0 +1,3 @@
+[detached HEAD 84a2e64] bench 123: K-Z3 3hr(deep-night) n-add run299A-C cold 1/60 (run299A single-scatter 1.3222s, B/C 0/20, control 0/20 quiet sep; heavy run271A 25-sets non-reproduced; 3hr cum 8/540 ~1.5% 9-set, deep-night 30/1500 ~2.0% 25-set, traffic-independence counter-evidence continues; status/rank to rank)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+rc=0

@@ -1,0 +1,8 @@
+RC=1
+
+---STDERR---
+npm error Missing script: "test:cljs"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/junkawasaki/.npm/_logs/2026-09-05T09_49_44_868Z-debug-0.log

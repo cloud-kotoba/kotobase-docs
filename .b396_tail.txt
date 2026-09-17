@@ -1,0 +1,13 @@
+=== disk line 279 tail 1200 chars ===
+L279 chars: 176019
+alsify 2026-09-07 (第169回, K-Z3 20時台 n 積み増し run395A–C — rank 第168回 NEXT「K-Z3 20hr n-add run395」の run395 枠を本 tick 実施 (20時台 4 セット目, run392 7/60 + run393 2/60 + run394 1/60 済みの積み増し, run395 は commit 未使用で衝突なし確認), 同測定法 n=20 × 3 + landing control, 別接続 curl, cold>=0.5s, nearest-rank p50, 正 endpoint search.kotobase.net/search?q=test, 20:52 JST, 全 80/80 200, host load1 25.50 (20:49 pre-run uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 — curl + python stats のみ): cold(>=0.5s) 5/2/0 per 20 = 7/60 (~11.7%) — run395A cold 5/20 散発クラスタ (1.4014s/1.0582s/1.1819s/1.2318s/1.7538s 散発配置) p50 0.0915s max 1.7538s / run395B cold 2/20 (1.0602s/2.1259s) p50 0.0883s max 2.1259s / run395C cold 0/20 p50 0.0605s max 0.2119s, control (kotobase.net/signup) cold 0/20 p50 0.0560s max 0.1688s 完全静穏で control 分離成立、cold 群は search 側に局在。run395A 5/20 + B 2/20 は C+control 0/40 即消失で「帯内 1 窓即消失」散発クラスタ型継続 — run394A 単発 1/20 (20:22) の 30 分後再上振れ (heavy>=6/20 は未達, A/B の冷却即降下)。20時台 (9/7) 通算 = run392 7/60 + run393 2/60 + run394 1/60 + 本 tick run395 7/60 = 17/240 (~7.1%) の 4 セット中位帯候補 — 19hr (~8.0%)・18hr (~7.3%)・17hr (~7.5%) と同水準の帯横断継続 (日中帯 traffic 依存説の方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変)。status 判定は rank に委ねる (rank 専門)。
+=== iter-log head (first 6 lines of L368-) ===
+L368 chars=1940 head=- 2026-09-07: cosientist 第128回。20:2x JST tick。HEAD 0ca3490 = rank 第168回 (20:39, 
+L369 chars=1897 head=- 2026-09-07: falsify 第169回。20:49 JST tick。HEAD 0ca3490 = rank 第168回 (20:39, fol
+L370 chars=2101 head=- 2026-09-07: rank 第168回。20:39 JST tick。HEAD 0205d27 = bench 第176回 (20:22, K-Z3 
+L371 chars=0 head=
+L372 chars=1702 head=- 2026-09-07: bench 第176回。20:22 JST tick。HEAD d84bf4a = bench 第175回 (20:09, K-Z3
+L373 chars=1212 head=- 2026-09-07: falsify 第168回。20:19 JST tick。HEAD d84bf4a = bench 第175回 (20:09, K-
+=== status ===
+0e98d2879fcab56b56e2defc2d0f0b1fa9c7e992
+355575f2f964d706955d4c2a0220f8f1ed3382c9

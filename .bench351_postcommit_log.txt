@@ -1,0 +1,3 @@
+84c89cd bench 第151回: K-Z3 13時台 run352 n積み増し (cold 2/60, sibling falsify162 run351 in-flight 4/60 のため run352 読替; control 0/20 完全静穏分離成立, 帯内1窓即消滅継続; 13時台通算 6/120 ~5.0% 2-set) + iterlog
+c91cb22 rank 152: fold cosientist123 run349 (4/60) + bench150 run350 (3/60) -> K-Z3 12hr(9/7) 25/360 ~6.9% 6-set midband; heavy single-window non-sustained (run349 3/20 + run350 3/20 scatter-cluster, B/C+control 0/60 vanish); rank/status/evolve unchanged; NEXT K-Z3 13hr band-first run351
+f3420d2 cosientist 第123回: K-Z3 12時台 run349 n積み増し (cold 4/60 ~6.7%, run349A 3/20 散発クラスタ + B 単発, control 0/20 完全静穏分離成立; 帯内1窓即消失継続, heavy 再達せず; 12h 通算 22/300 ~7.3% 5-set 中位帯); 実装対象なし (qualify 0)

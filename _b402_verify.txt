@@ -1,0 +1,7 @@
+TOTAL_LINES 2379
+HDR 369
+AFTER_HDR_FIRST60 '- 2026-09-07: bench 第182回。22:33 JST tick。HEAD 8568136 = rank'
+AFTER_HDR_HAS_B182 True
+KZ3_LINE 279 LEN 183717
+KZ3_HAS_B182 True
+KZ3_TAIL '%) 高位帯 — 21時台 (19/300 ~6.3%)・20時台 (~5.6%) より高位で夜帯 traffic 遷移説の弱い支持方向継続、日中低位帯 (~2–7%) との対比顕著, A 両セット 7/20 散発/heavy で重複再現\n'

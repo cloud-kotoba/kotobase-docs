@@ -1,0 +1,5 @@
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/search-origin/wrangler.jsonc
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/ipfs/wrangler.jsonc
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/cypher/wrangler.jsonc
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/lake/wrangler.jsonc
+/Users/junkawasaki/github/com-junkawasaki/orgs/net-kotobase/engine/wrangler.jsonc

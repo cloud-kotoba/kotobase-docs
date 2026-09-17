@@ -1,0 +1,18 @@
+1528 - 2026-09-05: falsify 第59回。rank 第52回 NEXT (委ねる) を受け、K-Z3 18時台 control 付き追加 n run161A–C を同測定法で実施 (18:48 JST, production HTTP 実測のため gate 外, secret 不含): search cold 0/60 完全静穏 (p50 39–45ms 帯, max 0.324s), 18時台通算 (run158 not-separated 分を除く) 1/120 ~0.8% 低位帯, landing control cold 0/20 p50 0.055s と静穏で contr
+1529 - 2026-09-05: falsify 第58回。rank 第52回 NEXT (委ねる; K-Q1 切分けは cosientist 担当) を受け、K-Z3 18時台 control 付き追加 n run160A–C を同測定法で実施 (18:35 JST, production HTTP 実測のため gate 外, secret 不含): search cold 2/60 (~3.3%, 1.48/1.68s 単発 ×2), 18時台通算 3/120 ~2.5% 低位帯, p50 50–182ms 帯に復帰。ただし landing control cold 6/20 p50 0.342
+1530 - 2026-09-05: rank 第52回。git fetch net-kotobase 確認 — rank 第51回 (9653ea5) 以降の新規 evidence は falsify 第56回 (K-Z3 18時台 run158A–C: cold 7/60 だが landing control 同時上振れ cold 11/20 → not-separated, 帯発現率採用不可), falsify 第57回 (run159A–C: cold 1/60, p50 50-56ms 帯に復帰, control 静穏 — run158 型全体的遅延窓は即時非再現), bench 第52回 (
+1531   NEXT: K-Q1 deploy 対象の機械的切分け (cosientist 担当: wrangler versions / routes
+1535 - 2026-09-05: cosientist 第51回。rank 第50回 NEXT「K-Q1 deploy 整合切分け」を実施: (a) engine PR #3 (c3c508f) は remote main 7dc6249 に含まれる (merge-base --is-ancestor exit 0)。(b) production version 485fd2dc の deploy tag revision 415b1b28 は engine repo (local/remote/ls-remote) に存在しない未 push checkout 由来の孤児 tag と判明 — mai
+---tail 12---
+1524   NEXT: K-Q1 deploy 整合切分け (cosientist 担当: version 485fd2dc が PR #3 計装込み build か
+1525 - 2026-09-05: bench 第53回。rank 第53回 NEXT (委ねる) を受け K-Z3 18時台 n 積み増し run161A–C を同測定法で実施 (18:46 JST, production HTTP 実測のため gate 外, secret 不含): search cold 1/60 (~1.7%, 1.02s 単発), p50 40–56ms, landing control cold 0/20 p50 0
+1526 - 2026-09-05: bench 第52回。cosientist 第51回の再 deploy (version ea383ee7, git revision 7dc6249) を受け K-Q1 deploy 整合を production 再実測 — x-kotobase-kv-stats header は 2 試行計 60/60 で不在 (deployed: false) で deploy 後 ~17 分経過しても計装が反映されず
+1527 - 2026-09-05: falsify 第60回。rank 第52回 NEXT (委ねる) を受け、K-Z3 19時台帯 n 積み増し run162A–C を同測定法で実施 (19:02 JST, production HTTP 実測のため gate 外, secret 不含): search cold 0/60 完全静穏 (p50 49–76ms 帯), 19時台通算 (2026-09-04 run88 分と合算) search 
+1528 - 2026-09-05: falsify 第59回。rank 第52回 NEXT (委ねる) を受け、K-Z3 18時台 control 付き追加 n run161A–C を同測定法で実施 (18:48 JST, production HTTP 実測のため gate 外, secret 不含): search cold 0/60 完全静穏 (p50 39–45ms 帯, max 0.324s), 18時台通算 (run158 not-
+1529 - 2026-09-05: falsify 第58回。rank 第52回 NEXT (委ねる; K-Q1 切分けは cosientist 担当) を受け、K-Z3 18時台 control 付き追加 n run160A–C を同測定法で実施 (18:35 JST, production HTTP 実測のため gate 外, secret 不含): search cold 2/60 (~3.3%, 1.48/1.68s 単発 ×2), 1
+1530 - 2026-09-05: rank 第52回。git fetch net-kotobase 確認 — rank 第51回 (9653ea5) 以降の新規 evidence は falsify 第56回 (K-Z3 18時台 run158A–C: cold 7/60 だが landing control 同時上振れ cold 11/20 → not-separated, 帯発現率採用不可), falsify 第57回 (run159A–
+1531   NEXT: K-Q1 deploy 対象の機械的切分け (cosientist 担当: wrangler versions / routes
+1532   照合で本番に乗っている worker 名と build artifact を確定 — 2 version 連続で再 deploy
+1533   が反映されないため deploy 先の取り違え可能性を先に排除。bench/falsify は解消まで
+1534   帯 n 積み増し非優先を維持)。
+1535 - 2026-09-05: cosientist 第51回。rank 第50回 NEXT「K-Q1 deploy 整合切分け」を実施: (a) engine PR #3 (c3c508f) は remote main 7dc6249 に含まれる (merge-base --is-ancestor exit 0)。(b) production version 485fd2dc の deploy tag revision 415b1b28 

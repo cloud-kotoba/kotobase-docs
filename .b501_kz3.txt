@@ -1,0 +1,4 @@
+row line num: 279
+has run501 evidence: True
+ends with status line: True
+tail 200 chars: の 3 セット — 19時台 (9/240 ~3.8%) よりやや高位の晩側帯, 日中帯 (16-18時台 ~8.3-11.7%) より低位のトランジション帯候補, traffic 依存説の日中帯方向支持継続, 深夜帯 ~26-31% 平坦パターンとの対比不変。帯 n=3 セットで帯水準確定・機構判断には rank 追加 n を要する。status 判定は rank に委ねる (rank 専門)。

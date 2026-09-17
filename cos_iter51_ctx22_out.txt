@@ -1,0 +1,12 @@
+--- 5106
+nters." |   [] |   (reset! block-fetch-stats {:l1 0 :l2 0 :pack 0 :b2 0 :miss 0 :distinct #{}})) |  | (defn record-block-fetch! |   "Observe one block fetch resolution. s
+--- 5987
+r |    later via another writer's flush!)." |   [env graph cid] |   (if-some [hit (l1-get! cid)] |     (do (record-block-fetch! :l1 cid) |         (js/Promise.resolve hit
+--- 6151
+     (-> (l2-get cid) |         (.then (fn [l2-hit] |                  (if l2-hit |                    (do (record-block-fetch! :l2 cid) |                        (l1-put!
+--- 6648
+  (.then (fn [packed] |                                 (if packed |                                   (do (record-block-fetch! :pack cid) packed) |                      
+--- 7079
+    (.then (fn [bytes] |                                 (if bytes |                                   (do (record-block-fetch! :b2 cid) |                                
+--- 7291
+                 (-> (l2-put cid bytes) (.then (fn [_] bytes)))) |                                   (do (record-block-fetch! :miss cid) nil))))))))))) |  | (defn fetch-b

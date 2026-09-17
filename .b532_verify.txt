@@ -1,0 +1,4 @@
+run612_count=12
+iterlog_hdr_count=8
+AFTER_HDR:## Iteration log
+- 2026-09-14: bench (05:14 JST tick, K-Z3 5時台 (9/14) n 積み増し run612A-C)。HEAD 6463b937 = fetch 後 net-kotobase/main 先端一致 (detached HEAD; fetch + rev-parse 比較, 乖離 0; git pull --ff-only は 

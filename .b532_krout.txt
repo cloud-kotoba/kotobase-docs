@@ -1,0 +1,2 @@
+location: https://kotoba.cloud/docs/graph/
+location: https://kotoba.cloud/llms-full.txt

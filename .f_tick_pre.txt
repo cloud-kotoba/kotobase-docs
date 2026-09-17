@@ -1,0 +1,8 @@
+===pre-edit HEAD===
+85e69b558a14f55c8153c6ca22cde3132f10a4fd
+===remote===
+85e69b558a14f55c8153c6ca22cde3132f10a4fd	refs/heads/main
+===status===
+ M query-cosientist.md
+===K-Z3 row line number===
+K-Z3 at line 279 len 106077

@@ -1,0 +1,2 @@
+log appended, new size: 231514
+evidence occurrences: 2

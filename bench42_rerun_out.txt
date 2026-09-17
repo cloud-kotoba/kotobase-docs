@@ -1,0 +1,5 @@
+time: 2026-09-05 08:32:10 JST
+A all=20 ok=20 cold(>=0.0s)=0 p50=0.038s warm range=0.034-0.094
+B all=20 ok=20 cold(>=0.0s)=0 p50=0.050s warm range=0.036-0.068
+C all=20 ok=20 cold(>=0.0s)=0 p50=0.041s warm range=0.035-0.070
+landing all=20 ok=20 cold(>=0.0s)=0 p50=0.041s warm range=0.032-0.083

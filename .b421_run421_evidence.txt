@@ -1,0 +1,14 @@
+bench run421 (K-Z3 5時台帯初計測, 2026-09-08 05:25-05:29 JST):
+ production HTTP (host load1 15.6-26.9, pre-run 05:22～05:29 実測, gate 7.5 超過だが production 実測は gate 外).
+ MEASURED run421A-C: cold(>=0.5s TTFB) 3/0/1 per 20 =  Ͱ4/60 ~6.7%.
+  run421A cold 3/20 (0.8581/1.2995/0.8796s 散発配置, p50 119.5ms max 1.2995s);
+  run421B cold 0/20 p50 73.8ms max 182.7ms;
+  run421C cold 1/20 (1.5194s 単発) p50 62.7ms max 1.5194s.
+
+ landing control (kotobase.net/signup, 同時刻, n=20, 全 200): cold 0/20 p50 47.4ms max 172.8ms と静穏で control 分離成立, cold 群は search 側に局在.
+.
+ verdict: not-separated は不成立 (control clean, cold 4/60 は search 側局在;機構判定は rank に委ねる (rank 専門).
+ secret 不含 (curl only, no credential/token/cookie.
+ raw data: .b421_run421_A.txt / _B.txt / _C.txt / _land.txt + .b421_stats_out.txt (nearest-rank p50, cold>=0.5s, per-file cold count, 200 codes 20/20/20/20.
+ qc 追記/commit は本 tick 不可 — query-cosientist.md は並行 cron (sibling) により常時再生成/676 行小额区 truncated され contention (sibling holds it; run419 と同型急 – rank は scratch evidence fold へ読替可能.
+ my HEAD commits は reset で破棄済み。

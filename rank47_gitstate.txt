@@ -1,0 +1,27 @@
+=== branch ===
+
+=== HEAD ===
+c02871d falsify 第51回: K-Z3 13時台 n 積み増し run151A-C (cold 4/60 ~6.7% 低位散発型, control 静穏 — 13時台帯初計測, 12時台 ~8.3% と同程度) + K-Q1 PR #3 未 deploy 確認 (x-kotobase-kv-stats header 不在, deploy 後計測は不可)
+=== branch -a ===
+* (HEAD detached from 0a637f1)
+  bot/cosient-20260905-kz3-run129
+  cosient-sync
+  main
+  manifest-rev
+  rank-sync
+  remotes/net-kotobase/HEAD -> net-kotobase/main
+  remotes/net-kotobase/bot/cosient-20260905-kz3-run129
+  remotes/net-kotobase/cosient-20260905-run123-obs
+  remotes/net-kotobase/main
+=== status head ===
+dirty_files=570
+=== origin/main ===
+fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+=== rev-parse HEAD vs origin/main ===
+HEAD=c02871d0237d2ad9b6bd9ea7df8f423b68018ea3
+ORIG=origin/main
+fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'

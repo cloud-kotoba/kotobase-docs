@@ -1,0 +1,5 @@
+A: n=20 codes=['404'] cold(>=0.5s)=0 [] p50=37.6ms p95=42.6ms max=78.6ms ttfb_p50=37.5ms
+B: n=20 codes=['404'] cold(>=0.5s)=0 [] p50=39.3ms p95=71.3ms max=119.2ms ttfb_p50=39.2ms
+C: n=20 codes=['404'] cold(>=0.5s)=1 [523.684] p50=36.1ms p95=69.0ms max=523.7ms ttfb_p50=35.8ms
+landing: n=20 codes=['200'] cold(>=0.5s)=0 [] p50=54.1ms p95=68.4ms max=79.6ms ttfb_p50=44.3ms
+2026-09-13T18:43:04Z

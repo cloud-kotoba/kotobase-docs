@@ -1,0 +1,5 @@
+run194A: 200 20/20, cold 3/20, p50 167ms, warm p50 165ms, max 1184ms
+run194B: 200 20/20, cold 0/20, p50 174ms, warm p50 174ms, max 402ms
+run194C: 200 20/20, cold 0/20, p50 224ms, warm p50 224ms, max 497ms
+control: 200 20/20, cold 0/20, p50 209ms, max 399ms
+['08:01:47 JST', ' 8:01  up 1 day, 44 mins, 11 users, load averages: 219.52 125.71 92.24']

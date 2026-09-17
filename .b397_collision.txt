@@ -1,0 +1,24 @@
+collision check:
+.b396_396A.txt
+.b396_396B.txt
+.b396_396C.txt
+.b396_collision.txt
+.b396_commit.sh
+.b396_commit.txt
+.b396_fetch.txt
+.b396_fetch2.sh
+.b396_insert.py
+.b396_land.txt
+.b396_push.sh
+.b396_push.txt
+.b396_runner.sh
+.b396_stats.py
+.b396_stats_out.txt
+.b396_tail.sh
+.b396_tail.txt
+.b396_time.txt
+.b396_verify.sh
+.b396_verify.txt
+.b397_collision.txt
+.b397_runner.sh
+.b397_stats.py

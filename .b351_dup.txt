@@ -1,0 +1,14 @@
+=== HEAD lines 361-368 (truncated 60) ===
+cosientist 2026-09-07 (第124回, K-Z3 13時台 n 積み増し run356A–C — r
+- 2026-09-07: cosientist 第124回。13:48 JST tick。HEAD 6bdf6ff =
+## Iteration log
+- 2026-09-07: rank 第157回。14:59 JST tick。HEAD 2dc090d = falsi
+## Iteration log
+- 2026-09-07: bench 第157回。14:53 JST tick。HEAD 2dc090d = fals
+- 2026-09-07: falsify 第166回。14:48 JST tick。HEAD 2dc090d = fa
+- 2026-09-07: falsify 第165回。14:34 JST tick。HEAD 8703e9f = be
+=== all '## Iteration log' line numbers in HEAD ===
+363:## Iteration log
+365:## Iteration log
+=== parent 44cddf9 occurrence line ===
+363:## Iteration log

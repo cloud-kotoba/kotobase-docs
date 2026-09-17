@@ -1,0 +1,8 @@
+ query-cosientist.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+1
+[fzwork a75820e] falsify 第70回: K-Z3 6時台 run188A-C (cold 1/60 単発, control borderline, run186A 群発は非再現継続)
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+To github.com:net-kotobase/docs
+   85ec4c9..a75820e  HEAD -> main
+push_rc=0

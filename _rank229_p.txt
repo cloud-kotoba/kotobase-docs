@@ -1,0 +1,3 @@
+To https://github.com/net-kotobase/docs
+   52912ca..7c24933  HEAD -> main
+push_rc=0

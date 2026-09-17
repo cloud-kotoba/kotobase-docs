@@ -1,0 +1,3 @@
+import subprocess
+# Re-run the warm query against production NOW (post-deploy verification round 2)
+# Reuse bench49 harness unmodified; save output.

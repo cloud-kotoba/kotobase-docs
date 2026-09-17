@@ -1,0 +1,7 @@
+== uptime at log time ==
+RC=0
+STDOUT:
+11:11  up  3:54, 12 users, load averages: 23.47 22.96 22.80
+
+STDERR:
+

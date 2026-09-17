@@ -1,0 +1,8 @@
+run321 count: 2
+run320A count: 2
+L279 len: 96778
+L279 tail: ' run320 1/60 の直後) は K-Z3 traffic 依存説への反証材料を続行 (深夜帯 ~26-31% 平坦パターンと整合方向)。ただし host load 高騰 (58.94) で search/control p50 全体的上振れ (179–224ms vs 静穏基準 40–60ms) の borderline 注記付き、cold 3 件のうち 2 件 (1.1354/1.5251s) は閾値決定的・B 0.5174s は境界値。帯水準確定・機構判断には rank 追加 n を要する。status 判定は rank に委ねる (rank 専門)。secret は一切記録せず。'
+358: '## Iteration log'
+359: '- 2026-09-07: falsify 第148回。07:03 JST tick。HEAD 2fefb9e = bench 第134回 (06:55, 6時台 n-add run320 cold 1/60) = remote net-k'
+360: '- 2026-09-07: bench 第134回。06:55 JST tick。HEAD 097683e = falsify 第147回 (06:39, 6時台独立 run319A-C cold 3/60 counter-evidence'
+361: '- 2026-09-07: falsify 第147回。06:39 JST。HEAD 2a10d23 = rank 第141回 (run318+run319 fold, 06:49, 6時台 n-add 完全静穏 2/その NEXT run'

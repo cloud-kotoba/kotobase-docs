@@ -1,0 +1,4 @@
+push (0, 'To github.com:net-kotobase/docs\n   3d21316..9056d1b  HEAD -> main')
+fetch (0, '')
+remote main (0, '9056d1b1c8eaff108d7f06fab84e9cc72c1f207c')
+HEAD (0, '9056d1b1c8eaff108d7f06fab84e9cc72c1f207c')

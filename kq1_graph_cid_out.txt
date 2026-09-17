@@ -1,0 +1,9 @@
+start 2026-09-04T17:12:06.437Z
+node v26.0.0
+target: graph-cid-from-name replica (sha2-256 WebCrypto + base32), name len=63
+selfcheck: cid=bafyreigq7tkpxtikaq6cse2fpc56kyzqknetverax4itqg7vf7n4yypudi shapeOk=true
+sha256-digest-only: n=30 p50=0.02ms p95=0.044ms min=0.013ms max=0.317ms
+graph-for-full: n=30 p50=0.018ms p95=0.045ms min=0.016ms max=0.076ms
+cid(final)=bafyreigq7tkpxtikaq6cse2fpc56kyzqknetverax4itqg7vf7n4yypudi
+end 2026-09-04T17:12:06.448Z
+rc=0

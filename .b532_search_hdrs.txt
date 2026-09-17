@@ -1,0 +1,26 @@
+HTTP/2 404 
+date: Sun, 13 Sep 2026 20:16:25 GMT
+content-type: text/html; charset=utf-8
+access-control-allow-origin: *
+cache-control: no-store
+content-language: en
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Accept-Language, Cookie, CF-IPCountry
+access-control-allow-headers: authorization, content-type, x-kotoba-did, x-datomic-db-name, x-request-id, x-payment, X-PAYMENT
+access-control-allow-methods: GET, POST, DELETE, OPTIONS
+access-control-expose-headers: x-kotobase-request-id, x-kotobase-content-sha256, x-kotobase-authority-receipt-cid, x-kotobase-canonical-origin, content-location, link, PAYMENT-REQUIRED, x-payment-response
+access-control-max-age: 86400
+permissions-policy: camera=(), geolocation=(), microphone=()
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-kotobase-request-id: kotobase-379aeb98-4495-49df-82b7-3a09f51a1a30
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pnxqLPoieEbgO1%2By5iaN%2BYpky2rS9B0ToDkBJNnLrk6tGkYp0%2FSTo%2F1srqC%2FKXFG1p7oL%2F2ulCEon7k5yOUHD9EcgwWmg%2BXqkICD3bWMi3vricMi519DdCw9d64s5DCECPWRVg1wZ%2Fd02uw%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a3a9d46069aeeb99-NRT
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)"><title>Page not found — kotobase</title  170133 .b532_search_body.txt

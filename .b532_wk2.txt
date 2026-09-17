@@ -1,0 +1,33 @@
+{
+  "schema": "https://kotoba.cloud/schemas/control-plane/v1",
+  "service": "kotoba-cloud",
+  "delegation": {
+    "subject": "kotoba.cloud/delegation",
+    "logPath": "/.well-known/biscuit-rootkey.json",
+    "published": false,
+    "authority": "the-log-not-this-document",
+    "pinnedBy": "the-calling-plane-not-this-document",
+    "verifiedLocally": false,
+    "verifierToday": "identity-service"
+  },
+  "libraries": {
+    "pqKeyRotateEndpoint": "https://kotoba.cloud/v1/pq-keys/rotate",
+    "hostedPublishEndpoint": "https://kotoba.cloud/v1/libraries/publish",
+    "defaultDryRun": true,
+    "minimumByteCompleteStorageProviders": 2,
+    "availabilityProofSchema": "kotoba.library-availability.v1",
+    "packageSignatureSuite": "ed25519+ml-dsa-65",
+    "inspectCommand": "kotoba library inspect",
+    "storageOrigin": "https://api.kotoba.cloud",
+    "publicationRequestReplayPolicy": "single-use-request-id",
+    "catalogPath": "/libraries/",
+    "runLockedCommand": "kotoba package run",
+    "catalogOrigin": "https://kotoba-lang.org",
+    "verifyCommand": "kotoba library verify",
+    "publishMode": "local-signed-passkey-plus-principal-pinned-ml-dsa-relay-distributed-gated",
+    "publishCommand": "kotoba library publish",
+    "packageRegistryPath": "/.well-known/kotoba-package-registry.edn",
+    "hostedPasskeyPublish": true,
+    "minimumRoutedPeerIds": 2,
+    "packageRegistryCid": "bafkreidcy5stqvnyfpmud6ozz5qz3supd3r3uzk7glmntuv36ezliaxstm",
+    "releaseSchema": "kotoba.library-release.

@@ -1,0 +1,34 @@
+$ git fetch net-kotobase -> 0
+
+$ git log --oneline -5 net-kotobase/main -> 0
+668ae46 bench 第37回: K-Z3 深夜 3時台 run107 evidence (cold 2/20, control 静穏, traffic 依存説反証材料)
+88c2c0a falsify: K-Z2 evidence (run106, 02:40-02:46 JST direct-after vs elapsed, n=40x2+control)
+91c516a rank 第36回 NEXT 修正: K-Z3 追加 n (限界利得低下済み) から K-Z2 発火直後 vs 経過後対比の n 増強へ — rank 第35回の残り焦点指定と整合
+68d3a22 rank 第36回: K-Q1 quiet-host 測定 2 本を反映 (graph-for 棄却材料, verify-session 1重化は主因ではない — 次切れ手を backend query path 計測へ更新), rank ブロック第36回版へ差替え, NEXT: gate 超過 tick は K-Z3 0時台 n 積み増し
+6eec2c1 bench 第36回: K-Q1 quiet-host local 測定 2 本 (graph-for p50 0.018ms で寄与せず, verify-session 1 hop p50 11.81ms — 1 重化の削減上限 ~12ms で退行主因ではない)
+
+$ git rev-parse HEAD -> 0
+668ae461887f32fd45a3f705bfc297e218a6b638
+
+$ git rev-parse net-kotobase/main -> 0
+668ae461887f32fd45a3f705bfc297e218a6b638
+
+$ git diff HEAD net-kotobase/main --stat -> 0
+
+TOTAL 1085
+=== TAIL 15 ===
+  (run3 増悪分 +~110ms の説明候補としても上限 +50ms 程度)、退行の主体は
+  backend query path / KV 側へ収束。K-Q1 の凍結切れ手は 2 本とも解消され
+  切れ手候補はほぼ枯えた — status は open 維持 (退行の本体が未特定のため
+  transition 要件を満たす測定はなし)。rank ブロックを第35回版から第36回版へ
+  差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2、K-Q1 の次切れ手を
+  backend query path 計測へ更新)。host load1 20.79 (本 tick 開始実測 2:33) で
+  gate (7.5) 超過に戻ったため backend 計測は quiet-host 窓待ち。
+  live smoke は / と /signup とも 200。
+  NEXT: K-Z2 発火直後 vs 発火経過後対比の n 増強 (rank 第35回で明記した残り焦点の
+  機構切分け — 深夜帯 0時台追加 n の限界利得は低下済みで K-Z3 追加 n を優先する
+  新規根拠はない。production HTTP で gate 外に可能: cron */5 発火時刻
+  3:00/3:05/3:10 直後 (~44s) と発火経過後 (~90s) の同測定法 n=20 対比,
+  falsify 2026-09-04 プロトコルの再実施。quiet-host 窓 (< 7.5) を観測した tick は
+  K-Q1 backend query path 計測を優先)。
+- 2026-09-05: bench 第37回。新規 evidence: K-Z3 深夜 3時台 run107 (03:33-03:34 JST, n=20 + landing control, 別接続 curl, Tokyo, 全 40/40 200, host load1 12.77 は production HTTP 実測のため gate 外)。search cold(>=0.5s) 2/20 (0.768s, 0.954s, 散発) / warm 18/20 p50 0.050s — 

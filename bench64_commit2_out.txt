@@ -1,0 +1,6 @@
+add rc=0 
+commit rc=0 [detached HEAD aadd539] docs: bench 第64回 evidence — K-Z3 3時台 2 セット目 run181A-C (cold 1/60 単発, run180A 多発は即時非再現) + bench63 記録修復の iteration log
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+push rc=0 To github.com:net-kotobase/docs
+   0caf38c..aadd539  HEAD -> main
+head aadd539 docs: bench 第64回 evidence — K-Z3 3時台 2 セット目 run181A-C (cold 1/60 単発, run180A 多発は即時非再現) + bench63 記録修復の iteration log

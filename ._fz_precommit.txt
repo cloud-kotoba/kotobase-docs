@@ -1,0 +1,21 @@
+== status ==
+ M query-cosientist.md
+?? $
+?? ._b531_count.txt
+?? ._b531_count2.txt
+?? ._b531_count3.txt
+?? ._b531_evloc_out.txt
+?? ._b531_insert_out.txt
+?? ._b531_loc3_out.txt
+== diff stat ==
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+== fetch ==
+Fetching net-kotobase
+Fetching bench_fetch
+From https://github.com/net-kotobase/docs
+   e47ccb1..36e89b3  main       -> bench_fetch/main
+== HEAD ==
+36e89b34ce833e1b9a7f2e6aa2d3048433ea4cf0
+== main ==
+36e89b34ce833e1b9a7f2e6aa2d3048433ea4cf0

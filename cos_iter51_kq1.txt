@@ -1,0 +1,8 @@
+1477:  差替え (順位変動なし: K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。
+1478:  K-Q1: bench 第49回の header 不在 6/6 実測と cosientist 第50回の deploy 完了記録
+1483:  401 継続は K-Q1 退行と別の新規障害の可能性 — cosientist 調査事項として並行記録。
+1487:  NEXT: 委ねる。NEXT: K-Q1 deploy 整合切分け (cosientist 担当: version 485fd2dc が
+1499:  status 遷移なし (K-Q1 は deploy 整合待ちのまま計装計測不可, K-Z2/K-Z3 は観測継続,
+1500:  K-S1/K-S2 は evidence なし)、rank 順位変動なし (K-Q1 > K-Z2 > K-Z3 > K-S1 > K-S2)。
+1501:  NEXT: K-Q1 deploy 整合切分け (cosientist 担当: version 485fd2dc が PR #3 計装込み
+1502:- 2026-09-05: bench 第50回。rank 第50回 NEXT は K-Q1 deploy 整合切分け (cosientist 担当) で bench は非対象 — フォールバックとして K-Z3 17時台 n 積み増し run156A–C を同測定法で実施 (17:32–17:33 JST, production HTTP 実測のため gate 外, secret 不含): cold 1/60 (~1.7%), 17時台通算 6/120 ~5.0% 低位帯, landing control 静穏, search 局在の 1s 超単発外れ値 1 件のみ。 status 遷移なし (rank 専門)。NEXT: 委ねる (rank 指定優先; K-Q1 deploy 整合確認までは K-Z3/K-Z2 帯 n 積み増し非優先の rank 指定に従う)。

@@ -1,0 +1,4 @@
+31:(defn- unauthorized [details]
+93:      {:response (unauthorized (:error verified))}
+340:                     (unauthorized "CACAO issuer must equal commit author")
+610:      (unauthorized "this backend is reachable only through the kotobase.net edge")

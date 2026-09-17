@@ -1,0 +1,24 @@
+$ git add query-cosientist.md
+rc=0
+STDOUT:
+
+STDERR:
+
+
+$ git commit -m falsify 第63回: K-Z3 20時台帯初計測 run167A-C (cold 0/60, control 同時上振れで partially not-separated) evidence 追記
+rc=0
+STDOUT:
+[detached HEAD acfb189] falsify 第63回: K-Z3 20時台帯初計測 run167A-C (cold 0/60, control 同時上振れで partially not-separated) evidence 追記
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+STDERR:
+
+
+$ git push net-kotobase HEAD:main
+rc=0
+STDOUT:
+
+STDERR:
+To github.com:net-kotobase/docs
+   69d7448..acfb189  HEAD -> main
+

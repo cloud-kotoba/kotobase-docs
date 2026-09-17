@@ -1,0 +1,15 @@
+===in-flight run354/run353 files===
+ls: .b354*: No such file or directory
+-rw-r--r--@ 1 junkawasaki  staff  2623 Sep  7 13:26 .b353_ilog.py
+-rw-r--r--@ 1 junkawasaki  staff  2363 Sep  7 13:25 .b353_insert.py
+-rw-r--r--@ 1 junkawasaki  staff  1005 Sep  7 13:24 .b353_runner.sh
+-rw-r--r--@ 1 junkawasaki  staff   834 Sep  7 13:25 .b353_stats.py
+===grep run354 in doc (evidence+iterlog)===
+0
+===uptime===
+13:35  up 2 days,  6:18, 13 users, load averages: 26.77 26.58 27.97
+===date===
+Mon Sep  7 13:35:56 JST 2026
+===search endpoint probe===
+200 0.078348
+200 0.049447

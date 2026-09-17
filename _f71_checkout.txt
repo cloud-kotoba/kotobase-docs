@@ -1,0 +1,2 @@
+HEAD is now at 24eb7de falsify 第72回: K-Z3 7時台帯初計測 run192A-C evidence 追記 (1/60 単発, control borderline), status 遷移なし
+M	query-cosientist.md

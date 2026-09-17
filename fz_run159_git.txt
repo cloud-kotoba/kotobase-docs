@@ -1,0 +1,10 @@
+[detached HEAD 1510e58] falsify 第57回: K-Z3 18時台 control 付き再計測 run159A-C (cold 1/60 薄単発, p50 50-56ms 帯に復帰, control 静穏で分離成立 — run158 型全体的遅延窓は即時非再現) evidence 追記 — status 遷移なし
+ 7 files changed, 174 insertions(+), 1 deletion(-)
+ create mode 100644 fz_run159.sh
+ create mode 100644 fz_run159_append.py
+ create mode 100644 fz_run159_calc.py
+ create mode 100644 fz_run159_calc_out.txt
+ create mode 100644 fz_run159_out.txt
+ create mode 100644 fz_run159_verify.py
+To github.com:net-kotobase/docs
+   9653ea5..1510e58  HEAD -> main

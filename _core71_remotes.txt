@@ -1,0 +1,6 @@
+net-kotobase
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+HEAD is now at c37950f falsify 第71回: K-Z3 6時台 run190A-C evidence 追記 (0/60, control 静穏), status 遷移なし
+c37950fb22d0cad21b2275c86623dd3dd294a7d1
+c37950fb22d0cad21b2275c86623dd3dd294a7d1

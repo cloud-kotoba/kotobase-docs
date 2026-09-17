@@ -1,0 +1,8 @@
+# append falsify run335 evidence to K-Z3 hypothesis row (L279 physical line END)
+lines = open('query-cosientist.md', encoding='utf-8').read().split('\n')
+i = 278
+assert lines[i].startswith('| K-Z3 |'), 'L279 not K-Z3 row'
+add = " falsify 2026-09-07 (第156回, K-Z3 10時台(9/7) n 積み増し run335A–C — bench 第142回 run334 (10:25) に続く current-band 10時台 n-add, 独立 2 計測, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 10:32:48–10:32:59 JST, 全 80/80 200, host load1 25.46 (10:32 uptime 実測, gate 7.5 大幅超過) は production HTTP 実測のため gate 外, secret 不含 — curl のみ): cold(>=0.5s) 1/1/0 per 20 = 2/60 (~3.3%) — run335A 単発散発 1.1288s p50 47.5ms / run335B 単発散発 1.5029s p50 51.9ms / run335C 0/20 p50 90.9ms max 179.1ms, control (kotobase.net/signup) cold 0/20 p50 71.0ms max 142.1ms 完全静穏で control 分離成立、cold 群 search 側に局在。run335A/B 各単発は C 0/20 + control 0/20 で即消失し「帯内 1 窓即消失」散発単発型継続 — run334A 散発ペア 2/20 (10:25) の直後減弱、10時台帯内で heavy (bench140-run331A 9/20 型) の再出現なし。10時台 (9/7) 通算 = falsify154-run332 (4/60) + bench141-run333 (5/60) + falsify155-run333-indep (1/60) + bench142-run334 (2/60) + 本 tick run335 (2/60) = 14/300 (~4.7%) の 5 セット中位帯寄り — 帯内 1 窓即消失へ収束継続、run331A heavy 9/20 初再出現 (55 セット連続非再現を割る) の弱後続は run333 以降 3 セット (5/60→2/60→2/60) で散発単発減弱。warm p50 47.5–90.9ms は control p50 71.0ms と同水準で host load 25 の影響下でも分析法に影響なし、cold 判定 2/60 は control 完全静穏で確定的。status 判定は rank に委ねる (rank 専門)。"
+lines[i] = lines[i] + add
+open('query-cosientist.md', 'w', encoding='utf-8').write('\n'.join(lines))
+print('appended. L279 len now', len(lines[i]))

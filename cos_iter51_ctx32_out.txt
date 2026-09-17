@@ -1,0 +1,35 @@
+def at 13289
+(defn- assoc-response-kv-stats
+  "K-Q1 engine 内訳計測: attach the per-request block-fetch summary as a
+  response header. Counts only -- no CID values, no block bytes, no secrets."
+  [resp]
+  (try
+    (.. resp -headers (set "x-kotobase-kv-stats" (store/block-fetch-stats-summary)))
+    (catch :default _ resp))
+  resp)
+
+(defn- read-store-extras
+  "extra-store for the read path: crypto profile + the L1 hydrated-db memo
+   + the colo-shared encrypted rows cache + direct async block fetch
+   (cold-datoms-async's O(N) discovery instead of the trampoline's O(N^2)
+   re-walk)."
+  [env g]
+  (let [{:keys [
+reset call at 14879
+te
+   it would be forgeable and owner binding would be worthless."
+  [request]
+  (let [v (some-> (.. request -headers (get "x-kotobase-tenant-did")) str/trim)]
+    (when (and v (not= "" v)) v)))
+
+(defn- run-authorized-read
+  "Read after the caller's authority to access `body` has already been
+  established. Kept separate so the strict operator-only LSM bootstrap can
+  snapshot an owned graph without pretending to be its tenant owner."
+  [env method body auth]
+  (let [g (:graph body)]
+    (store/reset-block-fetch-stats!)
+    (-> (head/read-head env g)
+        (.then
+         (fn [head-state]
+           (let [ck (w

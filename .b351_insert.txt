@@ -1,0 +1,2 @@
+inserted ok
+rc=0

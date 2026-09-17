@@ -1,0 +1,4 @@
+line279_len 284126
+tail>>>'ic 最低帯) へ移行後も 5 セット連続 cold>0 で K-Z3 traffic 依存説への反証材料を続行 (深夜帯 ~26-31% 平坦パターンと整合方向)。帯水準確定・機構判断には未達 (K-Z3 open 継続, fallback 専門のまま)。status 判定は rank に委ねる (rank 専門)。'
+has_zwnbsp False
+total_lines 2672

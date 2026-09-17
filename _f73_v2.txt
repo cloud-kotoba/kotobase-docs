@@ -1,0 +1,1 @@
+run190A–C, 同測定法 n=20 × 3 + landing control, 別接続 curl, Tokyo, 06:48 JST, 全 80/80 200, host load1 ~100 は production HTTP 実測のため gate 外): run190A cold(>=0.5s) 0/20 p50 141ms (max 381ms) / run190B cold 0/20 p50 143ms (max 223ms) / run190C cold 0/20 p50 132ms (max 202ms) — landing control (kotobase.net/, 同時刻, n=20, 全 200) は cold 0/20 p50 178ms (max 331ms) と

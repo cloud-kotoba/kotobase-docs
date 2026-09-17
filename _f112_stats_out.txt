@@ -1,0 +1,5 @@
+run246A: n=20 all200=True cold>=0.5s count=1 [1.0892] p50=0.052ms max=1.089ms
+run246B: n=20 all200=True cold>=0.5s count=0 [] p50=0.051ms max=0.096ms
+run246C: n=20 all200=True cold>=0.5s count=0 [] p50=0.05ms max=0.078ms
+control: n=20 all200=True cold>=0.5s count=0 [] p50=0.059ms max=0.167ms
+TOTAL 80 requests, all 200 = True

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/b532b_stats.py", line 16, in <module>
+    p50 = s[statistics.ceil(len(s) * 0.5) - 1]
+            ^^^^^^^^^^^^^^^
+AttributeError: module 'statistics' has no attribute 'ceil'

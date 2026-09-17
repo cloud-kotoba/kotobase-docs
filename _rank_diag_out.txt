@@ -1,0 +1,25 @@
+===REMOTES===
+bench_fetch	https://github.com/net-kotobase/docs (fetch)
+bench_fetch	https://github.com/net-kotobase/docs (push)
+net-kotobase	git@github.com:net-kotobase/docs (fetch)
+net-kotobase	git@github.com:net-kotobase/docs (push)
+===DIF query-cosientist.md===
+ query-cosientist.md | Unmerged
+ query-cosientist.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+===BENCH_FETCH LOG SINCE HEAD===
+===NETKOTO MAIN===
+31a65c9f9a551465febf949f79ccf1bde34f6316
+===BENCH_FETCH MAIN===
+31a65c9f9a551465febf949f79ccf1bde34f6316
+===31a65c9 SHOW===
+commit 31a65c9f9a551465febf949f79ccf1bde34f6316
+Author: Jun Kawasaki <jun784@gmail.com>
+Date:   Sun Sep 6 20:47:01 2026 +0900
+
+    bench 第97回: K-Z3 20時台 n 積み増し run243A-C (cold 3/60 ~5.0%, control 分離成立, 20時台通算 9/300 ~3.0% 低位帯残界確定方向, host load1 29.28 のため local 拒否 production HTTP fallback)
+
+ query-cosientist.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+===UNTRACKED COUNT (excluding state doc)===
+2144

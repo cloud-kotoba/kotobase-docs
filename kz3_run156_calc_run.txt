@@ -1,0 +1,5 @@
+run156A: n200=20/20 cold>=0.5s=0 p50=58.3ms p90=85.3ms max=116.9ms colds=[]
+run156B: n200=20/20 cold>=0.5s=1 p50=40.3ms p90=53.0ms max=1027.2ms colds=[1.027]
+run156C: n200=20/20 cold>=0.5s=0 p50=40.6ms p90=48.3ms max=137.1ms colds=[]
+control: n200=20/20 cold>=0.5s=0 p50=56.6ms p90=80.5ms max=111.3ms colds=[]
+run total: cold 1/60 (1.7%)
